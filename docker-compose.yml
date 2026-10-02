@@ -1,0 +1,43 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+  ollama-pull:
+    image: ollama/ollama:latest
+    depends_on:
+      - ollama
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        i=0
+        until ollama list >/dev/null 2>&1 || [ "$$i" -gt 30 ]; do
+          i=$$((i+1))
+          sleep 2
+        done
+        ollama pull qwen2.5:7b
+        if ! ollama pull qwen2.5vl:7b; then
+          if ! ollama pull llava:7b; then
+            ollama pull moondream
+          fi
+        fi
+    restart: "no"
+
+  helios:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      PYTHONPATH: /app/src
+      HELIOS_TTS: edge
+    depends_on:
+      - ollama
+
+volumes:
+  ollama:
