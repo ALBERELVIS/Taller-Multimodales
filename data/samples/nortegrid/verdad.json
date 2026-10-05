@@ -1,0 +1,38 @@
+{
+  "company": "NorteGrid",
+  "ticker": "NRGX",
+  "synthetic": true,
+  "currency": "EUR",
+  "fields": {
+    "ingresos_2025_m": 842.0,
+    "ebitda_2025_m": 239.0,
+    "margen_ebitda_pct": 28.4,
+    "capex_2025_m": 310.0,
+    "deuda_neta_m": 540.0,
+    "guidance_baja_m": 910.0,
+    "guidance_alta_m": 940.0,
+    "retraso_permiso_meses": 6.0
+  },
+  "risk_text": "Retraso de 6 meses en el permiso del parque eólico de Cabo Prior.",
+  "chart_pattern": "Caída plantada de aproximadamente el 18% entre las sesiones 180 y 200, seguida de una recuperación parcial. Los precios son sintéticos.",
+  "max_drawdown": -0.17999999999999994,
+  "price_stats": {
+    "trading_days": 252.0,
+    "first_close": 20.0,
+    "last_close": 27.1788,
+    "peak_close": 30.0,
+    "trough_close": 20.0,
+    "total_return": 0.35894000000000004,
+    "max_drawdown": -0.17999999999999994,
+    "annualized_volatility": 0.06487904430130524
+  },
+  "transcript_keywords": [
+    "842",
+    "margen",
+    "capex",
+    "cabo prior",
+    "540"
+  ],
+  "audio_file": "llamada.mp3",
+  "audio_engine": "edge-tts"
+}
