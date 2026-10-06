@@ -1,0 +1,101 @@
+{
+  "asr": [
+    {
+      "modelo": "whisper-base",
+      "dispositivo": "cpu",
+      "audio": "original",
+      "WER": 0.3482,
+      "RTF": 1.1029
+    },
+    {
+      "modelo": "whisper-base",
+      "dispositivo": "cpu",
+      "audio": "teléfono",
+      "WER": 0.354,
+      "RTF": 1.0886
+    },
+    {
+      "modelo": "whisper-large-v3-turbo",
+      "dispositivo": "cuda",
+      "audio": "original",
+      "WER": 0.2604,
+      "RTF": 0.2469
+    },
+    {
+      "modelo": "whisper-large-v3-turbo",
+      "dispositivo": "cuda",
+      "audio": "teléfono",
+      "WER": 0.259,
+      "RTF": 0.2449
+    }
+  ],
+  "vlm": {
+    "qwen2.5vl:7b": {
+      "CER": 0.015,
+      "s": 7.4746
+    }
+  },
+  "recuperacion": {
+    "clip imagen→imagen": {
+      "Recall@1": 0.2941,
+      "Recall@3": 0.3529,
+      "MRR": 0.4284
+    },
+    "clip imagen→descripción": {
+      "Recall@1": 0.2353,
+      "Recall@3": 0.3529,
+      "MRR": 0.3412
+    },
+    "siglip imagen→imagen": {
+      "Recall@1": 0.2941,
+      "Recall@3": 0.8235,
+      "MRR": 0.5706
+    },
+    "siglip imagen→descripción": {
+      "Recall@1": 0.2941,
+      "Recall@3": 0.4706,
+      "MRR": 0.4602
+    },
+    "e5 texto→texto": {
+      "Recall@1": 1.0,
+      "Recall@3": 1.0,
+      "MRR": 1.0
+    }
+  },
+  "tts": {
+    "Bark": {
+      "WER ida y vuelta": 0.0777,
+      "RTF": 13.573
+    },
+    "MMS-TTS": {
+      "WER ida y vuelta": 0.0777,
+      "RTF": 0.5484
+    }
+  },
+  "sdxl": {
+    "1": {
+      "SigLIP2": 0.1654,
+      "latencia_s": 15.6923
+    },
+    "2": {
+      "SigLIP2": 0.1776,
+      "latencia_s": 14.5552
+    },
+    "4": {
+      "SigLIP2": 0.1793,
+      "latencia_s": 15.1517
+    }
+  },
+  "llm": {
+    "qwen3:8b": {
+      "F1": 0.9351,
+      "AUC": 0.9572,
+      "latencia_s": 9.5679
+    },
+    "qwen2.5:7b": {
+      "F1": 0.8254,
+      "AUC": 0.9277,
+      "latencia_s": 7.7521
+    }
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "llamada_falso_banco",
+    "titulo": "Llamada del «departamento de seguridad» del banco",
+    "descripcion": "Voz generada con Bark y pasada por un canal telefónico simulado.",
+    "audio": "llamada_falso_banco.wav",
+    "esperado": "rojo"
+  },
+  {
+    "id": "sms_correos",
+    "titulo": "SMS de Correos: paquete retenido por 1,99 €",
+    "descripcion": "Smishing clásico con dominio que imita a Correos.",
+    "imagen": "sms_correos.png",
+    "esperado": "rojo"
+  },
+  {
+    "id": "whatsapp_hola_mama",
+    "titulo": "WhatsApp: «Hola mamá, este es mi número nuevo»",
+    "descripcion": "Falso familiar desde un número desconocido pidiendo un Bizum.",
+    "imagen": "whatsapp_hola_mama.png",
+    "esperado": "rojo"
+  },
+  {
+    "id": "sms_banco_legitimo",
+    "titulo": "SMS legítimo del banco (aviso de compra)",
+    "descripcion": "Aviso informativo sin enlaces ni peticiones: debe salir verde.",
+    "imagen": "sms_banco_legitimo.png",
+    "esperado": "verde"
+  },
+  {
+    "id": "carta_cripto",
+    "titulo": "Carta de una «gestora» de inversión en cripto",
+    "descripcion": "Foto de una carta en papel con rentabilidad garantizada y un IBAN.",
+    "imagen": "carta_cripto.png",
+    "esperado": "rojo"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "tactics": [
+    "suplantacion_entidad",
+    "urgencia_amenaza",
+    "credenciales_otp",
+    "enlace_sospechoso",
+    "pago_transferencia",
+    "falso_familiar",
+    "premio_inversion"
+  ],
+  "thresholds": {
+    "suplantacion_entidad": 0.225,
+    "urgencia_amenaza": 0.625,
+    "credenciales_otp": 0.45,
+    "enlace_sospechoso": 0.575,
+    "pago_transferencia": 0.7,
+    "falso_familiar": 0.4,
+    "premio_inversion": 0.35
+  },
+  "temperature": {
+    "estafa": 1.15,
+    "tacticas": 0.9
+  },
+  "embedding": "intfloat/multilingual-e5-small",
+  "hidden": 512,
+  "dropout": 0.2,
+  "seed": 0,
+  "train_size": 5563,
+  "test_manual": {
+    "F1 estafa": 0.8358,
+    "precisión": 0.9032,
+    "recall": 0.7778,
+    "ROC-AUC": 0.9375,
+    "Brier": 0.1181,
+    "ECE": 0.1243,
+    "F1 macro tácticas": 0.5977
+  },
+  "test_manual_5_semillas": {
+    "AUC val": {
+      "mean": 0.9943,
+      "std": 0.0007
+    },
+    "F1 macro tácticas val": {
+      "mean": 0.9245,
+      "std": 0.0197
+    },
+    "F1 estafa": {
+      "mean": 0.8589,
+      "std": 0.0306
+    },
+    "precisión": {
+      "mean": 0.888,
+      "std": 0.0213
+    },
+    "recall": {
+      "mean": 0.8333,
+      "std": 0.0556
+    },
+    "ROC-AUC": {
+      "mean": 0.9428,
+      "std": 0.0073
+    },
+    "Brier": {
+      "mean": 0.1092,
+      "std": 0.0135
+    },
+    "ECE": {
+      "mean": 0.1159,
+      "std": 0.0215
+    },
+    "F1 macro tácticas": {
+      "mean": 0.6049,
+      "std": 0.032
+    }
+  },
+  "comparativa": {
+    "Reglas (regex)": {
+      "F1 estafa": 0.56,
+      "precisión": 1.0,
+      "recall": 0.3889,
+      "ROC-AUC": 0.8032,
+      "Brier": 0.3868,
+      "ECE": 0.45,
+      "F1 macro tácticas": NaN
+    },
+    "TF-IDF + LogReg": {
+      "F1 estafa": 0.8451,
+      "precisión": 0.8571,
+      "recall": 0.8333,
+      "ROC-AUC": 0.8738,
+      "Brier": 0.139,
+      "ECE": 0.1006,
+      "F1 macro tácticas": 0.5357
+    },
+    "e5 + LogReg (sonda lineal)": {
+      "F1 estafa": 0.775,
+      "precisión": 0.7045,
+      "recall": 0.8611,
+      "ROC-AUC": 0.8391,
+      "Brier": 0.1712,
+      "ECE": 0.1596,
+      "F1 macro tácticas": 0.738
+    },
+    "Qwen3 8B sin entrenamiento": {
+      "F1 estafa": 0.9351,
+      "precisión": 0.878,
+      "recall": 1.0,
+      "ROC-AUC": 0.9572,
+      "Brier": 0.0717,
+      "ECE": 0.0707,
+      "F1 macro tácticas": 0.6149
+    },
+    "TacticNet sin calibrar": {
+      "F1 estafa": 0.8358,
+      "precisión": 0.9032,
+      "recall": 0.7778,
+      "ROC-AUC": 0.9375,
+      "Brier": 0.1201,
+      "ECE": 0.1144,
+      "F1 macro tácticas": 0.5652
+    },
+    "TacticNet (calibrado + umbrales)": {
+      "F1 estafa": 0.8358,
+      "precisión": 0.9032,
+      "recall": 0.7778,
+      "ROC-AUC": 0.9375,
+      "Brier": 0.1181,
+      "ECE": 0.1243,
+      "F1 macro tácticas": 0.5977
+    }
+  }
+}

@@ -1,0 +1,1093 @@
+texto,canal,estafa,receta,semilla,origen,suplantacion_entidad,urgencia_amenaza,credenciales_otp,enlace_sospechoso,pago_transferencia,falso_familiar,premio_inversion
+"Tu paquete 12345 ha sido retenido por 3€ de tasas. Paga aquí: https://enviaya.com/pago. Urgente, no dejes que te lo lleven.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"Tu envío 78901 está en retención por 5€ de cargos. Para liberar tu paquete, accede a: www.paqweb.es/pago. Activa tu cuenta ahora.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"El paquete 45678 ha sido bloqueado por un cargo de 2,95€. Paga en 15 minutos: www.enviayapaq.com. No te lo lleven.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"Paquete 34567 retenido por 4,5€ de tasas. Paga ahora en: www.enviax.com/pago. Si no lo haces, se lo llevarán.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"Tu envío 98765 fue retenido por 3,20€. Para liberarlo, visita: https://enviayapack.com. Hasta 24h para pagar.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"El paquete 11223 ha sido retornado por 5,99€ de cargos. Paga aquí: www.enviamex.com/pago. Si no lo haces, se lo llevarán.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"Tu pedido 77889 está retenido por un cargo de 2€. Accede a: http://enviaenvio.es/pago. Si no lo haces, se lo llevarán.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"El paquete 44556 está en retención por 3,95€. Paga ahora en: www.envioya.com. No dejes que te lo lleven.",sms,1,S0,0,sintetico_qwen3,1,1,0,1,1,0,0
+"Su paquete con referencia 34897 ha sido retenido por 3,50€ de tasas. Pague ahora en www.enviaya.com antes de que se pierda. No se lo puede entregar sin pago.",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+"Su envío ha sido detenido por incumplimiento de normas. Para liberarlo, pague 12,00€ en https://paqueteexpress.es. No haga caso a terceros.",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+"Su paquete está en espera de pago de 5,20€. Para evitar retrasos, pague en el enlace que le facilitamos: www.paqueteriacamino.com. ¡Haga clic ahora!",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+"Se ha producido un error en el envío de su paquete. Debe abonar 8,75€ para su liberación. Pague al instante en https://enviosdirectos.org. No pierda tiempo.",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+"Su envío ha sido retenido por un cargo de 4,95€. Para su liberación, pague en este enlace: www.paquetesalas.com. Haga clic ahora o perderá su envío.",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+"Su paquete con número 123456 ha sido retenido por incumplimiento. Pague 10,00€ en www.enviaquick.com para evitar retrasos. No responda a terceros.",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+"Se ha generado un cargo de 2,50€ por el envío. Pague ahora en https://enviosrapidos.es para liberar su paquete. No deje pasar la oportunidad.",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+"Su envío ha sido retenido por no haber pagado tasas. Abone 6,80€ en el siguiente enlace: www.paqueteriadenombre.com. Haga clic y pague antes de que se pierda.",sms,1,S0,1,sintetico_qwen3,1,1,0,1,1,0,0
+Su paquete con código 789456 está retenido por 15€ de tasas. Pague ahora: www.enviaya.es/pago. No se retrasará más.,sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+"Su envío fue retenido por 20€. Acceda al enlace para pagar: https://pagoenvia.es. Pago rápido, entrega inmediata.",sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+El paquete 345678 está en espera por 10€. Pague aquí: www.bancosur.es/pagos. No se lo enviamos sin pago.,sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+Su envío fue bloqueado por 12€. Pague sin demora en: pagoenvia.com. No lo retenemos más.,sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+Su envío con código 897654 fue retenido por 18€. Pague aquí: www.caja-levante.es. No se lo enviamos sin pago.,sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+Su paquete fue retenido por 15€. Páguelo aquí: https://pago.envia.es. No se lo entregamos sin pago.,sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+Su envío está en espera por 12€. Pague en: www.envia-ya.com. No se lo enviamos sin pago.,sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+Su envío fue retenido por 10€. Páguelo aquí: pagoenvia.com. No lo retenemos más.,sms,1,S0,2,sintetico_qwen3,1,1,0,1,1,0,0
+Tu paquete de EnvíaYa está retenido por 15€ de tasas. Paga ahora en [link] para evitar retrasos. No te lo devuelven si no lo haces tú.,sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+¡Urgente! Tu envío de Caja Levante está bloqueado. Debes abonar 30€ de tarifas antes de que se pierda. Paga aquí: [link].,sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+"BancoSur ha retornado tu paquete por falta de 5€. Para evitar que se vaya, paga en [link] ahora mismo. ¡No esperes!",sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+"Tienes un envío retenido por 25€ de costes de gestión. Para recuperarlo, haz clic aquí: [link]. No te lo entregan si no lo pagas.",sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+Tu paquete de EnvíaYa no puede ser entregado. Debes pagar 10€ de tasas urgentes. Paga aquí: [link]. ¡No lo dejes en la puerta!,sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+Caja Levante ha detenido tu envío por 20€ de tarifas. Paga en [link] ahora o perderás el paquete. No hay tiempo que perder.,sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+"Tu envío está retenido por un cargo de 12€. Para recuperarlo, paga en [link]. Si no lo haces, se lo llevan. ¡Actúa rápido!",sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+¡Atención! Tu paquete de BancoSur está bloqueado. Debes pagar 5€ de costes. Paga en [link] o se lo llevarán. No dejes que se vaya.,sms,1,S0,3,sintetico_qwen3,1,1,0,1,1,0,0
+"Tu envío con código 345678 no pudo ser entregado. Por favor reprograma ahora: https://bit.ly/entrega2024
+No te preocupes, no hay problema.
+Si no accedes, tu envío será cancelado.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"Tu paquete de 15,50 € no llegó. Reenvía aquí: bit.ly/entrega2024
+Si no lo haces, se te cobrará un cargo de 10 €.
+Asegúrate de que estás en la lista de contactos.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"BancoSur: Tu envío 456789 no llegó. Accede al enlace para reprogramar: bit.ly/entrega2024
+Si no lo haces, se te notificará como incumplimiento.
+No te olvides de revisar el estado de tu envío.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"Tu envío de 25 € no llegó. Accede aquí: bit.ly/entrega2024
+Reprograma ahora antes de que se considere como pérdida.
+No respondas si no estás seguro de la entrega.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"Caja Levante: Tu envío con código 789012 no llegó. Por favor reprograma: https://bit.ly/entrega2024
+No te preocupes, es un error de sistema.
+Si no lo haces, se te cobrará un cargo de 15 €.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"¡Tu envío no llegó! Reenvía ahora: bit.ly/entrega2024
+Si no lo haces, se te notificará como incumplimiento.
+Asegúrate de estar en la lista de contactos.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"EnvíaYa: Tu envío 123456 no llegó. Accede al enlace: bit.ly/entrega2024
+Si no lo haces, se te cobrará un cargo de 20 €.
+No te olvides de revisar el estado de tu envío.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"¡Tu envío no llegó! Reenvía ahora: bit.ly/entrega2024
+Si no lo haces, se te cobrará un cargo de 25 €.
+Asegúrate de estar en la lista de contactos.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+"Tu envío de 18 € no llegó. Accede aquí: bit.ly/entrega2024
+Reprograma ahora antes de que se considere como pérdida.
+No te olvides de revisar el estado de tu envío.",sms,1,S1,0,sintetico_qwen3,1,0,0,1,0,0,0
+¡Su envío con referencia 32457 no ha llegado! Haga clic aquí para reprogramar: http://enviaya.es/rep/32457,sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+Atención: Su paquete no fue entregado. Debe reprogramar la entrega urgentemente. www.enviaya.es/rep/32457,sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+"Su envío no ha llegado. Para reprogramar, haga clic: www.enviaya.es/rep/32457",sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+¡Alerta! Su envío con referencia 32457 no fue entregado. Pulse aquí: http://enviaya.es/rep/32457,sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+Su envío con referencia 32457 no fue entregado. Reprogamelo aquí: www.enviaya.es/rep/32457,sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+Ha habido un error en la entrega. Su paquete no ha llegado. Reprogamelo ahora: http://enviaya.es/rep/32457,sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+Su envío no ha sido entregado. Reprogamelo en este enlace: www.enviaya.es/rep/32457,sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+¡Atención! Su envío con ref 32457 no llegó. Reprogamelo aquí: http://enviaya.es/rep/32457,sms,1,S1,1,sintetico_qwen3,1,0,0,1,0,0,0
+⚠️ ¡ATENCIÓN! Su envío no ha sido entregado. Haga clic aquí para reprogramar: www.enviayapyme.es/rep/123456789,sms,1,S1,2,sintetico_qwen3,1,0,0,1,0,0,0
+Su paquete con código 2023-7890 no ha llegado. Debe reprogramar. Haga clic aquí: http://enviayapyme.es/rep/123456789,sms,1,S1,2,sintetico_qwen3,1,0,0,1,0,0,0
+Su envío no ha sido entregado. Haga clic aquí para reprogramar. www.enviayapyme.es/rep/123456789,sms,1,S1,2,sintetico_qwen3,1,0,0,1,0,0,0
+Hemos detectado un retraso en su envío. Puede reprogramar aquí: www.enviayapyme.es/rep/123456789,sms,1,S1,2,sintetico_qwen3,1,0,0,1,0,0,0
+Tu envío con número 789456 no se entregó. Re programa aquí: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+No hemos podido entregar tu paquete. Click aquí para reprogramar: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+Se ha producido un error en la entrega. Pide reprogramación en: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+Tu envío 789456 no llegó. Re programa en: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+Se ha perdido tu envío. Re programar aquí: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+Tu envío no llegó. Reprograma ahora: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+Se ha producido un error. Reprograma aquí: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+No se entregó tu envío. Re programa en: http://enviaya.es/reprograma,sms,1,S1,3,sintetico_qwen3,1,0,0,1,0,0,0
+ATENCIÓN: Su multa por exceso de velocidad está pendiente. Pague ahora en [www.multa.dgt.es] para evitar recargo. No pague si no la ha recibido.,sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+Urgente: Su vehículo está sancionado. Acceda a [www.dgt.es/multas] para abonar antes del 15 de diciembre. Recargo del 20% si no lo hace.,sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+Su multa por no llevar cinturón está caducando. Pague sin demora en [www.dgt.es]. El recargo será del 50% si no se paga antes del 31 de diciembre.,sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+Su multa de tráfico está pendiente. Pague ahora en [multas.dgt.es] para evitar recargo. No responda a este mensaje.,sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+La DGT le comunica que tiene una multa por infracción de señalización. Acceda a [www.dgt.es/multas] y pague antes del 31 de diciembre. Recargo del 30%.,sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+Atención: Su multa por no respetar señal de parada está pendiente. Pague antes del 15 de diciembre en [www.multas.dgt.es] para evitar recargo.,sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+Su multa por exceso de velocidad es válida. Abone ahora en [multa.dgt.es] para evitar recargo del 40%. No responda si no es su caso.,sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+"Su multa de tráfico está pendiente. Pague en [www.dgt.es/multas] para evitar recargo. Si no es su caso, ignore este mensaje.",sms,1,S2,0,sintetico_qwen3,1,1,0,1,1,0,0
+Su ticket de tránsito vence el 25/09. Pague ahora en [www.multas.es] para evitar recargo. DGT - Oficina de Tránsito,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+¡Atención! Su multa de 120€ está pendiente. Pague en [multas24.es] o perderá 50€ de recargo. DGT,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+Su multa de tránsito por exceso de velocidad está activa. Pague ahora: [multasonline.es] o pagará 200€ más. DGT,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+Recibe tu multa en [multasonline.net]. No pagues y perderás 300€. DGT - Oficina de Tránsito,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+Su multa no pagada se activa el 10/10. Pague ahora: [multasrapid.es] o perderá 300€. DGT,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+¡Urgente! Su multa de 150€ no se paga. Acceda a [multas24.es] antes del 30/09 o pague más. DGT,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+Su ticket de tránsito no está pagado. Pague ahora en [multas.es] o perderá 350€. D.G.T. Oficina de Tránsito,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+¡Alerta! Su multa no pagada será cobrada. Visite [multas24.es] y pague antes del 25/09. DGT - Oficina de Tránsito,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+Su ticket no pagado tiene recargo. Pague ahora en [multas.es] o pague 400€ más. D.G.T.,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+¡Pague su multa de 120€ antes del 20/10 o perderá 300€! Acceda a [multasrapid.es]. DGT - Oficina de Tránsito,sms,1,S2,1,sintetico_qwen3,1,1,0,1,1,0,0
+SU LLAMADA NO HA SIDO ATENDIDA. Usted tiene una multa por exceso de velocidad pendiente de 45 € con recargo de 20 € si no paga antes del 15 de diciembre. Pulse aquí: http://multasdgt.es/2023/multa45,sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+NOTIFICACIÓN OFICIAL: Su cuenta en Caja Levante ha sido bloqueada por incumplimiento de normas de tránsito. Debe pagar 60 € y 15 € de recargo. Acceda al enlace: http://www.dgt.es/multas/pendientes/234567,sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+Usted ha sido notificado de una multa por no llevar el carné de conducir. Pago urgente de 120 € y 30 € de recargo antes del 20 de diciembre. Pago aquí: https://multasenviaya.com/pendiente/1234567890,sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+"LA DGT le comunica que tiene una sanción de 90 € pendiente. Si no paga antes del 10 de diciembre, se aplicará un recargo de 45 €. Pago en: http://www.multasdgt.es/pago/1234567890",sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+SU VEHÍCULO ESTÁ REGISTRADO EN EL SISTEMA DE MULTAS. PAGO URGENTE DE 105 € y recargo de 50 € si no se resuelve antes del 5 de enero. Enlace: https://multasenviaya.com/multa/1234567890,sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+ESTE MENSAJE ES OFICIAL DE LA DGT. Le informamos que tiene una multa por infracción de señalización. Debe pagar 150 € y 75 € de recargo. Pago inmediato: http://multas.dgt.es/pago/1234567890,sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+Usted ha sido notificado de una multa de tránsito de 85 €. Recargo de 35 € si no paga antes del 18 de diciembre. Pulse aquí: https://multasenviaya.com/2023/multa85,sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+SU VEHÍCULO ESTÁ ASOCIADO A UNA MULTA DE 110 €. No puede circular hasta que no pague. Recargo de 50 €. Pago aquí: http://multasdgt.es/pago/1234567890,sms,1,S2,2,sintetico_qwen3,1,1,0,1,1,0,0
+⚠️ Atención: Su multa de tráfico por exceso de velocidad ha sido registrada. Pague ahora en www.multas-dgt.es antes del 15/10 o se aplicará un recargo del 50%. No responda a este mensaje.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+Su vehículo tiene una multa pendiente. Pago inmediato en www.dgt.es/multas o se aplicará un recargo. Importe: 120 €. No deje que esto afecte su historial.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+¡Urgente! La DGT le notifica una multa de 250 € por parada ilegal. Pago inmediato en www.dgt.org/multas o se aplicará un recargo de 150 €. No responda a este mensaje.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+Su multa de tráfico por no llevar cinturón está pendiente. Pague en multas.dgt.es antes de 30/11 o se aplicará un recargo del 100%. Importe total: 150 €.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+La DGT le notifica una multa de 180 € por exceso de velocidad. Pago inmediato en www.multas-dgt.com o se aplicará un recargo de 120 €. No deje que esto afecte su historial.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+¡ATENCIÓN! Su multa por parada ilegal está pendiente. Pague ahora en www.dgt.es/multas o se aplicará un recargo del 50%. Importe: 100 €. No responda a este mensaje.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+Su vehículo tiene una multa pendiente por velocidad excesiva. Pago inmediato en www.multas-dgt.net o se aplicarán recargos. Importe: 200 €. No deje que esto afecte su historial.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+La DGT le notifica una multa de 150 € por no llevar cinturón. Pago inmediato en multas.dgt.org o se aplicará un recargo. No responda a este mensaje.,sms,1,S2,3,sintetico_qwen3,1,1,0,1,1,0,0
+"⚠️ Atención: BancoSur detecta actividad sospechosa en su cuenta. Para garantizar su seguridad, haga clic aquí: https://verificar.bancosur.es. ¡Acceso no autorizado!",sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Su cuenta en Caja Levante ha sido accedida sin autorización. Por favor, confirme su identidad antes de las 24h: https://seguridad.cajalevante.org. Gracias",sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+⚠️ ¡Alerta! Su tarjeta EnvíaYa ha sido usada en un cajero. Debe verificar su identidad en 24h en: https://verificar.enviaya.com. ¡Acceso no autorizado!,sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+¡Urgente! Su cuenta en BancoSur fue accedida. Confirme su identidad en 24h: https://seguridad.bancosur.es. No responda a este mensaje,sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+"⚠️ Aviso: Se ha detectado un acceso no autorizado a su cuenta en Caja Levante. Por favor, haga clic aquí: https://verificar.cajalevante.es para confirmar su identidad. ¡Hasta las 24h!",sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+⚠️ Su cuenta ha sido hackeada. BancoSur le pide verificar su identidad en 24h en: https://seguridad.bancosur.es. ¡Acceso no autorizado!,sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+⚠️ Atención: Se ha detectado actividad sospechosa en su cuenta de Caja Levante. Confirme su identidad antes de las 24h en: https://verificar.cajalevante.es. ¡Urgente!,sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+⚠️ BancoSur le informa que su cuenta fue accedida sin autorización. Verifique su identidad en 24h: https://seguridad.bancosur.es. ¡No responda a este mensaje!,sms,1,S3,0,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Atención! Se ha detectado un acceso no autorizado a su cuenta en BancoSur. Por favor, confirme su identidad en [www.bancosur.es/verificar] antes de las 24 horas. No comparta su código de seguridad.",sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+Su cuenta en Caja Levante ha sido accedida. Verifique su identidad en [www.cajalevante.es/seguridad] en 24 horas. Importante: no responda a este mensaje.,sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+¡Alerta! Su cuenta en EnvíaYa fue accedida. Debe verificar su identidad en [www.enviayapay.com/seguridad] dentro de 24 horas. No haga clic en enlaces sospechosos.,sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+ATENCIÓN: Su tarjeta en BancoSur ha sido utilizada. Confirme su identidad en [www.bancosur.es/seguridad] o llame al 900 123 456. ¡No haga clic en el enlace!,sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+Se ha realizado un acceso no autorizado a su cuenta. Debe verificar su identidad en [www.enviayapay.com/verificar] en 24 horas. No responda a este mensaje.,sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Su cuenta en Caja Levante fue hackeada! Por favor, haga clic en [www.cajalevante.es/seguridad] para verificar su identidad. Tiempo límite: 24 horas.",sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+Se ha detectado un intento de acceso no autorizado a su cuenta en EnvíaYa. Debe confirmar su identidad en [www.enviayapay.com/seguridad] antes de las 24 horas. No responda a este mensaje.,sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Urgente: su cuenta en BancoSur fue accedida. Por favor, haga clic en [www.bancosur.es/verificar] para confirmar su identidad. Tiempo límite: 24 horas.",sms,1,S3,1,sintetico_qwen3,1,1,1,1,0,0,0
+¡Acceso no autorizado a tu cuenta en BancoSur! Verifica tu identidad en www.bancosur.es en 24 horas o tu cuenta será bloqueada. No hagas clic en enlaces de terceros.,sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Alerta! Tu cuenta en Caja Levante ha sido accedida. Para evitar problemas, confirma tu identidad en el siguiente enlace: https://www.cajalevante.es/seguridad. ¡Actúa ya!",sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Tu operación en EnvíaYa fue interrumpida. Para continuar, pulsa aquí: https://enviayapay.es/verificar. No hagas clic en otros enlaces.",sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Cuenta bloqueada! Acceso no autorizado detectado en BancoSur. Por favor, verifica tu identidad en https://bancosur.es/seguridad. Tiempo limitado.",sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+Tu cuenta en Caja Levante está en riesgo. Confirma tu identidad en www.cajalevante.es/verificar. No respondas a este mensaje.,sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+¡Alarma! Tu cuenta en BancoSur ha sido accedida. Accede al siguiente enlace: https://bancosur.com/seguridad para evitar que te roben. ¡Es urgente!,sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Operación no autorizada en EnvíaYa. Para evitar problemas, confirma tu identidad en https://enviayapay.com/verificar. Tiempo limitado.",sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Atención! Tu cuenta en BancoSur ha sido hackeada. Por favor, pulsa aquí para verificar tu identidad: https://bancosur.es/seguridad. ¡No dejes de actuar!",sms,1,S3,2,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Alerta! Se ha detectado un acceso no autorizado a su cuenta en BancoSur. Para confirmar su identidad, haga clic aquí: https://www.bancosur.es/verificar. Tiene 24 horas para actuar. No responda a este mensaje.",sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+"Su cuenta en Caja Levante ha sido accedida sin autorización. Por favor, verifique su identidad en el siguiente enlace: www.enviayapay.com/seguridad. Es urgente. No lea este mensaje si no es usted.",sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+"BancoSur le informa de un acceso no autorizado. Para evitar riesgos, confirme su identidad en: www.bancosur.es/verificar. Tiene 24 horas. No responda a este mensaje.",sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+ATENCIÓN: Su cuenta en EnvíaYa ha sido violada. Confirme su identidad en: www.enviayapay.com. Tiene 24 horas. No haga clic si no es usted.,sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+"Su cuenta ha sido accedida en BancoSur. Por favor, vaya a https://www.bancosur.es/seguridad para confirmar su identidad. Tiene 24 horas. No responda.",sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+¡Alerta! Su tarjeta de BancoSur ha sido usada sin autorización. Haga clic aquí: www.bancosur.es/verificar. Tiene 24 horas. No lea este mensaje si no es usted.,sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+Caja Levante ha detectado un acceso a su cuenta. Confirme su identidad en: www.enviayapay.com/seguridad. Tiene 24 horas para actuar. No responda a este mensaje.,sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+"Su cuenta en EnvíaYa ha sido accedida. Para confirmar su identidad, haga clic aquí: www.enviayapay.com. Tiene 24 horas. No haga clic si no es usted.",sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+BancoSur le informa de un acceso no autorizado. Confirme su identidad en: www.bancosur.es/seguridad. Tiene 24 horas. No responda a este mensaje.,sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+¡Urgente! Su cuenta en Caja Levante ha sido violada. Haga clic aquí: www.enviayapay.com. Tiene 24 horas. No lea si no es usted.,sms,1,S3,3,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Su tarjeta está bloqueada! Para desbloquearla, llame al 912 345 678 o vaya a www.bancosur.es. Es urgente.",sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+"Su cuenta ha sido bloqueada. Por favor, acceda a www.enviaya.com y verifique su seguridad. No espere más.",sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+Atención: su tarjeta de débito está inactiva. Llame al 600 123 456 o visite bankofuentes.com para resolverlo.,sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+Su tarjeta ha sido bloqueada. Haga clic aquí: www.cajaalmeria.net. Es importante actuar ahora.,sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+Su cuenta está bloqueada. Llame al 910 123 456 o vaya a www.bancogallego.org para desbloquearla. Urgente.,sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+"¡ALERTA! Su tarjeta no está activa. Para activarla, acceda a www.bancoeste.es. No haga clic en enlaces sospechosos.",sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+"Su tarjeta se ha bloqueado. Por favor, llame al 612 345 678 o vaya a www.cajalevante.com. No lo ignore.",sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+¡Su tarjeta está bloqueada! Llame al 930 123 456 y siga las instrucciones. www.bancosur.es es el sitio correcto.,sms,1,S4,0,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu tarjeta de crédito BancoSur está bloqueada. Para desbloquearla, llama al 912 345 678 o ve a www.bancosur.es/seguridad. No es un mensaje de SMS estándar.",sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu cuenta en Caja Levante ha sido bloqueada. Para activarla, accede a www.cajalevante.es o llama al 934 567 890. Importante: no responda a este mensaje.",sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+¡Alarma! Tu tarjeta EnvíaYa está bloqueada. Debes confirmar tu identidad en el sitio web www.enviaya.es. El código de seguridad es 12345. Llama al 938 765 432.,sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu tarjeta de BancoSur ha sido bloqueada. Para solucionarlo, ingresa en www.bancosur.com o llama al 912 123 456. No es un mensaje de tu banco.",sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+"¡Tu cuenta está bloqueada! Accede a www.enviaya.es para verificar tu identidad. Si no lo haces, se bloquearán tus fondos. Llama al 938 456 789.",sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+El banco te avisa: tu tarjeta está bloqueada. Confirma tu identidad en el sitio web www.cajalevante.net. No responder a este mensaje. Número de contacto: 934 567 890.,sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu tarjeta de EnvíaYa fue bloqueada. Para evitar pérdida de dinero, accede a www.enviaya.com o llama al 912 345 678. Este mensaje es urgente.",sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+¡Tu tarjeta está bloqueada! Llama al 912 123 456 o ve a www.bancosur.org. No es un mensaje de tu banco. Confirma tu identidad urgente.,sms,1,S4,1,sintetico_qwen3,1,1,0,1,0,0,0
+"¡Atención! Su tarjeta de BancoSur ha sido bloqueada. Para desbloquearla, llame al 910 123 456 o visite www.bancosur.com. Urgente.",sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+"El Banco de España ha detectado actividad sospechosa en su cuenta. Para evitar pérdida de fondos, active el código de seguridad en www.bancocaja.com. No confíe en terceros.",sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+Su cuenta en Caja Levante ha sido comprometida. Debe confirmar el acceso en 10 minutos o se bloqueará permanentemente. Llame al 912 345 678.,sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+"¡Alerta! Su tarjeta de EnvíaYa fue utilizada en un cajero. Para evitar más daños, visite www.enviaya.es ahora mismo. No responda a terceros.",sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+"Su tarjeta ha sido bloqueada. Para desbloquearla, ingrese en el sitio web oficial: www.bancosur.es. Llame al 600 123 456 si no puede acceder.",sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+"Se ha detectado un intento de robo en su cuenta bancaria. Para proteger sus fondos, active su clave de seguridad en www.bancocaja.com. No responda a mensajes de terceros.",sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+"Su tarjeta ha sido bloqueada. Para desbloquearla, escriba su clave en www.enviaya.es. El plazo es de 24 horas. Llame al 911 234 567 si no lo hace.",sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+¡Acceso no autorizado! Su cuenta de BancoSur ha sido invadida. Confirme su identidad en www.bancosur.es. No responda a ningún otro mensaje.,sms,1,S4,2,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu tarjeta de BancoSur ha sido bloqueada. Por favor, llama al 911 222 333 para activarla de inmediato. No hagas ninguna transacción sin confirmar.",sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu cuenta en Caja Levante está bloqueada. Debes acceder a www.enviayapay.es para resolver el problema. No esperes más, el tiempo es limitado.",sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+"¡ALERTA! Tu tarjeta de EnvíaYa ha sido desactivada. Para evitar pérdida, llama al 933 444 555. El banco te está avisando.",sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu cuenta en BancoSur está bloqueada y no puedes acceder. Para desbloquearla, ve a www.bancosur.es y confirma tu identidad. No hagas caso a terceros.",sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+"¡Tu tarjeta ha sido bloqueada! Por favor, accede a www.bancoclaro.com para activarla. Si no lo haces, perderás todo el dinero. ¡Actúa ahora!",sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+"Tu cuenta en Caja Levante está inactiva. Para solucionarlo, llama al 911 222 444. No dejes que terceros accedan a tu cuenta.",sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+La tarjeta de EnvíaYa ha sido suspendida. Debes verificar tu identidad en www.envia-ya.es. No responda a mensajes de terceros.,sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+¡Tu tarjeta ha sido bloqueada! Accede a www.bancosur.com para activarla. El banco te está avisando. No dejes que nadie te robe tu dinero.,sms,1,S4,3,sintetico_qwen3,1,1,0,1,0,0,0
+"Hola, soy del BancoSur, aquí le confirmamos que ha habido un cargo anómalo de 200 euros en su cuenta. Para evitar problemas, por favor me indique su código SMS para anularlo. ¡Es urgente!",llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+Tengo que informarle que su cuenta en Caja Levante ha sido comprometida y se ha realizado un pago de 500 euros sin autorización. Le pedimos que nos facilite su código de seguridad para poder bloquear la operación.,llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Llamo desde el número 910 123 456! Le confirmamos que ha habido una transacción sospechosa de 1.000 euros en su cuenta de EnvíaYa. Para evitar que se lleve más dinero, por favor diga su código SMS.",llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+"Ha habido un cargo de 300 euros en su cuenta bancaria, le llamamos porque necesitamos su código de seguridad para anularlo. Si no lo proporciona, se bloqueará su cuenta. ¡Es muy urgente!",llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+"Buenas tardes, su banco le llama porque ha habido una operación sospechosa de 700 euros. Le pedimos que nos diga su código de seguridad para poder revisar el movimiento. No se preocupe, somos del banco.",llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+"Le llamamos porque ha habido una transacción de 250 euros en su cuenta de BancoSur, necesitamos su código para poder cancelarla. Si no responde, se bloqueará su cuenta. Gracias por su atención.",llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+"Le informamos que ha habido una operación en su cuenta de Caja Levante de 1.200 euros. Por favor, diga su código SMS para poder anularla. Nos urge, gracias.",llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+El número 930 789 012 le llama desde el banco para informarle que ha habido un cargo de 800 euros. Le pedimos su código de seguridad para poder bloquear la operación. ¡Es muy urgente!,llamada,1,S5,0,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Hola! Soy de la seguridad de BancoSur, le informamos que ha habido un cargo de 300 euros en su cuenta, necesitamos el código SMS para anularlo. ¿Podría confirmarnos el código?",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Su cuenta en Caja Levante ha sido bloqueada por un posible fraude. Para desbloquearla, debe proporcionarnos el código de verificación SMS que recibió hace 15 minutos. Por favor, háganoslo saber urgentemente.",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Señor, le llamamos desde EnvíaYa, tenemos un cargo de 1.500 euros pendiente en su cuenta, pero no puede ser procesado sin el código SMS. Por favor, reenvíe el código para poder resolverlo.",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"¿Podría por favor facilitarnos el código SMS que recibió hace un momento? Es urgente, tenemos un cargo de 500 euros que debe ser anulado, y no podemos hacerlo sin ese código. Gracias.",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Esto es urgente! Le llamamos desde BancoSur, tenemos un cargo de 250 euros en su cuenta que no puede ser procesado sin el código SMS. Por favor, háganoslo saber ahora mismo. No podemos esperar.",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Le queremos informar que su cuenta en EnvíaYa ha sido comprometida. Para protegerla, necesitamos el código SMS que le enviamos a su teléfono. Por favor, responda cuanto antes.",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Su cuenta en Caja Levante ha sido hackeada, por eso le estamos llamando. Para desbloquearla, necesitamos el código SMS que recibió hace 10 minutos. Por favor, háganoslo saber ahora mismo.",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Le llamamos desde BancoSur por un cargo sospechoso de 1.200 euros. Para anularlo, debemos verificar su identidad con el código SMS que le enviamos. ¿Podría confirmarnos el código?",llamada,1,S5,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Hola, soy el encargado de seguridad de BancoSur. Acabo de detectar un cargo sospechoso en tu cuenta con el importe de 300 euros. Necesito el código SMS que recibiste hace 10 minutos para poder anularlo.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Tu cuenta en Caja Levante ha sido hackeada. Para evitar que se te lleven más dinero, dime ahora el código de verificación que te enviamos. Es urgente.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Estamos revisando tu historial de transacciones en EnvíaYa. Hay un cargo de 50 euros que no reconoces. Para resolverlo, tienes que enviar el código SMS al número 600 123 456.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Soy de seguridad de BancoSur. Tu tarjeta está siendo usada en otro país. Para bloquearla, necesito el código que te enviamos hace 15 minutos. Si no lo das, se te bloqueará la cuenta.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Tu cuenta en Caja Levante tiene un cargo de 100 euros inusual! Para evitar que te lo lleven, dime el código de seguridad que recibiste. Es urgente, no pierdas tiempo.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Hola, soy del soporte técnico de BancoSur. Hay un cargo de 200 euros en tu cuenta que no reconoces. Para anularlo, necesito el código SMS que te enviamos. Si no lo dices, se te bloqueará todo.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu cuenta en EnvíaYa ha sido hackeada. Hay un cargo de 30 euros. Para evitar más daños, dime ahora el código que te enviamos. Es importante que lo hagas cuanto antes.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Soy de seguridad de Caja Levante. Tu tarjeta está siendo usada. Hay un cargo de 150 euros. Para bloquearla, necesito el código SMS que te enviamos. No lo dejes para más tarde.",llamada,1,S5,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Hola, soy del departamento de seguridad de BancoSur. Hemos detectado un cargo anómalo de 500€ en su cuenta. Para anularlo, debe confirmar su código SMS que le enviamos hace 10 minutos.",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Su cuenta está bloqueada por actividades sospechosas. Para desbloquearla, ingrese su código de seguridad y el código SMS que recibió en el mensaje de Caja Levante.",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Su tarjeta ha sido hackeada. Para evitar que se use, debe proporcionarnos el código SMS de su cuenta EnvíaYa. Es urgente, no lo haga público.",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"El Banco nos ha contactado para verificar su identidad. Para evitar que se active un bloqueo, diga el código SMS que le enviamos a su número de teléfono.",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Su operación de 2.000€ ha sido rechazada. Para resolverlo, necesitamos su código SMS y el código de seguridad de su cuenta en línea. Haga clic aquí: https://bancoseguro.es",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Llamamos porque su tarjeta está siendo usada en otro país. Para evitar daños, diga el código SMS que le mandamos a su teléfono. No lo comparta con nadie.",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Su cuenta tiene una operación sospechosa de 1.500€. Para anularla, confirme con su código SMS y el PIN de su tarjeta. Es importante, no rechace la llamada.",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"El sistema de seguridad de su banco ha detectado actividad sospechosa. Para garantizar su seguridad, diga el código SMS que le enviamos hace 15 minutos. Es urgente, no lo haga público.",llamada,1,S5,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Hola, soy del BancoSur. Su cuenta ha sido hackeada, necesitamos transferir el dinero a una cuenta segura. El número es 4567891234. No haga ninguna transacción ahora. Es urgente.",llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+"¡Atención! Su cuenta en Caja Levante ha sido violada. Debemos mover los ahorros a una cuenta segura, el dominio es www.bancoseguro.es. No confíe en nadie, es urgente.",llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+"Soy de EnvíaYa, su cuenta está hackeada y tenemos que trasladar los fondos a una cuenta protegida. El sitio web es www.enviaya.es. No haga ninguna operación ahora, es muy importante.",llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+"¡Urgente! Su cuenta ha sido comprometida, necesita transferir los ahorros a una cuenta segura. El número de cuenta es 9876543210. No haga ninguna operación, es muy grave.",llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+"Soy de una entidad bancaria, su cuenta está hackeada y necesita transferir los fondos a una cuenta segura. El dominio es www.bancosseguros.com. No haga ninguna operación, es urgente.",llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+¡Atención! Su cuenta en una entidad bancaria ha sido violada. Debe transferir los ahorros a una cuenta segura. El número es 1234567890. No haga ninguna transacción ahora.,llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+"Su cuenta ha sido hackeada y debe trasladar los fondos a una cuenta segura. El dominio es www.bancoespecial.com. No confíe en nadie, es muy urgente.",llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+"¡Urgente! Su cuenta en Caja Levante está hackeada, debe transferir los ahorros a una cuenta segura. El número de cuenta es 0987654321. No haga ninguna operación, es muy grave.",llamada,1,S6,0,sintetico_qwen3,1,1,0,0,1,0,0
+"¡Hola! Soy del Banco Sur, acabo de detectar que tu cuenta está hackeada. Necesito que transfieras los 15.000€ a una cuenta segura antes de que se pierdan. ¡Es urgente!",llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+"¿Qué haces? Tu cuenta está bloqueada por un ataque de phishing. Debes transferir los 25.000€ a esta cuenta de EnvíaYa, si no, perderás todo. El sitio web es: www.bancosurseguro.com",llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+"Soy de Caja Levante. Tu cuenta está comprometida y para proteger tu dinero, debes enviar los 30.000€ a esta cuenta. No esperes más, o todo se perderá.",llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+Tu perfil en Banco Sur ha sido hackeado. Debes transferir los 10.000€ al número 666 111 222 333 antes de que te bloqueen. No hables con nadie. ¡Ahora!,llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+Acabo de ver que tu cuenta de EnvíaYa ha sido hackeada. Tienes que hacer un pago de 5.000€ a esta cuenta para evitar que te roben todo. No digas nada a nadie.,llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+"Tu tarjeta de Banco Sur fue robada. Para evitar que te roben el dinero, debes transferir 12.000€ a esta cuenta en 24 horas. El sitio web es: www.bancosurseguro.net",llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+¡Alerta! Tu cuenta en Caja Levante ha sido violada. Transferir 8.000€ a esta cuenta de EnvíaYa antes de que se te bloquee. El número es 666 222 333 444.,llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+"Soy de Banco Sur, tu cuenta está hackeada. Debes hacer un pago de 18.000€ a esta cuenta segura. No hables con nadie, es urgente. El sitio web es: www.bancosursafe.es",llamada,1,S6,1,sintetico_qwen3,1,1,0,0,1,0,0
+"Hola, soy de la banca. Tu cuenta está hackeada, necesitas transferir el dinero a una cuenta segura antes de que se pierda. El importe es 5.000€. La cuenta es 4567891234567890123456. Gracias, te espero.",llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+"¡Cuidado! Tu cuenta está en riesgo. Debes transferir los 15.000€ a la cuenta segura de BancoSur. El código es 1234. No hagas nada hasta que lo hagas. No te preocupes, es urgente.",llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+Tu operación ha sido denegada. Necesitas mover el dinero a una cuenta segura para evitar que te roben. El importe es 3.000€. La cuenta es 12345678901234567890. ¡Hazlo ahora!,llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+"¡Alarma! Tu cuenta está hackeada. Transfiere los 8.000€ a la cuenta 4567890123456789012345. Es urgente, no dejes que te roben. ¡Hazlo antes de que sea tarde!",llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+Tu dinero está en peligro. Debes transferir 20.000€ a una cuenta segura. El número es 98765432101234567890. No dejes que te lo roben. ¡Hazlo ahora mismo!,llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+¡Atención! Tu cuenta está en riesgo. Transfiere los 10.000€ a la cuenta de Caja Levante. El número es 4567891234567890123456. No dejes que te lo roben. ¡Hazlo ahora!,llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+¡Tu cuenta está hackeada! Debes mover los 12.000€ a la cuenta segura de EnvíaYa. El código es 9876. No hagas nada hasta que lo hagas. ¡Es urgente!,llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+Tu dinero está en peligro. Necesitas transferir 7.000€ a la cuenta 12345678901234567890. No dejes que te lo roben. ¡Hazlo antes de que sea demasiado tarde!,llamada,1,S6,2,sintetico_qwen3,1,1,0,0,1,0,0
+"Hola, soy del BancoSur, su cuenta fue hackeada. Necesitamos transferir el dinero a una cuenta segura. El importe es 15.000 euros. El dominio es banco-sur.es. Haga el pago ahora antes de que pierda todo.",llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+"Hola, soy de la Caja Levante. Su cuenta está comprometida. Debe transferir los ahorros a una cuenta segura. El importe es 25.000 euros. El dominio es cajalevante.es. Haga el pago inmediatamente.",llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+¿Es usted don Ramón? Su cuenta está hackeada. Debemos trasladar los fondos a una cuenta segura. El importe es 8.000 euros. El dominio es envíayapagos.com. Haga el pago ahora o perderá todo.,llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+¡Atención! Su cuenta en EnvíaYa fue violada. Debe transferir el dinero a un nuevo sitio web. El importe es 12.000 euros. El dominio es envíayapagos.net. Haga el pago antes de que se bloquee.,llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+Su cuenta está hackeada. Debe mandar los ahorros a una cuenta segura. El importe es 17.000 euros. El dominio es banco-sur.es. Póngase en contacto con el soporte al 900 123 456.,llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+¡Hola! Su cuenta fue robada. Debe trasladar los fondos a una cuenta segura. El importe es 9.000 euros. El dominio es cajalevante.org. Llame al 911 222 333 para confirmar.,llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+Su cuenta en BancoSur fue violada. Debe transferir el dinero a un sitio seguro. El importe es 20.000 euros. El dominio es banco-sur.es. Haga el pago sin demora.,llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+Su cuenta está hackeada. Debe mandar los ahorros a un nuevo sitio. El importe es 6.000 euros. El dominio es envíayapagos.com. Haga el pago ahora o perderá todo.,llamada,1,S6,3,sintetico_qwen3,1,1,0,0,1,0,0
+"Hola, soy el técnico de BancoSur. Hemos detectado actividad sospechosa en tu cuenta, necesitamos verificar tu identidad mediante AnyDesk. Instálalo ahora mismo y dime tu clave de seguridad bancaria. ¿Está listo?",llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+"Tengo que revisar tu cuenta de Caja Levante, hay un problema con los movimientos. Para resolverlo, necesito el acceso a tu computadora. Instala AnyDesk y comparte la pantalla. Tu clave de banco es importante.",llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Alarma! Tu cuenta de EnvíaYa ha sido bloqueada. Para desbloquearla, debes permitirme acceder a tu equipo con AnyDesk. Dime tu clave de seguridad y te libero el acceso. ¿Cuándo lo haces?",llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu cuenta está en riesgo, es urgente. Tengo que entrar a tu PC para resolverlo. Instala AnyDesk y comparte la pantalla. Tu clave bancaria es clave para desbloquear tu cuenta. ¿Qué esperas?",llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Tu perfil en EnvíaYa se ha visto comprometido. Para solucionarlo, permíteme usar AnyDesk. Dime tu clave de banco y te ayudo. ¡Es urgente!",llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+Hemos detectado un intento de robo en tu cuenta de BancoSur. Debes permitirme acceder a tu PC con AnyDesk. Tu clave de seguridad es necesaria para verificar tu identidad. ¿La tienes a mano?,llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu cuenta de Caja Levante ha sido hackeada. Para recuperarla, necesito el acceso a tu equipo. Instala AnyDesk y comparte la pantalla. Tu clave es clave para el acceso. ¿La tienes?",llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+Tu perfil de EnvíaYa está en peligro. Debes compartir tu pantalla con AnyDesk para que podamos resolverlo. Tu clave de banco es clave para evitar que te roben. ¿La dices ahora?,llamada,1,S7,0,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Hola! Soy del servicio técnico de EnvíaYa. Tu cuenta ha sido detectada con actividad sospechosa. Para evitar que te roben el dinero, necesito acceder a tu computadora para verificar la seguridad. Instala AnyDesk y dime tu clave de banco, por favor. No te preocupes, es solo para proteger tus datos.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Este es el técnico de Caja Levante. Tu cuenta está bloqueada por un error técnico. Para resolverlo, debo conectar con tu computadora. Descarga AnyDesk y envíame tus datos bancarios. Es urgente, por favor. Tu cuenta se puede ver afectada si no lo haces.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Tu cuenta en BancoSur ha sido hackeada. Para evitar problemas, necesito acceso remoto para limpiar el sistema. Instala AnyDesk y proporciona tus datos bancarios. Tiene que ser ahora, no hay más tiempo.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Estamos revisando tu cuenta en BancoCaixa. Se ha detectado actividad inusual. Para verificar tu identidad, necesito acceder a tu equipo. Instala AnyDesk y dímelo tu clave de banco. Si no lo haces, tu dinero se puede perder.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Hola! Soy técnico de EnvíaYa. Tu cuenta ha sido infectada. Debes permitirme acceder a tu computadora para limpiar el virus. Instala AnyDesk y dime tus datos bancarios. No te preocupes, solo necesito 5 minutos.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu cuenta en BancoSur está en riesgo. Para evitar que te roben, necesito acceso a tu computadora. Instala AnyDesk y dime tu clave de banco. Es urgente, por favor. Tu dinero está en peligro.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"Este es el servicio técnico de Caja Levante. Tu cuenta no está segura. Debes permitirme conectar a tu PC para verificar. Descarga AnyDesk y envíame tus datos bancarios. No es un fraude, es un procedimiento de seguridad.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Tu cuenta en BancoCaixa ha sido hackeada. Para resolverlo, necesito acceso a tu sistema. Instala AnyDesk y dime tu clave de banco. Si no lo haces, tu dinero se puede perder.",llamada,1,S7,1,sintetico_qwen3,1,1,1,0,0,0,0
+"¿Puedes decirme tu nombre completo y el DNI? Necesito verificar tu identidad para poder activar el servicio en tu cuenta de BancoSur. Por favor, no dejes que nadie más lo sepa.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu cuenta de Caja Levante ha sido bloqueada por inactividad. Para desbloquearla, descarga AnyDesk y proporciona las claves de tu cuenta bancaria. El proceso es rápido y seguro.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Llamo desde la Oficina de EnvíaYa! Tu tarjeta de débito está en riesgo. Instala AnyDesk ahora mismo y dime las claves de tu banco, por favor. No te preocupes, solo necesito el PIN.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Hola, soy técnico del Banco Sur. Tu cuenta ha sido hackeada. Para recuperarla, necesito acceso a tu computadora mediante AnyDesk y las claves de tu banco. Es urgente.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu cuenta en Caja Levante ha sido reportada. Para evitar que se te robe el dinero, abres AnyDesk y me das las claves del banco. Es solo por unos minutos, por favor.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Soy técnico de EnvíaYa, ¿puedes decirme tu nombre y el DNI? Tu cuenta está en riesgo. Para protegerla, instala AnyDesk y dime las claves de tu banco. Es urgente.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu tarjeta de crédito de BancoSur ha sido suspendida. Para reactivarla, descarga AnyDesk y me das las claves. No te preocupes, solo necesito el código de seguridad.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Soy de la Oficina de Caja Levante! Tu cuenta está infectada. Para resolverlo, descarga AnyDesk y dime las claves de tu banco. Es importante que lo hagas ahora.",llamada,1,S7,2,sintetico_qwen3,1,1,1,0,0,0,0
+"Hola, soy del BancoSur, tenemos un problema con tu cuenta, necesitamos que instales AnyDesk para resolverlo. Tu clave es 123456, rápido por favor.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Tu cuenta en Caja Levante fue bloqueada. Para desbloquearla, descarga AnyDesk y proporciona tu clave bancaria. Es urgente.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Hola, soy técnico de EnvíaYa. Tu tarjeta está reportada, para activarla necesitas instalar AnyDesk. Tu clave es 987654, no la desbloques por tu cuenta.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Tu banco, BancoSur, ha detectado actividad sospechosa. Para evitar fallos, instala AnyDesk y proporciona tus datos. Tu clave es 000001, es importante.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Alerta! Tu cuenta en Caja Levante fue hackeada. Para recuperarla, descarga AnyDesk y nos envías tu clave. Es urgente, no dejes pasar tiempo.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Soy del Banco Sur, tu cuenta está en riesgo. Instala AnyDesk y comparte tus datos. Tu clave es 111111, no la olvides.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"Tienes un problema en tu cuenta de Caja Levante. Para solucionarlo, instalas AnyDesk y nos das tu clave bancaria. Es urgente, no esperes.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Atención! Tu tarjeta de EnvíaYa fue bloqueada. Para desbloquearla, instala AnyDesk y envíanos tu clave. No la comparta con nadie.",llamada,1,S7,3,sintetico_qwen3,1,1,1,0,0,0,0
+"¡Estimado cliente! Su factura de la luz no ha sido pagada y vamos a cortar el suministro. Para evitarlo, debe realizar el pago inmediato mediante tarjeta en el sitio web oficial: www.luz-esp.com. No haga caso a nadie que le diga lo contrario.",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Hola! Somos de la compañía de la luz y su consumo ha sido muy alto. Para no perder el servicio, debe pagar ahora mismo con tarjeta en el portal de pago: luz-24h.net. No lo haga perder tiempo, es urgente.",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Estamos llamando porque su factura no está pagada y si no paga ya, le cortamos la luz! Pague con tarjeta en el sitio web: luz-24h.net. No le hagan caso a nadie, es muy importante.",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Atención! Su factura de la luz se encuentra vencida y le vamos a cortar el suministro. Pague ya con tarjeta en el portal: luz-24h.es. Si no lo hace, perderá el servicio. ¡No deje que le corten!",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Hola! Es la compañía de la luz y le estamos llamando porque su factura está en mora. Para evitar que le corten la luz, debe pagar ahora mismo usando su tarjeta en el sitio web: luz-24h.es. No lo haga perder tiempo.",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Estimado usuario! Su factura de energía no ha sido pagada y si no paga ahora con tarjeta, le vamos a cortar el suministro. Pague en el siguiente enlace: luz-24h.com. No deje que le corten la luz.",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Hola! Llamamos porque su factura de la luz se encuentra vencida. Si no paga ya con tarjeta, le cortamos el suministro. Pague aquí: luz-24h.es. No lo deje pasar, es urgente.",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Atención! Le estamos llamando porque su factura de la luz no ha sido pagada y si no lo hace ahora con tarjeta, le cortamos el suministro. Pague en el siguiente portal: luz-24h.net. ¡No deje que le corten la luz!",llamada,1,S8,0,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Tengo que hablar contigo, mijo! ¡Tu luz se va a cortar si no pagues ya! Te lo digo por teléfono porque no tengo tiempo para más. ¡Paga con la tarjeta de BancoSur antes de las 18 o te quedas sin luz!",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¿Tú eres el titular del contrato? Pues ya es tarde, porque hoy mismo se corta la luz si no se paga. Tienes que usar el código de pago que te enviamos por email, pero si no lo has recibido, llámame al 666 123 456",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Espera, que no me vayas a cortar la luz! Tengo a mi hija en el hospital y no puedo moverme. ¡Dame 24 horas más! Si no, ya me lo cortas. No me hagas perder el trabajo",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Tu empresa no tiene luz! El sistema se ha bloqueado y el director general te llama. Tienes que pagar 350 euros de deuda, si no, te cortan la electricidad. El sitio web es www.pagoenergia.com y el número es 912 345 678",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¡No me tomes por tonto! Hace 5 días que te he llamado y no contestas. ¡Si no paga ya con la tarjeta de EnvíaYa, lo vas a pasar mal! El importe es de 420 euros, y si no lo haces, te lo cortamos",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Hoy es el último día para pagar! Si no lo haces, te lo cortamos. El importe es de 280 euros y tienes que usar el código 1234. El sitio web es www.luzgratis.es y el número es 609 876 543",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Llama al 911! No es una amenaza, es una alerta. Tu luz se apagará en 2 horas si no paga. Usa la tarjeta de Caja Levante y el código 4567, o te lo cortamos",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¡No me hagas perder el tiempo! Tengo que hacer esto antes de que se acabe el plazo. Si no pagas con la tarjeta de EnvíaYa, te cortan la luz. El importe es de 300 euros y el código es 7890. ¡Hoy es el último día!",llamada,1,S8,1,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Por favor, pague ahora mismo el importe de 250 € que le debe a la compañía de la luz, si no lo hace nos veremos obligados a cortarle el suministro! Es urgente, no tenemos más tiempo.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"¿Ha recibido el mensaje de la compañía de la luz? Hemos detectado que no ha pagado el mes de abril, que asciende a 300 €, y si no paga antes de las 18, le cortamos la luz.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Estamos en el límite! Le queda un importe de 150 € pendiente, si no paga ya con tarjeta, el corte es inminente. Póngase en contacto con nosotros en el número 91 234 5678.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"La compañía de la luz ha detectado que no ha realizado el pago del mes de mayo, que asciende a 400 €, y le advierte que si no paga ahora, le cortarán la electricidad. Por favor, ingrese el pago en el sitio web www.luz24h.com.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"Tiene una deuda de 200 € con la compañía de la luz y si no paga antes de las 20 horas, le cortarán el suministro. Pague ahora con tarjeta en el sitio web oficial de luzsur.com.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"¡El corte de la luz es inminente! Le debe 180 € a la empresa de la luz, y si no paga en este momento con tarjeta, le vamos a cortar el suministro. Póngase en contacto ahora mismo.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"Ha detectado que no ha realizado el pago de julio, que asciende a 320 €, y le informamos que, si no paga con tarjeta ahora, su suministro será cortado. Haga el pago en www.enviaya.es.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"Le queda una deuda de 120 € con la compañía de la luz, si no paga ya, le cortamos el suministro. Haga el pago ahora mismo a través de la web de luzenvia.com.",llamada,1,S8,2,sintetico_qwen3,1,1,1,0,1,0,0
+"¡Mamá! Me han roba’o el móvil y no puedo llamarte. Necesito un Bizum urgente para poder hacer una transferencia. El banco es Caja Levante, cuenta 345678901234567890. ¡Por favor, rápido!",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"Mi madre, soy yo, Óscar. Se me rompió el móvil y no puedo contactar. Necesito un Bizum de 200€ a este número 678 901 2345. Estoy en una zona sin señal. Por favor, ayuda",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Madre! Mi móvil se ha caído al agua y no funciona. No puedo hacer nada, solo pido un Bizum de 150€ para poder llamar. El número es 666 789 0123. ¡Ayúdame!",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Hola mamá! Acabo de perder mi móvil, necesito un Bizum de 300€ a este número 622 345 6789. No puedo usar WhatsApp, pero si me mandas el dinero, te llamo en cuanto pueda. Gracias",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"Mamá, soy yo, Lucía. El móvil se me rompió, no puedo usar WhatsApp. Necesito un Bizum urgente de 250€ al número 689 789 0123. Por favor, rápido. Gracias",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Madre! Me han hackeado el móvil y no puedo hacer nada. Pide un Bizum de 100€ al número 654 321 9876. Debo irme, es urgente. Perdón por el susto",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Hola! Soy el hijo de María. Mi móvil se dañó y no puedo usar WhatsApp. Necesito un Bizum de 400€ al número 698 765 4321. Por favor, no me dejes solo",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"Mamá, no puedo escribir bien. Me roba’o el móvil y no puedo hacer nada. Pide un Bizum de 200€ al número 678 901 2345. Es urgente, por favor",whatsapp,1,S9,0,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Mamá! Me han robado el móvil, tengo que hacer una transferencia urgente a un amigo, por favor, hazme un Bizum ahora mismo, es muy importante!",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Papá! Es un número nuevo porque se me rompió el móvil, necesito un poco de dinero para poder seguir con las clases, por favor, hazme un Bizum rápido, es urgente.",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Mamá! Me han hackeado el móvil, no puedo acceder a mi cuenta en BancoSur, necesito que me envíes dinero a un contacto para que me ayude, es urgente.",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Papá! Tengo que hacer una transferencia urgente a EnvíaYa, es un número nuevo porque me lo robaron, por favor, hazme un Bizum, es muy importante.",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Mamá! Me han robado el móvil, no puedo usar el mío, necesito un poco de dinero para poder seguir, por favor, envíame un Bizum ahora mismo, es urgente.",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Papá! Es un nuevo número porque me lo robaron, tengo que hacer una transferencia a un amigo para poder seguir, por favor, hazme un Bizum, es urgente.",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Mamá! Me han hackeado el móvil y no puedo acceder a mi cuenta, necesito que me hagas un Bizum ahora mismo a un contacto de confianza, es muy importante.",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Papá! Me han robado el móvil, tengo que hacer una transferencia urgente a un amigo, no puedo usar el mío, por favor, hazme un Bizum, es muy importante.",whatsapp,1,S9,1,sintetico_qwen3,0,1,0,0,1,1,0
+¡Mamá! Me he roto el móvil y no tengo manera de contactar. Necesito que me hagas un Bizum de 50€ urgentemente. No tengo más opciones.,whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+"Hola mamá, es mi hermano. Mi móvil se ha caído al agua y no puedo hacer nada. Puedes mandarme 100€ a través de Bizum, por favor. Es urgente.",whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+"Mamá, no me queda más remedio. Mi móvil está dañado y no puedo comunicarme. Por favor, envíame 150€ a este número de Bizum: 666 666 666. Es vital.",whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+¡Mamá! Es urgente. Me he roto el móvil y no tengo manera de contactar. Puedes hacerme un Bizum de 200€ a este número: 666 666 666. Gracias.,whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+"Hola, soy mi hijo. Mi móvil se ha roto y necesito un dinero para reemplazarlo. Puedes hacerme un Bizum de 150€ a través de la app. Gracias.",whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+"Mamá, no me queda más remedio. Mi móvil está dañado y no puedo hacer nada. Por favor, envíame 250€ a este número: 666 666 666. Es urgente.",whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+¡Mamá! Me he roto el móvil y no tengo manera de contactar. Necesito que me hagas un Bizum de 100€. No tengo más opciones. Por favor.,whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+"Hola, es mi hija. Mi móvil se ha caído al agua y no puedo hacer nada. Por favor, haces un Bizum de 300€ a este número: 666 666 666. Es urgente.",whatsapp,1,S9,2,sintetico_qwen3,0,1,0,0,1,1,0
+"¡Hola! Soy mi hermano David, acabo de cambiar de número y me han enviado un código por SMS. ¿Me lo pasas por favor? Es urgente, gracias.",whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+¿Tienes el código que te envió el BancoSur? Es para confirmar mi acceso al perfil. Mi hermano Luis me ha dicho que lo necesitas para poder ayudarme.,whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+"¡Ayuda! Mi madre ha recibido un mensaje de la Caja Levante pidiéndole el código de seguridad. No sé qué hacer, ¿me lo pasas tú?",whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+¡Espera! He recibido un código por SMS y no sé qué hacer. Mi primo Juan me ha dicho que lo tienes y que me lo pases de inmediato.,whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+"¡Soy yo! Mi tía Rosa ha cambiado de número y necesita el código que le ha llegado por WhatsApp. No lo tiene y me lo pides a ti, ¿verdad?",whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+¡No te lo creo! Mi hermana ha sido víctima de un fraude. Le han enviado un código por SMS y necesita que lo leas. ¿Me lo pasas?,whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+"¿Tienes el código que te llegó el banco? Mi primo Carlos acaba de cambiar de número y no puede acceder. Es urgente, por favor.",whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+¡Es mi padre! Le han enviado un código por SMS y le han dicho que tiene que pasarlo a alguien de confianza. ¿Me lo pasas?,whatsapp,1,S10,0,sintetico_qwen3,0,0,1,0,0,1,0
+¡Hola! Mi hermano te ha dado mi número para que me ayudes con un código que me han enviado por SMS. ¿Puedes pasármelo? Es urgente.,whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+Mi tía me ha dicho que me llames porque tiene un problema con su cuenta en BancoSur y necesita un código para poder acceder. ¿Me lo pasas por WhatsApp?,whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+"¡Ayúdame, por favor! Mi primo me ha mandado un código por SMS y no sé cómo hacerlo. Te lo paso ahora mismo, pero necesito que me lo confirmes antes de seguir.",whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+Mi madre te ha dado mi número para que te pongas en contacto conmigo. Tengo que pasar un código de verificación que me han enviado. ¿Puedes pasarlo?,whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+"¡Hola! Mi abuela te ha dicho que me llames porque necesita un código que le ha llegado por SMS. Es urgente, por favor, pasámelo ahora.",whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+"Mi hermana te ha mandado este número para que me ayudes con un código de EnvíaYa. Me han enviado un SMS, pero no sé cómo hacerlo.",whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+¡Hola! Mi primo me ha dado este número para que me pasen un código que me han enviado. Lo necesito para poder hacer un pago. ¿Me lo pasas?,whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+"Mi tía te ha dado mi número para que me ayudes. Necesito un código de verificación que me han enviado por SMS. ¿Me lo pasas, por favor?",whatsapp,1,S10,1,sintetico_qwen3,0,0,1,0,0,1,0
+"¡Hola! Soy tu hermana Clara, acabo de llegar de Marruecos. Me han dicho que el banco me ha enviado un código para activar mi cuenta, ¿me lo pasas? Gracias.",whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+¡SOSPECHOSO! ¿No te parece raro que tu madre te escriba pidiéndote el código de seguridad? ¿Quieres que te lo envíe por WhatsApp? Es urgente.,whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+Mi tía Lorena necesita urgentemente el código que le envió el BancoSur para un traspaso. ¿Me lo pasas por favor? Es muy importante.,whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+¡Estamos en peligro! El sistema del Banco de España nos ha alertado. Tu primo Luis te necesita el código para evitar un fraude. Envíalo YA.,whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+¡Atención! Tu abuelo ha recibido un mensaje del sitio web de Caja Levante pidiéndole el código. ¿Podrías ayudarle? Es urgente.,whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+"¿Cómo estás? Tu hermano Carlos, en Madrid, necesita el código de tu cuenta para un pago urgente. ¿Me lo pasas por WhatsApp?",whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+"¡Hola! Soy tu primo Antonio, en Argentina. Me han dicho que el sitio web de EnvíaYa te envió un código. ¿Me lo pasas? Es para un traspaso.",whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+Tu madre está en el hospital y necesita el código para acceder a su cuenta. ¿Me lo pasas ya? Es una emergencia.,whatsapp,1,S10,2,sintetico_qwen3,0,0,1,0,0,1,0
+"¡Felicidades! Has ganado un electrodoméstico de 300€ en *SuperMegaMarket*. Para reclamarlo, pulsa aquí: [http://enviaya.es/1234567](http://enviaya.es/1234567). ¡No olvides pagar 40€ de gastos de envío!",whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡ATENCIÓN! El sorteo de *Caja Levante* te ha elegido. Recibe tu premio si envías 50€ a [http://sorteos2025.com](http://sorteos2025.com). ¡Solo 24 horas!,whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+"¡GANA UNA NEVERA DE 400€! *BancoSur* te lo envía, pero primero debes pagar 60€. Visita [http://sorteo-bancosur.com](http://sorteo-bancosur.com) y confirma tu sorteo.",whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+"¿Sabías que te has hecho acreedor de un iPhone 13? *SuperMegaShop* te lo envía, pero primero tienes que pagar 150€. Más info en [http://sorteo-iphone13.es](http://sorteo-iphone13.es).",whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡FELICIDADES! Has ganado un televisor de 500€ en *SuperMegaMarket*. Solo falta pagar 80€ de gastos de envío. Clica aquí: [http://supermercado.es/456](http://supermercado.es/456).,whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Sorteo de *MegaFarma*! Has ganado un producto gratis, pero primero tienes que pagar 30€. Visita [http://sorteofarma.com](http://sorteofarma.com) y completa el pago.",whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+"¡HAS GANADO UNA BICICLETA DE 150€! *CajaNorte* te la envía, pero antes debes pagar 20€. Más detalles aquí: [http://sorteocajanorte.com](http://sorteocajanorte.com). ¡No pierdas la oportunidad!",whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Sorpresa! *SuperFarma* te ha elegido para ganar un electrodoméstico de 250€. Solo falta pagar 50€ a [http://sorteo-farmacia.es](http://sorteo-farmacia.es). ¡No esperes más!,whatsapp,1,S11,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Felicidades! Has ganado 500€ en el sorteo de **BancoSur**. Solo necesitas pagar 20€ de gastos de envío en [www.enviaya.es](http://www.enviaya.es). ¡No pierdas la oportunidad!,whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+¡Tu nombre está en el listado de ganadores del sorteo de **Caja Levante**! Recibe 1.000€ gratis si envías 50€ a [www.sorteoenvia.com](http://www.sorteoenvia.com). ¡Actúa ahora!,whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+"Acabamos de contactar contigo desde **Supermercados VíaLuz**. Tu premio es 250€, pero debes pagar 30€ de gastos. Paga aquí: [www.envia-ya.com](http://www.envia-ya.com).",whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+¡Sorteo urgente! Has sido elegido para ganar 1.000€ en **Supermercados Rápido**. Paga 50€ de envío en [www.sorteobrilla.com](http://www.sorteobrilla.com). No esperes más.,whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+¡Ganaste 500€ en el sorteo de **Supermercados Surtel**! Solo tienes que pagar 20€ para recibirlo. Visita [www.envioexpress.net](http://www.envioexpress.net).,whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Sorteo de **Supermercados Rápido**! Tu premio es 1.000€, pero debes pagar 75€ de envío. Paga en [www.sorteoenvia.net](http://www.sorteoenvia.net).",whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Tu nombre aparece en el sorteo de **Supermercados Surtel**! Has ganado 1.000€, pero necesitas pagar 100€. Paga en [www.envia-sorteo.com](http://www.envia-sorteo.com).",whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+¡Has ganado 250€ en el sorteo de **Supermercados VíaLuz**! Solo debes pagar 30€ de envío en [www.envia-ya.com](http://www.envia-ya.com). ¡No lo dejes escapar!,whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Sorteo de **Supermercados EnvíaYa**! Tu premio es 1.000€, pero necesitas pagar 50€ de gastos de envío. Paga aquí: [www.envia-sorteo.es](http://www.envia-sorteo.es).",whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+¡Ganaste 500€ en el sorteo de **Supermercados Rápido**! Solo debes pagar 25€ de envío en [www.envia-ya.net](http://www.envia-ya.net). ¡Actúa ahora o pierdes el premio!,whatsapp,1,S11,1,sintetico_qwen3,0,0,0,1,1,0,1
+"¡GANASTE! Tu código 12345 ha sido seleccionado para el sorteo de EnvíaYa. Haz clic aquí para reclamar tu 500€: www.enviaya.es/Sorteo123
+
+*Nota: No es necesario pagar nada.*",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Felicidades! Has sido ganador del sorteo de BancoSur. Solo debes pagar 15€ para activar tu premio. Accede aquí: https://bancosur.com/sorteo
+
+*Atención: No es un fraude.*",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+"Tu nombre está en la lista del sorteo de Caja Levante. Para recoger tu premio de 800€, ingresa en este enlace: www.cajalevante.com/sorteo
+
+No te preocupes, no hay coste adicional.",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+"Sorteo exclusivo de SuperMega. Tu código es 78901. Clica aquí para reclamar tu 1000€: www.supermega.es
+
+*No te pidan dinero, es gratis.*",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Has ganado 300€ en el sorteo de EnvíaYa! Solo necesitas hacer clic en este enlace para confirmar: www.enviaya.es/sorteo
+
+*No es un fraude, es real.*",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+"Tu nombre aparece en el sorteo de BancoSur. Para recibir tu premio, haz clic en el siguiente enlace: sorteo.bancosur.es
+
+No debes pagar nada, es gratis.",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Felicidades! Has sido seleccionado para el sorteo de Caja Levante. Tu premio es de 600€. Accede al enlace: www.cajalevante.com/sorteo
+
+*No hagas clic en enlaces sospechosos.*",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+"Sorteo de SuperMega: tu código es 45678. Para reclamar tu premio de 1200€, visita este sitio: www.supermega.es/sorteo
+
+*No te pidan dinero, es un sorteo real.*",whatsapp,1,S11,2,sintetico_qwen3,0,0,0,1,1,0,1
+¡Te ofrezco un trabajo desde casa con sueldo de 2.000€ mensuales! Solo necesito un depósito de 500€ para la formación. Contacta a maría.pérez@envíaya.es,whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+Tu currículum ha sido seleccionado para un puesto de teletrabajo en BancoSur. Requerimos un pago de 300€ para el equipamiento. Confirma tu interés al 666 123 456,whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+"¡Tienes una oferta exclusiva de empleo a distancia con salario de 1.500€/mes! Para garantizar tu plaza, debes depositar 400€ en caja. Más info: www.empleoenvia.com",whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+Ofrecemos empleo a distancia con sueldo de 2.500€ mensuales. Solo falta un depósito de 600€ para el material. Envía el pago a cuenta de 'TrabajoFácil',whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+"¿Quieres un trabajo desde casa con salario de 1.800€? Para confirmar, debes hacer un depósito de 200€. Más detalles: www.trabajo24h.com",whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+Te ofrecemos empleo en casa con sueldo de 2.000€. Solo necesitas un pago de 350€ para la formación. Contacta al 666 789 012,whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+"¡Tienes una oportunidad de empleo a distancia con salario de 1.200€! Para garantizar tu plaza, debes pagar 250€. Más info: www.trabajoahora.es",whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Te notificamos una oferta de trabajo desde casa con sueldo de 1.600€. Para confirmar, debes hacer un depósito de 400€. Envía el pago a cuenta de 'TrabajoDomicilio'",whatsapp,1,S12,0,sintetico_qwen3,0,0,0,0,1,0,1
+¡Felicidades! Tu solicitud ha sido aceptada en EnvíaYa. Necesitamos un depósito de 300€ para comenzar. Paga a este número 666 111 222.,whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+¡Tu empleo de teletrabajo en BancoSur ha sido confirmado! Solo necesitamos 500€ de garantía. Enviémoselo a este enlace: www.bancosurempleo.com,whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+"¿Sabes que tienes un trabajo remoto con sueldo de 2.000€/mes? Debes transferir 200€ primero. No lo hagas con tu banco, usa este: www.trabajo-remoto.es",whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Hemos seleccionado tu perfil para un puesto de atención telefónica. Por favor, deposita 150€ en esta cuenta: ES23 0001 2345 6789 1234 5678",whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Tu empresa de logística, Caja Levante, te ha asignado un puesto desde casa. Por favor, envía 300€ a este número 622 333 444 para iniciar el proceso",whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+¡Gracias por aplicar! Te ofrecemos 2.500€/mes desde casa. Solo necesitamos 400€ de garantía. Paga ahora: www.trabajoahora.com,whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Tienes un trabajo en EnvíaYa con sueldo de 3.000€/mes. Para confirmarlo, envía 500€ a esta cuenta: ES12 3456 7890 1234 5678 9012",whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+¡Tu empleo remoto en Caja Levante ha sido aceptado! Solo falta 200€ para comenzar. Paga a este número 609 777 888. No lo hagas con tu banco,whatsapp,1,S12,1,sintetico_qwen3,0,0,0,0,1,0,1
+¡Felicidades! Has sido seleccionado para un trabajo desde casa con **BancoSur**. Solo necesitamos un depósito de 300€ para empezar. ¡Respuesta urgente! 👇,whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+¡Oferta exclusiva! Trabaja desde casa con **Caja Levante** y gana 2000€/mes. Requiere un depósito de 500€. Confirma tu interés ahora.,whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Hemos notado tu interés en **EnvíaYa**. Para activar tu cuenta, debes depositar 100€. ¡No lo dejes escapar!",whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+¿Trabajas desde casa? Únete a **ProyectosVIP**. Solo necesitas un pago de 200€ para comenzar. ¡Actúa ahora o perderás la oportunidad!,whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+¡Nueva oportunidad! **EmpresaSol** te ofrece un salario de 1500€/mes. Solo necesitamos un depósito de 400€ para empezar. ¡Responde ahora!,whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Estamos contactando a nuevos usuarios de **CajaAndalucía**. Para validar tu perfil, debes hacer un pago de 150€. ¡Confirma tu interés!",whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+¡Oferta de empleo desde casa! **TrabajoRápido** paga 2500€/mes. Requiere un depósito de 300€. ¡Solo por hoy!,whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+"¡Tu nombre está en la lista de **BancoSur**! Para activar tu cuenta, haz un depósito de 200€. ¡Actúa antes de que expire el plazo!",whatsapp,1,S12,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Hola, soy de la tienda online 'EnvíaYa' y he comprado tu producto, ¿puedes aceptar el Bizum de 35€? Gracias.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"¿Has recibido el dinero? Si no, dime y lo reenvío. Soy de la empresa 'BancoSur', todo es legal.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"Tengo el producto y el dinero, ahora solo falta el Bizum de 20€. Es urgente, por favor.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"Mejor lo aceptas ahora. Si no, se lo enviaré a otro vendedor. Soy de 'Caja Levante', es seguro.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"Hola, me llamo Ana y he comprado tu artículo, ¿puedes hacer el Bizum de 15€? Es para la entrega.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"El dinero ya está en la cuenta, solo falta el Bizum. No lo dejes en la bandeja, por favor.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"He comprado el producto, ¿puedes aceptar el pago de 50€? Si no, se lo enviaré a alguien más.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"¡Es urgente! He pagado con Bizum, pero el sistema no lo acepta. ¿Puedes reenviarlo? Gracias.",whatsapp,1,S13,0,sintetico_qwen3,0,1,0,0,1,0,0
+"Hola, soy de la web *BuenCompra*. ¿Has visto mi anuncio de *iPhone 13*? ¿Quieres hacer el pago por Bizum?",whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+"¡Soy el comprador del *iPad Air* que subiste! He pagado ya, ahora solo falta el *Bizum* de 300€",whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+"Acepta el Bizum, es urgente. Soy de *EnvíaYa*. El dinero está en la cuenta de *BancoSur*",whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+¿Has recibido mi mensaje? Soy el comprador del *Samsung Galaxy* y quiero hacer el pago por Bizum,whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+"Estoy en el *Carrefour* esperando. Por favor, acepta el Bizum de 200€ para poder recoger el producto",whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+"¡Tengo el dinero listo! Por favor, acepta el Bizum, soy de *Caja Levante* y voy a tu casa",whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+"No me dejes colgado, soy un comprador serio. Acepta el Bizum de 150€",whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+Espero tu respuesta. Soy de *WebMuebles* y ya he hecho el pago por *EnvíaYa*,whatsapp,1,S13,1,sintetico_qwen3,0,1,0,0,1,0,0
+"¡Hola! Soy un comprador de tu coche, acepta el Bizum de 400€ para cerrar la transacción. ¡Es rápido y seguro!",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"He visto tu anuncio en [web] y me interesa el producto. Puedes hacer el pago ahora por Bizum, el importe es 250€. ¿Aceptas?",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"¿Has visto el mensaje? Te envío el dinero por Bizum, el importe es 1.000€. Acepta antes de que se vaya.",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"¡Soy el comprador! He hecho la transferencia ya, el importe es 600€. Acepta el Bizum para finalizar la compra.",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"Tengo el producto en mano, por favor acepta el Bizum de 750€. No lo dejes pasar, es urgente.",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"Hola, te he contactado por el anuncio de [web]. El dinero ya está en camino, recibe el Bizum de 300€.",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"¡Atención! Soy el comprador del artículo, el pago es por Bizum de 500€. Acepta rápido para evitar problemas.",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"He visto tu anuncio en [web] y quiero hacer el pago. Envía el dinero por Bizum, el importe es 1.200€. ¿Aceptas?",whatsapp,1,S13,2,sintetico_qwen3,0,1,0,0,1,0,0
+"Buenos días, su devolución de 2.500€ ha sido autorizada por la Agencia Tributaria. Confirme su datos de tarjeta en www.haciendaresp.org para evitar retrasos.",email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+"¡ATENCIÓN! Su cuenta ha sido bloqueada. Para liberarla, indique sus datos de tarjeta en el sitio web oficial de la Hacienda Pública. Urgente.",email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Estimado usuario, su devolución de 1.300€ está pendiente. Por favor, rellene el formulario y envíe sus datos de pago a devoluciones@haciendapub.es.",email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+Su devolución de 500€ ha sido procesada. Confirme su tarjeta en el enlace: https://haciendaresp.com. No se le cobrará nada.,email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Recibimos su solicitud de devolución. Para completar el trámite, debe enviar sus datos de tarjeta a través del portal de la Hacienda Digital.",email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Su devolución de 800€ está a punto de ser transferida! Por favor, valide sus datos de tarjeta en el sitio oficial: https://haciendaspan.org.",email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Ha habido un error en su devolución. Para resolverlo, indique sus datos de tarjeta en el siguiente enlace: www.haciendapublica.es",email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+"ATENCIÓN: Su devolución de 1.000€ está pendiente. Para completar el trámite, envíe su información bancaria a devoluciones@haciendapub.com",email,1,S14,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Buenas tardes, su cuenta en el BancoSur ha sido bloqueada. Para liberarla, debe confirmar su identidad introduciendo los datos de su tarjeta en el sitio web de la Agencia Tributaria: www.agenciatributariaspain.es. La devolución de 2.000€ será procesada en 48 horas.",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Su solicitud de devolución fiscal ha sido aceptada. Por favor, envíe su número de tarjeta y el CVC al correo contacto@agenciatributaria.es. La devolución será de 1.500€ y se realizará antes del plazo de 7 días.",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Atención! Su cuenta está bajo investigación. Para evitar sanciones, debe enviar los datos de su tarjeta a la Agencia Tributaria hoy mismo. El importe a devolver es de 3.000€. No responda a este mensaje, envíe la información a soporte@agenciafiscal.es.",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Recibimos su petición de devolución y la estamos procesando. Debe facilitar sus datos bancarios antes del 15 de abril para poder proceder. El monto es de 2.500€. Por favor, envíe su número de tarjeta y código de seguridad a la dirección: info@fiscal.es",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Importante: su devolución fiscal de 4.000€ está pendiente. Para su liberación, debe ingresar los datos de su tarjeta en el portal oficial de la Agencia Tributaria: www.tributariaspain.es. El plazo es hoy mismo.",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Su devolución de 5.000€ ha sido aprobada. Para evitar retrasos, debe enviar sus datos de pago al correo: devoluciones@agenciatributaria.com. Por favor, incluya el número de la tarjeta y el CVC.",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Alarma! Su cuenta ha sido detectada como vulnerable. Para activar su devolución fiscal de 3.500€, debe confirmar su identidad introduciendo los datos de su tarjeta en el sitio web de la Agencia Tributaria. Plazo: hoy.",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Ha sido seleccionado para una devolución fiscal de 6.000€. Para su procesamiento, debe facilitar los datos de su tarjeta a la Agencia Tributaria. El plazo es de 24 horas. Contacto: tributaria@correo.net",email,1,S14,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Estimado/a Juan Pérez, la Agencia Tributaria ha identificado una devolución de 250 € en su cuenta. Para proceder, debe ingresar sus datos de tarjeta en el sitio web oficial: www.impuestos.es. No olvide que el plazo finaliza en 24 horas.",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Atención! Su cuenta de la Caja Levante ha sido seleccionada para una devolución de 500 €. Por favor, rellene el formulario en www.reembolsos.es antes de que expire el plazo. No responda a este mensaje.",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"BancoSur le informa de una devolución fiscal de 400 €. Para acelerar el proceso, por favor confirme sus datos de tarjeta en el siguiente enlace: www.bancosur.impuestos.es. La operación finaliza en 12 horas.",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Señor/a María Gutiérrez, ha sido seleccionada para una devolución de 300 €. Debe introducir sus datos de la tarjeta en el sitio web: www.impuestos.gov.es. Plazo: 24 horas desde hoy.",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Alerta! Su cuenta en EnvíaYa ha sido elegida para una devolución de 600 €. Para recibir el dinero, debe enviar sus datos de tarjeta a www.impuestos.es. La operación finaliza hoy a las 23:59.",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Señor/a David Martínez, la Agencia Tributaria le comunica una devolución de 150 €. Debe rellenar el formulario en www.impuestos-estatal.es. El plazo finaliza en 24 horas. ¡No lo deje pasar!",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Atención! Su banco BancoSur ha detectado una devolución fiscal de 450 €. Para proceder, debe enviar sus datos de tarjeta a www.impuestos-es.com. Plazo: 12 horas.",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Señor/a Luisa Fernández, ha sido seleccionada para una devolución de 200 €. Debe ingresar sus datos en el siguiente enlace: www.impuestos.es. El plazo finaliza en 24 horas. Gracias por su atención.",email,1,S14,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Tu suscripción a StreamVid ha expirado. Actualiza tu tarjeta de crédito en 24 horas para evitar interrupción. Accede a tu cuenta: https://streamvid.es/actualiza
+
+PAGO RECHAZADO. Tu tarjeta 4567 no es válida. Por favor actualiza la info antes de las 24h.
+
+Tu cuenta será bloqueada si no lo haces.
+
+Código de transacción: 789123456789",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Atención: Tu pago de 19,99€ en StreamNow no se procesó correctamente. Por favor, actualiza tu tarjeta en el siguiente enlace: https://streamnow.es/actualizar
+
+No recibimos tu pago. Asegúrate de que tu tarjeta esté activa y tenga suficiente saldo.
+
+Tiempo límite: 24 horas.
+
+Código: 1234567890",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Tu suscripción a VideoLift se ha cancelado. Debes actualizar tu tarjeta antes de las 24h para evitar que se te corte el acceso.
+
+PAGO FALLIDO: Tu tarjeta 4567 no es válida. Por favor, actualiza tu información en el siguiente enlace: https://videolift.es/actualizar",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Alerta: Tu pago de 9,99€ en WatchMore no se ha procesado. Tu cuenta será bloqueada si no actualizas tu tarjeta en 2,4 horas.
+
+Tarjeta no válida. Por favor, completa el formulario: https://watchmore.es/actualiza",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Tu suscripción a StreamX no se ha confirmado. Debes actualizar tu tarjeta de crédito antes de las 24h. Accede aquí: https://streamx.es/actualiza
+
+PAGO RECHAZADO: Tarjeta 4567 no es válida. Por favor, actualiza la info antes del tiempo límite.",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Alerta! Tu pago de 24,99€ en VideoSur ha fallado. Tu tarjeta no es válida. Debes actualizarla antes de las 24 horas. Verifica aquí: https://videosur.es/actualizar
+
+Código de transacción: 1234567890",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Se ha producido un error en tu pago de 14,99€ en Caja Levante. Tu tarjeta no es válida. Debes actualizarla en 24h para evitar la suspensión de tu cuenta. Accede aquí: https://cajalevante.es/actualiza",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Tu suscripción a StreamFlow se ha cancelado. Actualiza tu tarjeta antes de las 24h o perderás acceso. Pago fallido: Tarjeta 4567 no válida. Visita: https://streamflow.es/actualiza
+
+Código: 1234567890
+
+Tiempo límite: 24 horas.",email,1,S15,0,sintetico_qwen3,1,1,1,1,0,0,0
+"Su suscripción a [StreamingNow] ha finalizado. Para evitar interrupciones, actualice su tarjeta de crédito en los próximos 24 horas. Clic aquí: streamingnow.es/actualizar",email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+"¡Atención! Se ha detectado un error en el pago de su cuenta de [CineX]. Por favor, actualice su método de pago antes de que se bloquee su acceso. Más información: cineX.com/pago",email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Señor/a [Nombre], su tarjeta de crédito asociada a [StreamingSur] no se aceptó. Puede ser debido a un error de datos. Actualice su información antes de las 24 horas. Link: streamingsur.com/actualizar",email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+¡Urgente! Su suscripción a [EnvíaYa] ha sido suspendida. Debe actualizar la tarjeta de crédito antes de que se pierda el acceso. Haga clic aquí: enviaya.es/actualizar,email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+"El pago de su suscripción a [StreamingMax] no fue procesado. Por favor, verifique los datos de su tarjeta y actualícelos en 24 horas. Más detalles: streammax.com/pago",email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Su cuenta de [BancoSur] no permite el acceso a [Caja Levante]. Por favor, actualice su tarjeta de crédito para poder seguir usando el servicio. www.cajalevante.es",email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+Se ha producido un error en el pago de su suscripción a [StreamingFree]. Puede ser debido a un mal funcionamiento de su tarjeta. Actualice ahora para evitar interrupciones. Link: streamfree.es,email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+¡Alerta! Su suscripción a [CineX] no está activa. Debe actualizar su tarjeta de crédito antes de que se cierre el acceso. Clic aquí: cinesx.com/actualizar,email,1,S15,1,sintetico_qwen3,1,1,1,1,0,0,0
+"Su pago por la suscripción a **CineFlow** no se ha procesado correctamente. Para evitar interrupciones, actualice su tarjeta en **www.cineflow.es** dentro de 24 horas. Si no lo hace, su cuenta será bloqueada.",email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Su transacción de 25€ para **StreamCaja** ha fallado. Por favor, confirme su tarjeta en **streamcaja.com**. No se le cobrará nada si no actúa. ¡Gracias por su atención!",email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+⚠️ Alerta: su pago de 15€ para **CineSur** no ha sido recibido. Debe actualizar sus datos en **cinesur.es** dentro de 24h o perderá acceso. No se le cobrará si no actúa.,email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Su suscripción a **MoviStream** ha caducado. Para evitar que se le cobre 10€ extra, actualice su tarjeta en **movistream.net**. Tiene 24h para hacerlo. ¡Gracias por su confianza!",email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+Su pago de 30€ para **StreamCaja** falló. Debe actualizar su tarjeta en **streamcaja.es**. No se le cobrará si no actúa. Tiene 24h para hacerlo. Gracias.,email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+"⚠️ Su suscripción a **MoviFlow** ha expirado. Por favor, confirme su tarjeta en **moviflow.net**. No se le cobrará si no actúa. Tiene 24h para resolverlo.",email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+Su transacción de 20€ para **StreamCaja** no fue procesada. Debe actualizarse en **streamcaja.es** dentro de 24 horas. No se le cobrará si no actúa.,email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+Alarma: su pago de 18€ para **CineSur** falló. Debe actualizar su tarjeta en **cinesur.com**. Tiene 24 horas para hacerlo o perderá acceso. ¡Gracias por su atención!,email,1,S15,2,sintetico_qwen3,1,1,1,1,0,0,0
+"Re: Recuperación de tu dinero invertido en el proyecto de EnvíaYa. Tu inversión de 12.000€ está en proceso de devolución. Debes pagar 500€ para activar el proceso. Acepta el pago en el enlace: https://recuperacionenviaya.com/reembolso
+
+¡Espera! ¿No te han avisado de este tipo de fraudes? ¡No hagas caso a nadie! ¡No envíes dinero!",email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+"Tu caso ha sido asignado al bufete de asesoría jurídica LegalPlus. Para recuperar el dinero que perdiste en el plan de inversión de Caja Levante, debes abonar 1.500€ de comisión. El enlace para realizar el pago es: https://legalplus.es/recuperacion. Confirma tu pago en 24h o se perderá la oportunidad.",email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+"¡Atención! Tu cuenta bancaria en BancoSur ha sido bloqueada por falta de movimiento. Para recuperar el dinero invertido, debes pagar 300€ en concepto de tarifa de recuperación. Más información: https://recuperacionbancosur.org. ¡No esperes más o perderás todo!",email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+"Estimado cliente, su inversión en el plan de ahorro 'FuturoSeguro' ha sido afectada por irregularidades. Recuperaremos su dinero si paga 800€ de comisión. Accede al sitio web: https://futuroseguro.es. ¡El plazo finaliza hoy a las 23:59!",email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+"Urgente: su dinero en la plataforma EnvíaYa está en riesgo. Para evitar pérdidas, pague 500€ y recuperará todo. Ingrese aquí: https://enviaya.es/recuperar. ¡No deje que se le robe!",email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+"¡Alerta! Su inversión en el plan de inversión de BancoSur ha sido bloqueada. Para su recuperación, debe realizar un pago de 1.200€. Más detalles en: https://recuperacionbancoSur.com. ¡No deje pasar la oportunidad!",email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+"Su cuenta bancaria ha sido afectada. Para recuperar su dinero invertido, abone 600€ de tarifa de recuperación. Vaya al sitio web: https://recuperacioncuentas.es. ¡El plazo es limitado!",email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+¡Se ha encontrado su caso! Su dinero invertido en el proyecto de Caja Levante puede recuperarse si paga 900€ de comisión. Acceda a https://recuperacioncajalevante.net. ¡Haga el pago antes de que se cierre la oportunidad!,email,1,S16,0,sintetico_qwen3,1,0,0,0,1,0,1
+Su caso está siendo analizado por el bufete *JurisRecovery* para recuperar los 15.000€ perdidos en la inversión de *EnvíaYa*. Solo necesita pagar 2.000€ de tasas para iniciar el proceso. El contacto es info@jurisrecovery.es,email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+"¡Se ha encontrado su caso! *Caja Levante* ha sido investigada por fraude y su dinero puede recuperarse. Solo debe abonar 3.500€ a *RecuperaInversión@outlook.es* para seguir. No es un fraude, es una oportunidad",email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+"Recuperamos el 90% de sus inversiones en *BancoSur*. El bufete *DerechoVivo* requiere 4.000€ de tarifa para continuar. Para más información, escriba a contacto@derechovivo.net",email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+"Su dinero en *EnvíaYa* ha sido bloqueado por irregularidades. El bufete *RecuperarAhora* puede ayudarle, pero necesita 5.000€ de honorarios. Más detalles en: www.recuperarahora.es",email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+¡Se ha detectado un fraude en su cuenta de *BancoSur*! El bufete *JurisRecovery* puede recuperar los 12.000€. Pague 1.800€ a info@jurisrecovery.es para iniciar el proceso,email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+Su inversión en *Caja Levante* ha sido reportada. El bufete *RecuperaFácil* puede devolverle el dinero. Solo debe abonar 2.500€ en el siguiente enlace: www.recuperafacil.es,email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+"¡La empresa *EnvíaYa* está siendo investigada por fraude! El bufete *DerechoRecovery* puede recuperar su dinero, pero necesita 3.000€ de tarifa. Por favor, confirme su caso en contacto@derechorecovery.com",email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+Se ha encontrado su caso en *BancoSur*. El bufete *RecuperaInversión* puede recuperar el 80% de su dinero. Pague 4.500€ a: contacto@recuperainversion.es para continuar,email,1,S16,1,sintetico_qwen3,1,0,0,0,1,0,1
+"Su dinero ha sido bloqueado por el BancoSur, recupérelo ahora pagando 500€ en 123456789. Invierta con nosotros y gane un 40% de beneficios. No pierda más tiempo. https://recuperaciondinero.net",email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+Importante: Su cuenta en Caja Levante está en riesgo. Pague 300€ para evitar bloqueos. Contacte al responsable de su cuenta antes de 24h. Más info: enviaya.com,email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+"Su inversión en EnvíaYa ha sido cancelada. Para recuperar el capital, pague 2.000€ en el siguiente link: https://recuperacionesonline.org. Confirme su pago y recibirá el dinero en 7 días.",email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+¡Alerta! Su dinero en el BancoSur ha sido secuestrado. Pague 1.500€ para recuperarlo. Vaya al sitio web: www.recuperadonuevo.es. El plazo es urgente.,email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+Su cuenta en Caja Levante fue hackeada. Pague 1.000€ para evitar sanciones. Más detalles en: recuperar-dinero.net. No haga clic en enlaces sospechosos.,email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+Su dinero en EnvíaYa está en peligro. Pague 750€ para evitar su pérdida. Pago en: https://www.dinero-recuperado.org. Plazo limitado.,email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+¡Recuperación urgente de su dinero en el BancoSur! Pague 2.500€ y recupere todo. Confirme su pago en: https://recuperaciononline.org. No lo deje pasar.,email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+Su cuenta en Caja Levante fue cerrada por fraude. Pague 400€ para evitar multas. Más información: recuperadinero.es. No confíe en nadie.,email,1,S16,2,sintetico_qwen3,1,0,0,0,1,0,1
+"¡Hasta 1000€ diarios con Bitcoin! ¡Invierte ahora en el nuevo sistema de Caja Levante. Solo 200€ y recibe tu primer pago en 24h! No te lo pierdas, oferta limitada. www.bitcoinespana.com",web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Gana hasta 2000€ al mes con inteligencia artificial! BancoSur te garantiza 100% de rentabilidad. Inscríbete ahora en el programa de EnvíaYa. Tu dinero crecerá solo. ¡No dejes pasar la oportunidad!,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Invierte 500€ y recibe 5000€ en 30 días! El sistema de inteligencia artificial de CriptoFuturo te dará ganancias aseguradas. ¡No hay riesgo! Solo necesitas un email. ¡Aprovecha el plan exclusivo!,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Oportunidad única! Caja Levante te ofrece 300€ al mes con criptomonedas. ¡Sólo 3 pasos y ya estás ingresando! No hagas más trámites, es seguro. Visita: www.cajalevante.net",web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Tu dinero ya no se queda en casa! EnvíaYa te da el mejor rendimiento con blockchain. ¡Invierte 100€ y ganas 1000€ al mes! Solo necesitas un usuario. ¡No lo dejes escapar!,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Hasta 1500€ diarios con criptomonedas! BancoSur garantiza 100% de beneficio. ¡Inscríbete ahora en el nuevo plan de inversión! Tu capital crecerá solo. www.bancosur-invest.com,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Gana sin riesgo con la inteligencia artificial de BitFuturo! Solo 200€ de inversión y 500€ diarios de beneficios. ¡No hay límite! Inscríbete ya en el programa exclusivo. ¡No lo dejes pasar!,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Oferta limitada: 200€ y 1000€ al mes! CriptoFuturo te da el mejor rendimiento. ¡Invierte hoy y recibe tu primer pago en 48h! No hay riesgos. ¡Tu dinero crecerá solo! www.criptofuturo.es,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Invierte 100€ y gana 1000€ en 30 días! BancoSur te da garantías 100% de rentabilidad. ¡No dejes de aprovechar esta oportunidad! Solo tienes 24 horas. Visita: www.bancosur-invierte.com,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡Gana con la inteligencia artificial de CriptoFuturo! Invierte 500€ y recibe 5000€ al mes. ¡Oferta exclusiva! Tu dinero crecerá solo. ¡No dejes pasar la oportunidad! www.criptofuturo.net,web,1,S17,0,sintetico_qwen3,0,0,0,1,1,0,1
+¡¡GANA HASTA 800€ AL DÍA CON NUESTRO NUEVO PROYECTO DE BITCOIN! ¡SÓLO 10€ DE INVERSIÓN Y GANANCIAS GARANTIZADAS! ¡Habla con el famoso Juan Martínez ahora mismo!,web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+"¡INVERSIÓN SEGURA Y RENTABLE CON AI Y BITCOIN! ¡NO HAY RIESGOS, TODO ESTÁ GARANTIZADO! Visita www.bitcoinmax.com y contacta con el experto Carlos López",web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+¿QUERES 1.000€ EN 1 MES? ¡Cómprate un plan de 500€ y GANA HASTA 2.000€ CON LA IA! ¡Habla con el famoso Luis Fernández!,web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+¡PON TU DINERO EN NUESTRA NUEVA INVERSIÓN DE AI Y BITCOIN! ¡GANAS 100€ AL DÍA SIN RIESGO! ¡Llama al 612 345 678 y pide tu plan gratuito!,web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+"NO DEJES DE INVERTIR, ¡ESTA OPORTUNIDAD TE APORTARÁ 500€ SEMANALMENTE! ¡Sólo con el famoso Andrés Gómez, que lo ha probado y lo recomienda!",web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+"INVERSIÓN RÁPIDA Y FÁCIL CON LA IA Y BITCOIN, ¡GANAS 300€ AL DÍA! ¡No pierdas tiempo, ¡llama al 612 345 678 y pide tu plan!",web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+"¡OFERTA ESPECIAL: 100€ INVERTIDOS, 200€ GANADOS! ¡Habla con el famoso Pablo Sánchez, que lo hizo realidad!",web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+¡NUEVO SISTEMA DE INVERSIÓN CON AI Y BITCOIN! ¡GANAS 1.000€ EN 1 MES! ¡Visita www.nuevainversion.com y contacta con el experto Raúl Martínez!,web,1,S17,1,sintetico_qwen3,0,0,0,1,1,0,1
+"¡Cuidado con el fraude! El famoso X promete ganancias de 300€/día con Bitcoin y IA. No seas víctima, el sitio web es [bitcoinsur.com](https://bitcoinsur.com).",web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+¡Oferta exclusiva! Únete al club de [Caja Levante] y gana 500€ al mes. Solo 200€ de inversión. ¡No pierdas tu oportunidad!,web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+El famoso X te invita a unirse a su proyecto de IA que ya genera 1.000€ semanales. ¡Invierte ahora en [IA-Invertir.es](https://ia-invertir.es).,web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+¡Alto! El famoso X no tiene nada que ver con [EnvíaYa]. Es un fraude. No hagas transferencias. ¡Llame al 666 666 666!,web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+GANANCIAS GARANTIZADAS: 200€/día en Bitcoin. ¡Únete a [FinanzaAI.com](https://finanzaai.com) y empieza hoy! ¡No te arrepentas!,web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+¡No te dejes engañar! El famoso X no está involucrado en [BancoSur]. Es un fraude. ¡Llame al 911 222 333!,web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+¡Inversión segura! Con [Caja Levante] y IA ganas 400€/mes. ¡Únete ya a [InvierteAI.org](https://invierteai.org)!,web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+¡Alto! El famoso X no promete ganancias. Es un fraude. No hagas transferencias al [Finanza24.es](https://finanza24.es). ¡Llame al 678 901 234!,web,1,S17,2,sintetico_qwen3,0,0,0,1,1,0,1
+⚠️ Urgente: Su pensión será suspensa si no actualiza datos. Clique aquí: www.pension.es/act. Atención: Oficina de Seguridad Social - 912345678,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+⚠️ Su pensión está en riesgo. Haga clic aquí para actualizar: www.pensión-updates.com. No pase por alto esta alerta.,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+¡ATENCIÓN! Su pensión será cancelada. Debe actualizar sus datos en el siguiente enlace: https://seguridadsocial.es/update. Llamada urgente: 912 345 678,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+Su pensión se detendrá si no actualiza datos. Acceda al sitio: www.pensiones.gov.es. Llame al 912345678 para confirmar.,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+Urgente: Su pensión será suspensa. Actualice ahora en: https://seguridadsocial.gov.es. No responda a mensajes falsos.,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+¡Su pensión se detiene! Debe actualizar datos. Clique aquí: www.pensiones-updates.com. Llame al 912 345 678.,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+Su pensión no se cobrará si no confirma datos. Actualice: https://seguridad-social.es. Llamada urgente: 912345678,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+¡Alerta! Su pensión se cancelará. Actualice datos en: www.pensiones.gov.es. No rechace esta notificación.,sms,1,S18,0,sintetico_qwen3,1,1,0,1,0,0,0
+ATENCIÓN: Su pensión será suspendida si no actualiza datos. Acceda a [www.sesocial.es](http://www.sesocial.es) en 24h. No responda a este mensaje.,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+Su pensión se detendrá. Debe actualizar datos urgentemente en [www.seguridadsocial.es](http://www.seguridadsocial.es). No haga clic en enlaces sospechosos.,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+¡ALERTA! Su pensión está en riesgo. Actualice datos en [www.sesocial.gov.es](http://www.sesocial.gov.es) ahora mismo. ¡No pierda tiempo!,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+Su pensión será cortada. Debe verificar datos en [www.sesocial.com.es](http://www.sesocial.com.es). No responda a este SMS.,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+ATENCIÓN: Su pensión será suspendida. Actualice datos en [www.seguridadsocial.es](http://www.seguridadsocial.es) o llame al 900 123 456. ¡Es urgente!,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+¡SUSPENDIDA SU PENSION! Debe actualizar datos en [www.sesocial.es](http://www.sesocial.es) en 24 horas. No responda a este mensaje.,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+Su pensión está en peligro. Debe actualizar datos en [www.seguridadsocial.com](http://www.seguridadsocial.com). No haga clic en enlaces.,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+¡ADVERTENCIA! Su pensión se detendrá si no actualiza datos. Acceda a [www.sesocial.gov.es](http://www.sesocial.gov.es) en 24h.,sms,1,S18,1,sintetico_qwen3,1,1,0,1,0,0,0
+"¡ATENCIÓN! Su pensión está en peligro. Acceda a [www.sssspan.com] para actualizar sus datos. No lo haga tarde, o se suspenderá. URGENTE",sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+Su cuenta de la Seguridad Social será bloqueada. Actualice su información en [http://actualizacion-pensiones.es] antes del 30 de noviembre.,sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+Su pensión se suspenderá si no actualiza sus datos. Pulse aquí: [www.sseguridadsocial.es]. Importante: este es un mensaje oficial.,sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+¡ADVERTENCIA! Su pensión está en riesgo. Ingrese a [http://seg-social.es] para actualizar sus datos. ¡No responda a este mensaje!,sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+La Seguridad Social requiere la actualización de sus datos. Haga clic en [www.pensionesactualizadas.com] para evitar suspensiones.,sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+Su pensión será cancelada. Actualice sus datos en [http://actualizacionss.es] en los próximos días. No lo descarte.,sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+¡Alerta! Su pensión está en peligro. Acceda a [www.sseguridadsocial.es] para actualizar sus datos. El plazo finaliza el 15 de diciembre.,sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+Su cuenta de la Seguridad Social se inactivará. Actualice sus datos en [http://pensiones.es] para evitar suspensiones. No responda a este mensaje.,sms,1,S18,2,sintetico_qwen3,1,1,0,1,0,0,0
+"Le informamos que ha heredado 12.000€ de su abuela doña Rosa en Francia. Para poder recibir su dinero, debe pagar 1.500€ de gastos notariales a la empresa EnvíaYa, antes del 15 de julio.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Un familiar lejos de casa le deja una herencia de 50.000€. Para liberar los fondos, necesita abonar 3.000€ al BancoSur como gastos notariales. No se lo diga a nadie.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Su tía Mariana en Argentina le ha dejado una herencia de 8.000€. Para hacer efectiva la transferencia, debe pagar 1.200€ a la empresa Notaría Global. El plazo es 5 días.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Ha sido notificado por el Ministerio de Justicia que ha heredado 15.000€. Para poder retirar la cantidad, debe pagar 2.500€ a la Oficina de Notas de Madrid. La fecha límite es el 30 de junio.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Un familiar lejano ha dejado una herencia de 10.000€. Para liberar los fondos, debe abonar 1.000€ a la empresa EnvíaYa. Haga el pago antes del 10 de julio.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Le informamos que ha heredado 25.000€ de su tío en España. Para poder disfrutar del dinero, debe pagar 4.000€ a la empresa Notaria Express. No haga caso de nadie.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Su abuelo le ha dejado 18.000€. Para poder hacer efectiva la herencia, debe pagar 3.000€ a la empresa TransNotaria. El plazo es 7 días.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Un familiar lejano le deja una herencia de 9.000€. Para poder liberar la cantidad, debe abonar 1.200€ a la empresa Notaría Online. La fecha límite es el 20 de junio.",carta,1,S19,0,sintetico_qwen3,0,0,0,0,1,0,1
+"Hemos identificado una herencia en Alemania que le corresponde a su tía abuela, pero necesita pagar 1.500 € en gastos notariales para poder liberar el dinero. Favor de contactar a EnvíaYa.com antes de que expire el plazo.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Su prima Rosa, fallecida en 2015, dejó una herencia en Francia. Para poder recibir el dinero, debe pagar 2.000 € a la empresa NotaGastos S.L. antes de que se caduque la oportunidad.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Le informamos que una herencia le ha sido dejada por su tío abuelo, pero para poder recibirla debe pagar los gastos notariales de 3.000 € al BancoSur. Favor de contactar antes del 30 de noviembre.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Se le notifica que una herencia en Portugal le pertenece, pero para poder liberar el dinero debe abonar 1.200 € a la empresa Notarías de Madrid. No deje pasar la oportunidad, por favor contacte a info@notarías.es.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Su prima María, fallecida en 2012, dejó una herencia en España. Para poder recibir el dinero debe pagar 2.500 € a la notaría de Almería. Por favor, contacte al número 666 123 456 antes de que expire el plazo.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Se le comunica que una herencia le ha sido dejada por su tía, pero necesita pagar 1.800 € en gastos notariales para poder recibir el dinero. Por favor, contacte al dominio NotariaWeb.es antes de que pase el tiempo.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Su tío abuelo dejó una herencia en Suiza, pero para poder liberar el dinero debe abonar 4.000 € a la empresa NotaríasExtranjeras. Favor de contactar al número 912 345 678 antes del 15 de diciembre.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Le informamos que una herencia le corresponde en Italia, pero para poder recibirla debe pagar 1.000 € a la empresa NotaRapida. Por favor, contacte al dominio NotaríasItalia.org para más información.",carta,1,S19,1,sintetico_qwen3,0,0,0,0,1,0,1
+"Estimado/a Pedro, su tía Clara ha dejado una herencia de 20.000 euros. Para recibirlo, debe pagar 5.000 euros en concepto de gastos notariales a la empresa EnvíaYa. Póngase en contacto lo antes posible.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Le informamos que su primo Andrés ha fallecido y ha dejado una herencia de 15.000 euros. Para liberar los fondos, debe transferir 8.000 euros a la cuenta de BancoSur. El tiempo es limitado.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"¡Felicidades! Su prima Rosa ha dejado una herencia de 30.000 euros. Para reclamarla, pague 12.000 euros a la empresa Caja Levante. El enlace es: www.herencias2025.com.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Su abuela ha dejado una herencia de 10.000 euros. Para recibirla, haga un depósito de 4.500 euros en la cuenta de BancoSur. El plazo finaliza el 15 de noviembre.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Hemos encontrado una herencia de 18.000 euros para usted. Para liberarla, pague 7.000 euros a la empresa EnvíaYa. Confirme su identidad en el sitio web herenciaonline.com.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Su primo Carlos ha fallecido y ha dejado una herencia. Para recibir el dinero, debe pagar 6.000 euros a la empresa EnvíaYa. El tiempo es limitado. Por favor, haga la transferencia lo antes posible.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"¡Felicidades! Ha heredado 25.000 euros. Para reclamarlo, pague 10.000 euros a la empresa BancoSur. El enlace es: www.herenciaonline.es.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Su tía ha dejado una herencia de 12.000 euros. Para recibirla, debe transferir 5.000 euros a la empresa Caja Levante. El plazo finaliza el 30 de octubre. Haga la transferencia ahora.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Ha sido encontrado un legado de 22.000 euros. Para liberarlo, pague 9.000 euros a la empresa EnvíaYa. El tiempo es limitado. Confirme su identidad en el sitio web: herencias2025.com.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+"Ha heredado 17.000 euros de su prima Elena. Para recibirlo, debe pagar 6.500 euros a la empresa BancoSur. El plazo finaliza el 10 de noviembre. Haga la transferencia ahora.",carta,1,S19,2,sintetico_qwen3,0,0,0,0,1,0,1
+BancoSur confirma una compra de 25€ en tiendaonline.com realizada el 15 de junio.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante informa de un cargo de 40€ en la compra de un producto en envíaYa.es.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha registrado una operación de 15€ en la tienda virtual EnvíaYa el día de ayer.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+La entidad financiera BancoSur ha registrado una transacción de 30€ en la web mercatienda.com.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha efectuado una compra de 50€ en la plataforma EnvíaYa el pasado viernes.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur notifica una operación de 20€ en la tienda online Mercatienda el 12 de junio.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante informa de un cargo de 10€ en la compra realizada en tiendaonline.com.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha realizado una operación de 25€ en la web EnvíaYa el día 10 de junio.,sms,0,L0,0,sintetico_qwen3,0,0,0,0,0,0,0
+"BancoSur ha autorizado una compra en la tienda online EnvíaYa por un importe de 125,50 euros. El pago se realizó el 15 de mayo a las 14:30 horas.",sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Caja Levante informa de un movimiento en la cuenta de María López por un importe de 40 euros, realizado en el establecimiento Día.",sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Se ha registrado una transacción en la tienda online de EnvíaYa por 85,20 euros. El pago fue autorizado el 10 de abril a través de la tarjeta asociada a su cuenta.",sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+El banco informa de un pago realizado en el establecimiento Supermercados Río por 32 euros. La transacción fue efectuada el 7 de junio.,sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+Una compra de 60 euros ha sido procesada en la web de EnvíaYa. El pago se completó correctamente el 20 de mayo.,sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha efectuado un pago de 25 euros en el comercio local Mercadona. El movimiento se registró el 12 de mayo mediante la tarjeta bancaria.,sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha realizado una transacción de 150 euros en la tienda online de EnvíaYa el día 25 de abril. El pago fue procesado sin problemas.,sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+Un importe de 78 euros ha sido cargado en la cuenta de José Martínez por una compra realizada en la tienda virtual EnvíaYa el 5 de mayo.,sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+El BancoSur confirma una transacción de 90 euros en la web de EnvíaYa. La operación se llevó a cabo el 18 de abril sin problemas.,sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha registrado un movimiento de 30 euros por una compra en el establecimiento Mercadona el 28 de mayo.,sms,0,L0,1,sintetico_qwen3,0,0,0,0,0,0,0
+"BancoSur ha registrado una compra de 45,00 € en el establecimiento *La Parada* el día 15 de abril.¿Desea revisar el detalle?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Caja Levante notifica una operación de 30,00 € efectuada en *Tienda Online 24* el 12 de abril.¿Necesita información?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+"EnvíaYa ha procesado una transacción de 68,50 € en *Supermercados Rápido* el 10 de abril.¿Desea ver el resumen?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+"BancoSur confirma un gasto de 15,00 € en *Lámparas Casa* el 8 de abril.¿Ha realizado esta operación?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Caja Levante informa de una compra de 22,00 € en *Tienda Online 24* el 7 de abril.¿Requiere ayuda?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+"EnvíaYa registra una operación de 89,00 € en *Mercado Local* el 14 de abril.¿Ha autorizado esta transacción?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+"BancoSur ha procesado una compra de 12,50 € en *Librería Central* el 11 de abril.¿Desea revisar el movimiento?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Caja Levante notifica una transacción de 55,00 € en *Electrodomésticos 24* el 9 de abril.¿Necesita información adicional?",sms,0,L0,2,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur ha autorizado la compra de 50 € en Mercadona el 12 de mayo.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante informa de una transacción de 150 € en el establecimiento 'Café Central' el 10 de mayo.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa registra una operación de 80 € en la tienda online 'LuzDelDía' el 14 de mayo.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha realizado una compra de 30 € en el punto de venta 'Casa del Bicicleta' el 17 de mayo mediante tarjeta.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+La entidad financiera 'BancoCantabria' confirma una operación de 120 € en la tienda 'MundoDeportivo' el 9 de mayo.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha procesado una transacción de 75 € en el comercio 'Taller de Reparaciones' el 11 de mayo con tarjeta.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+La operación de 45 € en 'Tienda de Alimentos' el 16 de mayo fue realizada mediante tarjeta.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur ha registrado una compra de 90 € en 'Casa del Libro' el 8 de mayo a través de tarjeta.,sms,0,L0,3,sintetico_qwen3,0,0,0,0,0,0,0
+Confirma tu compra de 35€ en EnvíaYa. Código: 7X9P2R. No lo compartas con nadie.,sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+Tu pedido por 120€ en BancoSur está en proceso. Código único: 4T8L1K. Gracias por tu confianza.,sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+Compra realizada correctamente en Caja Levante. Código de validación: 5V3N7M. No lo difundas.,sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío de 85€ en EnvíaYa ha sido procesado. Código de confirmación: 9S2D4Q. Guarda este código.,sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+Has completado la compra de 50€ en Caja Levante. Código único: 6F1R8T. No lo comparta con otros.,sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Confirmación de pago de 150€ en BancoSur. Código: 3W7P5X. Para tu seguridad, no lo comparta.",sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+Compra finalizada en EnvíaYa por 70€. Código de verificación: 2K8L4M. No lo transmitas a terceros.,sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+Tu transacción de 90€ en Caja Levante está lista. Código único: 1Z6R3T. Guarda este código para futuras consultas.,sms,0,L1,0,sintetico_qwen3,0,0,0,0,0,0,0
+¡Gracias por tu compra con Caja Levante! Tu código de confirmación es 789456. No lo compartas con nadie.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu pedido en EnvíaYa está listo para ser enviado. Código de verificación: 321654. Solo tú puedes usarlo.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Has realizado una compra de 25 € en BancoSur. Confirma tu transacción con el código 987321. No lo hagas llegar a otros.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu compra en WebMuebles ha sido procesada. Código de verificación: 147896. Solo tú puedes utilizarlo.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Has pedido un producto de 15 € en MundoRopa. Código: 852369. No lo comparta con nadie.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío en EnvíaYa se está preparando. Código de confirmación: 654321. Solo tú puedes usarlo.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Has efectuado una compra de 30 € en CajaNavarra. Código de verificación: 123456. No lo comparta con nadie.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu pedido en SuperOnline está listo. Código de confirmación: 987654. No lo hagas llegar a otros.,sms,0,L1,1,sintetico_qwen3,0,0,0,0,0,0,0
+Gracias por tu compra en EnvíaYa. Tu código de confirmación es 4782. No lo comparta con nadie.,sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Tu transacción de 15,00 € en BancoSur ha sido procesada. Código único: 9317. ¡Gracias por confiar en nosotros!",sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Verificación finalizada. Tu compra en Caja Levante de 49,95 € está confirmada. Código: 5128.",sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+Confirmación de pedido en EnvíaYa. Código único 7316. Tu compra de 25 € está segura.,sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Tu pago en BancoSur de 67,50 € se ha realizado correctamente. Código de verificación: 8410.",sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Compra confirmada en Caja Levante. Código 3829. Tu transacción de 12,95 € está lista.",sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío en EnvíaYa está en proceso. Código único 1937. No lo comparta con nadie.,sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Verificación completada. Tu compra de 9,99 € en BancoSur está confirmada. Código: 6245.",sms,0,L1,2,sintetico_qwen3,0,0,0,0,0,0,0
+¡Gracias por tu compra! Tu código de confirmación es 38742. No lo compartas con nadie.,sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tu compra de 12,50 € en EnvíaYa está en proceso. Código: 91735. Confirma en [sitioweb.enviaya.es].",sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante ha procesado tu pago. Código único: 64189. No lo compartas con terceros.,sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tu envío de 45,00 € en BancoSur está listo. Código de confirmación: 12976. Solo para ti.",sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+Tu compra en [dominio.banco-sur.com] fue confirmada con código 73821. No lo comparta nadie.,sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Has recibido 15,00 € en tu cuenta de Caja Levante. Código de verificación: 54912. Úsalo solo tú.",sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+El envío de tu producto en EnvíaYa está finalizado. Código: 83621. No lo comparta nadie.,sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tu pago de 25,00 € en BancoSur ha sido procesado. Código único: 41739. No lo compartas con nadie.",sms,0,L1,3,sintetico_qwen3,0,0,0,0,0,0,0
+Paquete con destino a Madrid llegará mañana por la tarde. Consulta tu app EnvíaYa para más detalles.,sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío está en camino y llegará a tu dirección antes de las 18:00. Verifica en la app Caja Levante.,sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+El envío de hoy será entregado mañana. Accede a la plataforma BancoSur para ver el estado.,sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+Nuestro mensajero está en ruta y tu paquete llegará mañana. Revisa en la app EnvíaYa.,sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+"La entrega de tu envío se realizará hoy, pero el paquete llegará mañana. Comprueba en la web de BancoSur.",sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío está siendo transportado y llegará mañana. Accede a la app Caja Levante para ver el estado.,sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+El paquete que enviaste será entregado mañana. Consulta en la web de EnvíaYa para más información.,sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+La entrega de tu paquete se programó para mañana. Revisa tu app BancoSur para ver la ubicación.,sms,0,L2,0,sintetico_qwen3,0,0,0,0,0,0,0
+El paquete con el número 245897 llegará mañana a tu domicilio. Gracias por tu confianza.,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío está listo para ser entregado el día de mañana. Consulta el estado en envíaYa.com.,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+El paquete 789456 se encuentra en tránsito y llegará mañana a tu dirección. ¡Gracias por elegirnos!,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío con referencia 321654 está programado para mañana. Asegúrate de estar presente.,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+La entrega de tu paquete 123456 será realizada mañana. Confirma la recepción en la app de EnvíaYa.,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+El envío está preparado para la entrega mañana. Revisa los datos en la web de BancoSur.,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+El paquete con el código 876543 llegará mañana a tu domicilio. Gracias por usar nuestros servicios.,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío está listo para ser entregado el día de mañana. Consulta tu estado en la app Caja Levante.,sms,0,L2,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío con código 123456 está listo para recoger en el punto de entrega más cercano. Aviso de llegada programada para mañana.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu paquete con referencia 789012 llegará a tu domicilio mañana antes de las 14:00 horas. Consulta tu app para más detalles.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+El envío de la empresa EnvíaYa con ID 456789 está previsto para mañana. Revisa tu cuenta en la app oficial.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío ha sido procesado y llegará mañana a tu dirección. Verifica el estado en la app de EnvíaYa.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+El paquete 012345 será entregado mañana a tu domicilio. Accede a tu cuenta en la app para confirmar la información.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío con código 678901 está programado para llegar mañana. Consulta el estado en la app de Caja Levante.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+El envío de BancoSur con referencia 345678 está listo para entrega mañana. Asegúrate de estar presente en el momento de la entrega.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu envío con código 901234 llegará mañana a tu dirección. Accede a tu cuenta en la app oficial para más información.,sms,0,L2,2,sintetico_qwen3,0,0,0,0,0,0,0
+Su envío con referencia 123456789 ha sido procesado y llegará mañana a la dirección indicada.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+La empresa Caja Levante ha enviado su paquete y se prevé su llegada mañana a las 10:30.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+Su pedido en EnvíaYa llegará mañana al domicilio indicado. Agradecemos su paciencia.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+El paquete con código 789456123 está en tránsito y se entregará mañana por la mañana.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur ha enviado su envío y se espera su llegada mañana. Gracias por su confianza.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+Su envío con referencia 567890123 se encuentra en ruta y se entregará mañana a su domicilio.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+El envío de la empresa EnvíaYa llegará mañana al domicilio indicado. Sin problemas.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+El paquete con código 321654987 está en tránsito y se espera su llegada mañana.,sms,0,L2,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Recordatorio de su cita médica en el Centro de Salud San Ignacio el próximo lunes a las 10:00. Por favor, confirme su asistencia en la web www.centrosaludsantignacio.es.",sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+El Centro de Salud de Alcarráz ha programado su cita para el viernes a las 15:30. Puede consultar la información en el portal de la Consejería de Sanidad.,sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+Recuerde que su visita en el Centro de Salud de Montalbán está programada para el día 15. La consulta se realizará en el área de pediatría.,sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Cita médica en el centro de salud de El Puerto de Santa María el martes a las 14:00. Por favor, lleve su documento de identidad.",sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su cita en el Centro de Salud de La Línea de la Concepción está prevista para la semana que viene. La asistencia es obligatoria para la evaluación.,sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha programado su cita en el centro de salud de Málaga este miércoles a las 09:00. Puede obtener más detalles en el teléfono 951 234 567.,sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+"El Centro de Salud de Córdoba tiene prevista su cita para el jueves a las 11:00. Por favor, confirme su asistencia antes del día de la cita.",sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+Recuerde que su cita médica en el centro de salud de Granada está programada para el viernes a las 16:00. La consulta se realizará en el área de atención primaria.,sms,0,L3,0,sintetico_qwen3,0,0,0,0,0,0,0
+Recordatorio: Su cita médica en el centro de salud está programada para el lunes 15 a las 11:00. No olvide asistir.,sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Su cita en el centro de salud está programada para el miércoles 17 a las 16:30. Por favor, confirme su asistencia.",sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+Recuerde que su cita médica en el centro de salud es el viernes 19 a las 09:00. Asegúrese de llevar su documento de identidad.,sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur le informa que su cita médica en el centro de salud se ha programado para el jueves 25 a las 14:00. Le esperamos.,sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+El centro de salud le ha asignado una cita para el lunes 15 a las 10:00. No olvide presentar su tarjeta sanitaria.,sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+Su cita en el centro de salud está programada para el miércoles 17 a las 15:30. Le rogamos que acuda puntualmente.,sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+El centro de salud le notifica que su cita está programada para el viernes 19 a las 11:00. Asegúrese de venir con su historial médico.,sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Le recordamos que su cita médica en el centro de salud es el martes 23 a las 13:00. Por favor, acuda a tiempo.",sms,0,L3,1,sintetico_qwen3,0,0,0,0,0,0,0
+Recuerda que tienes una cita médica programada para el día 15 de abril en el centro de salud de Alcorcón. No olvides traer tu carnet de la Seguridad Social. La cita está marcada para las 10:00 horas.,sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Te recordamos que tu cita en el centro de salud de Las Rozas está programada para el viernes 10 de mayo a las 14:30. Por favor, confirma tu asistencia con antelación.",sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+"El día 22 de junio, a las 9:00, tienes una cita en el centro de salud de Majadahonda. No olvides traer tu historial médico.",sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu cita en el centro de salud de Villaviciosa está programada para el martes 7 de julio a las 11:00. Asegúrate de llegar con al menos 15 minutos de antelación.,sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+Recuerda que tienes una cita médica en el centro de salud de Torrejón de Ardoz el día 29 de septiembre a las 16:00. Confirma tu asistencia si no puedes acudir.,sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+Te recordamos que tu cita en el centro de salud de San Sebastián está programada para el jueves 11 de octubre a las 10:30. No olvides lleva tu documentación.,sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Tu cita médica en el centro de salud de Vélez-Málaga está marcada para el lunes 14 de noviembre a las 13:00. Por favor, acude puntualmente.",sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+Recuerda que tienes una cita en el centro de salud de Almería el día 5 de diciembre a las 09:00. Asegúrate de que tu historial médico esté actualizado.,sms,0,L3,2,sintetico_qwen3,0,0,0,0,0,0,0
+Recordatorio: Su cita en el Centro de Salud San Vicente está programada para el lunes 10 de abril a las 11:00 horas. Asegúrese de llegar con antelación.,sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+Cita médica programada para el viernes 14 de abril en la unidad de pediatría del centro de salud. No olvide llevar su carnet de identidad.,sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+El Centro de Salud de La Florida le recuerda que su cita está programada para el martes 18 de abril a las 15:30. Estamos aquí para ayudarle.,sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Recordatorio de su cita en el centro de salud del día jueves 20 de abril a las 10:00. Por favor, confirme su asistencia.",sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+Cita médica en el centro de salud San Miguel el próximo miércoles 25 de abril a las 14:00. Asegúrese de asistir.,sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+Se le notifica que su cita en el centro de salud está programada para el viernes 27 de abril a las 09:00. No olvide llevar su documento.,sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+Su cita en el centro de salud está agendada para el lunes 1 de mayo a las 16:00. Confirme su asistencia por favor.,sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+El centro de salud le recuerda que su cita médica está programada para el jueves 4 de mayo a las 11:00. Estamos aquí para atenderle.,sms,0,L3,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, su factura de energía del mes de mayo está disponible en su área de clientes. Acceda a https://clientes.electricidad.es para consultarla.",sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su compañía eléctrica le informa de que la factura del mes de abril está lista para su consulta. Acceda a su área de clientes en https://clientes.energiaonline.com.,sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+Le recordamos que la factura de electricidad correspondiente al mes de marzo se encuentra disponible en su área de clientes. Puede acceder en https://www.electricidad.es/clientes.,sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+La factura de electricidad del mes de febrero está disponible para consulta. Puede acceder a su área de clientes en https://clientes.electricidad.es.,sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su factura de energía del mes de enero está lista. Acceda a su zona de clientes en https://www.electricidad.es para revisarla.,sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha generado su factura de electricidad del mes de diciembre. Puede consultarla en su área de clientes en https://clientes.electricidad.es.,sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+Le informamos de que su factura de electricidad del mes de noviembre está disponible. Acceda a https://clientes.electricidad.es para verla.,sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su factura de energía correspondiente al mes de octubre se encuentra disponible en su área de clientes. Puede acceder en https://clientes.electricidad.es.,sms,0,L4,0,sintetico_qwen3,0,0,0,0,0,0,0
+Tu factura eléctrica de julio está disponible en tu área de clientes en [www.electricasur.es].,sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur ha procesado tu recibo de luz y está listo para descarga en [clientes.electricasur.com].,sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+La factura de electricidad del mes de junio se encuentra disponible en tu espacio de usuario en [www.electricasur.es].,sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Caja Levante ha generado tu factura eléctrica del mes de julio, accesible en [clientes.electricasur.com].",sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa ha completado el proceso de facturación y está disponible en tu área privada en [www.electricasur.es].,sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu factura eléctrica de julio se encuentra en el apartado de clientes en [clientes.electricasur.com].,sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+El recibo de electricidad del mes de junio está listo en tu zona de clientes en [www.electricasur.es].,sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+La factura eléctrica correspondiente a julio está disponible en tu área de usuario en [clientes.electricasur.com].,sms,0,L4,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tu factura de energía eléctrica de este mes está disponible en tu área de clientes en [www.energiaonline.es]. Accede para revisarla.,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur ha procesado tu recibo de electricidad de julio y lo tienes disponible en tu portal online. Revisa los datos antes de pagar.,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+La empresa eléctrica Caja Levante ha generado tu factura del mes de junio. Puedes consultarla en tu cuenta en [www.cajaonline.es].,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa ha preparado tu factura de electricidad correspondiente al mes de septiembre. Accede a tu área de clientes en [www.enviaya.com].,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu factura de energía eléctrica de este mes se encuentra disponible en tu cuenta de cliente. Consulta los detalles en [www.electricidad24.es].,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+La compañía eléctrica ha generado tu factura de junio. Puedes revisarla en tu zona de clientes en [www.electricidadonline.es].,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu recibo de electricidad del mes de agosto está disponible en tu portal de clientes. Accede a [www.electricidadgenérica.com] para verlo.,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante ha preparado tu factura de electricidad de julio. Puedes consultarla en tu área de clientes en [www.cajalevante.es].,sms,0,L4,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, tu factura de electricidad está disponible en [www.electricidadsur.es](www.electricidadsur.es). Accede a tu área de clientes para consultarla.",sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+Tienes una nueva factura eléctrica disponible en tu portal. Puedes verla en [www.electroluz.com](www.electroluz.com).,sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+Tu compañía eléctrica ha generado una factura para ti. Accede a [www.electricidad.es](www.electricidad.es) para verla.,sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+La factura eléctrica de tu hogar está lista. Puedes consultarla en [www.electroluz.es](www.electroluz.es).,sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+Tu cuenta eléctrica tiene una factura disponible. Accede a [www.electricidad.com](www.electricidad.com) para revisarla.,sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+La factura eléctrica de tu domicilio está disponible en [www.electricidadsur.es](www.electricidadsur.es).,sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+Tu factura eléctrica está lista en el portal de [www.electroluz.com](www.electroluz.com).,sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+La compañía eléctrica ha generado tu factura. Puedes consultarla en [www.electricidad.es](www.electricidad.es).,sms,0,L4,3,sintetico_qwen3,0,0,0,0,0,0,0
+"¿Te apetece cenar este viernes? A ver si conseguimos un sitio en el nuevo restaurante de la zona, el *Cocina de Raúl*.",whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+Acabo de pagar la cuota de la comunidad con el *BancoSur*. ¿Te lo envían por WhatsApp o lo ves en el portal?,whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+% ¿Te gustaría venir a ver la exposición de arte en el *Museo de la Ciudad*? Empieza mañana.,whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+"El *EnvíaYa* me ha enviado el paquete, ya está en la puerta. Si quieres lo recojo contigo.",whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+"He visto un anuncio en *Voy a Ver* sobre un viaje a la montaña. Si te interesa, podemos planearlo.",whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+El *Caja Levante* me ha mandado un mensaje de que mi cuenta está activa. ¿Te lo cuento?,whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+% El *Talento Digital* me ha llamado para una entrevista. ¿Voy a poder hablar contigo antes?,whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+% ¿Quieres que vayamos al *Centro Cultural* a ver esa película que tanto me ha gustado? Está en cartel hasta el lunes.,whatsapp,0,L5,0,sintetico_qwen3,0,0,0,0,0,0,0
+"¿Te apetece cenar este sábado? Me parece bien si quieres venir a mi casa, tengo algo de marisco en la nevera.",whatsapp,0,L5,1,sintetico_qwen3,0,0,0,0,0,0,0
+"He visto que la Caja Levante tiene un descuento en tarjetas de crédito, ¿te interesa que vayamos a verlo juntos?",whatsapp,0,L5,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Me acabo de dar cuenta de que el código de acceso al buzón de la comunidad es 1234, ¿lo sabías tú?",whatsapp,0,L5,1,sintetico_qwen3,0,0,0,0,0,0,0
+¿Sabes si la empresa EnvíaYa tiene descuentos en envíos internacionales este mes?,whatsapp,0,L5,1,sintetico_qwen3,0,0,0,0,0,0,0
+"He estado buscando un nuevo teléfono, pero aún no me he decidido, ¿tú qué opinas?",whatsapp,0,L5,1,sintetico_qwen3,0,0,0,0,0,0,0
+"He estado viendo un curso online sobre diseño web, el dominio es www.creatividadweb.es, si te interesa lo puedo compartir contigo.",whatsapp,0,L5,1,sintetico_qwen3,0,0,0,0,0,0,0
+Me acaba de llegar un mensaje del BancoSur:,whatsapp,0,L5,1,sintetico_qwen3,0,0,0,0,0,0,0
+Hoy me ha llamado la madre para decirme que el abuelo está mejor.,whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Acabo de ver la oferta de EnvíaYa, ¿te interesa que la comamos juntos?",whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hoy me han enviado el recibo de BancoSur, ya lo tengo todo pagado.",whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+¿Te apetece cenar esta noche? Yo preparo algo fácil.,whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hoy he tenido que cambiar la luz del garaje, se me rompió.",whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+"La caja de Caja Levante me ha enviado un folleto, me lo leo cuando tenga tiempo.",whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+Acabo de ver que el sistema de la oficina de correos se ha caído.,whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hoy me ha dado un recibo de la comunidad, lo pago este fin de semana.",whatsapp,0,L5,2,sintetico_qwen3,0,0,0,0,0,0,0
+¿Te apetece cenar esta noche? Puedo venir a tu casa.,whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Hoy me ha dado un descuento en EnvíaYa, si quieres te lo comparto.",whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+La Caja Levante me ha notificado que mi cuenta está a punto de vencer.,whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+Me acabo de enterar de que tu abuela viene a visitarnos el fin de semana.,whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+¿Sabes si el nuevo iPhone de papá ya está listo?,whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Hoy me han dado un bono por la compra en BancoSur, ¿te lo paso?",whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+¿Te apetece un paseo al parque? Hace buen tiempo.,whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+Me han avisado de que la conexión del router se va a cambiar este mes.,whatsapp,0,L5,3,sintetico_qwen3,0,0,0,0,0,0,0
+Hoy me llamó un supuesto representante de Caja Levante pidiendo datos bancarios. Le dije que no era mi banco y colgué.,whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+Acabo de ver un mensaje en mi correo que parecía ser de BancoSur pidiendo confirmar un pago. Lo he ignorado por si era un fraude.,whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+Alguien intentó contactarme por WhatsApp usando un número que parece de EnvíaYa. Le dije que no era mi empresa y lo denuncié.,whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+Me llegaron varias llamadas desde un número sospechoso que decía ser de una empresa de logística. No respondí y avisé a mis contactos.,whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+Un mensaje en mi WhatsApp decía que había un error en mi cuenta de EnvíaYa y que tenía que llamar al 912 345 678. Lo ignoré y lo reporté.,whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+Alguien intentó robarme datos diciéndose de una empresa de envíos. Le dije que no era mi empresa y lo bloqueé.,whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Me llegaron mensajes por WhatsApp desde un número que no reconocía, decían que había un problema con mi cuenta de un servicio de pago. Lo ignoré y avisé a mis amistades.",whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+Alguien trató de contactarme por WhatsApp usando un dominio web que parecía ser de una empresa de envíos. Le dije que no era mi empresa y lo denuncié.,whatsapp,0,L6,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hoy me han contactado diciéndome que mi cuenta bancaria de BancoSur ha sido hackeada y me pidieron datos personales. Me dijeron que era urgente y que si no respondía perdería todo el dinero. Al final resultó ser una estafa, pero me preocupa que otros puedan caer. Por eso, quería avisaros para que os cuidéis.",whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+Acabo de recibir un mensaje de una persona que decía ser del servicio de atención de Caja Levante. Me hablaba de un supuesto cobro no autorizado y me pedía mi número de tarjeta. Le respondí que no era verdad y que era una estafa. Me parece bien que os avise para que no os dejéis manipular.,whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+Esto es lo que me pasó: recibí un mensaje de un contacto que decía que había un error en mi cuenta de EnvíaYa y me pedía que confirmara mi correo para resolverlo. Me di cuenta de que era una estafa porque nunca hablé con esa persona. Os aviso por si a alguno le pasa algo parecido.,whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+"El otro día me llamó un número que decía ser de un operador de telecomunicaciones. Me avisaban de que había un problema con mi cuenta y que debía dar mi clave para solucionarlo. Me lo tomé con calma, investigué y vi que era un fraude. Quería compartirlo por si os pasa algo similar.",whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Me llegó un mensaje de un sitio web que decía que había un descuento en una tienda inventada, pero pedían mi número de móvil para confirmar la compra. Le dije que no era una tienda real y que no me interesaba. Ahora, por si alguien se lo encuentra, quería recordaros que os cuidéis con ese tipo de cosas.",whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Alguien me envió un mensaje de un dominio web que no reconocía, diciendo que había un error en mi factura de un servicio que no uso. Me dijeron que si no confirmaba perdería el acceso. Le respondí que no tenía nada que ver conmigo y que era una estafa. Es por eso que quería avisaros para que os cuidéis.",whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+Un amigo me comentó que le llamaron por un número que decía ser de un servicio de envíos. Le dijeron que había un paquete que le esperaba y le pedían su DNI para poder dejarlo. Le dije que era un engaño y que no tenía que hacer nada. Quería compartirlo por si a alguien le pasa algo parecido.,whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Recientemente me llegó un mensaje de un correo que decía que mi cuenta en una app de compras se había bloqueado y que tenía que reactivarla. Me dijeron que era por un error de seguridad y que tenía que hacer clic en un enlace. Al final, me di cuenta de que era una estafa. Por eso, quería comentaros que os cuidéis con estas cosas.",whatsapp,0,L6,1,sintetico_qwen3,0,0,0,0,0,0,0
+Hoy me han llamado desde BancoSur diciendo que hay un problema con mi cuenta. Les he dicho que no me puede llamar nadie sin previo aviso.,whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+Acabo de recibir un mensaje de EnvíaYa pidiendo confirmación de un envío que nunca pedí. Lo he ignorado por si era una trampa.,whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+Un número de teléfono que parecía de Caja Levante me ha llamado insistiendo en un pago urgente. Le he dicho que no acepto llamadas desconocidas.,whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+Me han mandado un enlace a un sitio web que decía que había un error en mi cuenta bancaria. Lo he borrado sin hacer clic.,whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hice una compra en una web que decía ser de EnvíaYa, pero no me llegó el producto. Puse un aviso en el foro de usuarios.",whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo una llamada de un número que parece de BancoSur, pero no sé si es real. Lo mejor es no responder y llamar directamente al banco.",whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+Alguien se hizo pasar por un empleado de Caja Levante y me pidió información sobre mi cuenta. Le dije que no me puede contactar así sin previo aviso.,whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+Recibí un mensaje diciendo que mi cuenta está bloqueada y que debo llamar a un número que no me recuerdo. No he hecho nada porque no sé si es verdad.,whatsapp,0,L6,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hoy me han contactado desde un número que parece de BancoSur pidiendo datos personales. No sé qué pasó, pero mejor estar alerta.",whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Ayer recibí un mensaje de un dominio que imita a Caja Levante. Me dijeron que había un error en mi cuenta y que debía revisar urgentemente. No hice nada, pero me preocupa.",whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Me han llamado desde un número que decía ser de EnvíaYa, me dijeron que había un problema con un envío y que debía confirmar algo. Puse excusas y colgué.",whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+Hace unos días recibí un correo de un dominio que imitaba a una empresa de telecomunicaciones. Me avisaron de un descuento si confirmaba algo. No me lo creí.,whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Un amigo me contó que le llamaron desde un número que parecía de un banco local. Le dijeron que había un cobro no autorizado y le pidieron datos. Lo ignoró, pero me avisó.",whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Me llegaron varios mensajes de un dominio que se hace pasar por una empresa de logística. Me dijeron que había un retraso y que debía hacer clic en un enlace. No lo hice, pero me preocupa.",whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Hace poco recibí un mensaje que decía que mi cuenta bancaria había sido bloqueada por un error. Me avisaron de un posible acceso no autorizado. No hice nada, pero mejor estar alerta.",whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un mensaje de un dominio que se parece a uno de una empresa de envíos. Me dijeron que había un error en la entrega y que debía confirmar algo. Lo ignoré, pero me avisó alguien más.",whatsapp,0,L6,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Laura, ¿cuándo tenemos la lista de quién paga qué? A ver si alguien se ofrece para la comida.",whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur: Transferencia realizada a la cuenta de la Caja Levante. Confirmada.,whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa: Pedido de 5 kg de frutas confirmado. Entrega en 2 días.,whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Miguel, ¿has visto si tenemos que pagar algo por el alquiler del local? A ver si lo incluimos.",whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+"¿Alguien se anima a pagar el pastel? Es un regalo, pero se agradece.",whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Número de WhatsApp del proveedor: 666 123 456. Si necesitas algo, lo contactas.",whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+Ya tenemos la lista de quién paga qué. Solo faltan confirmar los detalles del pastel.,whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+Dominio web de la web de la fiesta: www.cumplefamilia.es. Puedes ver los detalles allí.,whatsapp,0,L7,0,sintetico_qwen3,0,0,0,0,0,0,0
+¿A quién le toca la torta de chocolate?,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur: Confirmado el pago de la fiesta por 250€,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+Loli: ¿Alguien ha visto el menú de la cafetería?,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante: Transferencia realizada a nombre de la fiesta,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa: Paquete con los regalos llegará hoy a la tarde,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+¿Quién se queda con el coche del abuelo?,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+Pedro: He reservado la mesa en www.cafeteriacentro.es,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+¿Alguien quiere ayudar a organizar la música?,whatsapp,0,L7,1,sintetico_qwen3,0,0,0,0,0,0,0
+"¿A alguien le apetece que vaya a buscar el pan? Aunque si no, ya lo hago yo.",whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Mamá, ¿cómo va el presupuesto? Por si quieres ajustar algo antes de pasar a la lista.",whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Puse en la lista la cantidad que me toca, pero si alguien quiere añadir algo, que lo haga.",whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+A ver si alguien me confirma si el pago de la fiesta ya está hecho por su parte.,whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Voy a hacer el listado de quién paga qué, pero antes de empezar, ¿alguien quiere hacer las compras?",whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+¿Alguien tiene un banco en Caja Levante? Por si necesitamos hacer un pago conjunto.,whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+"¿A quién le queda el dinero de la fiesta? Si alguien se lo ha gastado, que lo diga.",whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+A ver si alguien me dice si el número de la cuenta de la fiesta es correcto o si hay que cambiar algo.,whatsapp,0,L7,2,sintetico_qwen3,0,0,0,0,0,0,0
+"¡Vaya, hoy toca mi día! ¿Alguien ha visto el presupuesto del catering?",whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo la cuenta de BancoSur abierta, ¿a quién le toca pagar la tarta?",whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+¿A alguien le queda el presupuesto de la fiesta? Puedo añadirlo al grupo,whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Llevé la tarta a casa, la dejé en la nevera. Si alguien quiere puede recogerla",whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+"He hecho un listado de quién paga qué, ¿a alguien le parece bien?",whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Estoy en la Caja Levante, ¿alguien me puede pasar el presupuesto?",whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un cupón de descuento de EnvíaYa, ¿alguien lo quiere usar para el envío?",whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+"He encontrado un código de descuento para el local, ¿a alguien le interesa?",whatsapp,0,L7,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, soy José, del BancoSur. Quería recordarte que tienes una cita programada para el miércoles en nuestra oficina de Madrid. No te olvides de traer tu DNI y el carnet de la Cuenta Nómina.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de la Caja Levante. Solo quería decirte que tu cita para revisar tu cuenta está programada para el viernes. Te avisaremos con antelación si hay algún cambio.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"¡Buenas! Soy Ana, del BancoSur. Tu cita en la oficina está confirmada para el jueves. Puedes llegar a cualquier hora, pero intenta llegar antes de las 14:00.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy del Banco EnvíaYa. Tu cita está programada para el lunes. No hay ninguna urgencia, solo un control rutinario de tu cuenta. Te llamamos para confirmar si no te ha llegado antes.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, soy de la Caja de Murcia. Tu cita está reservada para el martes. Puedes asistir con un acompañante si lo prefieres. No te preocupes, es solo una revisión.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de la Oficina Central de Banco Sur. Tu cita para el miércoles está confirmada. Te llamamos para recordarla, pero si no te ha llegado, no te preocupes, no es urgente.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"¡Hola! Soy del Banco de las Islas Baleares. Tu cita está programada para el viernes. La oficina está abierta de 9 a 14 horas. Si tienes algún problema, lo podemos resolver en la cita.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas, soy de la Caja Sur. Tu cita está programada para el jueves. Te recordamos que no es urgente, solo un control de tu cuenta. Llama si tienes dudas.",llamada,0,L8,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de BancoSur, aquí para recordarte que tienes una cita programada para el viernes en nuestra oficina de Madrid. ¿Te acuerdas de la fecha?",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un mensaje para ti, cliente de Caja Levante, recordándote que tienes una cita pendiente en la sucursal de Valencia el próximo lunes. ¿Has podido confirmarla?",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Quiero hacerte saber que tienes una cita programada en la oficina de EnvíaYa para el martes. Por si no lo has visto, te aviso ahora.",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Esta es una llamada de recordatorio de BancoSur. Te aviso porque tienes una cita pendiente en la oficina de Sevilla. No te preocupes, solo para recordarte.",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de Caja Levante. Quería recordarte que tienes una cita previa en la oficina de Zaragoza el día de mañana. ¿Has tenido tiempo de comprobar la fecha?",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un mensaje para ti, cliente de EnvíaYa, recordando que tienes una cita previa en la sucursal de Málaga el miércoles. Te aviso antes de que pase el plazo.",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Esta es una llamada de BancoSur para recordarte que tienes una cita en la oficina de Toledo. Por si no la has visto, te aviso ahora mismo.",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Quiero recordarte que tienes una cita pendiente en la oficina de Caja Levante en Bilbao. Por si no te acuerdas, te aviso antes de que se acabe el plazo.",llamada,0,L8,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, soy de BancoSur, solo quería recordarle que tiene una cita programada para el viernes en la oficina de Madrid. ¿La ha confirmado ya?",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, aquí de Caja Levante. Le quería recordar que tiene una cita en la sucursal de Valencia el próximo martes. Si no puede, puede cancelar sin problemas.",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Estimado cliente, de EnvíaYa le recordamos que tiene una reunión programada para el lunes en la oficina de Bilbao. No se preocupe si no puede asistir, puede cambiarla sin problemas.",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas tardes, soy del Banco Nación. Le recordamos que tiene una cita en la oficina de Córdoba el jueves. Si ya la ha confirmado, perfecto, sino, no se preocupe.",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, le llamamos desde CajaSur para recordarle que tiene una cita programada para el miércoles en la oficina de Sevilla. No se preocupe si no puede, puede cambiarla.",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Estimado cliente, aquí de BancoSur le recordamos que tiene una cita en la oficina de Málaga el viernes. Si ya la ha confirmado, perfecto, sino, no se preocupe.",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, le llamamos desde Caja Levante para recordarle que tiene una cita programada para el lunes en la oficina de Granada. Si ya la ha confirmado, perfecto, sino, no se preocupe.",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, le llamamos desde BancoEnvía para recordarle que tiene una cita en la oficina de Cádiz el miércoles. Si no puede asistir, puede cancelar sin problemas.",llamada,0,L8,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, soy de BancoSur y quería recordarte que tienes una cita programada en nuestra oficina el viernes a las 11:00. Por favor, confirma tu asistencia para que podamos preparar tu reunión.",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, me llama Caja Levante para recordarte que tienes pendiente una revisión de tu cuenta en la oficina. La cita está programada para el lunes a las 10:00, ¿podrías confirmar que seguirás con el proceso?",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Disculpa por molestar, soy del Banco de Navarra. Tenemos programada una reunión en la oficina el miércoles a las 14:00 para revisar tu cuenta. Por favor, confirma tu asistencia.",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, soy de EnvíaYa. Quería recordarte que tienes una cita en la oficina el jueves a las 15:00 para tratar un asunto relacionado con tu cuenta. Por favor, confirma tu presencia.",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy del Banco Sur. Te informo que tienes una cita programada en la oficina para el viernes a las 10:00. Por favor, confirma que estarás presente.",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, soy de Caja Levante. Quería recordarte que tienes una cita en la oficina el martes a las 11:00. Gracias por confirmar tu asistencia.",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de BancoSur. Te aviso de que tienes una reunión programada en la oficina para el miércoles a las 14:00. Por favor, confirma que seguirás con el proceso.",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Disculpa, soy del Banco de Aragón. Te informo de que tienes una cita en la oficina el jueves a las 10:00. Por favor, confirma tu asistencia para que podamos preparar tu reunión.",llamada,0,L8,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas tardes, soy José, el repartidor de EnvíaYa. Estoy en la puerta con un paquete para la señora Martínez. ¿Podría abrirla por favor?",llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+Soy Carlos del servicio de atención al cliente de BancoSur. He recibido un pedido para el señor López y estoy aquí con el paquete. ¿Podría abrir la puerta?,llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy Ana del reparto de Caja Levante. Tengo un paquete para la empresa Tecnosol en el número 23. ¿Podría alguien abrirla?",llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Soy Luis, repartidor de Urgencias24. Tengo un paquete para la señora Fernández. ¿Podría abrirla por favor?",llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy Sergio del servicio de reparto de EnvíaYa. Estoy aquí con un paquete para el señor García. ¿Puedo entregarlo?",llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas, soy Marta del reparto de EnvíaYa. Tengo un paquete para la empresa SostenibleTech en la calle Murcia. ¿Alguien puede abrirla?",llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+Soy David del reparto de Caja Levante. Estoy aquí con un paquete para el señor Ramírez. ¿Podría abrir la puerta?,llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy Elena del servicio de reparto de Urgencias24. Tengo un paquete para la empresa EcoTerra en el número 15. ¿Puedo entregarlo?",llamada,0,L9,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy el repartidor de EnvíaYa, estoy en la puerta con un paquete para usted. ¿Podría abrirla?",llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas tardes, llevo un paquete de BancoSur, lo dejé en la puerta. ¿Lo puede recoger?",llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de Caja Levante, tengo un envío para usted. ¿Puede abrir la puerta?",llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Aquí está el repartidor, llevo un paquete de una empresa de logística. ¿Lo puede recibir?",llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un envío para usted, es de una tienda online. Lo dejé en la puerta, ¿puede abrir?",llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de una empresa de envíos, llevo un paquete para usted. ¿Lo puede recoger?",llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+Estoy aquí con un paquete de una web de ropa. ¿Puede abrirla?,llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas, soy el repartidor, llevo un envío de una tienda. ¿Puede abrir la puerta?",llamada,0,L9,1,sintetico_qwen3,0,0,0,0,0,0,0
+"¡Hola! Soy el repartidor de EnvíaYa, estoy en la puerta con un paquete para la señora Elena Ruiz.",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un paquete para la empresa Caja Levante, por favor abran la puerta.",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de BancoSur, tengo un envío para el señor Martín Díaz. ¿Pueden abrir?",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Estoy aquí con un paquete para la tienda online WebTec, por favor, déjenme pasar.",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Soy el repartidor de EnvíaYa, tengo un paquete para la señora Ana López. Pueden abrir la puerta.",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un paquete para la oficina de AlmacénSur, por favor, déjenme pasar.",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy de WebTec, estoy aquí con un envío para el señor José García.",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Estoy con un paquete para la empresa EnvíaYa, por favor abran la puerta.",llamada,0,L9,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenos días, soy el repartidor de EnvíaYa, estoy frente a su portal con un paquete para usted. Puedo subirlo si quiere.",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Estoy aquí con un paquete de la Caja Levante, ¿puedo pasar a entregarlo?",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un envío para usted con el número 123456, espero que no haya problemas para recogerlo.",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Llevo un paquete de BancoSur, ¿puede abrir la puerta un momento?",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"He llegado con un envío para usted, espero que no haya inconvenientes.",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Estoy frente a su casa con un paquete para entregarse, ¿puede abrir la puerta?",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo un envío para usted, está listo para ser entregado.",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Estoy aquí con un paquete, ¿puede alguien abrir la puerta?",llamada,0,L9,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas tardes, me gustaría cambiar mi cita médica de mañana a la tarde, si es posible.",llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+Llamo porque mi cita está programada para el viernes y me gustaría reprogramarla para el martes.,llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Tengo una cita con el doctor Martínez el jueves a las 11, pero el médico me ha dicho que no puedo ir por razones personales.",llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Quería cambiar la fecha de mi cita del 15 al 17 de este mes, si hay disponibilidad.",llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+Me llamó la enfermera para informarme de que mi cita está cancelada y me gustaría reservar otra.,llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+El médico me indicó que necesito hacer una prueba y me gustaría programarla antes de la cita principal.,llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Me gustaría cambiar la hora de mi cita del mediodía a las 16:00, si es posible.",llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Mi cita estaba programada para el miércoles, pero ahora no puedo asistir y quiero cancelarla.",llamada,0,L10,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, ¿me puede cambiar la cita de mañana a la tarde? La de mañana es muy temprana y no me puedo levantar.",llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+Quería confirmar que la nueva cita está programada para el viernes a las 16:30. ¿Es posible?,llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+Tengo un problema con el turno que me asignaron. Me gustaría cambiarlo a otro día más tarde.,llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+Me gustaría reprogramar mi cita porque tengo que hacer unas gestiones en el banco. ¿Podría ser el jueves?,llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+¿Es posible hacer el cambio sin tener que venir al consultorio? Me gustaría que fuera en línea.,llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+Quería saber si puedo cambiar la hora de mi cita de mañana a la tarde. Tengo que hacer una entrega en el centro.,llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+¿Podría cambiar la cita al viernes por la mañana? El lunes me toca trabajar y no puedo.,llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+Me gustaría hacer el cambio de mi cita del martes al miércoles. ¿Hay disponibilidad en esa fecha?,llamada,0,L10,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, buenos días. Me llamo Ana Torres y quería cambiar mi cita de mañana a la tarde, si es posible.",llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Disculpe, aquí es José Ramírez. La cita que tenía con el doctor Sánchez el viernes a las 11 no me puede dar, necesito reprogramarla.",llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Me llamo Luisa Fernández. Quería preguntar si puedo hacer la cita por la mañana, ya que hoy tengo que ir a un evento familiar.",llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy Elena Martínez. Tengo una cita programada el miércoles a las 10, pero hoy me encontré mal y necesito cancelarla.",llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas tardes, aquí es David Sánchez. Me gustaría cambiar mi cita de este lunes a la semana que viene, si hay disponibilidad.",llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Hola, soy María López. Necesito reprogramar mi cita del martes porque tengo que hacer una consulta en otro centro de salud.",llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+Me llamo Roberto Gómez. Quería confirmar si mi cita del viernes a las 16 se puede hacer en otro lugar más cercano.,llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Buenas, aquí es Carmen Ruiz. Me gustaría cambiar mi cita de mañana a la tarde, pero solo si es posible hacerla el viernes.",llamada,0,L10,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Quiero cambiar mi cita de mañana a esta tarde, por favor.",llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Me gustaría posponer mi cita del lunes al viernes, ¿es posible?",llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+"He tenido que cancelar mi cita del jueves, ¿puedo reservar otra fecha?",llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Quiero hacer la cita en la sucursal de Almería, no en la de Granada.",llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+¿Tengo que hacer algún trámite antes de cambiar la cita?,llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Me han avisado de que mi cita ha sido cancelada, ¿puedo reservar otra?",llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+¿Podría cambiar mi cita al miércoles a las 15:30?,llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+"He tenido que reprogramar mi cita por motivos laborales, ¿puedo hacerlo esta misma semana?",llamada,0,L10,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Estimado cliente, le recordamos que el BancoSur no solicita información de seguridad por correo electrónico. Adjunta el extracto de su cuenta del mes de octubre. Disculpe las molestias.",email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+"El extracto de su cuenta en Caja Levante está disponible en su área privada. Si tiene dudas, no dude en contactarnos por teléfono.",email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su cuenta en EnvíaYa ha sido actualizada correctamente. Adjunta el extracto mensual de noviembre. Atención al cliente: 900 123 456.,email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+Le recordamos que el BancoSur nunca solicita claves ni datos sensibles por email. Su extracto del mes de octubre está listo para su consulta.,email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante le informa que el extracto de su cuenta se ha enviado correctamente. Puede revisarlo en su área de usuario.,email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur le informa que su cuenta se encuentra actualizada. El extracto de octubre está disponible en su bandeja de entrada.,email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su cuenta en EnvíaYa se encuentra al día. Le adjuntamos el extracto mensual de noviembre. No dude en contactarnos si tiene preguntas.,email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+Le recordamos que el BancoSur no solicita datos personales por correo. El extracto de su cuenta del mes de octubre ha sido enviado correctamente.,email,0,L11,0,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur le informa que su cuenta tiene un saldo de 1.200 € al 31 de diciembre. El extracto completo está disponible en su área de cliente.,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante le recuerda que el extracto de su cuenta se ha enviado correctamente y que puede consultarlo en la web: www.cajalevante.es,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa ha procesado su transferencia de 500 € hacia Caja Rural. Puede comprobar el estado en su cuenta online.,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+Su cuenta en Banco Popular tiene un movimiento de 800 € el 15 de enero. El extracto mensual se encuentra en su bandeja de entrada.,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+Banco Santander le comunica que el extracto de su cuenta ha sido enviado a su correo y puede revisarlo en la web: www.bancosantander.es,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Madrid le informa que su cuenta presenta un saldo de 1.500 € al 31 de diciembre. El extracto está disponible en su área de usuario.,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur le recuerda que su extracto mensual ha sido enviado y puede acceder a él desde su cuenta online en www.bancosur.es,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa le comunica que el movimiento de 300 € hacia Caja de Burgos se ha procesado correctamente y puede consultar el estado en su perfil.,email,0,L11,1,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur le recuerda que su cuenta está actualizada y que nunca solicita claves por correo. El extracto de junio está adjunto para su revisión.,email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante le informa que su cuenta en la entidad tiene un movimiento de 150€ el 12 de junio. Puede revisar el extracto en su área de clientes.,email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa le confirma que el movimiento de 250€ realizado el 20 de junio se ha procesado correctamente. Agradecemos su confianza.,email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+"El Banco de la Tierra le informa que su cuenta no ha tenido movimientos en el mes de junio. Si necesita información, puede contactar con atención al cliente.",email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+El extracto de julio de su cuenta en BancoSur ya está disponible. Recuerde que nunca solicitamos claves por correo electrónico.,email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+Caja de la Sierra le comunica que su cuenta ha tenido un movimiento de 80€ el 5 de julio. Puede acceder al extracto desde su área de usuarios.,email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+"BancoSur le informa que su cuenta no ha tenido movimientos en el mes de junio. Por favor, revise el extracto adjunto.",email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+EnvíaYa le recuerda que su cuenta está al día y que el extracto de junio está disponible en su área de clientes. No solicitamos nunca datos personales por correo.,email,0,L11,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Estimado/a Ana, le recordamos que su cuenta en BancoSur ha tenido una operación de 300€ en la última semana. Para su tranquilidad, el banco nunca solicita claves por correo electrónico. Por favor, revise su extracto en el área de cliente de www.bancosur.es",email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur le informa que su cuenta ha registrado un movimiento de 500€ en la última quincena. Recuerde que el banco no pide claves ni datos personales por correo. Puede consultar su estado en el área de clientes de www.bancosur.es,email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Caja Levante le notifica que ha habido un movimiento de 150€ en su cuenta el pasado viernes. Para su seguridad, el banco nunca solicita información por correo. Puede acceder a su extracto en www.cajalevante.es",email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+Le informamos de que su cuenta en EnvíaYa ha tenido una operación de 250€ el pasado miércoles. El banco no solicita datos por correo. Acceda a su extrato en www.enviaya.es,email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Su cuenta en BancoSur ha tenido un movimiento de 400€ en la última semana. El banco no pide claves por email. Para más información, consulte el extrato en www.bancosur.es",email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur le informa de que ha habido un movimiento de 300€ en su cuenta. El banco no solicita claves ni datos por correo. Puede consultar su estado en www.bancosur.es,email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Caja Levante le notifica que ha tenido una operación de 150€ el pasado viernes. Para su tranquilidad, el banco nunca solicita información por correo. Acceda a su extrato en www.cajalevant.es",email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+Le recordamos que su cuenta en EnvíaYa ha tenido un movimiento de 500€ en la última quincena. El banco no solicita claves por correo. Consulte su extracto en www.enviaya.es,email,0,L11,3,sintetico_qwen3,0,0,0,0,0,0,0
+Gracias por su compra. Su pedido con número 789456 está listo para envío y se entregará el 12 de junio.,email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Su pedido de 12,50 € con código 345678 ha sido procesado. El envío se realizará en los próximos días.",email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+Enviando su pedido 987654 con fecha de entrega estimada para el 20 de junio. Confirme el estado en www.enviayas.com.,email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su pedido número 112233 ha sido aceptado. Se espera la entrega el 15 de junio. Gracias por su confianza.,email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+La empresa EnvíaYa ha confirmado el envío de su pedido 456789. Se espera la entrega antes del 18 de junio.,email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+Pedido 789012 confirmado. La fecha estimada de entrega es el 10 de junio. Puede consultar el seguimiento en www.enviayaportugal.com.,email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+Su pedido número 567890 ha sido procesado. La entrega se realizará entre el 13 y el 16 de junio.,email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Confirmamos su pedido 345678 con un importe de 25,00 €. La fecha de entrega está prevista para el 11 de junio.",email,0,L12,0,sintetico_qwen3,0,0,0,0,0,0,0
+Gracias por su compra con EnvíaYa. Su pedido con número 23456789 está preparado y se entregará el 12 de mayo. Disfrute de su producto.,email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+Su pedido número 98765432 ha sido procesado correctamente. La entrega está programada para el viernes 15 de abril. Agradecemos su confianza.,email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+Caja Levante ha confirmado la recepción de su pedido número 11223344. La fecha prevista de entrega es el 20 de marzo. No olvide comprobar el estado en www.envioexpress.es,email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+El pedido con referencia 55667788 ha sido confirmado. Se entregará el 8 de abril en la dirección indicada. Muchas gracias por elegirnos.,email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+"BancoSur ha procesado su pedido número 88990011. La entrega está prevista para el 18 de febrero. Por favor, verifique los datos del envío en su cuenta.",email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+Su compra con referencia 77889900 ha sido confirmada. La entrega se realizará el 25 de enero. Agradecemos su confianza.,email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+Pedido número 44556677 confirmado. Fecha de entrega: 10 de febrero. Disfrute de su pedido con nosotros.,email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+Se ha confirmado el pedido 33445566. La entrega está programada para el 28 de enero. Gracias por su compra con EnvíaYa.,email,0,L12,1,sintetico_qwen3,0,0,0,0,0,0,0
+Gracias por tu compra. Tu pedido con número 234567890 está preparado para ser enviado el 15 de octubre. Puedes seguir su estado en www.enviaya.es/pedidos.,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu pedido número 123456789 ha sido procesado exitosamente. Se espera la entrega el 20 de octubre. ¡Gracias por confiar en nosotros!,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+Confirmamos la recepción de tu pedido el 10 de octubre. El número de pedido es 876543210 y la entrega está programada para el 18 de octubre.,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu compra número 456789012 ha sido confirmada. La fecha de entrega está establecida para el 25 de octubre. Gracias por elegirnos.,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+El pedido con código 987654321 ha sido procesado. Se prevé la entrega el 12 de octubre. Puedes consultar su estado en www.enviaya.es,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu pedido número 112233445 está listo para ser enviado. La fecha de entrega estimada es el 17 de octubre. Gracias por tu confianza.,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+Confirmamos la finalización del proceso de tu pedido 778899001. Se espera la entrega el 22 de octubre. ¡Que disfrutes tu compra!,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+Tu pedido con el código 667788990 ha sido procesado correctamente. La fecha de entrega está programada para el 14 de octubre. Muchas gracias.,email,0,L12,2,sintetico_qwen3,0,0,0,0,0,0,0
+Gracias por su compra. Su pedido con número 23456789 está listo para ser enviado el 12 de mayo. Los envíos se realizan de lunes a viernes.,email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+Su pedido número 12345678 con fecha de envío prevista para el 15 de abril ha sido procesado correctamente. Agradecemos su confianza.,email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+Confirmamos la recepción de su pedido número 98765432 el día 5 de marzo. La entrega se realizará mediante EnvíaYa en los próximos días.,email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Su pedido número 56789012, solicitado el 3 de abril, está preparado para ser enviado el 10 de mayo. El envío se realizará desde el almacén de Madrid.",email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+El pedido número 34567890 ha sido procesado el 18 de febrero y la fecha estimada de entrega es el 25 de marzo. Gracias por elegirnos.,email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+Su compra con número 87654321 ha sido confirmada. La entrega se realizará en los próximos días mediante el servicio de EnvíaYa.,email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+Su pedido número 11223344 ha sido enviado el día 20 de marzo. Se espera un tiempo de entrega de 3 días hábiles con el servicio de Caja Levante.,email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+El pedido número 99887766 se encuentra listo para el envío previsto para el 14 de mayo. Se realizará desde el almacén de Barcelona.,email,0,L12,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Estimado/a José López, le informamos que la declaración de la renta de la empresa EnvíaYa se ha presentado correctamente. Gracias por su colaboración.",email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+BancoSur ha completado el trámite de la declaración de impuestos correspondiente al ejercicio 2023. Su operación está registrada en el sistema.,email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria confirma que la declaración de la empresa Caja Levante ha sido recibida y procesada sin errores. Puede consultarlo en su área privada.,email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+La declaración de la empresa Aprova S.L. se ha enviado correctamente al sistema de la Agencia Tributaria. No se requiere ninguna acción adicional.,email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria le informa que la declaración de la empresa WebClic ha sido aceptada. Su número de referencia es 123456789.,email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+"Su empresa, Transportes Mora, ha presentado correctamente la declaración de impuestos. El trámite está finalizado sin observaciones.",email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria le comunica que la declaración de la empresa Soluciones Tech ha sido procesada. El importe total es de 5.000 euros.,email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+Le informamos que la declaración de la empresa Sostenible S.L. se ha presentado correctamente. Estamos a la espera de su confirmación.,email,0,L13,0,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria ha confirmado que la declaración de la renta de la empresa EnvíaYa se ha presentado correctamente. Gracias por su colaboración.,email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Su empresa, Caja Levante, ha finalizado el proceso de presentación de la declaración de impuestos. No se han detectado errores.",email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria ha validado la declaración de la empresa BancoSur. El importe total asciende a 12.500 euros.,email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+Su declaración de la empresa TallerMecánico ha sido aceptada correctamente. No se requiere ninguna acción adicional.,email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+El Ministerio de Hacienda confirma que la declaración de la empresa MueblesRústicos se ha presentado sin errores.,email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria informa que la declaración de la empresa AlimentaciónSana ha sido procesada correctamente.,email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+"Su empresa, TransportesLuz, ha sido notificada de que su declaración de impuestos se ha presentado correctamente.",email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+La declaración de la empresa VehículosCómodo se ha validado correctamente. El importe total es de 8.700 euros.,email,0,L13,1,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria confirma que la declaración de la empresa EnvíaYa se ha presentado correctamente en el plazo establecido.,email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+"La empresa Caja Levante ha completado correctamente su declaración, sin observaciones. Gracias por su colaboración.",email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+Su declaración para el ejercicio 2023 ha sido registrada en la Agencia Tributaria. Disponibilidad del modelo 390 en la web: www.impuestos.gob.es,email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria ha validado la declaración de BancoSur. No se han detectado errores en los datos proporcionados.,email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+"Su empresa, InmoTerra, ha enviado su declaración sin problemas. El modelo 349 está disponible en el sistema de la Agencia Tributaria.",email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+La empresa Almacén Sur ha presentado correctamente su declaración. La Agencia Tributaria no ha detectado irregularidades.,email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+Su declaración ha sido registrada correctamente en la Agencia Tributaria. El importe total es de 12.500 euros.,email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria ha aceptado la declaración de la empresa Logística Sur. No hay requisitos adicionales pendientes.,email,0,L13,2,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria confirma que la declaración de la renta de la empresa EnvíaYa se ha presentado correctamente. Gracias por su colaboración.,email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Su empresa, Caja Levante, ha completado la declaración de impuestos correspondiente al ejercicio 2023. La información se encuentra registrada en el sistema.",email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria ha validado la declaración de la empresa BancoSur. No se han encontrado errores en el proceso.,email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+"La declaración de la empresa DistribuTech, con CIF B-12345678, se ha presentado correctamente en la Agencia Tributaria.",email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+El sistema de la Agencia Tributaria confirma que la declaración de la empresa MueblesAlto ha sido aceptada sin observaciones.,email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+"Su empresa, SolucionesVerdes, ha finalizado el proceso de presentación de la declaración tributaria. No se han detectado problemas.",email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+La Agencia Tributaria informa que la declaración de la empresa AlimentariaSur se ha procesado correctamente. ¡Gracias por su atención!,email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+La declaración de la empresa TecnologíaFutura se ha presentado correctamente en la Agencia Tributaria. No se requieren acciones adicionales.,email,0,L13,3,sintetico_qwen3,0,0,0,0,0,0,0
+¡Feliz compra! En Supermercados Plaza tienes hasta un 20% de descuento en tu app. Accede ahora y aprovecha ofertas exclusivas.,sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+Supermercados Río de Janeiro: 10 euros de descuento en tu primera compra si te registras en la app antes del 31 de agosto. ¡No te lo pierdas!,sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+Descuentos en la app de Mercadona: 5 euros en productos frescos. Solo válido para usuarios registrados. ¡Revisa tu perfil!,sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+"¡Ahora sí! En Alimentación Sur, tu app te da un 15% extra en compras de lunes a jueves. ¡Válido hasta el 15 de septiembre!",sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+Supermercado Central: 20 euros de descuento en tu primer pedido si usas el código APP20. Solo en la app. ¡No olvides el código!,sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+"¡Tu descuento ya está listo! En Alimentación Nueva, tienes 10 euros en tu cuenta por ser usuario de la app. Revisa tu historial.",sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+Supermercados del Centro: Oferta exclusiva para app. 15 euros de descuento en productos de higiene. Válido para compras online.,sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+¡Descuentos en tu app! Supermercado Plaza te da un 10% en productos de la semana. Accede ahora y disfruta de tu compra.,sms,0,L14,0,sintetico_qwen3,0,0,0,0,0,0,0
+¡Hola! En tu app tenemos 5€ de descuento en tu próxima compra. ¡Descárgala ahora y aprovecha!,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Tu supermercado favorito tiene ofertas exclusivas en la app! No te las pierdas.,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Oferta del día! 10€ de descuento en tu compra si usas la app. ¡Válido hasta el 15 de octubre!,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Hola! Tu app de supermercado tiene promociones especiales. Descárgala y ahorra.,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Llega el fin de mes! En la app tienes un 15% de descuento en productos frescos. ¡No te lo pierdas!,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Hola! En tu app tenemos descuentos en productos de la huerta. ¡Descárgala y ahorra!,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Promoción limitada! 20€ de descuento en tu compra si usas la app. ¡Aprovecha antes de que acabe!,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Hola! Tu supermercado tiene descuentos en productos de limpieza. ¡Descárga la app y aprovecha!,sms,0,L14,1,sintetico_qwen3,0,0,0,0,0,0,0
+¡Tu supermercado favorito tiene descuentos en su app! Descubre ofertas exclusivas de hasta un 20% en productos frescos y de marca. ¡Descárgala ya en www.supermercadosur.com!,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+¡Ofertas de lunes a viernes en la app de Supermercados Sur! Algunos productos están hasta un 15% más baratos. ¡No te lo pierdas!,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+Supermercados Sur ha activado una promoción en su app: productos de limpieza y higiene con hasta un 10% de descuento. Descárgala y aprovecha.,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+¡Tus compras ahora más baratas con Supermercados Sur! En la app podrás encontrar descuentos de hasta un 12% en hortalizas y frutas. ¡Aprovecha el fin de semana!,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+¡Llega la promoción de verano en la app de Supermercados Sur! Descuentos de hasta un 18% en productos de primera necesidad. ¡No te lo pierdas!,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+Supermercados Sur tiene activa una promoción de descuentos en su app: hasta un 10% en productos de panadería y dulces. ¡Aprovecha antes de que se acaben!,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+¡Ofertas exclusivas en la app de Supermercados Sur! Productos de limpieza con hasta un 15% de descuento. Descárgala y empieza a ahorrar.,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+En la app de Supermercados Sur puedes encontrar productos de hasta un 12% más baratos. ¡No te olvides de descargártela antes de que termine la promoción!,sms,0,L14,2,sintetico_qwen3,0,0,0,0,0,0,0
+¡Gracias por ser cliente de SuperMás! Tu compra de hoy en la tienda física tiene un descuento del 10% en la app. ¡Descárgala gratis ahora mismo!,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0
+SuperMás te invita a aprovechar las ofertas de la semana: productos de limpieza hasta un 25% más baratos. Accede a tu descuento en la app.,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0
+¡Campaña de verano en SuperMás! En la app encontrarás descuentos exclusivos en frutas y verduras. Descárgala y no te lo pierdas.,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0
+SuperMás te da la bienvenida a su app. Tu primer pedido gratis si lo realizas antes de las 12:00 de hoy. ¡No te lo pierdas!,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0
+SuperMás lanza su app con descuentos exclusivos para los primeros 1000 usuarios. ¡Regístrate y aprovecha el 15% de descuento!,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0
+¡Oferta especial en la app de SuperMás! Productos de alimentación con descuentos del 15% para clientes registrados. ¡No te lo pierdas!,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0
+SuperMás está de celebración: descuentos del 20% en la app para el día de hoy. ¡Aprovecha la oferta antes de que acabe!,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0
+¿Ya tienes la app de SuperMás? Te recordamos que en las compras online podrás usar tus descuentos sin límite. ¡Aprovecha ahora!,sms,0,L14,3,sintetico_qwen3,0,0,0,0,0,0,0

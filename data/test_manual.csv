@@ -1,0 +1,61 @@
+texto,canal,estafa,suplantacion_entidad,urgencia_amenaza,credenciales_otp,enlace_sospechoso,pago_transferencia,falso_familiar,premio_inversion
+"CaixaSur: se ha registrado un nuevo dispositivo en su banca. Si no ha sido usted, cancele en: caixasur-dispositivos.com",sms,1,1,1,0,1,0,0,0
+"Su envio no ha podido ser entregado por falta de franqueo. Pague 2,49EUR en https://cutt.ly/enviolocal para recibirlo.",sms,1,1,0,0,1,1,0,0
+"Hola papa, este es mi numero nuevo, el otro se me cayo al water jaja. Me puedes escribir por aqui?",whatsapp,1,0,0,0,0,0,1,0
+"mama soy yo, tengo un problema con el banco y tengo que pagar una factura hoy, me haces una transferencia de 690 y te lo devuelvo el lunes",whatsapp,1,0,1,0,0,1,1,0
+"Le llamo de la unidad antifraude de su entidad. Hemos parado un cargo de 1.200 euros en Amazon. Para confirmar que no ha sido usted, leame el codigo de seis cifras que le acaba de llegar.",llamada,1,1,1,1,0,0,0,0
+"Buenas tardes, soy Javier del banco. Por seguridad vamos a mover su saldo a una cuenta puente mientras investigamos. Apunte el numero de cuenta que le voy a dar y haga la transferencia ahora, es muy urgente.",llamada,1,1,1,0,0,1,0,0
+"AEAT: Tiene pendiente un reembolso de 214,60 euros. Acceda a su perfil para recibirlo: agenciatributaria-reembolsos.online",sms,1,1,0,0,1,0,0,0
+"DGT INFORMA: Ultimo aviso. Sancion n 4471 pendiente de pago. Evite el embargo pagando hoy: dgt-pagos.top",sms,1,1,1,0,1,1,0,0
+"Enhorabuena!! Has sido elegido ganador de un iPhone 17. Solo tienes que pagar 1,95 de envio. Reclamalo antes de las 23:59 en premios-oficiales.vip",whatsapp,1,0,1,0,1,1,0,1
+"Hola, soy del soporte de Windows. Hemos detectado que su ordenador esta infectado. Descargue la aplicacion AnyDesk y deme el codigo para que podamos limpiarlo.",llamada,1,1,1,1,0,0,0,0
+"Invierte 250 euros hoy y gana 4.000 al mes con nuestro robot de trading con inteligencia artificial. Plazas limitadas, rentabilidad asegurada.",web,1,0,1,0,1,1,0,1
+"Estimado cliente, su tarjeta ha sido bloqueada temporalmente por motivos de seguridad. Para reactivarla introduzca sus datos y el CVV en el siguiente formulario.",email,1,1,1,1,1,0,0,0
+"Hola soy tu hija, estoy con el movil de una amiga porque me robaron el bolso. Necesito que me mandes un bizum de 300 al numero de ella porfa, es urgente",whatsapp,1,0,1,0,0,1,1,0
+"Iberluz: detectamos un error en su ultima factura. Tiene derecho a un reembolso de 47,90 euros. Solicitelo aqui: iberluz-reembolso.info",sms,1,1,0,0,1,0,0,1
+"Usted ha sido seleccionado para recibir la ayuda del Gobierno de 600 euros para pensionistas. Rellene sus datos bancarios en ayudas-pension.site",sms,1,1,0,1,1,0,0,1
+"buenas te escribo por lo del anuncio del sofa, te mando ahora una solicitud de bizum de 120, la aceptas y listo",whatsapp,1,0,0,0,0,1,0,0
+"Le llamamos de la compania del gas. Hay una revision obligatoria de su caldera manana. Si no la paga hoy por telefono tendra una multa de 300 euros.",llamada,1,1,1,1,0,1,0,0
+"Netflix: tu pago ha sido rechazado. Actualiza tu metodo de pago en las proximas 48h o tu cuenta sera cancelada.",email,1,1,1,1,1,0,0,0
+"Querido amigo, soy abogado en Londres. Un cliente fallecido con su mismo apellido dejo una herencia de 2,4 millones. Necesitamos sus datos y un pago de gastos de 900 euros para iniciar el tramite.",email,1,1,0,0,0,1,0,1
+"Te ha llegado un codigo? Es que me he equivocado y he puesto tu numero. Me lo pasas porfa?",whatsapp,1,0,0,1,0,0,0,0
+"Su cuenta de Banco Levante sera suspendida por no completar la verificacion PSD2. Pulse aqui para verificar: bit.ly/bl-verifica",sms,1,1,1,0,1,0,0,0
+"Le llamo del departamento de recuperacion de fondos de la CNMV. Hemos localizado los 8.000 euros que perdio en la plataforma de criptomonedas. Para liberarlos tiene que abonar primero una comision del 10 por ciento.",llamada,1,1,0,0,0,1,0,1
+"Trabaja desde casa! Solo 30 minutos al dia dando likes. Gana 150 euros diarios. Escribenos por WhatsApp para empezar.",whatsapp,1,0,0,0,0,0,0,1
+"Seur: Tu paquete esta en espera. Confirma tu direccion y paga la tasa de 1,79 en seur-gestion.shop",sms,1,1,0,0,1,1,0,0
+"Somos de la policia nacional. Su cuenta ha sido usada para blanquear dinero. Para no ser investigado debe retirar su dinero y entregarlo a un agente que pasara por su domicilio.",llamada,1,1,1,0,0,1,0,0
+"Ha recibido un ingreso de 950 euros por error en su cuenta. Por favor devuelvalo por Bizum a este numero lo antes posible.",sms,1,0,1,0,0,1,0,0
+"Hola abuela, soy Pablo, tu nieto. He tenido un accidente con el coche y necesito dinero para el abogado. No se lo digas a mama.",llamada,1,0,1,0,0,1,1,0
+"Amazon: se ha realizado un pedido de un iPhone por 1.329 euros con tu cuenta. Si no lo reconoces llama al 900 800 112 para cancelarlo.",sms,1,1,1,0,0,0,0,0
+"Su certificado digital caduca hoy. Renuevelo urgentemente en sede-renovacion.online para no perder el acceso a sus tramites.",email,1,1,1,0,1,0,0,0
+"[Correos] Aviso: Direccion incorrecta. Su paquete sera devuelto al remitente si no actualiza sus datos hoy. https://correos.es-entrega.info",sms,1,1,1,0,1,0,0,0
+"Buenos dias, le llamo de su banco para ofrecerle un prestamo preconcedido. Solo necesito que me confirme su clave de acceso a la banca online para tramitarlo.",llamada,1,1,0,1,0,0,0,0
+"Te he reservado una cripto que va a multiplicar por 10 su valor esta semana. Solo quedan 3 plazas. Ingresa 500 euros en esta cuenta y te doy acceso: ES76 2100 0418 4502 0005 1332",whatsapp,1,0,1,0,0,1,0,1
+"Hacienda le informa: tiene una deuda de 1.020 euros. Si no regulariza en 24 horas se procedera al embargo de su cuenta.",sms,1,1,1,0,0,1,0,0
+"Hola mama! El movil se me ha mojado y estoy escribiendote desde el de un amigo. Tengo que pagar una cosa de la uni hoy. Me ayudas?",whatsapp,1,0,1,0,0,1,1,0
+"Microsoft Defender: su suscripcion se renovara automaticamente por 399 euros. Si desea cancelarla llame ahora al 911 222 333.",email,1,1,1,0,0,1,0,0
+"Has ganado una tarjeta regalo de Mercadona de 300 euros por nuestro 50 aniversario! Responde la encuesta: mercadona-regalo.click",whatsapp,1,1,0,0,1,0,0,1
+"Compra con tarjeta ****4512 en FARMACIA CENTRAL por 12,40 EUR. Si no reconoce la operacion, contacte con su oficina.",sms,0,0,0,0,0,0,0,0
+"Tu codigo de verificacion es 482913. Lo necesitas para confirmar el pago de 59,90 EUR en ZALANDO. No lo compartas con nadie, ni siquiera con empleados del banco.",sms,0,0,0,0,0,0,0,0
+"Hola mama, llego a las 9 a cenar, compro pan de camino?",whatsapp,0,0,0,0,0,0,0,0
+"Recuerde su cita en el Centro de Salud San Isidro el jueves 14 a las 10:20 con la Dra. Moreno. Para anular llame al centro.",sms,0,0,0,0,0,0,0,0
+"Tu pedido 40221 ha salido del almacen y llegara manana entre las 9 y las 14h. Puedes seguirlo desde la app.",sms,0,0,0,0,0,0,0,0
+"Buenos dias, soy Marta, su gestora de la oficina. Le llamo solo para recordarle que el martes tiene cita para revisar el plan de pensiones. Si no le viene bien me dice y lo cambiamos.",llamada,0,0,0,0,0,0,0,0
+"Hola, soy el repartidor. Estoy en su portal con un paquete, me abre?",llamada,0,0,0,0,0,0,0,0
+"Ya esta disponible tu factura de la luz de septiembre en el area de clientes. Importe: 54,12 EUR. Se cargara en tu cuenta el dia 5.",email,0,0,0,0,0,0,0,0
+"Chicas, para el regalo de la abuela salimos a 15 euros cada una. Os paso mi numero de cuenta por privado cuando lo compre.",whatsapp,0,0,0,0,0,0,0,0
+"Cuidado que me ha llegado un SMS de Correos pidiendo pagar 1,99 y es mentira, no le deis al enlace!",whatsapp,0,0,0,0,0,0,0,0
+"Agencia Tributaria: su declaracion de la renta del ejercicio 2025 ha sido presentada correctamente. Numero de justificante 1009734.",email,0,0,0,0,0,0,0,0
+"Su banco nunca le pedira claves ni codigos por telefono, SMS o correo. Ante cualquier duda llame al numero que aparece en su tarjeta.",sms,0,0,0,0,0,0,0,0
+"Esta semana en tu supermercado: 2x1 en yogures y 30 por ciento de descuento en fruta. Consulta todas las ofertas en la app.",sms,0,0,0,0,0,0,0,0
+"Hola papa, que tal la revision del medico? Llamame cuando puedas",whatsapp,0,0,0,0,0,0,0,0
+"Le informamos de que su tarjeta caduca el mes que viene. Le enviaremos una nueva a su domicilio sin coste. No tiene que hacer nada.",sms,0,0,0,0,0,0,0,0
+"Bizum recibido: Lucia te ha enviado 20 EUR. Concepto: cena viernes",sms,0,0,0,0,0,0,0,0
+"Buenas, le llamo de la clinica dental para confirmar su cita de manana a las 5. Si no puede venir avisenos.",llamada,0,0,0,0,0,0,0,0
+"Su transferencia de 300 EUR a Ana Garcia se ha realizado correctamente.",sms,0,0,0,0,0,0,0,0
+"Has iniciado sesion en tu banca online desde un nuevo dispositivo Android a las 18:32. Si has sido tu, no tienes que hacer nada.",sms,0,0,0,0,0,0,0,0
+"Hola soy Carmen la vecina del 3B, mañana cortan el agua de 9 a 12 por obras, avisa a tu madre.",whatsapp,0,0,0,0,0,0,0,0
+"Tu codigo de acceso a la sede electronica es 7731. Caduca en 10 minutos. Si no lo has solicitado, ignora este mensaje.",sms,0,0,0,0,0,0,0,0
+"Recordatorio: el recibo de la comunidad de 45 euros se cargara el dia 1 como cada mes.",email,0,0,0,0,0,0,0,0
+"Hola, soy Luis de la academia. Te confirmo que el curso empieza el lunes. El pago se hace en secretaria como siempre.",whatsapp,0,0,0,0,0,0,0,0
+"Su paquete de Correos esta disponible en la oficina de Calle Mayor 12. Tiene 15 dias para recogerlo con su DNI.",sms,0,0,0,0,0,0,0,0

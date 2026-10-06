@@ -1,0 +1,535 @@
+{
+ "0": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp"
+  ],
+  "ms": 36591.921700004605
+ },
+ "1": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "pago_transferencia"
+  ],
+  "ms": 9168.78939999151
+ },
+ "2": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "falso_familiar",
+   "urgencia_amenaza"
+  ],
+  "ms": 9047.798600004171
+ },
+ "3": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "urgencia_amenaza",
+   "pago_transferencia",
+   "falso_familiar"
+  ],
+  "ms": 9117.699800000992
+ },
+ "4": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "credenciales_otp",
+   "suplantacion_entidad"
+  ],
+  "ms": 9461.578200003714
+ },
+ "5": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "urgencia_amenaza",
+   "pago_transferencia"
+  ],
+  "ms": 9718.691299989587
+ },
+ "6": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp"
+  ],
+  "ms": 8712.71560000605
+ },
+ "7": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "urgencia_amenaza"
+  ],
+  "ms": 9095.45700000308
+ },
+ "8": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "premio_inversion",
+   "enlace_sospechoso"
+  ],
+  "ms": 9588.776400007191
+ },
+ "9": {
+  "p": 0.99,
+  "veredicto": "estafa",
+  "tacticas": [
+   "credenciales_otp",
+   "suplantacion_entidad",
+   "enlace_sospechoso"
+  ],
+  "ms": 8653.994199994486
+ },
+ "10": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "premio_inversion"
+  ],
+  "ms": 9161.596299993107
+ },
+ "11": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "credenciales_otp",
+   "enlace_sospechoso"
+  ],
+  "ms": 8405.694699991727
+ },
+ "12": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "falso_familiar",
+   "pago_transferencia"
+  ],
+  "ms": 8891.772100003436
+ },
+ "13": {
+  "p": 0.85,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "suplantacion_entidad"
+  ],
+  "ms": 9345.889799995348
+ },
+ "14": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "premio_inversion"
+  ],
+  "ms": 9240.035299997544
+ },
+ "15": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "pago_transferencia",
+   "urgencia_amenaza"
+  ],
+  "ms": 8911.945300002117
+ },
+ "16": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "urgencia_amenaza",
+   "pago_transferencia"
+  ],
+  "ms": 9136.695500012138
+ },
+ "17": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp",
+   "enlace_sospechoso",
+   "urgencia_amenaza"
+  ],
+  "ms": 9304.688599993824
+ },
+ "18": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "premio_inversion",
+   "credenciales_otp",
+   "pago_transferencia"
+  ],
+  "ms": 8816.430200007744
+ },
+ "19": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "credenciales_otp",
+   "falso_familiar"
+  ],
+  "ms": 8653.631000008318
+ },
+ "20": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "enlace_sospechoso"
+  ],
+  "ms": 8758.112199997413
+ },
+ "21": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp",
+   "pago_transferencia"
+  ],
+  "ms": 9683.93470000592
+ },
+ "22": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "premio_inversion",
+   "enlace_sospechoso"
+  ],
+  "ms": 9193.724700002349
+ },
+ "23": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp"
+  ],
+  "ms": 9782.070799992653
+ },
+ "24": {
+  "p": 0.99,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp",
+   "urgencia_amenaza"
+  ],
+  "ms": 9994.13469999854
+ },
+ "25": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "pago_transferencia",
+   "urgencia_amenaza",
+   "credenciales_otp"
+  ],
+  "ms": 10114.65180000232
+ },
+ "26": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "urgencia_amenaza",
+   "falso_familiar"
+  ],
+  "ms": 9201.417599993874
+ },
+ "27": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp",
+   "urgencia_amenaza"
+  ],
+  "ms": 9550.896200002171
+ },
+ "28": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp",
+   "enlace_sospechoso"
+  ],
+  "ms": 8785.20819998812
+ },
+ "29": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "suplantacion_entidad"
+  ],
+  "ms": 9365.920800002641
+ },
+ "30": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp"
+  ],
+  "ms": 8318.575400000555
+ },
+ "31": {
+  "p": 0.98,
+  "veredicto": "estafa",
+  "tacticas": [
+   "premio_inversion",
+   "pago_transferencia",
+   "credenciales_otp"
+  ],
+  "ms": 9454.606300001615
+ },
+ "32": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "urgencia_amenaza",
+   "credenciales_otp"
+  ],
+  "ms": 8530.553500007954
+ },
+ "33": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "falso_familiar",
+   "urgencia_amenaza"
+  ],
+  "ms": 9121.2530000048
+ },
+ "34": {
+  "p": 0.85,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp"
+  ],
+  "ms": 10384.096000008867
+ },
+ "35": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "premio_inversion",
+   "enlace_sospechoso"
+  ],
+  "ms": 9707.74720000918
+ },
+ "36": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp"
+  ],
+  "ms": 9741.927499999292
+ },
+ "37": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "credenciales_otp",
+   "enlace_sospechoso",
+   "pago_transferencia"
+  ],
+  "ms": 9672.081299999263
+ },
+ "38": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "falso_familiar"
+  ],
+  "ms": 9269.660699996166
+ },
+ "39": {
+  "p": 0.0,
+  "veredicto": "legitimo",
+  "tacticas": [],
+  "ms": 9140.744100004667
+ },
+ "40": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "enlace_sospechoso",
+   "suplantacion_entidad"
+  ],
+  "ms": 10024.003799990169
+ },
+ "41": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "suplantacion_entidad"
+  ],
+  "ms": 9815.391000011005
+ },
+ "42": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "suplantacion_entidad",
+   "urgencia_amenaza"
+  ],
+  "ms": 9147.03299998655
+ },
+ "43": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp"
+  ],
+  "ms": 9427.202200007741
+ },
+ "44": {
+  "p": 0.85,
+  "veredicto": "estafa",
+  "tacticas": [
+   "pago_transferencia",
+   "credenciales_otp",
+   "enlace_sospechoso",
+   "falso_familiar"
+  ],
+  "ms": 9550.684599991655
+ },
+ "45": {
+  "p": 0.8,
+  "veredicto": "estafa",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp"
+  ],
+  "ms": 9508.25710000936
+ },
+ "46": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp"
+  ],
+  "ms": 9458.34250000189
+ },
+ "47": {
+  "p": 0.1,
+  "veredicto": "estafa",
+  "tacticas": [
+   "credenciales_otp"
+  ],
+  "ms": 9971.637299997383
+ },
+ "48": {
+  "p": 0.0,
+  "veredicto": "legitimo",
+  "tacticas": [],
+  "ms": 8099.463699996704
+ },
+ "49": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "falso_familiar"
+  ],
+  "ms": 8029.884299990954
+ },
+ "50": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "suplantacion_entidad"
+  ],
+  "ms": 9220.503999997163
+ },
+ "51": {
+  "p": 0.0,
+  "veredicto": "legitimo",
+  "tacticas": [],
+  "ms": 6759.128999998211
+ },
+ "52": {
+  "p": 0.0,
+  "veredicto": "legitimo",
+  "tacticas": [],
+  "ms": 6691.793000005418
+ },
+ "53": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "suplantacion_entidad"
+  ],
+  "ms": 9182.743400000618
+ },
+ "54": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "suplantacion_entidad",
+   "credenciales_otp"
+  ],
+  "ms": 8871.0662000085
+ },
+ "55": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "enlace_sospechoso",
+   "credenciales_otp",
+   "pago_transferencia",
+   "falso_familiar"
+  ],
+  "ms": 8716.500899987295
+ },
+ "56": {
+  "p": 0.95,
+  "veredicto": "estafa",
+  "tacticas": [
+   "credenciales_otp",
+   "enlace_sospechoso",
+   "urgencia_amenaza"
+  ],
+  "ms": 8912.959399996907
+ },
+ "57": {
+  "p": 0.0,
+  "veredicto": "legitimo",
+  "tacticas": [],
+  "ms": 7754.234199994244
+ },
+ "58": {
+  "p": 0.0,
+  "veredicto": "legitimo",
+  "tacticas": [],
+  "ms": 8275.16459999606
+ },
+ "59": {
+  "p": 0.1,
+  "veredicto": "sospechoso",
+  "tacticas": [
+   "enlace_sospechoso",
+   "suplantacion_entidad"
+  ],
+  "ms": 9859.05620000267
+ }
+}

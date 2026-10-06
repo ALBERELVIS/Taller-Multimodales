@@ -1,0 +1,172 @@
+[
+  {
+    "id": "correos_tasas",
+    "nombre": "Falso SMS de Correos: paquete retenido",
+    "canal": "sms",
+    "entidad": "Correos",
+    "remitente": "Correos",
+    "texto": "Correos: Su paquete ES2849301 está retenido en aduanas por tasas impagadas (1,99 €). Abone hoy para evitar su devolución: https://correos-envios.top/pago",
+    "descripcion": "SMS que suplanta a Correos y pide pagar una pequeña tasa de aduanas en un enlace falso para robar los datos de la tarjeta.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "enlace_sospechoso", "pago_transferencia"]
+  },
+  {
+    "id": "mensajeria_entrega",
+    "nombre": "Falsa empresa de mensajería: entrega fallida",
+    "canal": "sms",
+    "entidad": "DHL / SEUR / GLS",
+    "remitente": "+34 644 218 903",
+    "texto": "Hemos intentado entregar su pedido sin éxito. Reprograme la entrega y confirme la dirección aquí: bit.ly/entrega-pedido23",
+    "descripcion": "Mensaje de una supuesta empresa de paquetería con un enlace acortado para 'reprogramar la entrega' y capturar datos personales y bancarios.",
+    "tacticas": ["suplantacion_entidad", "enlace_sospechoso"]
+  },
+  {
+    "id": "dgt_multa",
+    "nombre": "Falsa multa de la DGT",
+    "canal": "sms",
+    "entidad": "DGT",
+    "remitente": "DGT",
+    "texto": "DGT: Tiene una multa de tráfico pendiente de 120,00 €. Si no la paga en 48h se incrementará con recargo. Consulte y pague en dgt-multas.info",
+    "descripcion": "SMS que suplanta a la Dirección General de Tráfico, amenaza con recargos y lleva a una web falsa de pago de multas.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "enlace_sospechoso", "pago_transferencia"]
+  },
+  {
+    "id": "banco_bloqueo",
+    "nombre": "Smishing bancario: acceso bloqueado",
+    "canal": "sms",
+    "entidad": "Banco",
+    "remitente": "BancoSur",
+    "texto": "BancoSur: Hemos detectado un acceso no autorizado y su cuenta ha sido bloqueada. Verifique su identidad en las próximas 24h en bancosur-seguridad.com para evitar la cancelación.",
+    "descripcion": "SMS que se cuela en el hilo de mensajes del banco, alerta de un bloqueo y lleva a una web clonada que roba usuario, clave y códigos SMS.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "enlace_sospechoso", "credenciales_otp"]
+  },
+  {
+    "id": "banco_llamada_spoofing",
+    "nombre": "Llamada del falso departamento de seguridad del banco",
+    "canal": "llamada",
+    "entidad": "Banco",
+    "remitente": "Llamada entrante: 900 123 456",
+    "texto": "Buenos días, le llamo del departamento de seguridad de su banco. Hemos detectado un cargo sospechoso de 940 euros. Para anularlo necesito que me diga el código que le acaba de llegar por SMS.",
+    "descripcion": "Llamada con número falsificado (spoofing) en la que un supuesto empleado del banco pide el código SMS para 'cancelar' una operación que en realidad está autorizando.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "credenciales_otp"]
+  },
+  {
+    "id": "cuenta_segura",
+    "nombre": "Transferencia a una 'cuenta segura'",
+    "canal": "llamada",
+    "entidad": "Banco",
+    "remitente": "Llamada entrante: 91 000 22 11",
+    "texto": "Su cuenta está comprometida por un hacker. Para proteger sus ahorros tiene que transferirlos hoy mismo a una cuenta segura a su nombre. Le dicto el IBAN: ES12 0049 0000 1234 5678 9012.",
+    "descripcion": "El estafador convence a la víctima de mover su dinero a una 'cuenta segura' que controla él.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "pago_transferencia"]
+  },
+  {
+    "id": "hola_mama",
+    "nombre": "Hola mamá: falso hijo con número nuevo",
+    "canal": "whatsapp",
+    "entidad": "Familiar",
+    "remitente": "+34 612 908 441",
+    "texto": "Hola mamá, se me ha roto el móvil y este es mi número nuevo. Guárdalo. Necesito que me hagas un Bizum de 480 € urgente, que no puedo entrar en mi banco. Mañana te lo devuelvo.",
+    "descripcion": "WhatsApp de un número desconocido que dice ser un hijo o hija con el móvil roto y pide dinero urgente.",
+    "tacticas": ["falso_familiar", "urgencia_amenaza", "pago_transferencia"]
+  },
+  {
+    "id": "soporte_tecnico",
+    "nombre": "Falso soporte técnico de Microsoft",
+    "canal": "llamada",
+    "entidad": "Microsoft",
+    "remitente": "Llamada entrante: +44 20 3769 0000",
+    "texto": "Hola, le llamo del servicio técnico de Microsoft. Su ordenador tiene un virus que está enviando sus datos bancarios. Instale AnyDesk y deme el número que aparece para que lo solucione.",
+    "descripcion": "Llamada de un falso técnico que pide instalar una app de control remoto para tomar el control del ordenador y de la banca online.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "credenciales_otp"]
+  },
+  {
+    "id": "hacienda_devolucion",
+    "nombre": "Falsa devolución de Hacienda",
+    "canal": "email",
+    "entidad": "Agencia Tributaria",
+    "remitente": "Agencia Tributaria <notificaciones@aeat-reembolso.online>",
+    "texto": "Estimado contribuyente: tras revisar su declaración, tiene derecho a una devolución de 368,40 €. Para recibirla, introduzca los datos de su tarjeta en el formulario antes de 72 horas.",
+    "descripcion": "Correo que suplanta a la Agencia Tributaria y promete una devolución a cambio de los datos de la tarjeta.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "enlace_sospechoso", "credenciales_otp"]
+  },
+  {
+    "id": "seguridad_social_pension",
+    "nombre": "Falsa Seguridad Social: actualizar datos de la pensión",
+    "canal": "sms",
+    "entidad": "Seguridad Social",
+    "remitente": "SegSocial",
+    "texto": "Seguridad Social: Debe actualizar sus datos para seguir cobrando su pensión. Si no lo hace antes del viernes se suspenderá el pago. Acceda en seg-social-actualiza.com",
+    "descripcion": "SMS dirigido a pensionistas que amenaza con suspender la pensión si no 'actualizan sus datos' en una web falsa.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "enlace_sospechoso"]
+  },
+  {
+    "id": "cripto_famoso",
+    "nombre": "Inversión en criptomonedas con un famoso",
+    "canal": "web",
+    "entidad": "Plataforma de inversión",
+    "remitente": "Anuncio patrocinado",
+    "texto": "El método secreto con el que este famoso presentador gana 3.000 € a la semana. Invierte solo 250 € en nuestra plataforma de bitcoin con inteligencia artificial: rentabilidad garantizada del 40 % mensual.",
+    "descripcion": "Anuncio o noticia falsa con un famoso (a veces con vídeo deepfake) que promete rentabilidades garantizadas en criptomonedas.",
+    "tacticas": ["premio_inversion", "enlace_sospechoso", "pago_transferencia"]
+  },
+  {
+    "id": "recuperacion_fondos",
+    "nombre": "Estafa de recuperación de fondos",
+    "canal": "email",
+    "entidad": "Supuesto bufete",
+    "remitente": "Departamento Legal <recuperacion@fondos-legal.vip>",
+    "texto": "Hemos localizado los fondos que perdió en la plataforma de inversión. Para iniciar la recuperación de 12.500 € debe abonar una tasa judicial de 600 € por transferencia.",
+    "descripcion": "Segunda estafa a víctimas previas: falsos abogados prometen recuperar el dinero perdido a cambio de una tasa por adelantado.",
+    "tacticas": ["premio_inversion", "pago_transferencia", "suplantacion_entidad"]
+  },
+  {
+    "id": "premio_supermercado",
+    "nombre": "Falso sorteo de un supermercado",
+    "canal": "whatsapp",
+    "entidad": "Supermercado",
+    "remitente": "+34 711 204 559",
+    "texto": "¡Enhorabuena! Has sido seleccionado para ganar una tarjeta regalo de 500 € por nuestro aniversario. Responde a 3 preguntas y paga solo 2 € de gastos de envío: premios-super.shop",
+    "descripcion": "Mensaje viral con un falso sorteo que pide una pequeña cantidad 'de gastos de envío' para suscribir a la víctima a cargos recurrentes.",
+    "tacticas": ["premio_inversion", "enlace_sospechoso", "pago_transferencia"]
+  },
+  {
+    "id": "bizum_inverso",
+    "nombre": "Bizum inverso en compraventa de segunda mano",
+    "canal": "whatsapp",
+    "entidad": "Comprador",
+    "remitente": "Comprador Wallapop",
+    "texto": "Hola, me interesa tu sofá. Te he enviado una solicitud de Bizum de 150 €, acéptala en tu app para recibir el dinero y paso a recogerlo esta tarde.",
+    "descripcion": "Un falso comprador envía una solicitud de dinero en lugar de un pago; al 'aceptarla', la víctima es quien paga.",
+    "tacticas": ["pago_transferencia", "urgencia_amenaza"]
+  },
+  {
+    "id": "electrica_corte",
+    "nombre": "Falsa compañía eléctrica: corte de suministro",
+    "canal": "llamada",
+    "entidad": "Compañía eléctrica",
+    "remitente": "Llamada entrante: 919 01 22 33",
+    "texto": "Le llamamos de su compañía de la luz. Tiene dos facturas sin pagar y mañana le cortaremos el suministro. Puede evitarlo pagando ahora 89 euros con su tarjeta por teléfono.",
+    "descripcion": "Llamada que amenaza con cortar la luz si no se paga en el momento con tarjeta.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "pago_transferencia", "credenciales_otp"]
+  },
+  {
+    "id": "streaming_suscripcion",
+    "nombre": "Suscripción de streaming suspendida",
+    "canal": "email",
+    "entidad": "Netflix",
+    "remitente": "Netflix <soporte@netflix-cuenta-pago.xyz>",
+    "texto": "No hemos podido procesar el pago de tu suscripción. Tu cuenta se suspenderá en 24 horas. Actualiza tu método de pago para seguir disfrutando del servicio.",
+    "descripcion": "Correo que imita a una plataforma de streaming para robar los datos de la tarjeta con la excusa de un pago fallido.",
+    "tacticas": ["suplantacion_entidad", "urgencia_amenaza", "enlace_sospechoso", "credenciales_otp"]
+  },
+  {
+    "id": "empleo_falso",
+    "nombre": "Falsa oferta de empleo desde casa",
+    "canal": "whatsapp",
+    "entidad": "Agencia de empleo",
+    "remitente": "+34 655 300 781",
+    "texto": "Hola, soy Laura de recursos humanos. Buscamos personas para trabajar desde casa 1 hora al día dando 'me gusta' a productos: 200 € diarios. Para empezar hay que hacer un pequeño depósito.",
+    "descripcion": "Oferta de trabajo fácil y muy bien pagado que termina pidiendo depósitos o usando a la víctima como 'mula' de dinero.",
+    "tacticas": ["premio_inversion", "pago_transferencia"]
+  }
+]

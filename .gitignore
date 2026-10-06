@@ -1,0 +1,25 @@
+# Entorno y herramientas locales (las instala el launcher)
+.venv/
+.tools/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Pesos de modelos (se descargan en el primer arranque)
+models/
+
+# Salidas generadas en tiempo de ejecución
+outputs/
+data/cases.sqlite
+data/cases.sqlite-*
+logs/
+
+# Datos intermedios pesados
+data/synthetic/audio_cache/
+data/synthetic/embeddings/
+data/synthetic/ablacion/
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,119 @@
+{
+  "threshold": 0.484017938375473,
+  "embedding": "laion/clap-htsat-unfused",
+  "audio": "canal telefónico simulado",
+  "test": {
+    "AUC": 0.9603,
+    "EER": 0.1208
+  },
+  "experimentos": [
+    {
+      "protocolo": "Dentro de distribución (MMS + Bark)",
+      "audio": "limpio",
+      "modelo": "Sonda lineal",
+      "AUC": 0.9987,
+      "EER": 0.0083,
+      "AUC_std": NaN
+    },
+    {
+      "protocolo": "Dentro de distribución (MMS + Bark)",
+      "audio": "limpio",
+      "modelo": "VozSinteticaNet",
+      "AUC": 0.9994,
+      "EER": 0.0079,
+      "AUC_std": 0.0003
+    },
+    {
+      "protocolo": "Dentro de distribución (MMS + Bark)",
+      "audio": "telefono",
+      "modelo": "Sonda lineal",
+      "AUC": 0.9091,
+      "EER": 0.1625,
+      "AUC_std": NaN
+    },
+    {
+      "protocolo": "Dentro de distribución (MMS + Bark)",
+      "audio": "telefono",
+      "modelo": "VozSinteticaNet",
+      "AUC": 0.9617,
+      "EER": 0.1352,
+      "AUC_std": 0.0023
+    },
+    {
+      "protocolo": "Entrena MMS → evalúa Bark (no visto)",
+      "audio": "limpio",
+      "modelo": "Sonda lineal",
+      "AUC": 0.9663,
+      "EER": 0.1,
+      "AUC_std": NaN
+    },
+    {
+      "protocolo": "Entrena MMS → evalúa Bark (no visto)",
+      "audio": "limpio",
+      "modelo": "VozSinteticaNet",
+      "AUC": 0.9852,
+      "EER": 0.0694,
+      "AUC_std": 0.0017
+    },
+    {
+      "protocolo": "Entrena MMS → evalúa Bark (no visto)",
+      "audio": "telefono",
+      "modelo": "Sonda lineal",
+      "AUC": 0.7153,
+      "EER": 0.2917,
+      "AUC_std": NaN
+    },
+    {
+      "protocolo": "Entrena MMS → evalúa Bark (no visto)",
+      "audio": "telefono",
+      "modelo": "VozSinteticaNet",
+      "AUC": 0.7306,
+      "EER": 0.2875,
+      "AUC_std": 0.0065
+    },
+    {
+      "protocolo": "Entrena Bark → evalúa MMS (no visto)",
+      "audio": "limpio",
+      "modelo": "Sonda lineal",
+      "AUC": 0.9854,
+      "EER": 0.0417,
+      "AUC_std": NaN
+    },
+    {
+      "protocolo": "Entrena Bark → evalúa MMS (no visto)",
+      "audio": "limpio",
+      "modelo": "VozSinteticaNet",
+      "AUC": 0.9951,
+      "EER": 0.025,
+      "AUC_std": 0.0006
+    },
+    {
+      "protocolo": "Entrena Bark → evalúa MMS (no visto)",
+      "audio": "telefono",
+      "modelo": "Sonda lineal",
+      "AUC": 0.7762,
+      "EER": 0.3208,
+      "AUC_std": NaN
+    },
+    {
+      "protocolo": "Entrena Bark → evalúa MMS (no visto)",
+      "audio": "telefono",
+      "modelo": "VozSinteticaNet",
+      "AUC": 0.7042,
+      "EER": 0.3687,
+      "AUC_std": 0.0115
+    }
+  ],
+  "cruce_limpio_a_telefono": {
+    "AUC": {
+      "mean": 0.9115,
+      "std": 0.0062
+    },
+    "EER": {
+      "mean": 0.169,
+      "std": 0.0112
+    }
+  },
+  "demo_call_p": 0.1807,
+  "aviso": "Experimental: solo dos sintetizadores y voz leída. En la fusión solo puede subir el riesgo."
+}
