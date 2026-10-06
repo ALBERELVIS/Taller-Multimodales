@@ -1,0 +1,10 @@
+* text=auto
+# cmd.exe interpreta mal las etiquetas de un .bat con finales LF; bash no acepta CRLF.
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.sh text eol=lf
+*.png binary
+*.wav binary
+*.mp4 binary
+*.npz binary
+*.keras binary
