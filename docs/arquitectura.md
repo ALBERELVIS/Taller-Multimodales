@@ -101,7 +101,7 @@ Con 8 GB no caben a la vez Qwen2.5-VL (≈ 6 GB), Qwen3 (≈ 6 GB), Whisper turb
 |---|---|---|
 | e5, SigLIP2, CLAP, MMS-TTS, TacticNet, VozSinteticaNet | CPU, siempre cargados | Milisegundos en un Ryzen moderno; no compiten por VRAM |
 | Whisper turbo | GPU bajo demanda; se mueve a RAM al ceder la GPU | Volver a la GPU tarda < 1 s |
-| Qwen2.5-VL, Qwen3, Qwen2.5 (Ollama) | GPU, un modelo cada vez (`OLLAMA_MAX_LOADED_MODELS=1`) | Se descargan con `keep_alive=0` al ceder la GPU |
+| Qwen2.5-VL, Qwen3, Qwen2.5 (Ollama) | GPU, un modelo cada vez (`OLLAMA_MAX_LOADED_MODELS=1`) | Se descargan con `keep_alive=0` al ceder la GPU; cambiar de uno a otro cuesta entre 20 y 30 s de carga |
 | SDXL-Turbo | GPU con `enable_model_cpu_offload` | Pico contenido; se libera al terminar |
 | Bark | GPU (solo para generar datos y la demo) | No forma parte del flujo del cliente |
 
@@ -114,6 +114,23 @@ plantilla sin SDXL.
 El launcher arranca una instancia de Ollama **dedicada** en el puerto 11435 con
 `OLLAMA_MODELS=./models/ollama`, de modo que todo queda dentro del repositorio y no interfiere con otra
 instalación de Ollama del usuario (puerto 11434). Ver [`ollama_server.py`](../src/diputado/ai/ollama_server.py).
+
+**Un problema real de VRAM que encontramos y cómo lo resolvimos.** Al medir la ablación (notebook 05) cada
+captura tardaba unos 120 s, cuando en el notebook 04 el modelo de visión leía una imagen en 7 s. El registro de
+Ollama (`logs/ollama.log`) mostraba la causa:
+
+1. En este portátil (AMD + NVIDIA), el descubrimiento de GPU de Ollama 0.35 tarda más que su propio límite de
+   tiempo y avisa con «unable to refresh free memory, using old values».
+2. El valor antiguo es la VRAM libre **con el modelo anterior todavía cargado**: tras usar Qwen3 cree que
+   quedan 1,1 GB, aunque Qwen3 ya se ha descargado.
+3. Con esa cifra, Ollama carga Qwen2.5-VL a medias y deja su codificador de imagen en CPU («CLIP using CPU
+   backend»): unos 140 s por captura.
+
+Lo resolvimos con dos cambios. Desactivamos la exploración de la iGPU por Vulkan (`OLLAMA_VULKAN=0`), que
+alargaba el arranque de Ollama de 10 s a 90 s. Y antes de un modelo de visión cargamos `all-minilm`, un modelo
+de 46 MB (`ollama_client.prime_vram`): la medida «antigua» pasa a ser la buena (6,9 GB libres) y Qwen2.5-VL
+entra entero en la GPU con su codificador. La lectura de una captura, cambio de modelo incluido, bajó de unos
+140 s a unos 40 s.
 
 ## 4. Fusión explicable
 

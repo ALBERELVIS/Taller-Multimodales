@@ -247,6 +247,7 @@ Pitch deck técnico: [docs/pitch_deck.md](docs/pitch_deck.md) (diapositivas Marp
 | La primera importación tarda minutos | Windows Defender analiza las librerías nuevas | Solo ocurre la primera vez |
 | «No he podido arrancar Ollama» | Puerto 11435 ocupado o descarga interrumpida | Cierra otras instancias y vuelve a ejecutar `INSTALAR_Y_ARRANCAR.bat` |
 | Sin GPU o con menos de 8 GB | | Modo ligero automático: Whisper base en CPU e infografía de plantilla |
+| Una captura tarda más de dos minutos y `logs/ollama.log` dice «CLIP using CPU backend» | Ollama no ha podido medir la VRAM libre al cambiar de modelo | Ya lo evitamos (ver [arquitectura](docs/arquitectura.md#ollama-propio)); si vuelve a ocurrir, cierra otros programas que usen la GPU y reinicia con `ARRANCAR.bat` |
 | La interfaz se ve oscura | Tema del sistema | La aplicación fuerza el modo claro (`?__theme=light`) |
 | Tildes raras en la consola | Página de códigos de la consola | Los `.bat` ya activan UTF-8 (`chcp 65001`, `PYTHONUTF8=1`) |
 | La descarga de modelos se cortó | Conexión | Vuelve a ejecutar: continúa donde lo dejó |

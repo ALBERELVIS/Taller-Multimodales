@@ -9,7 +9,12 @@ porque la aplicación **habla**.
 1. Arrancamos con `ARRANCAR.bat` y esperamos a que la cabecera diga **«Todo listo · 10 componentes · 100 % local»**
    (tarda unos minutos porque precarga los modelos, incluida SDXL-Turbo).
 2. Hacemos un análisis de prueba cualquiera para que todo esté «en caliente».
-3. Cerramos notificaciones de Windows (modo «No molestar»).
+3. Cerramos notificaciones de Windows (modo «No molestar») y otros programas que usen la GPU.
+4. Contamos con las esperas: en un portátil de 8 GB, el veredicto de una captura tarda alrededor de un minuto y
+   medio, porque el modelo de visión y el de razonamiento se turnan la GPU (latencias medidas en el
+   [notebook 06](../notebooks/06_latencia_vram_costes.ipynb)). En el montaje recortamos esas esperas y lo indicamos
+   con un rótulo («tiempo acelerado»); mientras tanto, la cronología de la vista Analista enseña cada etapa en
+   cuanto termina.
 
 ## Escena 1 · El problema (0:00 – 0:20)
 
