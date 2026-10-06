@@ -81,8 +81,9 @@ flowchart LR
 
 El orquestador ([`pipeline.py`](../src/diputado/core/pipeline.py)) es un **generador**: tras cada etapa
 devuelve el resultado parcial y la interfaz se actualiza. El usuario ve el progreso («Escuchando la
-llamada», «Leyendo la imagen»...), recibe el semáforo en segundos y después, de forma progresiva, la voz,
-la infografía y el vídeo.
+llamada», «Leyendo la imagen»...), recibe el semáforo en cuanto termina la fusión (entre 26 y 92 s en caliente
+en un portátil de 8 GB, según el flujo; [notebook 06](../notebooks/06_latencia_vram_costes.ipynb)) y después, de
+forma progresiva, la voz, la infografía y el vídeo.
 
 ### ¿Por qué un grafo determinista y no un agente?
 

@@ -81,10 +81,12 @@ riesgo; pedir un código fuerza el rojo.
 <!-- METRICAS -->
 | Experimento | Resultado |
 |---|---|
-| TacticNet frente a referencias (test manual) | ver notebook 02 |
-| VozSinteticaNet dejando fuera un generador | ver notebook 03 |
-| Ablación: señal individual frente a fusión | ver notebook 05 |
-| Latencia del veredicto | ver notebook 06 |
+| Fusión multimodal (60 casos, test manual, pesos a priori) | AUC **0,975** frente a 0,932 de la mejor señal sola · Brier 0,071 frente a 0,088 |
+| Errores graves del semáforo | 2 estafas en verde · 2 legítimos en rojo |
+| TacticNet (Keras) | AUC 0,938 frente a 0,874 de TF-IDF, en milisegundos en CPU; sumado a Qwen3 y las reglas, Brier de 0,088 a 0,072 |
+| VozSinteticaNet (Keras) | AUC 0,962 por teléfono; 0,70-0,73 con un generador no visto (experimental) |
+| Qwen3 frente a Qwen2.5 | F1 0,935 frente a 0,825 |
+| Veredicto en caliente (portátil 8 GB) | Llamada 39 s · Mensaje 92 s · Pregunta por voz 36 s · Texto 26 s |
 <!-- /METRICAS -->
 
 <span class="muted">Datos de entrenamiento sintéticos y un test escrito a mano que nunca se usa para decidir nada.</span>
@@ -118,7 +120,8 @@ riesgo; pedir un código fuerza el rojo.
 
 * Datos de entrenamiento **sintéticos** → piloto con casos reales del banco.
 * VozSinteticaNet **experimental** (dos sintetizadores) → más generadores y voz clonada.
-* Test manual pequeño → intervalos de confianza reportados.
+* Test manual pequeño (60 casos) → la fusión mejora, pero el intervalo de confianza aún incluye el cero.
+* En 8 GB de VRAM los modelos grandes se turnan: una captura tarda ~1,5 min → en un servidor de 24 GB, residentes.
 
 **Siguientes pasos:** piloto con un banco y una asociación de mayores · aprendizaje continuo · base de campañas
 pública (INCIBE) · análisis de llamadas en tiempo real.

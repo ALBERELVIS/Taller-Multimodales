@@ -1,0 +1,123 @@
+i,modalidad,tacticnet,llm,reglas,campana,campana_texto,campana_imagen,voz,acustica,regla_dura,riesgo_app,nivel_app,ms,errores,texto_leido
+0,imagen,0.6256703734397888,0.2,0.2,0.5905198559165001,0.8648143410682678,0.8287270069122314,,,False,0.11780912396400621,verde,129805.4,,"Remitente: CaixaSur
+CaixaSur: se ha registrado un nuevo dispositivo en su banca. Si no ha sido usted, cancele en: caixasur-dispositivos.com"
+1,imagen,0.9661487936973572,0.95,0.46249999999999997,0.95,0.9069581031799316,0.9445726871490479,,,False,0.9993934311119202,rojo,73060.40000000001,,"Remitente: A
+Su envio no ha podido ser entregado por falta de franqueo. Pague 2,49EUR en https://cutt.ly/enviolocal para recibirlo."
+2,imagen,0.024292515590786934,0.95,0.3875,0.3,0.8645281791687012,0.8629235029220581,,,False,0.1894018798216778,verde,78194.4,,"Remitente: Contacto
+Hola papa, este es mi numero nuevo, el otro se me cayo al water jaja. Me puedes escribir por aqui?"
+3,imagen,0.1052355095744133,0.98,0.3125,0.36589093059301375,0.9074584245681763,0.9034508466720581,,,False,0.6910001426581495,rojo,82577.40000000001,,"Remitente: Contacto
+mama soy yo, tengo un problema con el banco y tengo que pagar una factura hoy, me haces una transferencia de 690 y te lo devuelvo el lunes"
+4,audio,0.833666980266571,0.95,0.46249999999999997,0.32007327759638426,0.9013682007789612,,0.9000062346458435,0.6874390840530396,True,0.9848148178205199,rojo,73932.0,,"Le llamo de la unidad antifraude de su entidad. Hemos parado un cargo de 1.200 euros en Amazon. Para confirmar que no ha sido, usted le ama el código de seis cifras que le acaba de llegar."
+5,audio,0.856593132019043,0.98,0.425,0.30267658659722657,0.8990557789802551,,0.5962752103805542,0.6468470990657806,False,0.9905784239850474,rojo,32465.300000000003,,"Buenas tardes, soy Javier del Banco. Por seguridad, vamos a moverse usando a una cuenta Puente Mientras Investiramos. Apunten el número de cuenta que le voy a dar y haga la transferencia. Ahora es muy urgente."
+6,imagen,0.9649088978767395,0.95,0.5375,0.3366416946053505,0.8638769388198853,0.7624121904373169,,,False,0.9956808345009398,rojo,82102.3,,"Remitente: A
+AEAT: Tiene pendiente un reembolso de 214,60 euros. Acceda a su perfil para recibirlo: agenciatributaria-reembolsos.online"
+7,imagen,0.9688243269920349,0.98,0.425,0.95,0.88424152135849,0.9379658699035645,,,False,0.9997538835685686,rojo,80724.4,,"Remitente: DGT
+DGT INFORMA: Ultimo aviso. Sancion n 4471 pendiente de pago. Evite el embargo pagando hoy: dgt-pagos.top"
+8,imagen,0.9612593054771423,0.98,0.425,0.4309165358543396,0.8991591930389404,0.9212282299995422,,,False,0.9979200851459861,rojo,80329.0,,"Remitente: Contacto
+Enhorabuena!! Has sido elegido ganador de un iPhone 17. Solo tienes que pagar 1,95 de envío. Reclamalo antes de las 23:59 en premios-oficiales.vip"
+9,audio,0.7621591687202454,0.98,0.2,0.4586118571460247,0.9197831749916077,,0.9138616919517517,0.7875455915927887,False,0.9840427344179216,rojo,31546.199999999997,,"Hola, soy del soporte de INDOS. Hemos detectado que su ordenador está infectado. Descargue la aplicación en INDES y deme el código para que podamos limpiarlo."
+10,imagen,0.9991425275802612,0.95,0.3125,0.41765859723091125,0.914339542388916,0.8915797472000122,,,False,0.9955786358833045,rojo,81231.79999999999,,"EXCLUSIVA · Anuncio patrocinado
+
+Página web
+
+Invierte 250 euros hoy y gana 4.000 al mes con nuestro robot de trading con inteligencia artificial. Plazas limitadas, rentabilidad asegurada.
+
+EMPIEZA A GANAR HOY"
+11,imagen,0.9986045956611633,0.95,0.5375,0.3,0.8926476240158081,0.858708381652832,,,False,0.9971538114774986,rojo,66794.1,,"Remitente: notificaciones@correo.es
+Estimado cliente, su tarjeta ha sido bloqueada temporalmente por motivos de seguridad. Para reactivarla introduzca sus datos y el CVV en el siguiente formulario."
+12,imagen,0.9961727261543274,0.98,0.6125,0.414037200063467,0.91385817527771,0.9139721393585205,,,False,0.9993593233244265,rojo,65174.0,,"Remitente: Contacto
+Hola soy tu hija, estoy con el movil de una amiga porque me robaron el bolso. Necesito que me mandes un bizum de 300 al numero de ella porfa, es urgente"
+13,imagen,0.8145726323127747,0.85,0.3125,0.95,0.8890838623046875,0.9395419359207153,,,False,0.9820578735839328,rojo,64806.5,,"Remitente: Iberluz
+Iberluz: detectamos un error en su ultima factura. Tiene derecho a un reembolso de 47,90 euros. Solicitelo aqui: iberluz-reembolso.info"
+14,imagen,0.968893826007843,0.98,0.3125,0.95,0.8780229091644287,0.9378381967544556,,,False,0.9996376695933799,rojo,63951.5,,"Remitente: A
+Usted ha sido seleccionado para recibir la ayuda del Gobierno de 600 euros para pensionistas. Rellene sus datos bancarios en ayudas-pension.site"
+15,imagen,0.11756237596273422,0.95,0.3125,0.5199410587549209,0.9279352426528931,0.9068423509597778,,,False,0.5859893415651877,ambar,63239.200000000004,,"Remitente: Contacto
+buenas te escribo por lo del anuncio del sofa, te mando ahora una solicitud de bizum de 120, la aceptas y listo"
+16,audio,0.49644535779953003,0.95,0.2,0.39735169559717176,0.9116402864456177,,0.6969078779220581,0.6681981682777405,False,0.8293253555705866,rojo,30815.5,,"Le llamamos de la compañía del CAF. Hay una revisión obligatoria de su caldera manana. Si no la paga hoy, por teléfono tendrá una multa de 300 euros."
+17,imagen,0.9926918148994446,0.95,0.5375,0.7897388815879822,0.9325891137123108,0.881234884262085,,,False,0.9992245678351728,rojo,64210.700000000004,,"Remitente: notificaciones@correo.es
+Netflix: tu pago ha sido rechazado. Actualiza tu metodo de pago en las proximas 48h o tu cuenta sera cancelada."
+18,imagen,0.9813326597213745,0.98,0.5375,0.3,0.8743412494659424,0.8474165201187134,,,False,0.9988944493858858,rojo,65257.9,,"Remitente: notificaciones@correo.es
+Querido amigo, soy abogado en Londres. Un cliente fallecido con su mismo apellido dejó una herencia de 2,4 millones. Necesitamos sus datos y un pago de gastos de 900 euros para iniciar el tramite."
+19,imagen,0.08540899306535721,0.95,0.2,0.930004107952118,0.8718324899673462,0.9365847706794739,,,False,0.7414525514204173,rojo,63422.0,,"Remitente: Contacto
+Te ha llegado un código? Es que me he equivocado y he puesto tu número. Me lo pasas porfa?"
+20,imagen,0.998116135597229,0.95,0.46249999999999997,0.5238528057932854,0.8726111650466919,0.7897810935974121,,,False,0.9979423720781982,rojo,65178.7,,"Remitente: Banco Levante
+Su cuenta de Banco Levante sera suspendida por no completar la verificacion PSD2. Pulse aqui para verificar: bit.ly/bl-verifica"
+21,audio,0.9958103895187378,0.98,0.3125,0.4567522794008255,0.9195359945297241,,0.9786843657493591,0.7593440115451813,False,0.9993990094827049,rojo,32581.6,,Le llamo del Departamento de Recuperación de Fondos de la GIF. Hemos localizado los 8.000 euros que perdió en la plataforma de criptomonedas. Para liberarlos tiene que abonar primero una comisión del 10%.
+22,imagen,0.9980496168136597,0.95,0.2,0.3753273691982031,0.9087127447128296,0.9097391366958618,,,False,0.9920954776348261,rojo,63879.7,,"Remitente: Contacto
+Trabaja desde casa! Solo 30 minutos al día dando likes. Gana 150 euros diarios. Escribenos por WhatsApp para empezar."
+23,imagen,0.6078830361366272,0.95,0.6499999999999999,0.95,0.8966999053955078,0.9464759826660156,,,False,0.9955078152885546,rojo,63629.0,,"Remitente: Seur
+Tu paquete esta en espera. Confirma tu direccion y paga la tasa de 1,79 en seur-gestion.shop"
+24,audio,0.7014707922935486,0.99,0.2,0.3,0.8641306161880493,,0.9920638203620911,0.8505485653877258,False,0.9784636515364324,rojo,30449.6,,Somos de la Policia Nacional. Su cuenta ha sido usada para blanquear dinero. Para no ser investigado debe retirar su dinero y entregarlo a un agente que pasara por su domicilio.
+25,imagen,0.9851343631744385,0.95,0.3125,0.6984642028808594,0.8946191072463989,0.9294604659080505,,,False,0.9978070417317902,rojo,64461.6,,"Remitente: Aviso
+Ha recibido un ingreso de 950 euros por error en su cuenta. Por favor devuelvalo por Bizum a este numero lo antes posible."
+26,audio,0.8463427424430847,0.98,0.2,0.3,0.847313404083252,,0.8621147274971008,0.7646114528179169,False,0.9831800665605772,rojo,30251.9,,"Hola, abuela, soy Pablo, tu nieto. He tenido un accidente con el coche y necesito dinero para el abogado. No se lo digas a mamá."
+27,imagen,0.5991154313087463,0.85,0.2,0.5728598192334176,0.8615734577178955,0.8504077792167664,,,False,0.723779139420139,rojo,66454.5,,"Remitente: Amazon
+Amazon: se ha realizado un pedido de un iPhone por 1.329 euros con tu cuenta. Si no lo reconoces llama al 900 800 112 para cancelarlo."
+28,imagen,0.9961926937103271,0.95,0.6499999999999999,0.3,0.8951840996742249,0.8345355987548828,,,False,0.9980421134995237,rojo,63783.399999999994,,"Remitente: notificaciones@correo.es
+Aviso
+Su certificado digital caduca hoy. Renuevelo urgentemente en sede-renovacion.online para no perder el acceso a sus tramites."
+29,imagen,0.9915655851364136,0.85,0.5375,0.95,0.929779052734375,0.9500011205673218,,,False,0.9990172067153044,rojo,67048.9,,"Remitente: Aviso
+[Correos] Aviso: Direccion incorrecta. Su paquete sera devuelto al remitente si no actualiza sus datos hoy. https://correos.es-entrega.info"
+30,audio,0.5370278358459473,0.98,0.46249999999999997,0.3,0.8399039506912231,,0.4830787181854248,0.5553977489471436,True,0.9607121875727255,rojo,30179.2,,Buenos días le llamo de su banco para ofrecerle un préstamo preconcedido. Solo necesito que me confirme su clave de acceso a la banca o mime para tramitarlo.
+31,imagen,0.9381274580955505,0.98,0.3125,0.7764015972614289,0.8728528618812561,0.9318585395812988,,,False,0.9980826150338659,rojo,65238.9,,"Remitente: Contacto
+Te he reservado una cripto que va a multiplicar por 10 su valor esta semana. Solo quedan 3 plazas. Ingresa 500 euros en esta cuenta y te doy acceso: ES76 2100 0418 4502 0005 1332"
+32,imagen,0.30325227975845337,0.95,0.3125,0.95,0.8712517023086548,0.952312707901001,,,False,0.9581801212018969,rojo,64554.2,,"Remitente: Hacienda
+Hacienda le informa: tiene una deuda de 1.020 euros. Si no regulariza en 24 horas se procedera al embargo de su cuenta."
+33,imagen,0.7588967680931091,0.95,0.3875,0.3,0.8709211349487305,0.877894401550293,,,False,0.9479338797720176,rojo,64671.200000000004,,"Remitente: Contacto
+Hola mama! El movil se me ha mojado y estoy escribiendote desde el de un amigo. Tengo que pagar una cosa de la uni hoy. Me ayudas?"
+34,imagen,0.9985003471374512,0.95,0.425,0.3061582028865814,0.8859986066818237,0.8502132892608643,,,False,0.9959876883378744,rojo,65062.8,,"Remitente: notificaciones@correo.es
+Microsoft Defender: su suscripción se renovará automáticamente por 399 euros. Si desea cancelarla llame ahora al 911 222 333."
+35,imagen,0.9054364562034607,0.95,0.425,0.5278986230492592,0.9289929866790771,0.8974158763885498,,,False,0.9900764471890406,rojo,63862.99999999999,,"Remitente: Contacto
+Has ganado una tarjeta regalo de Mercadona de 300 euros por nuestro 50 aniversario! Responde la encuesta: mercadona-regalo.click"
+36,imagen,0.13368691504001617,0.2,0.2,0.95,0.872127890586853,0.9461624622344971,,,False,0.06846330666749675,verde,64348.6,,"Remitente: Aviso
+Compra con tarjeta ****4512 en FARMACIA CENTRAL por 12,40 EUR. Si no reconoce la operación, contacte con su oficina."
+37,imagen,0.025318892672657967,0.95,0.2,0.95,0.8860393762588501,0.9433723092079163,,,False,0.5291078853271547,ambar,65441.4,,"Remitente: A
+Tu código de verificación es 482913. Lo necesitas para confirmar el pago de 59,90 EUR en ZALANDO. No lo compartas con nadie, ni siquiera con empleados del banco."
+38,imagen,0.025748832151293755,0.95,0.3875,0.3,0.8734321594238281,0.8655059337615967,,,False,0.197791025327807,verde,63017.4,,"Remitente: Contacto
+Hola mama, llego a las 9 a cenar, compro pan de camino?"
+39,imagen,0.03660638630390167,0.0,0.2,0.95,0.8441112637519836,0.9394106864929199,,,False,0.0016966392514828365,verde,63823.0,,"Remitente: Aviso
+Recuerde su cita en el Centro de Salud San Isidro el jueves 14 a las 10:20 con la Dra. Moreno. Para anular llame al centro."
+40,imagen,0.0067284489050507545,0.1,0.2,0.95,0.8827316164970398,0.9470400214195251,,,False,0.005260603964410575,verde,63801.4,,"Remitente: Aviso
+Tu pedido 40221 ha salido del almacén y llegará mañana entre las 9 y las 14h. Puedes seguirlo desde la app."
+41,audio,0.0002839426451828331,0.0,0.2,0.3,0.8342651128768921,,0.94138103723526,0.859067976474762,False,0.00019983866459165683,verde,30203.3,,"«Buenos días, soy Marta, su gestora de la oficina. Le llamo solo para recordarle que el martes tiene cita para revisar el plan de pensiones». «Si no le viene bien, me dice, y lo cambiamos»."
+42,audio,0.0035278762225061655,0.1,0.2,0.3,0.8444850444793701,,0.9741296172142029,0.940906822681427,False,0.0013447981398278146,verde,27671.0,,Pola soy el repartidor. Estoy en su portal con un paquete me abre.
+43,imagen,0.11911775916814804,0.2,0.425,0.3069165974855423,0.8784092664718628,0.8685545921325684,,,False,0.01602273916904154,verde,64889.4,,"Remitente: notificaciones@correo.es
+Aviso
+Ya esta disponible tu factura de la luz de septiembre en el area de clientes. Importe: 54,12 EUR. Se cargara en tu cuenta el dia 5.
+ACCEDER AHORA"
+44,imagen,0.2654540538787842,0.95,0.2,0.314023520052433,0.8752412796020508,0.9171261787414551,,,False,0.5623115053819965,ambar,65422.4,,"Remitente: Contacto
+Chicas, para el regalo de la abuela salimos a 15 euros cada una. Os paso mi numero de cuenta por privado cuando lo compre."
+45,imagen,0.8772182464599609,0.2,0.2,0.435085778683424,0.9166560173034668,0.8886300325393677,,,False,0.25307184010091927,verde,66765.09999999999,,"Remitente: Contacto
+Cuidado que me ha llegado un SMS de Correos pidiendo pagar 1,99 y es mentira, no le deis al enlace!"
+46,imagen,0.20755741000175476,0.1,0.425,0.3,0.8765128254890442,0.8290190696716309,,,False,0.012702546653981819,verde,65273.2,,"Remitente: notificaciones@correo.es
+Aviso
+Agencia Tributaria: su declaración de la renta del ejercicio 2025 ha sido presentada correctamente. Numero de justificante 1009734."
+47,imagen,0.4360714852809906,0.1,0.2,0.7220296442508698,0.8834818005561829,0.9301855564117432,,,False,0.04050668946002686,verde,63898.7,,"Remitente: A
+Su banco nunca le pedira claves ni codigos por telefono, SMS o correo. Ante cualquier duda llame al numero que aparece en su tarjeta."
+48,imagen,0.0006620895583182573,0.1,0.2,0.3,0.8602750301361084,0.9098793268203735,,,False,0.0005433154248149094,verde,63876.799999999996,,"Remitente: Aviso
+Esta semana en tu supermercado: 2x1 en yogures y 30 por ciento de descuento en fruta. Consulta todas las ofertas en la app."
+49,imagen,0.050586532801389694,0.1,0.3875,0.3,0.874534010887146,0.8674538135528564,,,False,0.002702658971094812,verde,61327.9,,"Remitente: Contacto
+Hola papa, que tal la revision del medico? Llamame cuando puedas"
+50,imagen,0.160921111702919,0.1,0.3125,0.95,0.8846880197525024,0.9468128681182861,,,False,0.06022355294542336,verde,64033.6,,"Remitente: Aviso
+Le informamos de que su tarjeta caduca el mes que viene. Le enviaremos una nueva a su domicilio sin coste. No tiene que hacer nada."
+51,imagen,0.05461081862449646,0.0,0.3125,0.7476775228977204,0.8635262846946716,0.9309747219085693,,,False,0.0013091645216551846,verde,60959.9,,"Remitente: Lucia
+Bizum recibido: Lucia te ha enviado 20 EUR. Concepto: cena viernes"
+52,audio,0.002267019124701619,0.1,0.2,0.3,0.838868260383606,,0.9656594395637512,0.9354761838912964,False,0.0012502558401881155,verde,30320.8,,"Buenas, le llamo de la clínica dental para confirmar su cita de manana a las 5. Si no puede venir a mis senos."
+53,imagen,0.8853810429573059,0.85,0.3125,0.5124221622943879,0.8746395707130432,0.9237360954284668,,,False,0.9412334788707417,rojo,61987.3,,"Remitente: Aviso
+Su transferencia de 300 EUR a Ana Garcia se ha realizado correctamente."
+54,imagen,0.2063320130109787,0.1,0.2,0.95,0.8906487226486206,0.9463237524032593,,,False,0.049639360694307876,verde,63746.6,,"Remitente: Aviso
+Has iniciado sesión en tu banca online desde un nuevo dispositivo Android a las 18:32. Si has sido tu, no tienes que hacer nada."
+55,imagen,0.03817296773195267,0.1,0.2,0.3,0.8481534719467163,0.8586998581886292,,,False,0.0009881621528199135,verde,62213.2,,"Remitente: Carmen
+Hola soy Carmen la vecina del 3B, mañana cortan el agua de 9 a 12 por obras, avisa a tu madre."
+56,imagen,0.29286321997642517,0.95,0.3125,0.8116286873817444,0.8876392841339111,0.9329424500465393,,,False,0.8999512672290877,rojo,64396.2,,"Remitente: A
+Tu código de acceso a la sede electrónica es 7731. Caduca en 10 minutos. Si no lo has solicitado, ignora este mensaje."
+57,imagen,0.13225288689136505,0.2,0.425,0.3,0.8761906623840332,0.8545687198638916,,,False,0.017471407451525166,verde,64616.5,,"Remitente: notificaciones@correo.es
+Aviso
+
+Recordatorio: el recibo de la comunidad de 45 euros se cargara el dia 1 como cada mes.
+
+ACCEDER AHORA"
+58,imagen,0.014582228846848011,0.1,0.2,0.3,0.854836106300354,0.864808976650238,,,False,0.0005433154248149094,verde,63795.7,,"Remitente: Luis de la academia
+Hola, soy Luis de la academia. Te confirmo que el curso empieza el lunes. El pago se hace en secretaría como siempre."
+59,imagen,0.04839199036359787,0.2,0.2,0.95,0.872572124004364,0.9401997327804565,,,False,0.02634949108022112,verde,64123.0,,"Remitente: Aviso
+Su paquete de Correos esta disponible en la oficina de Calle Mayor 12. Tiene 15 dias para recogerlo con su DNI."

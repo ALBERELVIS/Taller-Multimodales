@@ -50,8 +50,8 @@ el fraude por suplantación: **el banco tiene un incentivo directo para prevenir
 |---|---|
 | **Cliente (paga)** | El banco, que integra DiputadoDetector en su app o lo despliega en sus servidores (B2B2C) |
 | **Usuario** | Sus clientes, especialmente mayores de 60 años; y el equipo de fraude del banco (vista Analista) |
-| **Propuesta de valor** | Un veredicto explicable en segundos para **cualquier** modalidad, con salida por voz, sin que ningún dato salga del banco |
-| **Diferencial** | La multimodalidad mejora la detección (lo medimos en el [notebook 05](notebooks/05_orquestacion_y_ablacion.ipynb)) y la ejecución 100 % local resuelve la privacidad (RGPD) y la dependencia de terceros (DORA) con un coste marginal casi nulo |
+| **Propuesta de valor** | Un veredicto explicable para **cualquier** modalidad antes de que la persona actúe (de 26 s con texto a 92 s con una captura en un portátil de 8 GB), con salida por voz, sin que ningún dato salga del banco |
+| **Diferencial** | La fusión de modelos y modalidades detecta mejor que cualquiera por separado (AUC de 0,93 a 0,97 en el [notebook 05](notebooks/05_orquestacion_y_ablacion.ipynb)) y la ejecución 100 % local resuelve la privacidad (RGPD) y la dependencia de terceros (DORA) con un coste marginal casi nulo |
 
 ## 2. Instalación en un clic
 
@@ -157,7 +157,7 @@ Decisiones clave:
 | Modelo | Función | Por qué (experimento) |
 |---|---|---|
 | `openai/whisper-large-v3-turbo` | Transcripción | Un 25 % menos de errores que `whisper-base` (WER 0,26 frente a 0,35) y 4 veces más rápido que el tiempo real ([nb 04](notebooks/04_seleccion_de_modelos.ipynb)); `whisper-base` en CPU como modo ligero |
-| `qwen2.5vl:7b` (Ollama) | Lectura de capturas y cartas (JSON) | CER de 0,015 en nuestras capturas: copia exacta de dominios y enlaces, que deciden el veredicto; comparado con el 3B ([nb 04](notebooks/04_seleccion_de_modelos.ipynb)) |
+| `qwen2.5vl:7b` (Ollama) | Lectura de capturas y cartas (JSON) | Copia exacta de todos los dominios y enlaces de nuestras capturas, que deciden el veredicto. El 3B lee igual de bien y 2,5 veces más rápido; seguimos con el 7B porque toda la evaluación de extremo a extremo está hecha con él ([nb 04](notebooks/04_seleccion_de_modelos.ipynb)) |
 | `qwen3:8b` (Ollama) | Razonamiento, veredicto y explicación (JSON) | F1 0,94 en nuestro test manual frente a 0,83 de Qwen2.5 7B, con unos 10 s por mensaje sin modo *thinking* ([nb 02](notebooks/02_keras_tacticnet.ipynb), [04](notebooks/04_seleccion_de_modelos.ipynb)) |
 | `qwen2.5:7b` + smolagents | Agente SQL del analista | Fiable escribiendo código y SQL; un modelo distinto al del veredicto |
 | `intfloat/multilingual-e5-small` | Embeddings de texto | Multilingüe, 384 dimensiones, milisegundos en CPU |
@@ -173,7 +173,77 @@ Decisiones clave:
 ## 6. Resultados
 
 <!-- RESULTADOS -->
-*Las cifras se rellenan al ejecutar los notebooks; ver sección 7.*
+Todas las cifras salen de los notebooks ejecutados (`python scripts/actualizar_resultados.py` regenera esta sección).
+El conjunto de prueba es un **test escrito a mano** que nunca se usa para entrenar ni para elegir umbrales.
+
+**Detección de estafas: ¿aporta la fusión multimodal?** (60 casos multimodales, audio e imagen,
+[notebook 05](notebooks/05_orquestacion_y_ablacion.ipynb)). AUC y F1: más es mejor; Brier: menos es mejor.
+
+| Configuración | AUC | F1 | Brier |
+|---|---|---|---|
+| Solo reglas | 0,756 | 0,154 | 0,284 |
+| Solo TacticNet | 0,910 | 0,866 | 0,124 |
+| Solo Qwen3 | 0,932 | 0,921 | 0,088 |
+| Texto: TacticNet + Qwen3 + reglas | 0,972 | 0,917 | 0,072 |
+| Texto + campañas (texto e imagen) | 0,975 | 0,919 | 0,072 |
+| Todo (texto + imagen + audio) | 0,975 | 0,919 | 0,071 |
+| Todo + regla dura (aplicación) | 0,975 | 0,919 | 0,071 |
+| Aplicación (pesos finales de `artifacts/fusion.json`, medidos en la misma muestra: optimista) | 0,973 | 0,931 | 0,068 |
+
+Las filas con pesos fijados **antes** del experimento son la comparación justa. Frente a la mejor señal individual
+(Qwen3), la fusión mejora el Brier en 0,018 (IC 95 % por *bootstrap* pareado: -0,025 a 0,064) y el
+AUC en 0,042 (IC 95 %: -0,004 a 0,099). Con 60 casos la tendencia es clara, pero los intervalos todavía incluyen el cero: lo declaramos tal cual.
+Reajustar los pesos con tan pocos casos sobreajusta (validación *leave-one-out*: -0,001 de Brier), y por
+eso los pesos finales mezclan al 50 % los ajustados con los fijados a priori. Con el semáforo de la aplicación:
+
+| Real \ semáforo | verde | ámbar | rojo |
+|---|---|---|---|
+| estafa | 2 | 1 | 33 |
+| legítimo | 20 | 2 | 2 |
+
+Errores graves: **2 estafas en verde** y **2 mensajes legítimos en rojo**.
+
+**TacticNet (Keras)** sobre el test manual de texto ([notebook 02](notebooks/02_keras_tacticnet.ipynb)):
+
+| Modelo | F1 estafa | ROC-AUC | Brier | F1 macro tácticas |
+|---|---|---|---|---|
+| Reglas (regex) | 0,560 | 0,803 | 0,387 | – |
+| TF-IDF + LogReg | 0,845 | 0,874 | 0,139 | 0,536 |
+| e5 + LogReg (sonda lineal) | 0,775 | 0,839 | 0,171 | 0,738 |
+| Qwen3 8B sin entrenamiento | 0,935 | 0,957 | 0,072 | 0,615 |
+| TacticNet (calibrado + umbrales) | 0,836 | 0,938 | 0,118 | 0,598 |
+
+Con 5 semillas, TacticNet obtiene F1 0,859 ± 0,031 y AUC
+0,943 ± 0,007. Qwen3 sin entrenamiento es el mejor clasificador
+individual, pero tarda segundos y necesita la GPU; TacticNet responde en milisegundos en CPU y da las 7 tácticas
+calibradas para la explicación. En la ablación multimodal, sumar TacticNet y las reglas a Qwen3 baja el Brier de 0,088 a 0,072.
+
+**VozSinteticaNet (Keras)** ([notebook 03](notebooks/03_keras_voz_sintetica.ipynb)): AUC
+0,999 con audio limpio y 0,962 por canal telefónico cuando conoce los generadores;
+con un **generador no visto** cae a 0,70-0,73 por teléfono.
+Por eso es *experimental* y en la fusión solo puede subir el riesgo. La llamada de la demo obtiene
+p = 0,18: no la reconoce como sintética y el veredicto lo deciden el contenido y la regla dura.
+
+**Selección de modelos** ([notebook 04](notebooks/04_seleccion_de_modelos.ipynb)):
+
+| Tarea | Elegido | Alternativa | Resultado |
+|---|---|---|---|
+| Transcripción | whisper-large-v3-turbo (GPU) | whisper-base (CPU) | WER 0,26 frente a 0,35; RTF 0,30 frente a 1,12 |
+| Lectura de imagen | qwen2.5vl:7b | qwen2.5vl:3b | qwen2.5vl:3b: CER 0,001, enlaces exactos 100 %, 3,1 s · qwen2.5vl:7b: CER 0,015, enlaces exactos 100 %, 7,6 s |
+| Búsqueda visual de campañas | SigLIP2 | CLIP | Recall@3 0,82 frente a 0,35; MRR 0,57 frente a 0,43 |
+| Razonamiento | qwen3:8b | qwen2.5:7b | F1 0,935 frente a 0,825 |
+| Aviso por voz | MMS-TTS | Bark | Mismo WER de ida y vuelta (0,078); RTF 0,56 frente a 16,8 |
+| Infografía | SDXL-Turbo, 2 pasos | 1 y 4 pasos | SigLIP2 0,165 · 0,178 · 0,179 |
+
+**Latencia en caliente** en un portátil con NVIDIA GeForce RTX 4070 Laptop GPU (8 GB) y 31 GB RAM ([notebook 06](notebooks/06_latencia_vram_costes.ipynb)); pico de VRAM
+6,7 GB:
+
+| Flujo | Veredicto | Con voz, infografía y vídeo |
+|---|---|---|
+| Llamada (audio) | 38,8 s | 90,4 s |
+| Mensaje (imagen) | 91,7 s | 145,1 s |
+| Pregunta por voz | 36,1 s | 36,1 s |
+| Texto | 26,4 s | 77,9 s |
 <!-- /RESULTADOS -->
 
 ## 7. Notebooks
@@ -188,7 +258,7 @@ duplican lógica) y están **ejecutados**, con sus salidas visibles en GitHub.
 | [02 · TacticNet (Keras)](notebooks/02_keras_tacticnet.ipynb) | Partición por grupos, referencias (reglas, TF-IDF, sonda lineal, Qwen3), pérdida enmascarada, 5 semillas, calibración por temperatura, análisis de errores |
 | [03 · VozSinteticaNet (Keras)](notebooks/03_keras_voz_sintetica.ipynb) | CLAP congelado + red pequeña; dentro de distribución, dejando fuera un generador y efecto del canal telefónico |
 | [04 · Selección de modelos](notebooks/04_seleccion_de_modelos.ipynb) | Whisper, VLM 7B frente a 3B, CLIP frente a SigLIP2, MMS frente a Bark, pasos de SDXL-Turbo, LLMs; calibración de la búsqueda de campañas |
-| [05 · Orquestación y ablación](notebooks/05_orquestacion_y_ablacion.ipynb) | 61 casos multimodales, cada señal por separado frente a la fusión, bootstrap, ajuste de pesos (`artifacts/fusion.json`) |
+| [05 · Orquestación y ablación](notebooks/05_orquestacion_y_ablacion.ipynb) | 60 casos multimodales (49 capturas y 11 llamadas), cada señal por separado frente a la fusión, bootstrap pareado, ajuste de pesos (`artifacts/fusion.json`) |
 | [06 · Latencia, VRAM y costes](notebooks/06_latencia_vram_costes.ipynb) | Latencia de cada flujo, VRAM en el tiempo, energía y coste por análisis |
 
 Para abrirlos: `.venv\Scripts\python -m jupyter lab` (en Windows con *Smart App Control*, usa siempre
@@ -221,8 +291,13 @@ Pitch deck técnico: [docs/pitch_deck.md](docs/pitch_deck.md) (diapositivas Marp
   etiquetados por el banco.
 * VozSinteticaNet es **experimental**: solo dos sintetizadores y voz leída. Por eso en la fusión solo puede subir el
   riesgo.
-* El test manual (61 casos) es pequeño: los intervalos de confianza son amplios y los reportamos.
-* En 8 GB de VRAM los modelos grandes se turnan; en un servidor con 24 GB todo quedaría cargado y la latencia bajaría.
+* El test manual (60 casos) es pequeño: la fusión supera a cada señal por separado, pero los intervalos de
+  confianza de esa mejora todavía incluyen el cero. Los reportamos tal cual.
+* En el test todas las llamadas, legítimas y fraudulentas, están locutadas con voz sintética, así que las señales
+  de audio no pueden discriminar ahí; harían falta grabaciones reales para evaluarlas.
+* En 8 GB de VRAM los modelos grandes se turnan, y cada cambio de modelo cuesta entre 20 y 30 s: una captura tarda
+  unos 90 s hasta el veredicto y un texto unos 26 s. En un servidor con 24 GB todo quedaría cargado y ese tiempo
+  desaparecería.
 
 **Ética:**
 
@@ -233,11 +308,13 @@ Pitch deck técnico: [docs/pitch_deck.md](docs/pitch_deck.md) (diapositivas Marp
 
 **Hoja de ruta:**
 
-1. Piloto con un banco y una asociación de mayores.
-2. Aprendizaje continuo con los casos confirmados por el equipo de fraude.
-3. Ampliar la base de campañas con fuentes públicas (INCIBE, Policía Nacional).
-4. Extensión de navegador y análisis en tiempo real de llamadas (con consentimiento).
-5. Detector de voz clonada entrenado con más sintetizadores.
+1. Validar de extremo a extremo Qwen2.5-VL 3B (`DD_VLM=qwen2.5vl:3b`): en el notebook 04 lee igual de bien que el
+   7B en 2,5 veces menos tiempo, y es la forma más directa de bajar la latencia en portátiles de 8 GB.
+2. Piloto con un banco y una asociación de mayores.
+3. Aprendizaje continuo con los casos confirmados por el equipo de fraude.
+4. Ampliar la base de campañas con fuentes públicas (INCIBE, Policía Nacional).
+5. Extensión de navegador y análisis en tiempo real de llamadas (con consentimiento).
+6. Detector de voz clonada entrenado con más sintetizadores y con grabaciones reales.
 
 ## 10. Solución de problemas
 

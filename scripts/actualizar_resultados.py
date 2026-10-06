@@ -47,7 +47,9 @@ rows = {(r["configuración"], r["pesos"]): r for r in abl["ablacion"]}
 CONFIGS = ["Solo reglas", "Solo TacticNet", "Solo Qwen3", "Texto: TacticNet + Qwen3 + reglas",
            "Texto + campañas (texto e imagen)", "Todo (texto + imagen + audio)", "Todo + regla dura (aplicación)"]
 fin = abl["final"]
-br, au = abl["bootstrap"]["mejora_brier"], abl["bootstrap"]["mejora_auc"]
+br, au = abl["bootstrap"]["a_priori"]["mejora_brier"], abl["bootstrap"]["a_priori"]["mejora_auc"]
+br_loo = abl["bootstrap"]["loo"]["mejora_brier"]
+significant = br[1] > 0 or au[1] > 0
 LABELS = {"tacticnet": "TacticNet", "llm": "Qwen3", "reglas": "las reglas"}
 best = LABELS.get(abl["bootstrap"]["mejor_individual"], abl["bootstrap"]["mejor_individual"])
 
@@ -70,6 +72,10 @@ llm = sel["llm"]
 vlm = sel["vlm"]
 
 flows = bench["flujos"]
+hw = bench["hardware"].split(" · ")
+hardware = f"{hw[0]} y {hw[-1]}" if len(hw) > 1 else hw[0]
+up = sorted(e["AUC"] for e in unseen if e["audio"] == "telefono")
+unseen_phone = f"{f(up[0], 2)}-{f(up[-1], 2)}" if len(up) > 1 else f(up[0], 2)
 
 combo, solo_q = rows.get(("Texto: TacticNet + Qwen3 + reglas", "iniciales")), rows.get(("Solo Qwen3", "iniciales"))
 if combo and solo_q and combo["Brier"] < solo_q["Brier"]:
@@ -93,11 +99,15 @@ El conjunto de prueba es un **test escrito a mano** que nunca se usa para entren
 """ + "\n".join(
     f"| {c} | {f(rows[(c, 'iniciales')]['AUC'])} | {f(rows[(c, 'iniciales')]['F1'])} | {f(rows[(c, 'iniciales')]['Brier'])} |"
     for c in CONFIGS if (c, "iniciales") in rows) + f"""
-| **Aplicación (pesos finales de `artifacts/fusion.json`)** | **{f(fin['AUC'])}** | **{f(fin['F1'])}** | **{f(fin['Brier'])}** |
+| Aplicación (pesos finales de `artifacts/fusion.json`, medidos en la misma muestra: optimista) | {f(fin['AUC'])} | {f(fin['F1'])} | {f(fin['Brier'])} |
 
-Frente a la mejor señal individual ({best}), la fusión con pesos ajustados (validación *leave-one-out*) mejora el
-Brier en {f(br[0])} (IC 95 % por *bootstrap* pareado: {f(br[1])} a {f(br[2])}) y el AUC en {f(au[0])} (IC 95 %:
-{f(au[1])} a {f(au[2])}). Con el semáforo de la aplicación:
+Las filas con pesos fijados **antes** del experimento son la comparación justa. Frente a la mejor señal individual
+({best}), la fusión mejora el Brier en {f(br[0])} (IC 95 % por *bootstrap* pareado: {f(br[1])} a {f(br[2])}) y el
+AUC en {f(au[0])} (IC 95 %: {f(au[1])} a {f(au[2])}). """ + (
+    "La mejora es significativa." if significant else
+    f"Con {abl['casos']} casos la tendencia es clara, pero los intervalos todavía incluyen el cero: lo declaramos tal cual.") + f"""
+Reajustar los pesos con tan pocos casos sobreajusta (validación *leave-one-out*: {f(br_loo[0])} de Brier), y por
+eso los pesos finales mezclan al 50 % los ajustados con los fijados a priori. Con el semáforo de la aplicación:
 
 | Real \\ semáforo | verde | ámbar | rojo |
 |---|---|---|---|
@@ -115,12 +125,12 @@ Errores graves: **{fn} estafas en verde** y **{fp} mensajes legítimos en rojo**
 
 Con 5 semillas, TacticNet obtiene F1 {f(seeds['F1 estafa']['mean'])} ± {f(seeds['F1 estafa']['std'])} y AUC
 {f(seeds['ROC-AUC']['mean'])} ± {f(seeds['ROC-AUC']['std'])}. Qwen3 sin entrenamiento es el mejor clasificador
-individual, pero tarda segundos y necesita la GPU; TacticNet responde en milisegundos en CPU, da las 7 tácticas
+individual, pero tarda segundos y necesita la GPU; TacticNet responde en milisegundos en CPU y da las 7 tácticas
 calibradas para la explicación. {combo_txt}
 
 **VozSinteticaNet (Keras)** ([notebook 03]({NB}/03_keras_voz_sintetica.ipynb)): AUC
 {f(indist[0]['AUC'])} con audio limpio y {f(indist[1]['AUC'])} por canal telefónico cuando conoce los generadores;
-con un **generador no visto** cae a {', '.join(f(e['AUC']) for e in unseen if e['audio'] == 'telefono')} por teléfono.
+con un **generador no visto** cae a {unseen_phone} por teléfono.
 Por eso es *experimental* y en la fusión solo puede subir el riesgo. La llamada de la demo obtiene
 p = {f(voz['demo_call_p'], 2)}: no la reconoce como sintética y el veredicto lo deciden el contenido y la regla dura.
 
@@ -137,7 +147,7 @@ p = {f(voz['demo_call_p'], 2)}: no la reconoce como sintética y el veredicto lo
 | Aviso por voz | MMS-TTS | Bark | Mismo WER de ida y vuelta ({f(sel['tts']['MMS-TTS']['WER ida y vuelta'])}); RTF {f(sel['tts']['MMS-TTS']['RTF'], 2)} frente a {f(sel['tts']['Bark']['RTF'], 1)} |
 | Infografía | SDXL-Turbo, 2 pasos | 1 y 4 pasos | SigLIP2 {f(sel['sdxl']['1']['SigLIP2'])} · {f(sel['sdxl']['2']['SigLIP2'])} · {f(sel['sdxl']['4']['SigLIP2'])} |
 
-**Latencia en caliente** en {bench['hardware']} ([notebook 06]({NB}/06_latencia_vram_costes.ipynb)); pico de VRAM
+**Latencia en caliente** en un portátil con {hardware} ([notebook 06]({NB}/06_latencia_vram_costes.ipynb)); pico de VRAM
 {f(bench['vram_pico_gb'], 1)} GB:
 
 | Flujo | Veredicto | Con voz, infografía y vídeo |
@@ -147,10 +157,10 @@ p = {f(voz['demo_call_p'], 2)}: no la reconoce como sintética y el veredicto lo
 pitch = f"""
 | Experimento | Resultado |
 |---|---|
-| Fusión multimodal ({abl['casos']} casos, test manual) | AUC **{f(fin['AUC'])}** · F1 **{f(fin['F1'])}**; Brier {f(br[0])} mejor que la mejor señal sola |
+| Fusión multimodal ({abl['casos']} casos, test manual, pesos a priori) | AUC **{f(rows[('Todo + regla dura (aplicación)', 'iniciales')]['AUC'])}** frente a {f(rows[('Solo Qwen3', 'iniciales')]['AUC'])} de la mejor señal sola · Brier {f(rows[('Todo + regla dura (aplicación)', 'iniciales')]['Brier'])} frente a {f(rows[('Solo Qwen3', 'iniciales')]['Brier'])} |
 | Errores graves del semáforo | {fn} estafas en verde · {fp} legítimos en rojo |
-| TacticNet (Keras) frente a TF-IDF | F1 {f(cmp_['TacticNet (calibrado + umbrales)']['F1 estafa'])} frente a {f(cmp_['TF-IDF + LogReg']['F1 estafa'])} · AUC {f(cmp_['TacticNet (calibrado + umbrales)']['ROC-AUC'])} frente a {f(cmp_['TF-IDF + LogReg']['ROC-AUC'])} · milisegundos en CPU |
-| VozSinteticaNet (Keras) | AUC {f(indist[1]['AUC'])} por teléfono; {', '.join(f(e['AUC']) for e in unseen if e['audio'] == 'telefono')} con un generador no visto (experimental) |
+| TacticNet (Keras) | AUC {f(cmp_['TacticNet (calibrado + umbrales)']['ROC-AUC'])} frente a {f(cmp_['TF-IDF + LogReg']['ROC-AUC'])} de TF-IDF, en milisegundos en CPU; sumado a Qwen3 y las reglas, Brier de {f(solo_q['Brier'])} a {f(combo['Brier'])} |
+| VozSinteticaNet (Keras) | AUC {f(indist[1]['AUC'])} por teléfono; {unseen_phone} con un generador no visto (experimental) |
 | Qwen3 frente a Qwen2.5 | F1 {f(llm['qwen3:8b']['F1'])} frente a {f(llm['qwen2.5:7b']['F1'])} |
 | Veredicto en caliente (portátil 8 GB) | """ + " · ".join(f"{k.split(' (')[0]} {f(v['veredicto_s'], 0)} s" for k, v in flows.items()) + " |"
 

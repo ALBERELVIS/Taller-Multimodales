@@ -1,0 +1,12 @@
+{
+  "bias": -0.343,
+  "weights": {
+    "tacticnet": 0.737,
+    "llm": 0.905,
+    "reglas": 0.544,
+    "campana": 0.343,
+    "voz": 0.244,
+    "acustica": 0.066
+  },
+  "source": "notebook 05: mezcla 50/50 de pesos ajustados (60 casos multimodales) y pesos iniciales"
+}

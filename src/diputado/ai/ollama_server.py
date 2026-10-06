@@ -126,7 +126,8 @@ def list_local_models() -> set[str]:
     try:
         with urllib.request.urlopen(f"{config.OLLAMA_HOST}/api/tags", timeout=5) as r:
             data = json.load(r)
-        return {m["name"] for m in data.get("models", [])}
+        names = {m["name"] for m in data.get("models", [])}
+        return names | {n.removesuffix(":latest") for n in names}
     except Exception:
         return set()
 

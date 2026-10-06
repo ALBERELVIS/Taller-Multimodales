@@ -5,34 +5,40 @@
       "dispositivo": "cpu",
       "audio": "original",
       "WER": 0.3482,
-      "RTF": 1.1029
+      "RTF": 1.1261
     },
     {
       "modelo": "whisper-base",
       "dispositivo": "cpu",
       "audio": "teléfono",
       "WER": 0.354,
-      "RTF": 1.0886
+      "RTF": 1.1233
     },
     {
       "modelo": "whisper-large-v3-turbo",
       "dispositivo": "cuda",
       "audio": "original",
       "WER": 0.2604,
-      "RTF": 0.2469
+      "RTF": 0.2685
     },
     {
       "modelo": "whisper-large-v3-turbo",
       "dispositivo": "cuda",
       "audio": "teléfono",
       "WER": 0.259,
-      "RTF": 0.2449
+      "RTF": 0.3324
     }
   ],
   "vlm": {
+    "qwen2.5vl:3b": {
+      "CER": 0.001,
+      "enlace_exacto": 1.0,
+      "s": 3.0613
+    },
     "qwen2.5vl:7b": {
       "CER": 0.015,
-      "s": 7.4746
+      "enlace_exacto": 1.0,
+      "s": 7.5711
     }
   },
   "recuperacion": {
@@ -65,25 +71,25 @@
   "tts": {
     "Bark": {
       "WER ida y vuelta": 0.0777,
-      "RTF": 13.573
+      "RTF": 16.809
     },
     "MMS-TTS": {
       "WER ida y vuelta": 0.0777,
-      "RTF": 0.5484
+      "RTF": 0.5588
     }
   },
   "sdxl": {
     "1": {
       "SigLIP2": 0.1654,
-      "latencia_s": 15.6923
+      "latencia_s": 19.5273
     },
     "2": {
       "SigLIP2": 0.1776,
-      "latencia_s": 14.5552
+      "latencia_s": 18.6043
     },
     "4": {
       "SigLIP2": 0.1793,
-      "latencia_s": 15.1517
+      "latencia_s": 19.8076
     }
   },
   "llm": {
@@ -95,7 +101,7 @@
     "qwen2.5:7b": {
       "F1": 0.8254,
       "AUC": 0.9277,
-      "latencia_s": 7.7521
+      "latencia_s": 7.6002
     }
   }
 }

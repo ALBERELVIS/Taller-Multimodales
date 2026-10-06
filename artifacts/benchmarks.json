@@ -1,0 +1,49 @@
+{
+  "hardware": "NVIDIA GeForce RTX 4070 Laptop GPU (8 GB) · AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD · 31 GB RAM",
+  "gpu_w": 16.265167057444316,
+  "vram_pico_gb": 6.68359375,
+  "flujos": {
+    "Llamada (audio)": {
+      "veredicto_s": 38.8,
+      "total_s": 90.38,
+      "energia_wh": 0.417
+    },
+    "Mensaje (imagen)": {
+      "veredicto_s": 91.74,
+      "total_s": 145.07,
+      "energia_wh": 0.726
+    },
+    "Pregunta por voz": {
+      "veredicto_s": 36.07,
+      "total_s": 36.07,
+      "energia_wh": 0.138
+    },
+    "Texto": {
+      "veredicto_s": 26.4,
+      "total_s": 77.87,
+      "energia_wh": 0.362
+    }
+  },
+  "frio": {
+    "Llamada (audio)": 248.0,
+    "Mensaje (imagen)": 159.87,
+    "Pregunta por voz": 30.38,
+    "Texto": 76.53
+  },
+  "etapas": {
+    "Lectura visual": 48.525,
+    "Razonamiento": 31.241,
+    "Vídeo-alerta": 17.107,
+    "Infografía": 16.125,
+    "Aviso de voz": 16.006,
+    "Transcripción": 11.681,
+    "Contexto acústico": 1.624,
+    "Embedding visual": 0.694,
+    "Embedding texto": 0.11,
+    "TacticNet": 0.045,
+    "Voz sintética": 0.028,
+    "Reglas deterministas": 0.003,
+    "Fusión de riesgo": 0.001,
+    "Campañas conocidas": 0.001
+  }
+}

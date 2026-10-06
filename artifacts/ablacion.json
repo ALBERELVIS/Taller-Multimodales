@@ -1,0 +1,214 @@
+{
+  "casos": 60,
+  "senales_individuales": {
+    "TacticNet (Keras, texto)": {
+      "n": 60.0,
+      "AUC": 0.9097,
+      "F1": 0.8824,
+      "Brier": 0.1196
+    },
+    "Qwen3 (razonamiento)": {
+      "n": 60.0,
+      "AUC": 0.9317,
+      "F1": 0.9211,
+      "Brier": 0.09
+    },
+    "Reglas deterministas": {
+      "n": 60.0,
+      "AUC": 0.7564,
+      "F1": 0.3636,
+      "Brier": 0.2705
+    },
+    "Parecido a campañas conocidas": {
+      "n": 60.0,
+      "AUC": 0.5307,
+      "F1": 0.5079,
+      "Brier": 0.323
+    },
+    "VozSinteticaNet (Keras, audio)": {
+      "n": 11.0,
+      "AUC": 0.25,
+      "F1": 0.7778,
+      "Brier": 0.3024
+    },
+    "Contexto acústico (CLAP)": {
+      "n": 11.0,
+      "AUC": 0.0,
+      "F1": 0.8421,
+      "Brier": 0.2918
+    }
+  },
+  "ablacion": [
+    {
+      "configuración": "Solo TacticNet",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.9097,
+      "F1": 0.8657,
+      "Brier": 0.1242
+    },
+    {
+      "configuración": "Solo TacticNet",
+      "pesos": "ajustados (LOO)",
+      "n": 60,
+      "AUC": 0.8993,
+      "F1": 0.8732,
+      "Brier": 0.1201
+    },
+    {
+      "configuración": "Solo Qwen3",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.9317,
+      "F1": 0.9211,
+      "Brier": 0.0882
+    },
+    {
+      "configuración": "Solo Qwen3",
+      "pesos": "ajustados (LOO)",
+      "n": 60,
+      "AUC": 0.8704,
+      "F1": 0.9211,
+      "Brier": 0.0906
+    },
+    {
+      "configuración": "Solo reglas",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.7564,
+      "F1": 0.1538,
+      "Brier": 0.2838
+    },
+    {
+      "configuración": "Solo reglas",
+      "pesos": "ajustados (LOO)",
+      "n": 60,
+      "AUC": 0.6551,
+      "F1": 0.7671,
+      "Brier": 0.2051
+    },
+    {
+      "configuración": "Texto: TacticNet + Qwen3",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.9688,
+      "F1": 0.9189,
+      "Brier": 0.0712
+    },
+    {
+      "configuración": "Texto: TacticNet + Qwen3",
+      "pesos": "ajustados (LOO)",
+      "n": 60,
+      "AUC": 0.9583,
+      "F1": 0.9315,
+      "Brier": 0.0836
+    },
+    {
+      "configuración": "Texto: TacticNet + Qwen3 + reglas",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.9722,
+      "F1": 0.9167,
+      "Brier": 0.0716
+    },
+    {
+      "configuración": "Texto: TacticNet + Qwen3 + reglas",
+      "pesos": "ajustados (LOO)",
+      "n": 60,
+      "AUC": 0.956,
+      "F1": 0.9041,
+      "Brier": 0.0852
+    },
+    {
+      "configuración": "Texto + campañas (texto e imagen)",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.9745,
+      "F1": 0.9189,
+      "Brier": 0.0718
+    },
+    {
+      "configuración": "Texto + campañas (texto e imagen)",
+      "pesos": "ajustados (LOO)",
+      "n": 60,
+      "AUC": 0.9491,
+      "F1": 0.8919,
+      "Brier": 0.0903
+    },
+    {
+      "configuración": "Todo (texto + imagen + audio)",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.9745,
+      "F1": 0.9189,
+      "Brier": 0.0715
+    },
+    {
+      "configuración": "Todo (texto + imagen + audio)",
+      "pesos": "ajustados (LOO)",
+      "n": 60,
+      "AUC": 0.9491,
+      "F1": 0.8919,
+      "Brier": 0.0905
+    },
+    {
+      "configuración": "Todo + regla dura (aplicación)",
+      "pesos": "iniciales",
+      "n": 60,
+      "AUC": 0.9745,
+      "F1": 0.9189,
+      "Brier": 0.0715
+    }
+  ],
+  "bootstrap": {
+    "mejor_individual": "llm",
+    "a_priori": {
+      "mejora_brier": [
+        0.0184,
+        -0.0251,
+        0.0643
+      ],
+      "mejora_auc": [
+        0.0424,
+        -0.0038,
+        0.0989
+      ]
+    },
+    "loo": {
+      "mejora_brier": [
+        -0.0009,
+        -0.039,
+        0.0367
+      ],
+      "mejora_auc": [
+        0.017,
+        -0.0352,
+        0.0714
+      ]
+    }
+  },
+  "semaforo": {
+    "ambar": {
+      "estafa": 1,
+      "legítimo": 2
+    },
+    "rojo": {
+      "estafa": 33,
+      "legítimo": 2
+    },
+    "verde": {
+      "estafa": 2,
+      "legítimo": 20
+    }
+  },
+  "final": {
+    "n": 60.0,
+    "AUC": 0.9734,
+    "F1": 0.9315,
+    "Brier": 0.0681
+  },
+  "latencia_media_s": {
+    "imagen": 67.8,
+    "audio": 34.6
+  }
+}
