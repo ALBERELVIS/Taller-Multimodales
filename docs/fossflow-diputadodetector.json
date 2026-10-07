@@ -1,0 +1,3763 @@
+{
+  "version": "1.0.1",
+  "title": "DiputadoDetector — proyecto completo",
+  "description": "Escudo antifraude del taller B5-T4. Cuatro vistas: 1 flujo multimodal, 2 capas de software, 3 modelos y VRAM, 4 datos, seguridad y negocio. Importar con el botón Import File de https://www.icewolfsoft.com/fossflow/ y cambiar de vista en el selector. 12 modelos, 2 redes Keras, 100 % local.",
+  "fitToScreen": true,
+  "colors": [
+    {
+      "id": "flow",
+      "value": "#2563eb"
+    },
+    {
+      "id": "keras",
+      "value": "#7c3aed"
+    },
+    {
+      "id": "gpu",
+      "value": "#ea580c"
+    },
+    {
+      "id": "out",
+      "value": "#15803d"
+    },
+    {
+      "id": "risk",
+      "value": "#dc2626"
+    },
+    {
+      "id": "muted",
+      "value": "#6b7280"
+    },
+    {
+      "id": "sec",
+      "value": "#0f766e"
+    },
+    {
+      "id": "zone",
+      "value": "#94a3b8"
+    }
+  ],
+  "items": [
+    {
+      "id": "banco",
+      "name": "Banco",
+      "icon": "office"
+    },
+    {
+      "id": "cliente",
+      "name": "Cliente",
+      "icon": "user"
+    },
+    {
+      "id": "analista",
+      "name": "Analista",
+      "icon": "user"
+    },
+    {
+      "id": "familia",
+      "name": "Familia",
+      "icon": "user"
+    },
+    {
+      "id": "llamada",
+      "name": "Llamada",
+      "icon": "mobiledevice"
+    },
+    {
+      "id": "captura",
+      "name": "Captura",
+      "icon": "image"
+    },
+    {
+      "id": "texto",
+      "name": "Texto",
+      "icon": "document"
+    },
+    {
+      "id": "pregunta",
+      "name": "Pregúntame",
+      "icon": "speech"
+    },
+    {
+      "id": "whisper",
+      "name": "Whisper turbo",
+      "icon": "speech"
+    },
+    {
+      "id": "clap",
+      "name": "CLAP",
+      "icon": "sphere"
+    },
+    {
+      "id": "qwen_vl",
+      "name": "Qwen2.5-VL",
+      "icon": "image"
+    },
+    {
+      "id": "siglip",
+      "name": "SigLIP2",
+      "icon": "sphere"
+    },
+    {
+      "id": "e5",
+      "name": "e5-small",
+      "icon": "sphere"
+    },
+    {
+      "id": "voznet",
+      "name": "VozSinteticaNet",
+      "icon": "pyramid"
+    },
+    {
+      "id": "acustica",
+      "name": "Acústica",
+      "icon": "sphere"
+    },
+    {
+      "id": "evidencia",
+      "name": "Evidencia",
+      "icon": "queue"
+    },
+    {
+      "id": "reglas",
+      "name": "Reglas",
+      "icon": "firewall"
+    },
+    {
+      "id": "tacticnet",
+      "name": "TacticNet",
+      "icon": "pyramid"
+    },
+    {
+      "id": "campanas",
+      "name": "Campañas",
+      "icon": "storage"
+    },
+    {
+      "id": "qwen3",
+      "name": "Qwen3 8B",
+      "icon": "cube"
+    },
+    {
+      "id": "fusion",
+      "name": "Fusión",
+      "icon": "diamond"
+    },
+    {
+      "id": "regla_dura",
+      "name": "Regla dura",
+      "icon": "lock"
+    },
+    {
+      "id": "semaforo",
+      "name": "Semáforo",
+      "icon": "switch-module"
+    },
+    {
+      "id": "tts",
+      "name": "MMS-TTS",
+      "icon": "speech"
+    },
+    {
+      "id": "sdxl",
+      "name": "SDXL-Turbo",
+      "icon": "image"
+    },
+    {
+      "id": "infografia",
+      "name": "Infografía",
+      "icon": "printer"
+    },
+    {
+      "id": "video",
+      "name": "Vídeo-alerta",
+      "icon": "cube"
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "icon": "storage"
+    },
+    {
+      "id": "sql_agent",
+      "name": "Agente SQL",
+      "icon": "lock"
+    },
+    {
+      "id": "main",
+      "name": "Gradio :7860",
+      "icon": "desktop"
+    },
+    {
+      "id": "ui_cliente",
+      "name": "Vista Cliente",
+      "icon": "desktop"
+    },
+    {
+      "id": "ui_analista",
+      "name": "Vista Analista",
+      "icon": "desktop"
+    },
+    {
+      "id": "ui_info",
+      "name": "Cómo funciona",
+      "icon": "document"
+    },
+    {
+      "id": "services",
+      "name": "services.py",
+      "icon": "package-module"
+    },
+    {
+      "id": "config",
+      "name": "config.py",
+      "icon": "document"
+    },
+    {
+      "id": "pipeline",
+      "name": "pipeline.py",
+      "icon": "router"
+    },
+    {
+      "id": "schemas",
+      "name": "schemas.py",
+      "icon": "document"
+    },
+    {
+      "id": "audio_io",
+      "name": "audio_io.py",
+      "icon": "mobiledevice"
+    },
+    {
+      "id": "gpu",
+      "name": "gpu.py",
+      "icon": "loadbalancer"
+    },
+    {
+      "id": "ollama_server",
+      "name": "Ollama :11435",
+      "icon": "server"
+    },
+    {
+      "id": "ollama_client",
+      "name": "ollama_client.py",
+      "icon": "function-module"
+    },
+    {
+      "id": "qwen25",
+      "name": "Qwen2.5 7B",
+      "icon": "server"
+    },
+    {
+      "id": "primer",
+      "name": "all-minilm",
+      "icon": "cache"
+    },
+    {
+      "id": "bark",
+      "name": "Bark",
+      "icon": "speech"
+    },
+    {
+      "id": "modo",
+      "name": "Modo ligero",
+      "icon": "laptop"
+    },
+    {
+      "id": "rtx",
+      "name": "RTX 4070",
+      "icon": "vm"
+    },
+    {
+      "id": "nb00",
+      "name": "NB 00 Negocio",
+      "icon": "office"
+    },
+    {
+      "id": "nb01",
+      "name": "NB 01 Datos",
+      "icon": "document"
+    },
+    {
+      "id": "nb02",
+      "name": "NB 02 TacticNet",
+      "icon": "pyramid"
+    },
+    {
+      "id": "nb03",
+      "name": "NB 03 Voz",
+      "icon": "speech"
+    },
+    {
+      "id": "nb04",
+      "name": "NB 04 Selección",
+      "icon": "cube"
+    },
+    {
+      "id": "nb05",
+      "name": "NB 05 Ablación",
+      "icon": "diamond"
+    },
+    {
+      "id": "nb06",
+      "name": "NB 06 Latencia",
+      "icon": "tower"
+    },
+    {
+      "id": "synth",
+      "name": "Texto sintético",
+      "icon": "mailmultiple"
+    },
+    {
+      "id": "uci",
+      "name": "UCI SMS Spam",
+      "icon": "mail"
+    },
+    {
+      "id": "mls",
+      "name": "MLS español",
+      "icon": "speech"
+    },
+    {
+      "id": "telefono",
+      "name": "Canal telefónico",
+      "icon": "router"
+    },
+    {
+      "id": "demos",
+      "name": "5 demos",
+      "icon": "document"
+    },
+    {
+      "id": "pii",
+      "name": "Máscara PII",
+      "icon": "firewall"
+    },
+    {
+      "id": "sql_guard",
+      "name": "SQL blindado",
+      "icon": "lock"
+    },
+    {
+      "id": "marca",
+      "name": "Marca AI Act",
+      "icon": "document"
+    },
+    {
+      "id": "aconseja",
+      "name": "No bloquea",
+      "icon": "user"
+    },
+    {
+      "id": "psr",
+      "name": "PSD3 / PSR",
+      "icon": "paymentcard"
+    },
+    {
+      "id": "rgpd",
+      "name": "RGPD",
+      "icon": "lock"
+    },
+    {
+      "id": "dora",
+      "name": "DORA",
+      "icon": "firewall"
+    },
+    {
+      "id": "coste",
+      "name": "Coste",
+      "icon": "cache"
+    },
+    {
+      "id": "launcher",
+      "name": "Arranque",
+      "icon": "package-module"
+    },
+    {
+      "id": "tests",
+      "name": "Tests",
+      "icon": "lock"
+    },
+    {
+      "id": "pitch",
+      "name": "Pitch y guion",
+      "icon": "document"
+    },
+    {
+      "id": "repo",
+      "name": "Repositorio",
+      "icon": "tower"
+    },
+    {
+      "id": "render",
+      "name": "Capturas",
+      "icon": "printer"
+    }
+  ],
+  "views": [
+    {
+      "id": "flujo",
+      "name": "1 · Flujo multimodal",
+      "description": "De la llamada, la captura o el texto al semáforo, y de ahí a la voz, la infografía, el vídeo y el archivo del analista.",
+      "items": [
+        {
+          "id": "llamada",
+          "tile": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "pregunta",
+          "tile": {
+            "x": 3,
+            "y": 3
+          }
+        },
+        {
+          "id": "captura",
+          "tile": {
+            "x": 6,
+            "y": 6
+          }
+        },
+        {
+          "id": "texto",
+          "tile": {
+            "x": 9,
+            "y": 9
+          }
+        },
+        {
+          "id": "whisper",
+          "tile": {
+            "x": 2,
+            "y": -2
+          }
+        },
+        {
+          "id": "clap",
+          "tile": {
+            "x": 5,
+            "y": 1
+          }
+        },
+        {
+          "id": "qwen_vl",
+          "tile": {
+            "x": 8,
+            "y": 4
+          }
+        },
+        {
+          "id": "siglip",
+          "tile": {
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "id": "e5",
+          "tile": {
+            "x": 13,
+            "y": 5
+          }
+        },
+        {
+          "id": "voznet",
+          "tile": {
+            "x": 6,
+            "y": -6
+          }
+        },
+        {
+          "id": "acustica",
+          "tile": {
+            "x": 9,
+            "y": -3
+          }
+        },
+        {
+          "id": "evidencia",
+          "tile": {
+            "x": 7,
+            "y": -1
+          }
+        },
+        {
+          "id": "reglas",
+          "tile": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "campanas",
+          "tile": {
+            "x": 15,
+            "y": 3
+          }
+        },
+        {
+          "id": "tacticnet",
+          "tile": {
+            "x": 17,
+            "y": 1
+          }
+        },
+        {
+          "id": "qwen3",
+          "tile": {
+            "x": 11,
+            "y": -5
+          }
+        },
+        {
+          "id": "regla_dura",
+          "tile": {
+            "x": 14,
+            "y": -2
+          }
+        },
+        {
+          "id": "fusion",
+          "tile": {
+            "x": 13,
+            "y": -7
+          }
+        },
+        {
+          "id": "semaforo",
+          "tile": {
+            "x": 15,
+            "y": -9
+          }
+        },
+        {
+          "id": "tts",
+          "tile": {
+            "x": 14,
+            "y": -14
+          }
+        },
+        {
+          "id": "infografia",
+          "tile": {
+            "x": 17,
+            "y": -11
+          }
+        },
+        {
+          "id": "sdxl",
+          "tile": {
+            "x": 20,
+            "y": -8
+          }
+        },
+        {
+          "id": "sqlite",
+          "tile": {
+            "x": 23,
+            "y": -5
+          }
+        },
+        {
+          "id": "video",
+          "tile": {
+            "x": 19,
+            "y": -13
+          }
+        },
+        {
+          "id": "familia",
+          "tile": {
+            "x": 21,
+            "y": -15
+          }
+        },
+        {
+          "id": "sql_agent",
+          "tile": {
+            "x": 25,
+            "y": -7
+          }
+        }
+      ],
+      "connectors": [
+        {
+          "id": "flujo_c1",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c1a",
+              "ref": {
+                "item": "llamada"
+              }
+            },
+            {
+              "id": "flujo_c1b",
+              "ref": {
+                "item": "whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c2",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c2a",
+              "ref": {
+                "item": "llamada"
+              }
+            },
+            {
+              "id": "flujo_c2b",
+              "ref": {
+                "item": "clap"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c3",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "flujo_c3a",
+              "ref": {
+                "item": "pregunta"
+              }
+            },
+            {
+              "id": "flujo_c3b",
+              "ref": {
+                "item": "whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c4",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c4a",
+              "ref": {
+                "item": "whisper"
+              }
+            },
+            {
+              "id": "flujo_c4b",
+              "ref": {
+                "item": "evidencia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c5",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c5a",
+              "ref": {
+                "item": "clap"
+              }
+            },
+            {
+              "id": "flujo_c5b",
+              "ref": {
+                "item": "voznet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c6",
+          "color": "keras",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "flujo_c6a",
+              "ref": {
+                "item": "clap"
+              }
+            },
+            {
+              "id": "flujo_c6b",
+              "ref": {
+                "item": "acustica"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c7",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c7a",
+              "ref": {
+                "item": "captura"
+              }
+            },
+            {
+              "id": "flujo_c7b",
+              "ref": {
+                "item": "qwen_vl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c8",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c8a",
+              "ref": {
+                "item": "captura"
+              }
+            },
+            {
+              "id": "flujo_c8b",
+              "ref": {
+                "item": "siglip"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c9",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c9a",
+              "ref": {
+                "item": "qwen_vl"
+              }
+            },
+            {
+              "id": "flujo_c9b",
+              "ref": {
+                "item": "evidencia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c10",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c10a",
+              "ref": {
+                "item": "texto"
+              }
+            },
+            {
+              "id": "flujo_c10b",
+              "ref": {
+                "item": "evidencia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c11",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c11a",
+              "ref": {
+                "item": "texto"
+              }
+            },
+            {
+              "id": "flujo_c11b",
+              "ref": {
+                "item": "e5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c12",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c12a",
+              "ref": {
+                "item": "evidencia"
+              }
+            },
+            {
+              "id": "flujo_c12b",
+              "ref": {
+                "item": "e5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c13",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c13a",
+              "ref": {
+                "item": "evidencia"
+              }
+            },
+            {
+              "id": "flujo_c13b",
+              "ref": {
+                "item": "reglas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c14",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c14a",
+              "ref": {
+                "item": "evidencia"
+              }
+            },
+            {
+              "id": "flujo_c14b",
+              "ref": {
+                "item": "qwen3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c15",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c15a",
+              "ref": {
+                "item": "e5"
+              }
+            },
+            {
+              "id": "flujo_c15b",
+              "ref": {
+                "item": "tacticnet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c16",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c16a",
+              "ref": {
+                "item": "e5"
+              }
+            },
+            {
+              "id": "flujo_c16b",
+              "ref": {
+                "item": "campanas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c17",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c17a",
+              "ref": {
+                "item": "siglip"
+              }
+            },
+            {
+              "id": "flujo_c17b",
+              "ref": {
+                "item": "campanas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c18",
+          "color": "risk",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c18a",
+              "ref": {
+                "item": "reglas"
+              }
+            },
+            {
+              "id": "flujo_c18b",
+              "ref": {
+                "item": "regla_dura"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c19",
+          "color": "risk",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c19a",
+              "ref": {
+                "item": "regla_dura"
+              }
+            },
+            {
+              "id": "flujo_c19b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c20",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c20a",
+              "ref": {
+                "item": "reglas"
+              }
+            },
+            {
+              "id": "flujo_c20b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c21",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c21a",
+              "ref": {
+                "item": "tacticnet"
+              }
+            },
+            {
+              "id": "flujo_c21b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c22",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c22a",
+              "ref": {
+                "item": "campanas"
+              }
+            },
+            {
+              "id": "flujo_c22b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c23",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c23a",
+              "ref": {
+                "item": "qwen3"
+              }
+            },
+            {
+              "id": "flujo_c23b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c24",
+          "color": "keras",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "flujo_c24a",
+              "ref": {
+                "item": "voznet"
+              }
+            },
+            {
+              "id": "flujo_c24b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c25",
+          "color": "keras",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "flujo_c25a",
+              "ref": {
+                "item": "acustica"
+              }
+            },
+            {
+              "id": "flujo_c25b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c26",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "flujo_c26a",
+              "ref": {
+                "item": "pregunta"
+              }
+            },
+            {
+              "id": "flujo_c26b",
+              "ref": {
+                "item": "qwen3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c27",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "flujo_c27a",
+              "ref": {
+                "item": "qwen3"
+              }
+            },
+            {
+              "id": "flujo_c27b",
+              "ref": {
+                "item": "tts"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c28",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c28a",
+              "ref": {
+                "item": "fusion"
+              }
+            },
+            {
+              "id": "flujo_c28b",
+              "ref": {
+                "item": "semaforo"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c29",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c29a",
+              "ref": {
+                "item": "semaforo"
+              }
+            },
+            {
+              "id": "flujo_c29b",
+              "ref": {
+                "item": "tts"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c30",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c30a",
+              "ref": {
+                "item": "semaforo"
+              }
+            },
+            {
+              "id": "flujo_c30b",
+              "ref": {
+                "item": "infografia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c31",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c31a",
+              "ref": {
+                "item": "semaforo"
+              }
+            },
+            {
+              "id": "flujo_c31b",
+              "ref": {
+                "item": "sqlite"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c32",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "flujo_c32a",
+              "ref": {
+                "item": "siglip"
+              }
+            },
+            {
+              "id": "flujo_c32b",
+              "ref": {
+                "item": "sdxl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c33",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c33a",
+              "ref": {
+                "item": "sdxl"
+              }
+            },
+            {
+              "id": "flujo_c33b",
+              "ref": {
+                "item": "infografia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c34",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c34a",
+              "ref": {
+                "item": "tts"
+              }
+            },
+            {
+              "id": "flujo_c34b",
+              "ref": {
+                "item": "video"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c35",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c35a",
+              "ref": {
+                "item": "infografia"
+              }
+            },
+            {
+              "id": "flujo_c35b",
+              "ref": {
+                "item": "video"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c36",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c36a",
+              "ref": {
+                "item": "video"
+              }
+            },
+            {
+              "id": "flujo_c36b",
+              "ref": {
+                "item": "familia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flujo_c37",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "flujo_c37a",
+              "ref": {
+                "item": "sqlite"
+              }
+            },
+            {
+              "id": "flujo_c37b",
+              "ref": {
+                "item": "sql_agent"
+              }
+            }
+          ]
+        }
+      ],
+      "rectangles": [],
+      "textBoxes": [
+        {
+          "id": "tb_flujo_0",
+          "tile": {
+            "x": -3,
+            "y": -3
+          },
+          "content": "ENTRADAS",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_flujo_1",
+          "tile": {
+            "x": -1,
+            "y": -5
+          },
+          "content": "PERCEPCIÓN",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_flujo_2",
+          "tile": {
+            "x": 3,
+            "y": -9
+          },
+          "content": "SEÑALES",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_flujo_3",
+          "tile": {
+            "x": 7,
+            "y": -13
+          },
+          "content": "DECISIÓN",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_flujo_4",
+          "tile": {
+            "x": 11,
+            "y": -17
+          },
+          "content": "RESPUESTA",
+          "fontSize": 0.7,
+          "orientation": "X"
+        }
+      ]
+    },
+    {
+      "id": "capas",
+      "name": "2 · Capas de software",
+      "description": "app/ no importa modelos. core/ no sabe de Gradio. ai/ esconde cada modelo detrás de una función. media/ compone las salidas.",
+      "items": [
+        {
+          "id": "banco",
+          "tile": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "cliente",
+          "tile": {
+            "x": 2,
+            "y": -2
+          }
+        },
+        {
+          "id": "analista",
+          "tile": {
+            "x": 4,
+            "y": -4
+          }
+        },
+        {
+          "id": "main",
+          "tile": {
+            "x": 6,
+            "y": 6
+          }
+        },
+        {
+          "id": "ui_cliente",
+          "tile": {
+            "x": 8,
+            "y": 4
+          }
+        },
+        {
+          "id": "ui_analista",
+          "tile": {
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "id": "ui_info",
+          "tile": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "services",
+          "tile": {
+            "x": 14,
+            "y": -2
+          }
+        },
+        {
+          "id": "config",
+          "tile": {
+            "x": 12,
+            "y": 12
+          }
+        },
+        {
+          "id": "pipeline",
+          "tile": {
+            "x": 14,
+            "y": 10
+          }
+        },
+        {
+          "id": "schemas",
+          "tile": {
+            "x": 16,
+            "y": 8
+          }
+        },
+        {
+          "id": "reglas",
+          "tile": {
+            "x": 18,
+            "y": 6
+          }
+        },
+        {
+          "id": "campanas",
+          "tile": {
+            "x": 20,
+            "y": 4
+          }
+        },
+        {
+          "id": "fusion",
+          "tile": {
+            "x": 22,
+            "y": 2
+          }
+        },
+        {
+          "id": "gpu",
+          "tile": {
+            "x": 18,
+            "y": 18
+          }
+        },
+        {
+          "id": "ollama_server",
+          "tile": {
+            "x": 20,
+            "y": 16
+          }
+        },
+        {
+          "id": "ollama_client",
+          "tile": {
+            "x": 22,
+            "y": 14
+          }
+        },
+        {
+          "id": "audio_io",
+          "tile": {
+            "x": 24,
+            "y": 12
+          }
+        },
+        {
+          "id": "whisper",
+          "tile": {
+            "x": 26,
+            "y": 10
+          }
+        },
+        {
+          "id": "qwen_vl",
+          "tile": {
+            "x": 28,
+            "y": 8
+          }
+        },
+        {
+          "id": "qwen3",
+          "tile": {
+            "x": 30,
+            "y": 6
+          }
+        },
+        {
+          "id": "e5",
+          "tile": {
+            "x": 32,
+            "y": 4
+          }
+        },
+        {
+          "id": "clap",
+          "tile": {
+            "x": 21,
+            "y": 21
+          }
+        },
+        {
+          "id": "tacticnet",
+          "tile": {
+            "x": 23,
+            "y": 19
+          }
+        },
+        {
+          "id": "voznet",
+          "tile": {
+            "x": 25,
+            "y": 17
+          }
+        },
+        {
+          "id": "siglip",
+          "tile": {
+            "x": 27,
+            "y": 15
+          }
+        },
+        {
+          "id": "tts",
+          "tile": {
+            "x": 29,
+            "y": 13
+          }
+        },
+        {
+          "id": "sdxl",
+          "tile": {
+            "x": 31,
+            "y": 11
+          }
+        },
+        {
+          "id": "sqlite",
+          "tile": {
+            "x": 33,
+            "y": 9
+          }
+        },
+        {
+          "id": "sql_agent",
+          "tile": {
+            "x": 35,
+            "y": 7
+          }
+        },
+        {
+          "id": "infografia",
+          "tile": {
+            "x": 32,
+            "y": 16
+          }
+        },
+        {
+          "id": "video",
+          "tile": {
+            "x": 34,
+            "y": 14
+          }
+        },
+        {
+          "id": "render",
+          "tile": {
+            "x": 36,
+            "y": 12
+          }
+        }
+      ],
+      "connectors": [
+        {
+          "id": "capas_c1",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c1a",
+              "ref": {
+                "item": "banco"
+              }
+            },
+            {
+              "id": "capas_c1b",
+              "ref": {
+                "item": "cliente"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c2",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c2a",
+              "ref": {
+                "item": "cliente"
+              }
+            },
+            {
+              "id": "capas_c2b",
+              "ref": {
+                "item": "ui_cliente"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c3",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c3a",
+              "ref": {
+                "item": "analista"
+              }
+            },
+            {
+              "id": "capas_c3b",
+              "ref": {
+                "item": "ui_analista"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c4",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c4a",
+              "ref": {
+                "item": "analista"
+              }
+            },
+            {
+              "id": "capas_c4b",
+              "ref": {
+                "item": "ui_info"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c5",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c5a",
+              "ref": {
+                "item": "main"
+              }
+            },
+            {
+              "id": "capas_c5b",
+              "ref": {
+                "item": "ui_cliente"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c6",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c6a",
+              "ref": {
+                "item": "main"
+              }
+            },
+            {
+              "id": "capas_c6b",
+              "ref": {
+                "item": "ui_analista"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c7",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c7a",
+              "ref": {
+                "item": "main"
+              }
+            },
+            {
+              "id": "capas_c7b",
+              "ref": {
+                "item": "ui_info"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c8",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c8a",
+              "ref": {
+                "item": "ui_cliente"
+              }
+            },
+            {
+              "id": "capas_c8b",
+              "ref": {
+                "item": "services"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c9",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c9a",
+              "ref": {
+                "item": "ui_analista"
+              }
+            },
+            {
+              "id": "capas_c9b",
+              "ref": {
+                "item": "services"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c10",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c10a",
+              "ref": {
+                "item": "services"
+              }
+            },
+            {
+              "id": "capas_c10b",
+              "ref": {
+                "item": "pipeline"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c11",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "capas_c11a",
+              "ref": {
+                "item": "config"
+              }
+            },
+            {
+              "id": "capas_c11b",
+              "ref": {
+                "item": "pipeline"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c12",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "capas_c12a",
+              "ref": {
+                "item": "schemas"
+              }
+            },
+            {
+              "id": "capas_c12b",
+              "ref": {
+                "item": "pipeline"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c13",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c13a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c13b",
+              "ref": {
+                "item": "reglas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c14",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c14a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c14b",
+              "ref": {
+                "item": "campanas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c15",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c15a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c15b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c16",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c16a",
+              "ref": {
+                "item": "reglas"
+              }
+            },
+            {
+              "id": "capas_c16b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c17",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c17a",
+              "ref": {
+                "item": "campanas"
+              }
+            },
+            {
+              "id": "capas_c17b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c18",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c18a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c18b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c19",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c19a",
+              "ref": {
+                "item": "gpu"
+              }
+            },
+            {
+              "id": "capas_c19b",
+              "ref": {
+                "item": "ollama_server"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c20",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c20a",
+              "ref": {
+                "item": "ollama_server"
+              }
+            },
+            {
+              "id": "capas_c20b",
+              "ref": {
+                "item": "ollama_client"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c21",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c21a",
+              "ref": {
+                "item": "ollama_client"
+              }
+            },
+            {
+              "id": "capas_c21b",
+              "ref": {
+                "item": "qwen_vl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c22",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c22a",
+              "ref": {
+                "item": "ollama_client"
+              }
+            },
+            {
+              "id": "capas_c22b",
+              "ref": {
+                "item": "qwen3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c23",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c23a",
+              "ref": {
+                "item": "audio_io"
+              }
+            },
+            {
+              "id": "capas_c23b",
+              "ref": {
+                "item": "whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c24",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c24a",
+              "ref": {
+                "item": "audio_io"
+              }
+            },
+            {
+              "id": "capas_c24b",
+              "ref": {
+                "item": "clap"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c25",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c25a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c25b",
+              "ref": {
+                "item": "whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c26",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c26a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c26b",
+              "ref": {
+                "item": "e5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c27",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c27a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c27b",
+              "ref": {
+                "item": "tacticnet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c28",
+          "color": "keras",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "capas_c28a",
+              "ref": {
+                "item": "pipeline"
+              }
+            },
+            {
+              "id": "capas_c28b",
+              "ref": {
+                "item": "voznet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c29",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c29a",
+              "ref": {
+                "item": "e5"
+              }
+            },
+            {
+              "id": "capas_c29b",
+              "ref": {
+                "item": "tacticnet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c30",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c30a",
+              "ref": {
+                "item": "clap"
+              }
+            },
+            {
+              "id": "capas_c30b",
+              "ref": {
+                "item": "voznet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c31",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c31a",
+              "ref": {
+                "item": "fusion"
+              }
+            },
+            {
+              "id": "capas_c31b",
+              "ref": {
+                "item": "sqlite"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c32",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c32a",
+              "ref": {
+                "item": "sqlite"
+              }
+            },
+            {
+              "id": "capas_c32b",
+              "ref": {
+                "item": "sql_agent"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c33",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c33a",
+              "ref": {
+                "item": "ui_analista"
+              }
+            },
+            {
+              "id": "capas_c33b",
+              "ref": {
+                "item": "sql_agent"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c34",
+          "color": "gpu",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "capas_c34a",
+              "ref": {
+                "item": "sql_agent"
+              }
+            },
+            {
+              "id": "capas_c34b",
+              "ref": {
+                "item": "ollama_client"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c35",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c35a",
+              "ref": {
+                "item": "fusion"
+              }
+            },
+            {
+              "id": "capas_c35b",
+              "ref": {
+                "item": "tts"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c36",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c36a",
+              "ref": {
+                "item": "fusion"
+              }
+            },
+            {
+              "id": "capas_c36b",
+              "ref": {
+                "item": "infografia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c37",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c37a",
+              "ref": {
+                "item": "sdxl"
+              }
+            },
+            {
+              "id": "capas_c37b",
+              "ref": {
+                "item": "infografia"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c38",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c38a",
+              "ref": {
+                "item": "tts"
+              }
+            },
+            {
+              "id": "capas_c38b",
+              "ref": {
+                "item": "video"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c39",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c39a",
+              "ref": {
+                "item": "infografia"
+              }
+            },
+            {
+              "id": "capas_c39b",
+              "ref": {
+                "item": "video"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c40",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "capas_c40a",
+              "ref": {
+                "item": "siglip"
+              }
+            },
+            {
+              "id": "capas_c40b",
+              "ref": {
+                "item": "campanas"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capas_c41",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "capas_c41a",
+              "ref": {
+                "item": "render"
+              }
+            },
+            {
+              "id": "capas_c41b",
+              "ref": {
+                "item": "qwen_vl"
+              }
+            }
+          ]
+        }
+      ],
+      "rectangles": [],
+      "textBoxes": [
+        {
+          "id": "tb_capas_0",
+          "tile": {
+            "x": -2,
+            "y": 2
+          },
+          "content": "QUIÉN",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_capas_1",
+          "tile": {
+            "x": 4,
+            "y": 8
+          },
+          "content": "GRADIO",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_capas_2",
+          "tile": {
+            "x": 10,
+            "y": 14
+          },
+          "content": "NEGOCIO",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_capas_3",
+          "tile": {
+            "x": 16,
+            "y": 20
+          },
+          "content": "MODELOS",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_capas_4",
+          "tile": {
+            "x": 22,
+            "y": 26
+          },
+          "content": "SALIDA",
+          "fontSize": 0.7,
+          "orientation": "X"
+        }
+      ]
+    },
+    {
+      "id": "vram",
+      "name": "3 · Modelos y VRAM",
+      "description": "Doce modelos en 8 GB: los pequeños viven siempre en CPU y los grandes se turnan la GPU. Ollama es una instancia propia en el puerto 11435.",
+      "items": [
+        {
+          "id": "e5",
+          "tile": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "siglip",
+          "tile": {
+            "x": 3,
+            "y": 3
+          }
+        },
+        {
+          "id": "clap",
+          "tile": {
+            "x": 6,
+            "y": 6
+          }
+        },
+        {
+          "id": "tts",
+          "tile": {
+            "x": 9,
+            "y": 9
+          }
+        },
+        {
+          "id": "tacticnet",
+          "tile": {
+            "x": 12,
+            "y": 12
+          }
+        },
+        {
+          "id": "voznet",
+          "tile": {
+            "x": 15,
+            "y": 15
+          }
+        },
+        {
+          "id": "primer",
+          "tile": {
+            "x": 4,
+            "y": -4
+          }
+        },
+        {
+          "id": "gpu",
+          "tile": {
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "id": "ollama_server",
+          "tile": {
+            "x": 16,
+            "y": 8
+          }
+        },
+        {
+          "id": "rtx",
+          "tile": {
+            "x": 19,
+            "y": 11
+          }
+        },
+        {
+          "id": "whisper",
+          "tile": {
+            "x": 8,
+            "y": -8
+          }
+        },
+        {
+          "id": "qwen_vl",
+          "tile": {
+            "x": 11,
+            "y": -5
+          }
+        },
+        {
+          "id": "qwen3",
+          "tile": {
+            "x": 14,
+            "y": -2
+          }
+        },
+        {
+          "id": "qwen25",
+          "tile": {
+            "x": 17,
+            "y": 1
+          }
+        },
+        {
+          "id": "sdxl",
+          "tile": {
+            "x": 20,
+            "y": 4
+          }
+        },
+        {
+          "id": "modo",
+          "tile": {
+            "x": 23,
+            "y": 7
+          }
+        },
+        {
+          "id": "bark",
+          "tile": {
+            "x": 12,
+            "y": -12
+          }
+        },
+        {
+          "id": "ollama_client",
+          "tile": {
+            "x": 24,
+            "y": 0
+          }
+        }
+      ],
+      "connectors": [
+        {
+          "id": "vram_c1",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c1a",
+              "ref": {
+                "item": "e5"
+              }
+            },
+            {
+              "id": "vram_c1b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c2",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c2a",
+              "ref": {
+                "item": "siglip"
+              }
+            },
+            {
+              "id": "vram_c2b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c3",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c3a",
+              "ref": {
+                "item": "clap"
+              }
+            },
+            {
+              "id": "vram_c3b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c4",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c4a",
+              "ref": {
+                "item": "tts"
+              }
+            },
+            {
+              "id": "vram_c4b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c5",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c5a",
+              "ref": {
+                "item": "tacticnet"
+              }
+            },
+            {
+              "id": "vram_c5b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c6",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c6a",
+              "ref": {
+                "item": "voznet"
+              }
+            },
+            {
+              "id": "vram_c6b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c7",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c7a",
+              "ref": {
+                "item": "gpu"
+              }
+            },
+            {
+              "id": "vram_c7b",
+              "ref": {
+                "item": "whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c8",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c8a",
+              "ref": {
+                "item": "gpu"
+              }
+            },
+            {
+              "id": "vram_c8b",
+              "ref": {
+                "item": "qwen_vl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c9",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c9a",
+              "ref": {
+                "item": "gpu"
+              }
+            },
+            {
+              "id": "vram_c9b",
+              "ref": {
+                "item": "qwen3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c10",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c10a",
+              "ref": {
+                "item": "gpu"
+              }
+            },
+            {
+              "id": "vram_c10b",
+              "ref": {
+                "item": "qwen25"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c11",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c11a",
+              "ref": {
+                "item": "gpu"
+              }
+            },
+            {
+              "id": "vram_c11b",
+              "ref": {
+                "item": "sdxl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c12",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c12a",
+              "ref": {
+                "item": "ollama_server"
+              }
+            },
+            {
+              "id": "vram_c12b",
+              "ref": {
+                "item": "qwen_vl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c13",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c13a",
+              "ref": {
+                "item": "ollama_server"
+              }
+            },
+            {
+              "id": "vram_c13b",
+              "ref": {
+                "item": "qwen3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c14",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c14a",
+              "ref": {
+                "item": "ollama_server"
+              }
+            },
+            {
+              "id": "vram_c14b",
+              "ref": {
+                "item": "qwen25"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c15",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c15a",
+              "ref": {
+                "item": "ollama_server"
+              }
+            },
+            {
+              "id": "vram_c15b",
+              "ref": {
+                "item": "ollama_client"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c16",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c16a",
+              "ref": {
+                "item": "primer"
+              }
+            },
+            {
+              "id": "vram_c16b",
+              "ref": {
+                "item": "qwen_vl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c17",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "vram_c17a",
+              "ref": {
+                "item": "rtx"
+              }
+            },
+            {
+              "id": "vram_c17b",
+              "ref": {
+                "item": "gpu"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c18",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c18a",
+              "ref": {
+                "item": "modo"
+              }
+            },
+            {
+              "id": "vram_c18b",
+              "ref": {
+                "item": "whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c19",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c19a",
+              "ref": {
+                "item": "modo"
+              }
+            },
+            {
+              "id": "vram_c19b",
+              "ref": {
+                "item": "sdxl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vram_c20",
+          "color": "keras",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "vram_c20a",
+              "ref": {
+                "item": "bark"
+              }
+            },
+            {
+              "id": "vram_c20b",
+              "ref": {
+                "item": "voznet"
+              }
+            }
+          ]
+        }
+      ],
+      "rectangles": [],
+      "textBoxes": [
+        {
+          "id": "tb_vram_0",
+          "tile": {
+            "x": 4,
+            "y": 8
+          },
+          "content": "CPU",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_vram_1",
+          "tile": {
+            "x": 1,
+            "y": -7
+          },
+          "content": "VRAM",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_vram_2",
+          "tile": {
+            "x": 5,
+            "y": -11
+          },
+          "content": "GPU",
+          "fontSize": 0.7,
+          "orientation": "X"
+        }
+      ]
+    },
+    {
+      "id": "proyecto",
+      "name": "4 · Datos, seguridad y negocio",
+      "description": "De dónde salen los números, qué controles tiene el MVP y por qué el banco lo pagaría. Cubre los bloques del taller B5-T4.",
+      "items": [
+        {
+          "id": "nb00",
+          "tile": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "nb01",
+          "tile": {
+            "x": 2,
+            "y": -2
+          }
+        },
+        {
+          "id": "nb02",
+          "tile": {
+            "x": 4,
+            "y": -4
+          }
+        },
+        {
+          "id": "nb03",
+          "tile": {
+            "x": 6,
+            "y": -6
+          }
+        },
+        {
+          "id": "nb04",
+          "tile": {
+            "x": 8,
+            "y": -8
+          }
+        },
+        {
+          "id": "nb05",
+          "tile": {
+            "x": 10,
+            "y": -10
+          }
+        },
+        {
+          "id": "nb06",
+          "tile": {
+            "x": 12,
+            "y": -12
+          }
+        },
+        {
+          "id": "synth",
+          "tile": {
+            "x": 6,
+            "y": 6
+          }
+        },
+        {
+          "id": "uci",
+          "tile": {
+            "x": 8,
+            "y": 4
+          }
+        },
+        {
+          "id": "qwen3",
+          "tile": {
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "id": "mls",
+          "tile": {
+            "x": 12,
+            "y": 0
+          }
+        },
+        {
+          "id": "telefono",
+          "tile": {
+            "x": 14,
+            "y": -2
+          }
+        },
+        {
+          "id": "bark",
+          "tile": {
+            "x": 16,
+            "y": -4
+          }
+        },
+        {
+          "id": "demos",
+          "tile": {
+            "x": 18,
+            "y": -6
+          }
+        },
+        {
+          "id": "render",
+          "tile": {
+            "x": 20,
+            "y": -8
+          }
+        },
+        {
+          "id": "pii",
+          "tile": {
+            "x": 12,
+            "y": 12
+          }
+        },
+        {
+          "id": "sql_guard",
+          "tile": {
+            "x": 16,
+            "y": 8
+          }
+        },
+        {
+          "id": "marca",
+          "tile": {
+            "x": 20,
+            "y": 4
+          }
+        },
+        {
+          "id": "aconseja",
+          "tile": {
+            "x": 24,
+            "y": 0
+          }
+        },
+        {
+          "id": "tests",
+          "tile": {
+            "x": 28,
+            "y": -4
+          }
+        },
+        {
+          "id": "banco",
+          "tile": {
+            "x": 18,
+            "y": 18
+          }
+        },
+        {
+          "id": "psr",
+          "tile": {
+            "x": 22,
+            "y": 14
+          }
+        },
+        {
+          "id": "rgpd",
+          "tile": {
+            "x": 26,
+            "y": 10
+          }
+        },
+        {
+          "id": "dora",
+          "tile": {
+            "x": 30,
+            "y": 6
+          }
+        },
+        {
+          "id": "coste",
+          "tile": {
+            "x": 34,
+            "y": 2
+          }
+        },
+        {
+          "id": "launcher",
+          "tile": {
+            "x": 24,
+            "y": 24
+          }
+        },
+        {
+          "id": "repo",
+          "tile": {
+            "x": 28,
+            "y": 20
+          }
+        },
+        {
+          "id": "pitch",
+          "tile": {
+            "x": 32,
+            "y": 16
+          }
+        },
+        {
+          "id": "fusion",
+          "tile": {
+            "x": 36,
+            "y": 12
+          }
+        }
+      ],
+      "connectors": [
+        {
+          "id": "proyecto_c1",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c1a",
+              "ref": {
+                "item": "nb00"
+              }
+            },
+            {
+              "id": "proyecto_c1b",
+              "ref": {
+                "item": "nb01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c2",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c2a",
+              "ref": {
+                "item": "nb01"
+              }
+            },
+            {
+              "id": "proyecto_c2b",
+              "ref": {
+                "item": "nb02"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c3",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c3a",
+              "ref": {
+                "item": "nb01"
+              }
+            },
+            {
+              "id": "proyecto_c3b",
+              "ref": {
+                "item": "nb03"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c4",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c4a",
+              "ref": {
+                "item": "nb02"
+              }
+            },
+            {
+              "id": "proyecto_c4b",
+              "ref": {
+                "item": "nb04"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c5",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c5a",
+              "ref": {
+                "item": "nb03"
+              }
+            },
+            {
+              "id": "proyecto_c5b",
+              "ref": {
+                "item": "nb04"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c6",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c6a",
+              "ref": {
+                "item": "nb04"
+              }
+            },
+            {
+              "id": "proyecto_c6b",
+              "ref": {
+                "item": "nb05"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c7",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c7a",
+              "ref": {
+                "item": "nb05"
+              }
+            },
+            {
+              "id": "proyecto_c7b",
+              "ref": {
+                "item": "nb06"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c8",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c8a",
+              "ref": {
+                "item": "nb05"
+              }
+            },
+            {
+              "id": "proyecto_c8b",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c9",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c9a",
+              "ref": {
+                "item": "synth"
+              }
+            },
+            {
+              "id": "proyecto_c9b",
+              "ref": {
+                "item": "nb01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c10",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c10a",
+              "ref": {
+                "item": "uci"
+              }
+            },
+            {
+              "id": "proyecto_c10b",
+              "ref": {
+                "item": "nb01"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c11",
+          "color": "gpu",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c11a",
+              "ref": {
+                "item": "qwen3"
+              }
+            },
+            {
+              "id": "proyecto_c11b",
+              "ref": {
+                "item": "synth"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c12",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c12a",
+              "ref": {
+                "item": "mls"
+              }
+            },
+            {
+              "id": "proyecto_c12b",
+              "ref": {
+                "item": "nb03"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c13",
+          "color": "keras",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c13a",
+              "ref": {
+                "item": "bark"
+              }
+            },
+            {
+              "id": "proyecto_c13b",
+              "ref": {
+                "item": "nb03"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c14",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c14a",
+              "ref": {
+                "item": "telefono"
+              }
+            },
+            {
+              "id": "proyecto_c14b",
+              "ref": {
+                "item": "nb03"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c15",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c15a",
+              "ref": {
+                "item": "render"
+              }
+            },
+            {
+              "id": "proyecto_c15b",
+              "ref": {
+                "item": "nb04"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c16",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c16a",
+              "ref": {
+                "item": "demos"
+              }
+            },
+            {
+              "id": "proyecto_c16b",
+              "ref": {
+                "item": "repo"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c17",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c17a",
+              "ref": {
+                "item": "pii"
+              }
+            },
+            {
+              "id": "proyecto_c17b",
+              "ref": {
+                "item": "rgpd"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c18",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c18a",
+              "ref": {
+                "item": "sql_guard"
+              }
+            },
+            {
+              "id": "proyecto_c18b",
+              "ref": {
+                "item": "tests"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c19",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c19a",
+              "ref": {
+                "item": "marca"
+              }
+            },
+            {
+              "id": "proyecto_c19b",
+              "ref": {
+                "item": "pitch"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c20",
+          "color": "out",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c20a",
+              "ref": {
+                "item": "aconseja"
+              }
+            },
+            {
+              "id": "proyecto_c20b",
+              "ref": {
+                "item": "banco"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c21",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c21a",
+              "ref": {
+                "item": "banco"
+              }
+            },
+            {
+              "id": "proyecto_c21b",
+              "ref": {
+                "item": "psr"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c22",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c22a",
+              "ref": {
+                "item": "banco"
+              }
+            },
+            {
+              "id": "proyecto_c22b",
+              "ref": {
+                "item": "coste"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c23",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c23a",
+              "ref": {
+                "item": "rgpd"
+              }
+            },
+            {
+              "id": "proyecto_c23b",
+              "ref": {
+                "item": "dora"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c24",
+          "color": "muted",
+          "style": "DOTTED",
+          "anchors": [
+            {
+              "id": "proyecto_c24a",
+              "ref": {
+                "item": "nb00"
+              }
+            },
+            {
+              "id": "proyecto_c24b",
+              "ref": {
+                "item": "banco"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c25",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c25a",
+              "ref": {
+                "item": "nb06"
+              }
+            },
+            {
+              "id": "proyecto_c25b",
+              "ref": {
+                "item": "coste"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c26",
+          "color": "flow",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c26a",
+              "ref": {
+                "item": "launcher"
+              }
+            },
+            {
+              "id": "proyecto_c26b",
+              "ref": {
+                "item": "repo"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c27",
+          "color": "sec",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c27a",
+              "ref": {
+                "item": "tests"
+              }
+            },
+            {
+              "id": "proyecto_c27b",
+              "ref": {
+                "item": "repo"
+              }
+            }
+          ]
+        },
+        {
+          "id": "proyecto_c28",
+          "color": "muted",
+          "style": "SOLID",
+          "anchors": [
+            {
+              "id": "proyecto_c28a",
+              "ref": {
+                "item": "pitch"
+              }
+            },
+            {
+              "id": "proyecto_c28b",
+              "ref": {
+                "item": "repo"
+              }
+            }
+          ]
+        }
+      ],
+      "rectangles": [],
+      "textBoxes": [
+        {
+          "id": "tb_proyecto_0",
+          "tile": {
+            "x": -2,
+            "y": 2
+          },
+          "content": "NOTEBOOKS",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_proyecto_1",
+          "tile": {
+            "x": 4,
+            "y": 8
+          },
+          "content": "DATOS",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_proyecto_2",
+          "tile": {
+            "x": 10,
+            "y": 14
+          },
+          "content": "CONTROLES",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_proyecto_3",
+          "tile": {
+            "x": 16,
+            "y": 20
+          },
+          "content": "VIABILIDAD",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "tb_proyecto_4",
+          "tile": {
+            "x": 22,
+            "y": 26
+          },
+          "content": "ENTREGA",
+          "fontSize": 0.7,
+          "orientation": "X"
+        }
+      ]
+    }
+  ]
+}
