@@ -60,7 +60,7 @@ style: |
 
 * `app/`: interfaz Gradio (Cliente, Analista y «Cómo funciona»).
 * `src/diputado/core/`: orquestador determinista, reglas, campañas, **fusión explicable**, SQLite y agente SQL.
-* `src/diputado/ai/`: conectores (Whisper, Qwen2.5-VL, Qwen3, e5, SigLIP2, CLAP, MMS, SDXL, Bark, Keras) y
+* `src/diputado/ai/`: conectores (Whisper, Qwen2.5-VL, Qwen3, e5, SigLIP2, CLAP, Piper, SDXL, Bark, Keras) y
   **gestor de VRAM**.
 
 **Gestor de VRAM:** con 8 GB, los modelos grandes se turnan la GPU y los pequeños viven en CPU.

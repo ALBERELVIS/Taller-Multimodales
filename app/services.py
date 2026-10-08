@@ -70,7 +70,7 @@ def warmup() -> None:
         ("e5 (texto)", lambda: embeddings.embed_text("hola")),
         ("SigLIP2 (imagen)", lambda: embeddings.embed_image_texts(["hola"])),
         ("CLAP (audio)", lambda: audio_clap.zero_shot(audio_clap.embed_audio(__import__("numpy").zeros(48000, dtype="float32")))),
-        ("MMS-TTS (voz)", lambda: tts.synthesize("Hola.")),
+        ("Voz en español de España", lambda: tts.synthesize("Hola.")),
         ("Modelos Keras", _warm_keras),
         ("Whisper", _warm_whisper),
         ("SDXL-Turbo (infografía)", _warm_sdxl),

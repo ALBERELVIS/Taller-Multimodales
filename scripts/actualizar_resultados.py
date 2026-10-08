@@ -131,8 +131,9 @@ calibradas para la explicación. {combo_txt}
 **VozSinteticaNet (Keras)** ([notebook 03]({NB}/03_keras_voz_sintetica.ipynb)): AUC
 {f(indist[0]['AUC'])} con audio limpio y {f(indist[1]['AUC'])} por canal telefónico cuando conoce los generadores;
 con un **generador no visto** cae a {unseen_phone} por teléfono.
-Por eso es *experimental* y en la fusión solo puede subir el riesgo. La llamada de la demo obtiene
-p = {f(voz['demo_call_p'], 2)}: no la reconoce como sintética y el veredicto lo deciden el contenido y la regla dura.
+Por eso es *experimental* y en la fusión solo puede subir el riesgo. La llamada de la demo
+(locutor de español de España y canal telefónico) obtiene p = {f(voz['demo_call_p'], 2)}: no la reconoce
+como sintética y el veredicto lo deciden el contenido y la regla dura.
 
 **Selección de modelos** ([notebook 04]({NB}/04_seleccion_de_modelos.ipynb)):
 
@@ -144,8 +145,8 @@ p = {f(voz['demo_call_p'], 2)}: no la reconoce como sintética y el veredicto lo
     for k, v in vlm.items()) + f""" |
 | Búsqueda visual de campañas | SigLIP2 | CLIP | Recall@3 {f(ret['siglip imagen→imagen']['Recall@3'], 2)} frente a {f(ret['clip imagen→imagen']['Recall@3'], 2)}; MRR {f(ret['siglip imagen→imagen']['MRR'], 2)} frente a {f(ret['clip imagen→imagen']['MRR'], 2)} |
 | Razonamiento | qwen3:8b | qwen2.5:7b | F1 {f(llm['qwen3:8b']['F1'])} frente a {f(llm['qwen2.5:7b']['F1'])} |
-| Aviso por voz | MMS-TTS | Bark | Mismo WER de ida y vuelta ({f(sel['tts']['MMS-TTS']['WER ida y vuelta'])}); RTF {f(sel['tts']['MMS-TTS']['RTF'], 2)} frente a {f(sel['tts']['Bark']['RTF'], 1)} |
-| Infografía | SDXL-Turbo, 2 pasos | 1 y 4 pasos | SigLIP2 {f(sel['sdxl']['1']['SigLIP2'])} · {f(sel['sdxl']['2']['SigLIP2'])} · {f(sel['sdxl']['4']['SigLIP2'])} |
+| Aviso por voz | Piper es_ES davefx, en la aplicación | MMS-TTS y Bark | Mismo WER de ida y vuelta entre MMS y Bark ({f(sel['tts']['MMS-TTS']['WER ida y vuelta'])}); RTF {f(sel['tts']['MMS-TTS']['RTF'], 2)} frente a {f(sel['tts']['Bark']['RTF'], 1)}. En la aplicación habla un hombre de español de España |
+| Infografía | SDXL-Turbo, 4 pasos, estilo oscuro | 1 y 2 pasos | SigLIP2 {f(sel['sdxl']['1']['SigLIP2'])} · {f(sel['sdxl']['2']['SigLIP2'])} · {f(sel['sdxl']['4']['SigLIP2'])} |
 
 **Latencia en caliente** en un portátil con {hardware} ([notebook 06]({NB}/06_latencia_vram_costes.ipynb)); pico de VRAM
 {f(bench['vram_pico_gb'], 1)} GB:

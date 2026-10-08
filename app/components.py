@@ -12,7 +12,7 @@ from diputado.core import fusion
 from diputado.core.schemas import AnalysisResult
 
 LEVEL_TEXT = {"rojo": "ESTAFA PROBABLE", "ambar": "SOSPECHOSO", "verde": "PARECE SEGURO"}
-LEVEL_COLOR = {"rojo": "#d7263d", "ambar": "#e89128", "verde": "#2a9d8f"}
+LEVEL_COLOR = {"rojo": "#ff3b54", "ambar": "#ffb020", "verde": "#1dffb0"}
 
 
 def semaforo(r: AnalysisResult | None) -> str:
@@ -30,16 +30,15 @@ def semaforo(r: AnalysisResult | None) -> str:
 
 
 def progress(r: AnalysisResult | None, extra_done: list[str] | None = None, current: str | None = None) -> str:
+    del extra_done  # los tiempos viven en la cronología del analista, no en esta vista
     if r is None:
         return '<div class="dd-progress dd-idle">Sube una captura, graba la llamada o escribe el mensaje y pulsa <b>Analizar</b>.</div>'
-    chips = "".join(
-        f'<span class="dd-chip">{html.escape(s.etapa)} · {s.ms / 1000:.1f} s</span>' for s in r.timeline if s.modelo != "error"
-    )
-    for e in extra_done or []:
-        chips += f'<span class="dd-chip">{html.escape(e)}</span>'
     stage = current or (r.stage if not r.done else "")
-    spinner = f'<div class="dd-stage"><span class="dd-spin"></span>{html.escape(stage)}…</div>' if stage else ""
-    return f'<div class="dd-progress">{spinner}<div class="dd-chips">{chips}</div></div>'
+    if stage:
+        return f'<div class="dd-progress"><div class="dd-stage"><span class="dd-spin"></span>{html.escape(stage)}</div></div>'
+    if r and r.done:
+        return '<div class="dd-progress dd-idle">Listo. Escucha el aviso y, si hace falta, compártelo con tu familia.</div>'
+    return '<div class="dd-progress dd-idle">Trabajando…</div>'
 
 
 def summary_md(r: AnalysisResult) -> str:
@@ -66,10 +65,11 @@ def contributions_fig(r: AnalysisResult | None) -> go.Figure:
         names = [fusion.SIGNAL_LABELS.get(k, k) for k, _ in items]
         vals = [v for _, v in items]
         fig.add_bar(x=vals, y=names, orientation="h",
-                    marker_color=["#d7263d" if v > 0 else "#2a9d8f" for v in vals],
+                    marker_color=["#ff3b54" if v > 0 else "#1dffb0" for v in vals],
                     text=[f"p={r.signal_inputs.get(k, 0):.2f}" for k, _ in items], textposition="outside")
     fig.update_layout(title="Contribución de cada señal al riesgo (log-odds)", height=320, margin=dict(l=10, r=30, t=50, b=30),
-                      xaxis_title="← hacia legítimo · hacia estafa →", template="plotly_white")
+                      xaxis_title="← hacia legítimo · hacia estafa →", template="plotly_dark",
+                      paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#0d1520", font_color="#e7f4fb")
     return fig
 
 

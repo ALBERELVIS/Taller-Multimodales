@@ -134,6 +134,8 @@ filelock==4.0.12
     #   huggingface-hub
     #   torch
     #   transformers
+flatbuffers==25.12.19
+    # via onnxruntime
 fonttools==4.66.1
     # via matplotlib
 fqdn==1.6.0
@@ -365,6 +367,7 @@ numpy==2.5.3
     #   matplotlib
     #   ml-dtypes
     #   moviepy
+    #   onnxruntime
     #   pandas
     #   scikit-learn
     #   scipy
@@ -411,6 +414,8 @@ nvidia-nvtx-cu12==12.8.90 ; sys_platform == 'linux'
     # via cuda-toolkit
 ollama==0.6.3
     # via diputado-detector
+onnxruntime==1.30.0
+    # via piper-tts
 openai==2.54.0
     # via litellm
 opentelemetry-api==1.45.0
@@ -434,6 +439,7 @@ packaging==26.3
     #   keras
     #   matplotlib
     #   nbconvert
+    #   onnxruntime
     #   plotly
     #   pytest
     #   transformers
@@ -446,6 +452,8 @@ pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.7
     # via jedi
+pathvalidate==3.3.1
+    # via piper-tts
 pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
     # via ipython
 pillow==11.3.0
@@ -457,6 +465,8 @@ pillow==11.3.0
     #   matplotlib
     #   moviepy
     #   smolagents
+piper-tts==1.8.0
+    # via diputado-detector
 platformdirs==4.12.3
     # via jupyter-core
 plotly==7.1.0
@@ -474,7 +484,9 @@ propcache==0.5.4
     #   aiohttp
     #   yarl
 protobuf==7.36.2
-    # via diputado-detector
+    # via
+    #   diputado-detector
+    #   onnxruntime
 psutil==7.2.2
     # via
     #   accelerate

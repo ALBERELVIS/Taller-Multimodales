@@ -3,7 +3,7 @@
 Con 8 GB de VRAM no caben a la vez Whisper (1,6 GB), Qwen2.5-VL 7B (6 GB),
 Qwen3 8B (5,2 GB) y SDXL-Turbo (7 GB). Nuestra política es:
 
-* Los modelos pequeños (e5, SigLIP2, CLAP, MMS-TTS y las cabezas Keras) viven en
+* Los modelos pequeños (e5, SigLIP2, CLAP, Piper y las cabezas Keras) viven en
   CPU: en un Ryzen moderno tardan decenas de milisegundos y no compiten por VRAM.
 * Los grandes se turnan la GPU. Antes de que uno entre, desalojamos al anterior:
   Whisper y SDXL se mueven a RAM (volver tarda <1 s) y a Ollama le pedimos que

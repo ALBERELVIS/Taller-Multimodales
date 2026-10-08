@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ DiputadoDetector
+# DiputadoDetector
 
 ### Detector de estafas multimodal
 
@@ -94,16 +94,16 @@ macOS/Linux: `./instalar_y_arrancar.sh`. Pruebas: `python -m pytest` y `python s
 
 | Entrada | Ejemplo | Lo que ocurre |
 |---|---|---|
-| 📞 **¿Me están llamando?** | Graba la llamada con el altavoz o sube el audio | Whisper transcribe, CLAP y VozSinteticaNet analizan la voz, Qwen3 razona |
-| 💬 **¿Es fiable este mensaje?** | Captura de SMS, WhatsApp, correo o foto de una carta, o texto pegado | Qwen2.5-VL lee la imagen, las reglas analizan enlaces e IBAN, SigLIP2 busca campañas conocidas |
-| 🙋 **Pregúntame** | «¿Es normal que mi banco me pida el PIN?» (hablando o escribiendo) | Whisper → Qwen3 → respuesta hablada |
+| **¿Me están llamando?** | Graba la llamada con el altavoz o sube el audio | Whisper transcribe, CLAP y VozSinteticaNet analizan la voz, Qwen3 razona |
+| **¿Es fiable este mensaje?** | Captura de SMS, WhatsApp, correo o foto de una carta, o texto pegado | Qwen2.5-VL lee la imagen, las reglas analizan enlaces e IBAN, SigLIP2 busca campañas conocidas |
+| **Pregúntame** | «¿Es normal que mi banco me pida el PIN?» (hablando o escribiendo) | Whisper → Qwen3 → respuesta hablada |
 
 La respuesta llega **por etapas**: primero el semáforo y la explicación; después el aviso por voz, la infografía
 (SDXL-Turbo con control de calidad SigLIP2) y el vídeo-alerta, con un botón para compartirlo con la familia.
 
-Hay **5 casos de demostración** precargados: la llamada del falso banco (voz sintética de Bark por canal
-telefónico), el SMS de Correos, el WhatsApp de «hola mamá», un SMS **legítimo** del banco (debe salir verde) y la
-carta de una «gestora» de cripto.
+Hay **5 casos de demostración** precargados: la llamada del falso banco (locutor masculino de español,
+pasada por un canal telefónico), el SMS de Correos, el WhatsApp de «hola mamá», un SMS **legítimo** del banco
+(debe salir verde) y la carta de una «gestora» de cripto.
 
 ### Vista Analista del banco
 
@@ -136,7 +136,7 @@ flowchart LR
   EV --> Q3["Qwen3 8B"]
   RX & TN & CP & Q3 & VS --> FU{{"Fusión log-odds<br/>explicable + regla dura"}}
   FU --> S["🚦 Semáforo"]
-  S --> TTS["MMS-TTS 🔊"]
+  S --> TTS["Piper es_ES 🔊"]
   S --> SD["SDXL-Turbo 🖼️"]
   TTS & SD --> MV["Vídeo 🎬"]
   S --> DB[("SQLite")] --> AG["Agente SQL"]
@@ -165,9 +165,10 @@ Decisiones clave:
 | `laion/clap-htsat-unfused` | Contexto acústico y embeddings de voz | Clasificación sin entrenamiento y base para VozSinteticaNet |
 | **TacticNet** (Keras, propio) | Estafa + 7 tácticas desde e5 | Rápido, calibrado y explicable ([nb 02](notebooks/02_keras_tacticnet.ipynb)) |
 | **VozSinteticaNet** (Keras, propio) | ¿Voz humana o sintética? | Validación dejando fuera un generador ([nb 03](notebooks/03_keras_voz_sintetica.ipynb)); experimental |
-| `facebook/mms-tts-spa` | Aviso por voz | Igual de inteligible que Bark y unas 25 veces más rápido, en CPU y determinista ([nb 04](notebooks/04_seleccion_de_modelos.ipynb)) |
-| `stabilityai/sdxl-turbo` | Ilustración de la infografía | 2 pasos: casi la misma puntuación SigLIP2 que con 4; con 8 GB la latencia (~15 s) la domina mover el modelo entre RAM y VRAM, no los pasos ([nb 04](notebooks/04_seleccion_de_modelos.ipynb)) |
-| `suno/bark-small` | Llamadas sintéticas (datos y demo) | Prosodia natural: el tipo de voz que queremos detectar |
+| Piper `es_ES-davefx-medium` | Aviso, respuesta y vídeo | Hombre, español de España, en CPU. Lo elegimos por el acento de nuestros usuarios; MMS-TTS empata en inteligibilidad con Bark y es más rápido ([nb 04](notebooks/04_seleccion_de_modelos.ipynb)), |
+| `facebook/mms-tts-spa` | Dataset de voz sintética | Referencia del experimento de inteligibilidad y uno de los dos generadores con los que entrenamos VozSinteticaNet |
+| `stabilityai/sdxl-turbo` | Ilustración de la infografía | 4 pasos, estilo oscuro de ciberseguridad (objetos, no caras). En el experimento, 1, 2 y 4 pasos puntúan casi igual y la latencia la domina mover el modelo, no los pasos ([nb 04](notebooks/04_seleccion_de_modelos.ipynb)) |
+| `suno/bark-small` | Llamadas sintéticas de entrenamiento | Prosodia natural: el tipo de voz que queremos detectar |
 | `openai/clip-vit-base-patch32`, `openai/whisper-base` | Solo como comparación | Referencias en el notebook 04 |
 
 ## 6. Resultados
@@ -221,8 +222,9 @@ calibradas para la explicación. En la ablación multimodal, sumar TacticNet y l
 **VozSinteticaNet (Keras)** ([notebook 03](notebooks/03_keras_voz_sintetica.ipynb)): AUC
 0,999 con audio limpio y 0,962 por canal telefónico cuando conoce los generadores;
 con un **generador no visto** cae a 0,70-0,73 por teléfono.
-Por eso es *experimental* y en la fusión solo puede subir el riesgo. La llamada de la demo obtiene
-p = 0,18: no la reconoce como sintética y el veredicto lo deciden el contenido y la regla dura.
+Por eso es *experimental* y en la fusión solo puede subir el riesgo. La llamada de la demo
+(locutor de español y canal telefónico) obtiene p = 0,25: no la reconoce
+como sintética y el veredicto lo deciden el contenido y la regla dura.
 
 **Selección de modelos** ([notebook 04](notebooks/04_seleccion_de_modelos.ipynb)):
 
@@ -232,8 +234,8 @@ p = 0,18: no la reconoce como sintética y el veredicto lo deciden el contenido 
 | Lectura de imagen | qwen2.5vl:7b | qwen2.5vl:3b | qwen2.5vl:3b: CER 0,001, enlaces exactos 100 %, 3,1 s · qwen2.5vl:7b: CER 0,015, enlaces exactos 100 %, 7,6 s |
 | Búsqueda visual de campañas | SigLIP2 | CLIP | Recall@3 0,82 frente a 0,35; MRR 0,57 frente a 0,43 |
 | Razonamiento | qwen3:8b | qwen2.5:7b | F1 0,935 frente a 0,825 |
-| Aviso por voz | MMS-TTS | Bark | Mismo WER de ida y vuelta (0,078); RTF 0,56 frente a 16,8 |
-| Infografía | SDXL-Turbo, 2 pasos | 1 y 4 pasos | SigLIP2 0,165 · 0,178 · 0,179 |
+| Aviso por voz | Piper es_ES davefx, en la aplicación | MMS-TTS y Bark | Mismo WER de ida y vuelta entre MMS y Bark (0,078); RTF 0,56 frente a 16,8. En la aplicación habla un hombre de español |
+| Infografía | SDXL-Turbo, 4 pasos, estilo oscuro | 1 y 2 pasos | SigLIP2 0,165 · 0,178 · 0,179 |
 
 **Latencia en caliente** en un portátil con NVIDIA GeForce RTX 4070 Laptop GPU (8 GB) y 31 GB RAM ([notebook 06](notebooks/06_latencia_vram_costes.ipynb)); pico de VRAM
 6,7 GB:

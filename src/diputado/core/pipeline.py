@@ -292,7 +292,7 @@ def outputs(r: AnalysisResult, video: bool = True) -> Iterator[tuple[str, Analys
     from diputado.ai import tts
     from diputado.media import infographic, video as video_mod
 
-    yield "Preparando el aviso de voz (MMS-TTS)", r
+    yield "Preparando el aviso de voz", r
     text = narration(r)
     res = _safe(r, "Aviso de voz", tts.speak, text)
     if res:

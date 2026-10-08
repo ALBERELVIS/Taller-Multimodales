@@ -25,15 +25,33 @@ from diputado.core import pipeline  # noqa: E402
 from diputado.core.schemas import CaseInput  # noqa: E402
 
 CSS = (Path(__file__).parent / "theme.css").read_text(encoding="utf-8")
-THEME = gr.themes.Soft(primary_hue="rose", secondary_hue="slate", neutral_hue="slate",
-                       font=["Segoe UI", "system-ui", "-apple-system", "sans-serif"])
+THEME = gr.themes.Base(
+    primary_hue="cyan", secondary_hue="slate", neutral_hue="slate",
+    font=["Segoe UI", "system-ui", "sans-serif"],
+).set(
+    body_background_fill="#070b12", body_background_fill_dark="#070b12",
+    block_background_fill="#0d1520", block_background_fill_dark="#0d1520",
+    block_border_color="#16384a", block_border_color_dark="#16384a",
+    block_label_text_color="#8eafc0", block_label_text_color_dark="#8eafc0",
+    body_text_color="#e7f4fb", body_text_color_dark="#e7f4fb",
+    body_text_color_subdued="#8eafc0", body_text_color_subdued_dark="#8eafc0",
+    input_background_fill="#091018", input_background_fill_dark="#091018",
+    button_primary_background_fill="#071018", button_primary_background_fill_dark="#071018",
+    button_primary_text_color="#3ee0ff", button_primary_text_color_dark="#3ee0ff",
+    button_primary_border_color="#3ee0ff", button_primary_border_color_dark="#3ee0ff",
+    border_color_accent="#3ee0ff", border_color_accent_dark="#3ee0ff",
+)
 
-# La interfaz está diseñada con alto contraste en modo claro; lo forzamos aunque el sistema use modo oscuro.
-FORCE_LIGHT = """() => { const u = new URL(window.location.href);
-  if (u.searchParams.get('__theme') !== 'light') { u.searchParams.set('__theme', 'light'); window.location.replace(u.href); } }"""
+# Consola oscura: lo forzamos aunque el sistema esté en modo claro.
+FORCE_DARK = """() => { const u = new URL(window.location.href);
+  if (u.searchParams.get('__theme') !== 'dark') { u.searchParams.set('__theme', 'dark'); window.location.replace(u.href); } }"""
 
+_LOGO = """<svg viewBox="0 0 64 64" aria-hidden="true">
+<path d="M32 4 56 14v18c0 14.5-9.8 24.6-24 28C17.8 56.6 8 46.5 8 32V14L32 4z" fill="none" stroke="#3ee0ff" stroke-width="3"/>
+<path d="M24 32.5 29.2 38 41 25" fill="none" stroke="#1dffb0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>"""
 HERO = f"""
-<div id="dd-hero"><div class="dd-logo">🛡️</div>
+<div id="dd-hero"><div class="dd-logo">{_LOGO}</div>
 <div><h1>{config.BRAND_NAME}</h1><p>{config.BRAND_TAGLINE} · {config.BRAND_CLAIM}</p></div>
 <div class="dd-status" id="dd-status">{{status}}</div></div>
 """
@@ -113,14 +131,14 @@ def answer_question(q_audio, q_text):
 
 
 def build() -> gr.Blocks:
-    with gr.Blocks(title=f"{config.BRAND_NAME} · {config.BRAND_TAGLINE}", theme=THEME, css=CSS, js=FORCE_LIGHT) as demo:
+    with gr.Blocks(title=f"{config.BRAND_NAME} · {config.BRAND_TAGLINE}", theme=THEME, css=CSS, js=FORCE_DARK) as demo:
         hero = gr.HTML(HERO.format(status=services.status_html()), elem_id="dd-hero-box")
         with gr.Tabs():
-            with gr.Tab("👵 Cliente"):
+            with gr.Tab("Cliente"):
                 uc = ui_cliente.build()
-            with gr.Tab("🏦 Analista del banco"):
+            with gr.Tab("Analista del banco"):
                 ua = ui_analista.build()
-            with gr.Tab("⚙️ Cómo funciona"):
+            with gr.Tab("Cómo funciona"):
                 ui_info.build()
 
         timer = gr.Timer(2.0)

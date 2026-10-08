@@ -1,4 +1,4 @@
-"""Casos de demostración precargados (imágenes renderizadas y una llamada generada con Bark)."""
+"""Casos de demostración precargados (imágenes renderizadas y una llamada en español de España)."""
 
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ CASES = [
     {
         "id": "llamada_falso_banco",
         "titulo": "Llamada del «departamento de seguridad» del banco",
-        "descripcion": "Voz generada con Bark y pasada por un canal telefónico simulado.",
+        "descripcion": "Locutor masculino de español de España, pasado por un canal telefónico simulado.",
         "audio": "llamada_falso_banco.wav",
         "esperado": "rojo",
     },
@@ -89,12 +89,12 @@ def build_images() -> None:
     ), d / "carta_cripto.png")
 
 
-def build_call(seed: int = 4, voice: str = "v2/es_speaker_8") -> None:
-    from diputado.ai import bark
+def build_call(seed: int = 4) -> None:
+    from diputado.ai import tts
     from diputado.ai.audio_io import resample
     from diputado.data.telephony import phone_channel
 
-    audio, sr = bark.synthesize(CALL_SCRIPT, voice=voice, seed=seed)
+    audio, sr = tts.synthesize(CALL_SCRIPT)
     phone = phone_channel(resample(audio, sr, 16_000), 16_000, np.random.default_rng(seed))
     sf.write(config.DEMO_DIR / "llamada_falso_banco.wav", phone, 16_000)
 

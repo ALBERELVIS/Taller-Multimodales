@@ -53,6 +53,15 @@ HF_MODELS: dict[str, dict] = {
     "clip": {"id": "openai/clip-vit-base-patch32", "allow": ["*.json", "*.txt", "pytorch_model.bin"]},
     "clap": {"id": "laion/clap-htsat-unfused", "allow": ["*.json", "*.txt", "pytorch_model.bin"]},
     "tts": {"id": "facebook/mms-tts-spa", "allow": ["*.json", "model.safetensors"]},
+    # Locutor de la aplicación: hombre, español de España. MMS se queda para el dataset.
+    "piper": {
+        "id": "rhasspy/piper-voices",
+        "file": "es/es_ES/davefx/medium/es_ES-davefx-medium.onnx",
+        "allow": [
+            "es/es_ES/davefx/medium/es_ES-davefx-medium.onnx",
+            "es/es_ES/davefx/medium/es_ES-davefx-medium.onnx.json",
+        ],
+    },
     "bark": {
         "id": "suno/bark-small",
         "allow": ["*.json", "*.txt", "pytorch_model.bin", "speaker_embeddings/v2/es_*", "speaker_embeddings/v2/en_speaker_6*"],
