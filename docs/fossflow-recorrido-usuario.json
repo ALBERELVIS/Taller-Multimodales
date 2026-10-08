@@ -1,0 +1,5515 @@
+{
+  "version": "1.0.1",
+  "title": "DiputadoDetector · recorrido de una consulta",
+  "description": "Arriba, el recorrido: el usuario elige qué quiere comprobar y la petición va por una rama (pregunta, llamada, captura, texto o analista), atraviesa el código y los modelos y vuelve como respuesta. Abajo, las dependencias: instalación, modelos descargados, entrenamiento de las redes Keras, código de soporte y librerías. Importar con Import File en https://www.icewolfsoft.com/fossflow/",
+  "fitToScreen": true,
+  "colors": [
+    {
+      "id": "c_user",
+      "value": "#0284c7"
+    },
+    {
+      "id": "c_q",
+      "value": "#9333ea"
+    },
+    {
+      "id": "c_audio",
+      "value": "#2563eb"
+    },
+    {
+      "id": "c_img",
+      "value": "#ea580c"
+    },
+    {
+      "id": "c_text",
+      "value": "#475569"
+    },
+    {
+      "id": "c_core",
+      "value": "#4f46e5"
+    },
+    {
+      "id": "c_red",
+      "value": "#dc2626"
+    },
+    {
+      "id": "c_amber",
+      "value": "#d97706"
+    },
+    {
+      "id": "c_green",
+      "value": "#16a34a"
+    },
+    {
+      "id": "c_out",
+      "value": "#059669"
+    },
+    {
+      "id": "c_db",
+      "value": "#a16207"
+    },
+    {
+      "id": "c_sql",
+      "value": "#0d9488"
+    },
+    {
+      "id": "c_alt",
+      "value": "#94a3b8"
+    },
+    {
+      "id": "c_dep",
+      "value": "#64748b"
+    },
+    {
+      "id": "c_train",
+      "value": "#7c3aed"
+    },
+    {
+      "id": "z_user",
+      "value": "#e0f2fe"
+    },
+    {
+      "id": "z_q",
+      "value": "#f3e8ff"
+    },
+    {
+      "id": "z_audio",
+      "value": "#dbeafe"
+    },
+    {
+      "id": "z_img",
+      "value": "#ffedd5"
+    },
+    {
+      "id": "z_text",
+      "value": "#f1f5f9"
+    },
+    {
+      "id": "z_core",
+      "value": "#e0e7ff"
+    },
+    {
+      "id": "z_sem",
+      "value": "#fef2f2"
+    },
+    {
+      "id": "z_out",
+      "value": "#dcfce7"
+    },
+    {
+      "id": "z_res",
+      "value": "#cffafe"
+    },
+    {
+      "id": "z_sql",
+      "value": "#ccfbf1"
+    },
+    {
+      "id": "z_leg",
+      "value": "#f8fafc"
+    },
+    {
+      "id": "z_inst",
+      "value": "#fef3c7"
+    },
+    {
+      "id": "z_hf",
+      "value": "#fef9c3"
+    },
+    {
+      "id": "z_oll",
+      "value": "#fae8ff"
+    },
+    {
+      "id": "z_train",
+      "value": "#ede9fe"
+    },
+    {
+      "id": "z_sup",
+      "value": "#e2e8f0"
+    },
+    {
+      "id": "z_lib",
+      "value": "#f1f5f9"
+    }
+  ],
+  "items": [
+    {
+      "id": "usuario",
+      "name": "Usuario",
+      "icon": "user",
+      "description": "Cliente del banco (a menudo una persona mayor) o analista antifraude. Abre la app local en http://127.0.0.1:7860."
+    },
+    {
+      "id": "gradio",
+      "name": "Interfaz web Gradio",
+      "icon": "desktop",
+      "description": "app/main.py · build(): pestañas Cliente, Analista del banco y Cómo funciona. app/ui_cliente.py recoge audio, imagen y texto."
+    },
+    {
+      "id": "decide",
+      "name": "¿Qué quieres comprobar?",
+      "icon": "diamond",
+      "description": "Según la pestaña y lo que se suba, la petición va por una rama u otra. Llamada, captura y texto se pueden combinar: pipeline.analyze() procesa solo las modalidades presentes."
+    },
+    {
+      "id": "in_q",
+      "name": "Pregúntame",
+      "icon": "speech",
+      "description": "Duda en voz alta o escrita. app/main.py · answer_question()."
+    },
+    {
+      "id": "q_whisper",
+      "name": "Whisper turbo · pregunta",
+      "icon": "sphere",
+      "description": "ai/asr.py · transcribe(): el mismo modelo que la rama de llamada."
+    },
+    {
+      "id": "q_llm",
+      "name": "Qwen3 8B · llm.answer()",
+      "icon": "cube",
+      "description": "ai/llm.py · answer(): máximo 3 frases claras y cálidas, con las reglas de seguridad bancaria. Vía ai/ollama_client.py."
+    },
+    {
+      "id": "q_tts",
+      "name": "Piper es_ES · tts.speak()",
+      "icon": "sphere",
+      "description": "ai/tts.py: pasa cifras y URLs a palabras y locuta con la voz es_ES-davefx-medium (ONNX, CPU)."
+    },
+    {
+      "id": "q_out",
+      "name": "Respuesta hablada",
+      "icon": "user",
+      "description": "Texto de la respuesta + audio con reproducción automática."
+    },
+    {
+      "id": "in_audio",
+      "name": "Llamada o nota de voz",
+      "icon": "mobiledevice",
+      "description": "Micrófono o archivo. Rama de audio de core/pipeline.py · analyze()."
+    },
+    {
+      "id": "whisper",
+      "name": "Whisper large-v3-turbo",
+      "icon": "sphere",
+      "description": "ai/asr.py · transcribe() + ai/audio_io.py (ffmpeg, 16 kHz). GPU bajo demanda con gpu.claim(); en modo ligero usa whisper-base en CPU."
+    },
+    {
+      "id": "clap",
+      "name": "CLAP · embedding de audio",
+      "icon": "sphere",
+      "description": "ai/audio_clap.py · embed_audio(): laion/clap-htsat-unfused, vector de 512 por ventanas, en CPU."
+    },
+    {
+      "id": "zeroshot",
+      "name": "CLAP sin entrenamiento",
+      "icon": "sphere",
+      "description": "audio_clap.zero_shot(): contexto acústico (voz robótica, menú IVR, call center...). Señal «acustica»."
+    },
+    {
+      "id": "voznet",
+      "name": "VozSinteticaNet (Keras)",
+      "icon": "pyramid",
+      "description": "ai/keras_heads.py · predict_voice() con artifacts/voz_sintetica.keras: p(voz sintética). Señal «voz»: solo puede subir el riesgo."
+    },
+    {
+      "id": "in_img",
+      "name": "Captura o foto de carta",
+      "icon": "image",
+      "description": "Captura de SMS, WhatsApp, correo, web o foto de una carta."
+    },
+    {
+      "id": "vlm",
+      "name": "Qwen2.5-VL 7B · lectura",
+      "icon": "cube",
+      "description": "ai/vision.py · read_image(): JSON con remitente, texto, enlaces, teléfonos y señales visuales. ollama_client.prime_vram() carga antes all-minilm para que entre entero en la GPU."
+    },
+    {
+      "id": "siglip",
+      "name": "SigLIP2 · embedding visual",
+      "icon": "sphere",
+      "description": "ai/embeddings.py · embed_images(): google/siglip2-base-patch16-224 en CPU. Sirve para encontrar campañas parecidas."
+    },
+    {
+      "id": "in_text",
+      "name": "Texto pegado",
+      "icon": "document",
+      "description": "El mensaje copiado tal cual. Va directo a la evidencia unificada."
+    },
+    {
+      "id": "in_sql",
+      "name": "Panel del analista",
+      "icon": "laptop",
+      "description": "app/ui_analista.py: KPIs y gráficos Plotly de data/cases.sqlite + preguntas en lenguaje natural · ask()."
+    },
+    {
+      "id": "agent",
+      "name": "CodeAgent + Qwen2.5 7B",
+      "icon": "cube",
+      "description": "core/sql_agent.py: smolagents CodeAgent con LiteLLM → Ollama (qwen2.5:7b), herramienta consultar_casos, máximo 4 pasos."
+    },
+    {
+      "id": "direct",
+      "name": "Consulta directa",
+      "icon": "function-module",
+      "description": "sql_agent._direct(): si el agente se pierde, una única llamada pregunta → SQL con esquema JSON."
+    },
+    {
+      "id": "safe",
+      "name": "safe_query · solo lectura",
+      "icon": "firewall",
+      "description": "core/cases_db.py · safe_query(): lista negra (INSERT, DROP, PRAGMA, ATTACH...) y una sola sentencia, SQLite mode=ro y PRAGMA query_only = ON."
+    },
+    {
+      "id": "db",
+      "name": "data/cases.sqlite",
+      "icon": "storage",
+      "description": "Casos analizados por la app (con datos personales enmascarados) + 450 casos sintéticos de histórico."
+    },
+    {
+      "id": "sql_out",
+      "name": "Analista: respuesta y tabla",
+      "icon": "user",
+      "description": "Frase de respuesta, la SQL ejecutada y la tabla de resultados."
+    },
+    {
+      "id": "evidence",
+      "name": "Evidencia unificada",
+      "icon": "queue",
+      "description": "core/pipeline.py · analyze(): une transcripción, texto leído de la imagen y texto pegado en evidence_text."
+    },
+    {
+      "id": "rules",
+      "name": "Reglas deterministas",
+      "icon": "function-module",
+      "description": "core/extractors.py · extract(): dominios no oficiales, OTP/PIN, IBAN, importes y apps de control remoto (regex + rapidfuzz). Puede activar la regla dura."
+    },
+    {
+      "id": "e5",
+      "name": "e5-small · embedding de texto",
+      "icon": "sphere",
+      "description": "ai/embeddings.py · embed_text(): intfloat/multilingual-e5-small, vector de 384, en CPU."
+    },
+    {
+      "id": "llm",
+      "name": "Qwen3 8B · veredicto JSON",
+      "icon": "cube",
+      "description": "ai/llm.py · analyze(): esquema JSON con probabilidad, veredicto, tácticas, frases clave, explicación y consejos."
+    },
+    {
+      "id": "tacticnet",
+      "name": "TacticNet (Keras)",
+      "icon": "pyramid",
+      "description": "ai/keras_heads.py · predict_tactics() con artifacts/tacticnet.keras: p(estafa) + 7 tácticas."
+    },
+    {
+      "id": "camp_idx",
+      "name": "Índice de campañas",
+      "icon": "storage",
+      "description": "data/campaigns: campaigns.json, capturas img/ e index.npz (lo crea scripts/build_index.py)."
+    },
+    {
+      "id": "campaigns",
+      "name": "Campañas conocidas",
+      "icon": "function-module",
+      "description": "core/campaigns.py · search(): similitud de texto (e5), imagen (SigLIP2) e imagen-texto, reescalada con artifacts/campaign_ranges.json."
+    },
+    {
+      "id": "fusion_w",
+      "name": "Pesos de la fusión",
+      "icon": "storage",
+      "description": "artifacts/fusion.json, ajustado en el notebook 05."
+    },
+    {
+      "id": "fusion",
+      "name": "Fusión log-odds",
+      "icon": "loadbalancer",
+      "description": "core/fusion.py · fuse(): riesgo = σ(b + Σ wᵢ·logit(pᵢ)); una señal ausente vale 0,5. Regla dura: si pide un código o una app remota y un modelo coincide, el riesgo no baja de 0,9."
+    },
+    {
+      "id": "sem",
+      "name": "Semáforo",
+      "icon": "diamond",
+      "description": "pipeline._decide(): umbrales 0,35 y 0,65 (config.py). Elige titular, explicación y consejos."
+    },
+    {
+      "id": "rojo",
+      "name": "Rojo · riesgo ≥ 0,65",
+      "icon": "block",
+      "description": "«Cuidado: esto tiene todas las señales de una estafa.»"
+    },
+    {
+      "id": "ambar",
+      "name": "Ámbar · 0,35 – 0,65",
+      "icon": "block",
+      "description": "«Atención: hay señales sospechosas. Compruébalo antes de hacer nada.»"
+    },
+    {
+      "id": "verde",
+      "name": "Verde · riesgo < 0,35",
+      "icon": "block",
+      "description": "«Parece legítimo, aunque conviene mantener la precaución.»"
+    },
+    {
+      "id": "outputs",
+      "name": "Salidas multimedia",
+      "icon": "router",
+      "description": "core/pipeline.py · outputs(): genera por orden de utilidad la voz, la infografía y el vídeo, y guarda el caso."
+    },
+    {
+      "id": "tts",
+      "name": "Piper es_ES · aviso de voz",
+      "icon": "sphere",
+      "description": "ai/tts.py · speak(): narra el veredicto en outputs/aviso_*.wav."
+    },
+    {
+      "id": "sdxl",
+      "name": "SDXL-Turbo · ilustración",
+      "icon": "sphere",
+      "description": "ai/imagegen.py · generate(): 4 pasos en GPU con enable_model_cpu_offload."
+    },
+    {
+      "id": "store",
+      "name": "Guardar caso",
+      "icon": "function-module",
+      "description": "core/cases_db.py · insert_case() tras extractors.mask_pii() (IBAN, tarjetas, DNI y teléfonos)."
+    },
+    {
+      "id": "iqa",
+      "name": "SigLIP2 · control de calidad",
+      "icon": "sphere",
+      "description": "embeddings.image_text_score(): puntúa imagen frente a prompt; hasta 2 intentos y se queda la mejor."
+    },
+    {
+      "id": "plantilla",
+      "name": "Plantilla sin GPU",
+      "icon": "function-module",
+      "description": "media/infographic.py · _fallback_hero(): en modo ligero no se usa SDXL."
+    },
+    {
+      "id": "infographic",
+      "name": "Infografía",
+      "icon": "image",
+      "description": "media/infographic.py · make(): PIL + Atkinson Hyperlegible, con la marca «Generado por IA» (AI Act, art. 50)."
+    },
+    {
+      "id": "video",
+      "name": "Vídeo-alerta",
+      "icon": "vm",
+      "description": "media/video.py · make(): moviepy + imageio-ffmpeg, MP4 H.264 con la infografía y la voz."
+    },
+    {
+      "id": "result",
+      "name": "Usuario: semáforo y avisos",
+      "icon": "user",
+      "description": "Ve el semáforo y la explicación en cuanto termina la fusión; después escucha la voz y recibe la infografía y el vídeo para compartir."
+    },
+    {
+      "id": "leg_hf",
+      "name": "Modelo de Hugging Face",
+      "icon": "sphere"
+    },
+    {
+      "id": "leg_oll",
+      "name": "LLM en Ollama",
+      "icon": "cube"
+    },
+    {
+      "id": "leg_keras",
+      "name": "Red Keras propia",
+      "icon": "pyramid"
+    },
+    {
+      "id": "leg_code",
+      "name": "Código Python",
+      "icon": "function-module"
+    },
+    {
+      "id": "leg_data",
+      "name": "Datos o artefactos",
+      "icon": "storage"
+    },
+    {
+      "id": "leg_lib",
+      "name": "Librería Python",
+      "icon": "package-module"
+    },
+    {
+      "id": "i_bat",
+      "name": "INSTALAR_Y_ARRANCAR.bat",
+      "icon": "cronjob",
+      "description": "Instalador de Windows en 6 pasos (en Linux/macOS: instalar_y_arrancar.sh). Con --light, sin SDXL, Bark ni Whisper turbo."
+    },
+    {
+      "id": "i_py",
+      "name": "get_python.ps1 → Python 3.12",
+      "icon": "cronjob",
+      "description": "Python oficial firmado (NuGet) en .tools/python312; evita los bloqueos de Smart App Control."
+    },
+    {
+      "id": "i_uv",
+      "name": "uv sync --frozen",
+      "icon": "cronjob",
+      "description": "Crea .venv con pyproject.toml + uv.lock; torch sale del índice CUDA 12.8."
+    },
+    {
+      "id": "i_check",
+      "name": "check_system.py",
+      "icon": "cronjob",
+      "description": "Comprueba sistema, GPU, VRAM, RAM, disco y puertos."
+    },
+    {
+      "id": "i_dl",
+      "name": "download_models.py",
+      "icon": "cronjob",
+      "description": "Descarga los modelos de Hugging Face y Ollama a ./models y escribe models/.complete."
+    },
+    {
+      "id": "i_idx",
+      "name": "build_index.py",
+      "icon": "cronjob",
+      "description": "Genera las capturas de campañas y data/campaigns/index.npz (e5 + SigLIP2)."
+    },
+    {
+      "id": "i_run",
+      "name": "ARRANCAR.bat → app.main",
+      "icon": "cronjob",
+      "description": "Arranca Ollama, precarga los modelos (app/services.py · warmup) y abre Gradio en :7860."
+    },
+    {
+      "id": "hf_hub",
+      "name": "Hugging Face Hub",
+      "icon": "cloud",
+      "description": "huggingface_hub.snapshot_download() con los allow_patterns de config.HF_MODELS. HF_HOME=models/hf; DD_OFFLINE=1 bloquea descargas."
+    },
+    {
+      "id": "hf_whisper",
+      "name": "whisper-large-v3-turbo",
+      "icon": "sphere",
+      "description": "openai/whisper-large-v3-turbo · transcripción en GPU (≈ 1,6 GB) · ai/asr.py"
+    },
+    {
+      "id": "hf_e5",
+      "name": "multilingual-e5-small",
+      "icon": "sphere",
+      "description": "intfloat/multilingual-e5-small · embedding de texto (384) · embeddings, campañas y TacticNet"
+    },
+    {
+      "id": "hf_clap",
+      "name": "clap-htsat-unfused",
+      "icon": "sphere",
+      "description": "laion/clap-htsat-unfused · embedding de audio (512) y contexto acústico · ai/audio_clap.py"
+    },
+    {
+      "id": "hf_piper",
+      "name": "piper-voices · es_ES-davefx",
+      "icon": "sphere",
+      "description": "rhasspy/piper-voices · es_ES-davefx-medium.onnx · locutor de la app (ai/tts.py)"
+    },
+    {
+      "id": "hf_sdxl",
+      "name": "sdxl-turbo (fp16)",
+      "icon": "sphere",
+      "description": "stabilityai/sdxl-turbo · ilustración de la infografía (ai/imagegen.py). Se omite con --light."
+    },
+    {
+      "id": "hf_wbase",
+      "name": "whisper-base",
+      "icon": "sphere",
+      "description": "openai/whisper-base · transcripción en CPU para el modo ligero"
+    },
+    {
+      "id": "hf_siglip",
+      "name": "siglip2-base-patch16-224",
+      "icon": "sphere",
+      "description": "google/siglip2-base-patch16-224 · embedding visual y control de calidad de la infografía"
+    },
+    {
+      "id": "hf_clip",
+      "name": "clip-vit-base-patch32",
+      "icon": "sphere",
+      "description": "openai/clip-vit-base-patch32 · solo para la comparativa del notebook 04 frente a SigLIP2"
+    },
+    {
+      "id": "hf_mms",
+      "name": "mms-tts-spa",
+      "icon": "sphere",
+      "description": "facebook/mms-tts-spa · voces sintéticas para entrenar VozSinteticaNet (data/voices.py)"
+    },
+    {
+      "id": "hf_bark",
+      "name": "bark-small",
+      "icon": "sphere",
+      "description": "suno/bark-small · voces sintéticas para entrenar VozSinteticaNet (ai/bark.py). Se omite con --light."
+    },
+    {
+      "id": "oll_srv",
+      "name": "Ollama dedicado :11435",
+      "icon": "server",
+      "description": "ai/ollama_server.py: Ollama portable de GitHub en .tools/ollama si falta; OLLAMA_MODELS=models/ollama, un modelo cargado cada vez, Vulkan desactivado. Reutiliza los modelos de tu Ollama habitual si ya los tienes."
+    },
+    {
+      "id": "o_vl",
+      "name": "qwen2.5vl:7b",
+      "icon": "cube",
+      "description": "Lectura de capturas (≈ 6 GB de VRAM) · ai/vision.py"
+    },
+    {
+      "id": "o_q3",
+      "name": "qwen3:8b",
+      "icon": "cube",
+      "description": "Veredicto JSON, asistente «Pregúntame» y textos sintéticos (≈ 6 GB) · ai/llm.py"
+    },
+    {
+      "id": "o_q25",
+      "name": "qwen2.5:7b",
+      "icon": "cube",
+      "description": "Agente SQL del analista · core/sql_agent.py"
+    },
+    {
+      "id": "o_mini",
+      "name": "all-minilm",
+      "icon": "cube",
+      "description": "46 MB: se carga antes del modelo de visión para que Ollama mida bien la VRAM libre"
+    },
+    {
+      "id": "d_sms",
+      "name": "UCI SMS Spam",
+      "icon": "cloud",
+      "description": "Dataset ucirvine/sms_spam (Hugging Face) con las tácticas enmascaradas · data/synth_text.py"
+    },
+    {
+      "id": "d_stext",
+      "name": "01 · Textos sintéticos",
+      "icon": "laptop",
+      "description": "Qwen3 genera estafas y mensajes legítimos en español (data/synth_text.py → data/synthetic)."
+    },
+    {
+      "id": "d_mls",
+      "name": "MLS español · voces reales",
+      "icon": "cloud",
+      "description": "facebook/multilingual_librispeech, partición spanish · data/voices.py"
+    },
+    {
+      "id": "d_svoice",
+      "name": "01 · Voces sintéticas",
+      "icon": "laptop",
+      "description": "MMS-TTS y Bark leen frases; data/telephony.py simula el canal telefónico (banda estrecha y códec)."
+    },
+    {
+      "id": "d_manual",
+      "name": "data/test_manual.csv",
+      "icon": "storage",
+      "description": "Casos etiquetados a mano para elegir modelos y ajustar la fusión."
+    },
+    {
+      "id": "nb02",
+      "name": "02 · TacticNet",
+      "icon": "laptop",
+      "description": "Red Keras sobre embeddings e5: tronco 256→128 GELU + 2 cabezas, temperatura incorporada."
+    },
+    {
+      "id": "nb03",
+      "name": "03 · VozSinteticaNet",
+      "icon": "laptop",
+      "description": "Red Keras 128→32 sobre embeddings CLAP, con ruido gaussiano y dropout 0,4."
+    },
+    {
+      "id": "nb04",
+      "name": "04 · Selección de modelos",
+      "icon": "laptop",
+      "description": "Compara Whisper turbo/base, SigLIP2/CLIP, MMS/Bark y LLMs; calibra los rangos de similitud de campañas."
+    },
+    {
+      "id": "nb05",
+      "name": "05 · Orquestación y ablación",
+      "icon": "laptop",
+      "description": "Ajusta los pesos de la fusión (validación cruzada dejando uno fuera)."
+    },
+    {
+      "id": "nb06",
+      "name": "06 · Latencia, VRAM y costes",
+      "icon": "laptop",
+      "description": "Mide tiempos por flujo y picos de VRAM."
+    },
+    {
+      "id": "nb00",
+      "name": "00 · Negocio y viabilidad",
+      "icon": "laptop",
+      "description": "Usa las cifras medidas para el caso de negocio."
+    },
+    {
+      "id": "a_tactic",
+      "name": "tacticnet.keras + .json",
+      "icon": "storage",
+      "description": "Lo carga ai/keras_heads.py · predict_tactics()."
+    },
+    {
+      "id": "a_voz",
+      "name": "voz_sintetica.keras + .json",
+      "icon": "storage",
+      "description": "Lo carga ai/keras_heads.py · predict_voice()."
+    },
+    {
+      "id": "a_ranges",
+      "name": "campaign_ranges.json",
+      "icon": "storage",
+      "description": "+ seleccion_modelos.json. Lo lee core/campaigns.py."
+    },
+    {
+      "id": "a_fusion",
+      "name": "fusion.json + ablacion.json",
+      "icon": "storage",
+      "description": "Pesos que lee core/fusion.py · load_params()."
+    },
+    {
+      "id": "a_bench",
+      "name": "benchmarks.json",
+      "icon": "storage",
+      "description": "Latencias y VRAM; los usa el notebook 00 y el README."
+    },
+    {
+      "id": "s_config",
+      "name": "config.py",
+      "icon": "switch-module",
+      "description": "src/diputado/config.py: rutas, IDs de modelos, puertos, umbrales y tácticas; fija HF_HOME, KERAS_BACKEND y desactiva la telemetría."
+    },
+    {
+      "id": "s_gpu",
+      "name": "gpu.py · gestor de VRAM",
+      "icon": "vm",
+      "description": "ai/gpu.py: gpu.claim(dueño) desaloja al anterior; detecta CUDA y el modo ligero (< 7,5 GB)."
+    },
+    {
+      "id": "s_audio",
+      "name": "audio_io.py",
+      "icon": "function-module",
+      "description": "ai/audio_io.py: decodifica con ffmpeg y remuestrea."
+    },
+    {
+      "id": "s_comp",
+      "name": "components.py + theme.css",
+      "icon": "function-module",
+      "description": "app/: semáforo, barra de progreso, gráficos y estilo de la consola oscura."
+    },
+    {
+      "id": "s_fonts",
+      "name": "fonts.py + Atkinson",
+      "icon": "function-module",
+      "description": "media/fonts.py + fonts/AtkinsonHyperlegible (OFL): tipografía muy legible para infografía y vídeo."
+    },
+    {
+      "id": "s_demo",
+      "name": "demo_cases.py · data/demo",
+      "icon": "function-module",
+      "description": "5 casos de demostración: llamada de falso banco, SMS de Correos, «hola mamá», carta cripto y SMS legítimo."
+    },
+    {
+      "id": "s_smoke",
+      "name": "smoke_test.py",
+      "icon": "cronjob",
+      "description": "scripts/smoke_test.py: ejecuta los casos de demo de principio a fin y comprueba el semáforo."
+    },
+    {
+      "id": "s_results",
+      "name": "actualizar_resultados.py",
+      "icon": "cronjob",
+      "description": "scripts/actualizar_resultados.py: vuelca las métricas de artifacts/ al README y al pitch deck."
+    },
+    {
+      "id": "s_services",
+      "name": "services.py · precarga",
+      "icon": "function-module",
+      "description": "app/services.py · warmup(): precarga en segundo plano casos, campañas, e5, SigLIP2, CLAP, Piper, Keras, Whisper, SDXL y Qwen3."
+    },
+    {
+      "id": "s_oclient",
+      "name": "ollama_client.py",
+      "icon": "function-module",
+      "description": "ai/ollama_client.py · chat(): salida con esquema JSON, métricas, descarga con keep_alive=0 y prime_vram()."
+    },
+    {
+      "id": "s_schemas",
+      "name": "schemas.py",
+      "icon": "function-module",
+      "description": "core/schemas.py: CaseInput (entrada) y AnalysisResult (resultado parcial, final y traza de pasos)."
+    },
+    {
+      "id": "s_info",
+      "name": "ui_info.py",
+      "icon": "function-module",
+      "description": "app/ui_info.py: pestaña «Cómo funciona»."
+    },
+    {
+      "id": "s_render",
+      "name": "render.py",
+      "icon": "function-module",
+      "description": "media/render.py: capturas sintéticas de SMS, WhatsApp y cartas para campañas y demo."
+    },
+    {
+      "id": "s_tests",
+      "name": "tests/ · pytest",
+      "icon": "firewall",
+      "description": "Fusión, extractores y protección de solo lectura del agente SQL."
+    },
+    {
+      "id": "s_capt",
+      "name": "capturas.py",
+      "icon": "cronjob",
+      "description": "scripts/capturas.py: regenera docs/img con un navegador sin ventana."
+    },
+    {
+      "id": "g_dl_0",
+      "name": "torch ≥ 2.6 · CUDA 12.8",
+      "icon": "package-module",
+      "description": "Motor de los modelos de Hugging Face y backend de Keras."
+    },
+    {
+      "id": "g_dl_1",
+      "name": "keras ≥ 3.8",
+      "icon": "package-module",
+      "description": "TacticNet y VozSinteticaNet con KERAS_BACKEND=torch."
+    },
+    {
+      "id": "g_dl_2",
+      "name": "accelerate",
+      "icon": "package-module",
+      "description": "Carga eficiente y enable_model_cpu_offload de SDXL."
+    },
+    {
+      "id": "g_dl_3",
+      "name": "safetensors",
+      "icon": "package-module",
+      "description": "Formato de pesos de Whisper, e5, SigLIP2, SDXL y MMS."
+    },
+    {
+      "id": "g_hf_0",
+      "name": "transformers < 5",
+      "icon": "package-module",
+      "description": "Whisper, e5, SigLIP2, CLIP, CLAP, MMS (VITS) y Bark."
+    },
+    {
+      "id": "g_hf_1",
+      "name": "diffusers",
+      "icon": "package-module",
+      "description": "AutoPipelineForText2Image para SDXL-Turbo."
+    },
+    {
+      "id": "g_hf_2",
+      "name": "huggingface-hub[hf-xet]",
+      "icon": "package-module",
+      "description": "snapshot_download y hf_hub_download; hf-xet acelera las descargas."
+    },
+    {
+      "id": "g_hf_3",
+      "name": "sentencepiece",
+      "icon": "package-module",
+      "description": "Tokenizadores de e5 y SigLIP2."
+    },
+    {
+      "id": "g_hf_4",
+      "name": "protobuf",
+      "icon": "package-module",
+      "description": "Requisito de los tokenizadores."
+    },
+    {
+      "id": "g_hf_5",
+      "name": "datasets",
+      "icon": "package-module",
+      "description": "Carga de datasets en los notebooks."
+    },
+    {
+      "id": "g_hf_6",
+      "name": "pyarrow < 25",
+      "icon": "package-module",
+      "description": "Parquet de MLS y UCI SMS Spam; < 25 por Smart App Control."
+    },
+    {
+      "id": "g_llm_0",
+      "name": "ollama",
+      "icon": "package-module",
+      "description": "Cliente Python de Ollama (ai/ollama_client.py)."
+    },
+    {
+      "id": "g_llm_1",
+      "name": "smolagents[litellm]",
+      "icon": "package-module",
+      "description": "CodeAgent del analista; LiteLLM conecta con Ollama."
+    },
+    {
+      "id": "g_llm_2",
+      "name": "gradio < 6",
+      "icon": "package-module",
+      "description": "Interfaz web con resultados parciales en streaming."
+    },
+    {
+      "id": "g_llm_3",
+      "name": "plotly",
+      "icon": "package-module",
+      "description": "Gráficos del panel del analista y de contribuciones."
+    },
+    {
+      "id": "g_llm_4",
+      "name": "pydantic",
+      "icon": "package-module",
+      "description": "Validación de datos para Gradio y smolagents."
+    },
+    {
+      "id": "g_media_0",
+      "name": "piper-tts",
+      "icon": "package-module",
+      "description": "Locutor es_ES-davefx en ONNX y CPU (ai/tts.py)."
+    },
+    {
+      "id": "g_media_1",
+      "name": "soundfile",
+      "icon": "package-module",
+      "description": "Lectura y escritura de WAV."
+    },
+    {
+      "id": "g_media_2",
+      "name": "scipy",
+      "icon": "package-module",
+      "description": "Remuestreo y filtro de canal telefónico."
+    },
+    {
+      "id": "g_media_3",
+      "name": "pillow",
+      "icon": "package-module",
+      "description": "Capturas sintéticas, infografía y fotogramas del vídeo."
+    },
+    {
+      "id": "g_media_4",
+      "name": "moviepy",
+      "icon": "package-module",
+      "description": "Montaje del vídeo-alerta (media/video.py)."
+    },
+    {
+      "id": "g_media_5",
+      "name": "imageio-ffmpeg",
+      "icon": "package-module",
+      "description": "ffmpeg empaquetado; config.ensure_ffmpeg_on_path lo expone en .tools/bin."
+    },
+    {
+      "id": "g_data_0",
+      "name": "numpy",
+      "icon": "package-module",
+      "description": "Embeddings, índice de campañas y audio."
+    },
+    {
+      "id": "g_data_1",
+      "name": "pandas",
+      "icon": "package-module",
+      "description": "Datos de entrenamiento, consultas SQL y tablas del analista."
+    },
+    {
+      "id": "g_data_2",
+      "name": "scikit-learn",
+      "icon": "package-module",
+      "description": "Validación cruzada y métricas en los notebooks."
+    },
+    {
+      "id": "g_data_3",
+      "name": "matplotlib",
+      "icon": "package-module",
+      "description": "Gráficos de los notebooks y fuentes de respaldo (fonts.py)."
+    },
+    {
+      "id": "g_data_4",
+      "name": "rapidfuzz",
+      "icon": "package-module",
+      "description": "Parecido de dominios con los oficiales (core/extractors.py)."
+    },
+    {
+      "id": "g_data_5",
+      "name": "jiwer",
+      "icon": "package-module",
+      "description": "WER para comparar transcripción y voz (notebook 04)."
+    },
+    {
+      "id": "g_tools_0",
+      "name": "jupyterlab",
+      "icon": "package-module",
+      "description": "Notebooks 00 a 06."
+    },
+    {
+      "id": "g_tools_1",
+      "name": "ipykernel",
+      "icon": "package-module",
+      "description": "Kernel de los notebooks."
+    },
+    {
+      "id": "g_tools_2",
+      "name": "nbconvert",
+      "icon": "package-module",
+      "description": "Ejecución de notebooks sin interfaz."
+    },
+    {
+      "id": "g_tools_3",
+      "name": "nbformat",
+      "icon": "package-module",
+      "description": "Lectura y escritura de notebooks."
+    },
+    {
+      "id": "g_tools_4",
+      "name": "pytest",
+      "icon": "package-module",
+      "description": "tests/: fusión, extractores y agente SQL."
+    },
+    {
+      "id": "g_tools_5",
+      "name": "psutil",
+      "icon": "package-module",
+      "description": "RAM y CPU en check_system.py y el notebook 06."
+    },
+    {
+      "id": "g_tools_6",
+      "name": "tqdm",
+      "icon": "package-module",
+      "description": "Barras de progreso."
+    },
+    {
+      "id": "g_tools_7",
+      "name": "rpds-py < 0.28",
+      "icon": "package-module",
+      "description": "Dependencia de jsonschema; fijada por Smart App Control."
+    }
+  ],
+  "views": [
+    {
+      "id": "recorrido",
+      "name": "Recorrido y dependencias",
+      "description": "Flujo por ramas del usuario a la respuesta y, debajo, todas las dependencias del proyecto.",
+      "items": [
+        {
+          "id": "usuario",
+          "tile": {
+            "x": 0,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "gradio",
+          "tile": {
+            "x": 4,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "decide",
+          "tile": {
+            "x": 8,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "in_q",
+          "tile": {
+            "x": 12,
+            "y": 28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "q_whisper",
+          "tile": {
+            "x": 16,
+            "y": 28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "q_llm",
+          "tile": {
+            "x": 28,
+            "y": 28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "q_tts",
+          "tile": {
+            "x": 53,
+            "y": 28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "q_out",
+          "tile": {
+            "x": 65,
+            "y": 28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "in_audio",
+          "tile": {
+            "x": 12,
+            "y": 19
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "whisper",
+          "tile": {
+            "x": 16,
+            "y": 21
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "clap",
+          "tile": {
+            "x": 16,
+            "y": 17
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "zeroshot",
+          "tile": {
+            "x": 20,
+            "y": 17
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "voznet",
+          "tile": {
+            "x": 20,
+            "y": 14
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "in_img",
+          "tile": {
+            "x": 12,
+            "y": 7
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "vlm",
+          "tile": {
+            "x": 16,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "siglip",
+          "tile": {
+            "x": 16,
+            "y": 4
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "in_text",
+          "tile": {
+            "x": 12,
+            "y": -1
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "in_sql",
+          "tile": {
+            "x": 12,
+            "y": -6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "agent",
+          "tile": {
+            "x": 20,
+            "y": -6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "direct",
+          "tile": {
+            "x": 24,
+            "y": -9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "safe",
+          "tile": {
+            "x": 28,
+            "y": -6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "db",
+          "tile": {
+            "x": 53,
+            "y": -6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "sql_out",
+          "tile": {
+            "x": 65,
+            "y": -6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "evidence",
+          "tile": {
+            "x": 24,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "rules",
+          "tile": {
+            "x": 28,
+            "y": 13
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "e5",
+          "tile": {
+            "x": 28,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "llm",
+          "tile": {
+            "x": 28,
+            "y": 1
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "tacticnet",
+          "tile": {
+            "x": 32,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "camp_idx",
+          "tile": {
+            "x": 34,
+            "y": 2
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "campaigns",
+          "tile": {
+            "x": 32,
+            "y": 4
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "fusion_w",
+          "tile": {
+            "x": 37,
+            "y": 5
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "fusion",
+          "tile": {
+            "x": 37,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "sem",
+          "tile": {
+            "x": 41,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "rojo",
+          "tile": {
+            "x": 45,
+            "y": 13
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "ambar",
+          "tile": {
+            "x": 45,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "verde",
+          "tile": {
+            "x": 45,
+            "y": 5
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "outputs",
+          "tile": {
+            "x": 49,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "tts",
+          "tile": {
+            "x": 53,
+            "y": 13
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "sdxl",
+          "tile": {
+            "x": 53,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "store",
+          "tile": {
+            "x": 53,
+            "y": 4
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "iqa",
+          "tile": {
+            "x": 57,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "plantilla",
+          "tile": {
+            "x": 57,
+            "y": 6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "infographic",
+          "tile": {
+            "x": 61,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "video",
+          "tile": {
+            "x": 61,
+            "y": 13
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "result",
+          "tile": {
+            "x": 65,
+            "y": 9
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "leg_hf",
+          "tile": {
+            "x": 0,
+            "y": 0
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "leg_oll",
+          "tile": {
+            "x": 5,
+            "y": 0
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "leg_keras",
+          "tile": {
+            "x": 0,
+            "y": -3
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "leg_code",
+          "tile": {
+            "x": 5,
+            "y": -3
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "leg_data",
+          "tile": {
+            "x": 0,
+            "y": -6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "leg_lib",
+          "tile": {
+            "x": 5,
+            "y": -6
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "i_bat",
+          "tile": {
+            "x": 2,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "i_py",
+          "tile": {
+            "x": 2,
+            "y": -26
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "i_uv",
+          "tile": {
+            "x": 2,
+            "y": -30
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "i_check",
+          "tile": {
+            "x": 2,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "i_dl",
+          "tile": {
+            "x": 2,
+            "y": -38
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "i_idx",
+          "tile": {
+            "x": 2,
+            "y": -42
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "i_run",
+          "tile": {
+            "x": 2,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_hub",
+          "tile": {
+            "x": 10,
+            "y": -31
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_whisper",
+          "tile": {
+            "x": 15,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_e5",
+          "tile": {
+            "x": 15,
+            "y": -26
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_clap",
+          "tile": {
+            "x": 15,
+            "y": -30
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_piper",
+          "tile": {
+            "x": 15,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_sdxl",
+          "tile": {
+            "x": 15,
+            "y": -38
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_wbase",
+          "tile": {
+            "x": 21,
+            "y": -24
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_siglip",
+          "tile": {
+            "x": 21,
+            "y": -28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_clip",
+          "tile": {
+            "x": 21,
+            "y": -32
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_mms",
+          "tile": {
+            "x": 21,
+            "y": -36
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "hf_bark",
+          "tile": {
+            "x": 21,
+            "y": -40
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "oll_srv",
+          "tile": {
+            "x": 10,
+            "y": -50
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "o_vl",
+          "tile": {
+            "x": 15,
+            "y": -47
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "o_q3",
+          "tile": {
+            "x": 15,
+            "y": -51
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "o_q25",
+          "tile": {
+            "x": 21,
+            "y": -49
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "o_mini",
+          "tile": {
+            "x": 21,
+            "y": -53
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "d_sms",
+          "tile": {
+            "x": 28,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "d_stext",
+          "tile": {
+            "x": 28,
+            "y": -26
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "d_mls",
+          "tile": {
+            "x": 28,
+            "y": -30
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "d_svoice",
+          "tile": {
+            "x": 28,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "d_manual",
+          "tile": {
+            "x": 28,
+            "y": -38
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "nb02",
+          "tile": {
+            "x": 34,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "nb03",
+          "tile": {
+            "x": 34,
+            "y": -30
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "nb04",
+          "tile": {
+            "x": 34,
+            "y": -38
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "nb05",
+          "tile": {
+            "x": 34,
+            "y": -42
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "nb06",
+          "tile": {
+            "x": 34,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "nb00",
+          "tile": {
+            "x": 34,
+            "y": -50
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "a_tactic",
+          "tile": {
+            "x": 40,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "a_voz",
+          "tile": {
+            "x": 40,
+            "y": -30
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "a_ranges",
+          "tile": {
+            "x": 40,
+            "y": -38
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "a_fusion",
+          "tile": {
+            "x": 40,
+            "y": -42
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "a_bench",
+          "tile": {
+            "x": 40,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_config",
+          "tile": {
+            "x": 47,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_gpu",
+          "tile": {
+            "x": 47,
+            "y": -26
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_audio",
+          "tile": {
+            "x": 47,
+            "y": -30
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_comp",
+          "tile": {
+            "x": 47,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_fonts",
+          "tile": {
+            "x": 47,
+            "y": -38
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_demo",
+          "tile": {
+            "x": 47,
+            "y": -42
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_smoke",
+          "tile": {
+            "x": 47,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_results",
+          "tile": {
+            "x": 47,
+            "y": -50
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_services",
+          "tile": {
+            "x": 53,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_oclient",
+          "tile": {
+            "x": 53,
+            "y": -26
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_schemas",
+          "tile": {
+            "x": 53,
+            "y": -30
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_info",
+          "tile": {
+            "x": 53,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_render",
+          "tile": {
+            "x": 53,
+            "y": -38
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_tests",
+          "tile": {
+            "x": 53,
+            "y": -42
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "s_capt",
+          "tile": {
+            "x": 53,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_dl_0",
+          "tile": {
+            "x": 59,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_dl_1",
+          "tile": {
+            "x": 63,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_dl_2",
+          "tile": {
+            "x": 59,
+            "y": -25
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_dl_3",
+          "tile": {
+            "x": 63,
+            "y": -25
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_hf_0",
+          "tile": {
+            "x": 59,
+            "y": -31
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_hf_1",
+          "tile": {
+            "x": 63,
+            "y": -31
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_hf_2",
+          "tile": {
+            "x": 59,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_hf_3",
+          "tile": {
+            "x": 63,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_hf_4",
+          "tile": {
+            "x": 59,
+            "y": -37
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_hf_5",
+          "tile": {
+            "x": 63,
+            "y": -37
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_hf_6",
+          "tile": {
+            "x": 59,
+            "y": -40
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_llm_0",
+          "tile": {
+            "x": 59,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_llm_1",
+          "tile": {
+            "x": 63,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_llm_2",
+          "tile": {
+            "x": 59,
+            "y": -49
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_llm_3",
+          "tile": {
+            "x": 63,
+            "y": -49
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_llm_4",
+          "tile": {
+            "x": 59,
+            "y": -52
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_media_0",
+          "tile": {
+            "x": 68,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_media_1",
+          "tile": {
+            "x": 72,
+            "y": -22
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_media_2",
+          "tile": {
+            "x": 68,
+            "y": -25
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_media_3",
+          "tile": {
+            "x": 72,
+            "y": -25
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_media_4",
+          "tile": {
+            "x": 68,
+            "y": -28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_media_5",
+          "tile": {
+            "x": 72,
+            "y": -28
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_data_0",
+          "tile": {
+            "x": 68,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_data_1",
+          "tile": {
+            "x": 72,
+            "y": -34
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_data_2",
+          "tile": {
+            "x": 68,
+            "y": -37
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_data_3",
+          "tile": {
+            "x": 72,
+            "y": -37
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_data_4",
+          "tile": {
+            "x": 68,
+            "y": -40
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_data_5",
+          "tile": {
+            "x": 72,
+            "y": -40
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_0",
+          "tile": {
+            "x": 68,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_1",
+          "tile": {
+            "x": 72,
+            "y": -46
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_2",
+          "tile": {
+            "x": 68,
+            "y": -49
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_3",
+          "tile": {
+            "x": 72,
+            "y": -49
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_4",
+          "tile": {
+            "x": 68,
+            "y": -52
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_5",
+          "tile": {
+            "x": 72,
+            "y": -52
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_6",
+          "tile": {
+            "x": 68,
+            "y": -55
+          },
+          "labelHeight": 110
+        },
+        {
+          "id": "g_tools_7",
+          "tile": {
+            "x": 72,
+            "y": -55
+          },
+          "labelHeight": 110
+        }
+      ],
+      "connectors": [
+        {
+          "id": "c001",
+          "color": "c_user",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c001_0",
+              "ref": {
+                "item": "usuario"
+              }
+            },
+            {
+              "id": "c001_1",
+              "ref": {
+                "item": "gradio"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c002",
+          "color": "c_user",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c002_0",
+              "ref": {
+                "item": "gradio"
+              }
+            },
+            {
+              "id": "c002_1",
+              "ref": {
+                "item": "decide"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c003",
+          "color": "c_q",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c003_0",
+              "ref": {
+                "item": "in_q"
+              }
+            },
+            {
+              "id": "c003_1",
+              "ref": {
+                "item": "q_whisper"
+              }
+            }
+          ],
+          "description": "si la dices en voz alta"
+        },
+        {
+          "id": "c004",
+          "color": "c_q",
+          "style": "DASHED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c004_0",
+              "ref": {
+                "item": "in_q"
+              }
+            },
+            {
+              "id": "c004_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": 26
+                }
+              }
+            },
+            {
+              "id": "c004_2",
+              "ref": {
+                "tile": {
+                  "x": 28,
+                  "y": 26
+                }
+              }
+            },
+            {
+              "id": "c004_3",
+              "ref": {
+                "item": "q_llm"
+              }
+            }
+          ],
+          "description": "si la escribes"
+        },
+        {
+          "id": "c005",
+          "color": "c_q",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c005_0",
+              "ref": {
+                "item": "q_whisper"
+              }
+            },
+            {
+              "id": "c005_1",
+              "ref": {
+                "item": "q_llm"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c006",
+          "color": "c_q",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c006_0",
+              "ref": {
+                "item": "q_llm"
+              }
+            },
+            {
+              "id": "c006_1",
+              "ref": {
+                "item": "q_tts"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c007",
+          "color": "c_q",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c007_0",
+              "ref": {
+                "item": "q_tts"
+              }
+            },
+            {
+              "id": "c007_1",
+              "ref": {
+                "item": "q_out"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c008",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c008_0",
+              "ref": {
+                "item": "in_audio"
+              }
+            },
+            {
+              "id": "c008_1",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 19
+                }
+              }
+            },
+            {
+              "id": "c008_2",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 21
+                }
+              }
+            },
+            {
+              "id": "c008_3",
+              "ref": {
+                "item": "whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c009",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c009_0",
+              "ref": {
+                "item": "in_audio"
+              }
+            },
+            {
+              "id": "c009_1",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 19
+                }
+              }
+            },
+            {
+              "id": "c009_2",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 17
+                }
+              }
+            },
+            {
+              "id": "c009_3",
+              "ref": {
+                "item": "clap"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c010",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c010_0",
+              "ref": {
+                "item": "clap"
+              }
+            },
+            {
+              "id": "c010_1",
+              "ref": {
+                "item": "zeroshot"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c011",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c011_0",
+              "ref": {
+                "item": "clap"
+              }
+            },
+            {
+              "id": "c011_1",
+              "ref": {
+                "tile": {
+                  "x": 18,
+                  "y": 17
+                }
+              }
+            },
+            {
+              "id": "c011_2",
+              "ref": {
+                "tile": {
+                  "x": 18,
+                  "y": 14
+                }
+              }
+            },
+            {
+              "id": "c011_3",
+              "ref": {
+                "item": "voznet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c012",
+          "color": "c_img",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c012_0",
+              "ref": {
+                "item": "in_img"
+              }
+            },
+            {
+              "id": "c012_1",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 7
+                }
+              }
+            },
+            {
+              "id": "c012_2",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c012_3",
+              "ref": {
+                "item": "vlm"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c013",
+          "color": "c_img",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c013_0",
+              "ref": {
+                "item": "in_img"
+              }
+            },
+            {
+              "id": "c013_1",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 7
+                }
+              }
+            },
+            {
+              "id": "c013_2",
+              "ref": {
+                "tile": {
+                  "x": 14,
+                  "y": 4
+                }
+              }
+            },
+            {
+              "id": "c013_3",
+              "ref": {
+                "item": "siglip"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c014",
+          "color": "c_sql",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c014_0",
+              "ref": {
+                "item": "in_sql"
+              }
+            },
+            {
+              "id": "c014_1",
+              "ref": {
+                "item": "agent"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c015",
+          "color": "c_sql",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c015_0",
+              "ref": {
+                "item": "agent"
+              }
+            },
+            {
+              "id": "c015_1",
+              "ref": {
+                "item": "safe"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c016",
+          "color": "c_alt",
+          "style": "DASHED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c016_0",
+              "ref": {
+                "item": "agent"
+              }
+            },
+            {
+              "id": "c016_1",
+              "ref": {
+                "tile": {
+                  "x": 20,
+                  "y": -9
+                }
+              }
+            },
+            {
+              "id": "c016_2",
+              "ref": {
+                "item": "direct"
+              }
+            }
+          ],
+          "description": "si el agente falla"
+        },
+        {
+          "id": "c017",
+          "color": "c_alt",
+          "style": "DASHED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c017_0",
+              "ref": {
+                "item": "direct"
+              }
+            },
+            {
+              "id": "c017_1",
+              "ref": {
+                "tile": {
+                  "x": 28,
+                  "y": -9
+                }
+              }
+            },
+            {
+              "id": "c017_2",
+              "ref": {
+                "item": "safe"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c018",
+          "color": "c_sql",
+          "style": "DOTTED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c018_0",
+              "ref": {
+                "item": "safe"
+              }
+            },
+            {
+              "id": "c018_1",
+              "ref": {
+                "item": "db"
+              }
+            }
+          ],
+          "description": "SELECT"
+        },
+        {
+          "id": "c019",
+          "color": "c_sql",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c019_0",
+              "ref": {
+                "item": "db"
+              }
+            },
+            {
+              "id": "c019_1",
+              "ref": {
+                "item": "sql_out"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c020",
+          "color": "c_q",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c020_0",
+              "ref": {
+                "item": "decide"
+              }
+            },
+            {
+              "id": "c020_1",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c020_2",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 28
+                }
+              }
+            },
+            {
+              "id": "c020_3",
+              "ref": {
+                "item": "in_q"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c021",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c021_0",
+              "ref": {
+                "item": "decide"
+              }
+            },
+            {
+              "id": "c021_1",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c021_2",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 19
+                }
+              }
+            },
+            {
+              "id": "c021_3",
+              "ref": {
+                "item": "in_audio"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c022",
+          "color": "c_img",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c022_0",
+              "ref": {
+                "item": "decide"
+              }
+            },
+            {
+              "id": "c022_1",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c022_2",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 7
+                }
+              }
+            },
+            {
+              "id": "c022_3",
+              "ref": {
+                "item": "in_img"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c023",
+          "color": "c_text",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c023_0",
+              "ref": {
+                "item": "decide"
+              }
+            },
+            {
+              "id": "c023_1",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c023_2",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": -1
+                }
+              }
+            },
+            {
+              "id": "c023_3",
+              "ref": {
+                "item": "in_text"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c024",
+          "color": "c_sql",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c024_0",
+              "ref": {
+                "item": "decide"
+              }
+            },
+            {
+              "id": "c024_1",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c024_2",
+              "ref": {
+                "tile": {
+                  "x": 10,
+                  "y": -6
+                }
+              }
+            },
+            {
+              "id": "c024_3",
+              "ref": {
+                "item": "in_sql"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c025",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c025_0",
+              "ref": {
+                "item": "whisper"
+              }
+            },
+            {
+              "id": "c025_1",
+              "ref": {
+                "tile": {
+                  "x": 22,
+                  "y": 21
+                }
+              }
+            },
+            {
+              "id": "c025_2",
+              "ref": {
+                "tile": {
+                  "x": 22,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c025_3",
+              "ref": {
+                "item": "evidence"
+              }
+            }
+          ],
+          "description": "transcripción"
+        },
+        {
+          "id": "c026",
+          "color": "c_img",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c026_0",
+              "ref": {
+                "item": "vlm"
+              }
+            },
+            {
+              "id": "c026_1",
+              "ref": {
+                "item": "evidence"
+              }
+            }
+          ],
+          "description": "texto leído"
+        },
+        {
+          "id": "c027",
+          "color": "c_text",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c027_0",
+              "ref": {
+                "item": "in_text"
+              }
+            },
+            {
+              "id": "c027_1",
+              "ref": {
+                "tile": {
+                  "x": 22,
+                  "y": -1
+                }
+              }
+            },
+            {
+              "id": "c027_2",
+              "ref": {
+                "tile": {
+                  "x": 22,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c027_3",
+              "ref": {
+                "item": "evidence"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c028",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c028_0",
+              "ref": {
+                "item": "evidence"
+              }
+            },
+            {
+              "id": "c028_1",
+              "ref": {
+                "tile": {
+                  "x": 26,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c028_2",
+              "ref": {
+                "tile": {
+                  "x": 26,
+                  "y": 13
+                }
+              }
+            },
+            {
+              "id": "c028_3",
+              "ref": {
+                "item": "rules"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c029",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c029_0",
+              "ref": {
+                "item": "evidence"
+              }
+            },
+            {
+              "id": "c029_1",
+              "ref": {
+                "item": "e5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c030",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c030_0",
+              "ref": {
+                "item": "evidence"
+              }
+            },
+            {
+              "id": "c030_1",
+              "ref": {
+                "tile": {
+                  "x": 26,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c030_2",
+              "ref": {
+                "tile": {
+                  "x": 26,
+                  "y": 1
+                }
+              }
+            },
+            {
+              "id": "c030_3",
+              "ref": {
+                "item": "llm"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c031",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c031_0",
+              "ref": {
+                "item": "e5"
+              }
+            },
+            {
+              "id": "c031_1",
+              "ref": {
+                "item": "tacticnet"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c032",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c032_0",
+              "ref": {
+                "item": "e5"
+              }
+            },
+            {
+              "id": "c032_1",
+              "ref": {
+                "tile": {
+                  "x": 30,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c032_2",
+              "ref": {
+                "tile": {
+                  "x": 30,
+                  "y": 4
+                }
+              }
+            },
+            {
+              "id": "c032_3",
+              "ref": {
+                "item": "campaigns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c033",
+          "color": "c_img",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c033_0",
+              "ref": {
+                "item": "siglip"
+              }
+            },
+            {
+              "id": "c033_1",
+              "ref": {
+                "item": "campaigns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c034",
+          "color": "c_dep",
+          "style": "DOTTED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c034_0",
+              "ref": {
+                "item": "camp_idx"
+              }
+            },
+            {
+              "id": "c034_1",
+              "ref": {
+                "tile": {
+                  "x": 32,
+                  "y": 2
+                }
+              }
+            },
+            {
+              "id": "c034_2",
+              "ref": {
+                "item": "campaigns"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c035",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c035_0",
+              "ref": {
+                "item": "rules"
+              }
+            },
+            {
+              "id": "c035_1",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 13
+                }
+              }
+            },
+            {
+              "id": "c035_2",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c035_3",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c036",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c036_0",
+              "ref": {
+                "item": "tacticnet"
+              }
+            },
+            {
+              "id": "c036_1",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c037",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c037_0",
+              "ref": {
+                "item": "campaigns"
+              }
+            },
+            {
+              "id": "c037_1",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 4
+                }
+              }
+            },
+            {
+              "id": "c037_2",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c037_3",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c038",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c038_0",
+              "ref": {
+                "item": "llm"
+              }
+            },
+            {
+              "id": "c038_1",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 1
+                }
+              }
+            },
+            {
+              "id": "c038_2",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c038_3",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c039",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c039_0",
+              "ref": {
+                "item": "voznet"
+              }
+            },
+            {
+              "id": "c039_1",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 14
+                }
+              }
+            },
+            {
+              "id": "c039_2",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c039_3",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c040",
+          "color": "c_audio",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c040_0",
+              "ref": {
+                "item": "zeroshot"
+              }
+            },
+            {
+              "id": "c040_1",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 17
+                }
+              }
+            },
+            {
+              "id": "c040_2",
+              "ref": {
+                "tile": {
+                  "x": 35,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c040_3",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c041",
+          "color": "c_dep",
+          "style": "DOTTED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c041_0",
+              "ref": {
+                "item": "fusion_w"
+              }
+            },
+            {
+              "id": "c041_1",
+              "ref": {
+                "item": "fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c042",
+          "color": "c_core",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c042_0",
+              "ref": {
+                "item": "fusion"
+              }
+            },
+            {
+              "id": "c042_1",
+              "ref": {
+                "item": "sem"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c043",
+          "color": "c_red",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c043_0",
+              "ref": {
+                "item": "sem"
+              }
+            },
+            {
+              "id": "c043_1",
+              "ref": {
+                "tile": {
+                  "x": 43,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c043_2",
+              "ref": {
+                "tile": {
+                  "x": 43,
+                  "y": 13
+                }
+              }
+            },
+            {
+              "id": "c043_3",
+              "ref": {
+                "item": "rojo"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c044",
+          "color": "c_amber",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c044_0",
+              "ref": {
+                "item": "sem"
+              }
+            },
+            {
+              "id": "c044_1",
+              "ref": {
+                "item": "ambar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c045",
+          "color": "c_green",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c045_0",
+              "ref": {
+                "item": "sem"
+              }
+            },
+            {
+              "id": "c045_1",
+              "ref": {
+                "tile": {
+                  "x": 43,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c045_2",
+              "ref": {
+                "tile": {
+                  "x": 43,
+                  "y": 5
+                }
+              }
+            },
+            {
+              "id": "c045_3",
+              "ref": {
+                "item": "verde"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c046",
+          "color": "c_red",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c046_0",
+              "ref": {
+                "item": "rojo"
+              }
+            },
+            {
+              "id": "c046_1",
+              "ref": {
+                "tile": {
+                  "x": 47,
+                  "y": 13
+                }
+              }
+            },
+            {
+              "id": "c046_2",
+              "ref": {
+                "tile": {
+                  "x": 47,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c046_3",
+              "ref": {
+                "item": "outputs"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c047",
+          "color": "c_amber",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c047_0",
+              "ref": {
+                "item": "ambar"
+              }
+            },
+            {
+              "id": "c047_1",
+              "ref": {
+                "item": "outputs"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c048",
+          "color": "c_green",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c048_0",
+              "ref": {
+                "item": "verde"
+              }
+            },
+            {
+              "id": "c048_1",
+              "ref": {
+                "tile": {
+                  "x": 47,
+                  "y": 5
+                }
+              }
+            },
+            {
+              "id": "c048_2",
+              "ref": {
+                "tile": {
+                  "x": 47,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c048_3",
+              "ref": {
+                "item": "outputs"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c049",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c049_0",
+              "ref": {
+                "item": "outputs"
+              }
+            },
+            {
+              "id": "c049_1",
+              "ref": {
+                "tile": {
+                  "x": 51,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c049_2",
+              "ref": {
+                "tile": {
+                  "x": 51,
+                  "y": 13
+                }
+              }
+            },
+            {
+              "id": "c049_3",
+              "ref": {
+                "item": "tts"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c050",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c050_0",
+              "ref": {
+                "item": "outputs"
+              }
+            },
+            {
+              "id": "c050_1",
+              "ref": {
+                "item": "sdxl"
+              }
+            }
+          ],
+          "description": "con GPU"
+        },
+        {
+          "id": "c051",
+          "color": "c_db",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c051_0",
+              "ref": {
+                "item": "outputs"
+              }
+            },
+            {
+              "id": "c051_1",
+              "ref": {
+                "tile": {
+                  "x": 51,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c051_2",
+              "ref": {
+                "tile": {
+                  "x": 51,
+                  "y": 4
+                }
+              }
+            },
+            {
+              "id": "c051_3",
+              "ref": {
+                "item": "store"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c052",
+          "color": "c_alt",
+          "style": "DASHED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c052_0",
+              "ref": {
+                "item": "outputs"
+              }
+            },
+            {
+              "id": "c052_1",
+              "ref": {
+                "tile": {
+                  "x": 49,
+                  "y": 6
+                }
+              }
+            },
+            {
+              "id": "c052_2",
+              "ref": {
+                "item": "plantilla"
+              }
+            }
+          ],
+          "description": "modo ligero"
+        },
+        {
+          "id": "c053",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c053_0",
+              "ref": {
+                "item": "sdxl"
+              }
+            },
+            {
+              "id": "c053_1",
+              "ref": {
+                "item": "iqa"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c054",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c054_0",
+              "ref": {
+                "item": "iqa"
+              }
+            },
+            {
+              "id": "c054_1",
+              "ref": {
+                "item": "infographic"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c055",
+          "color": "c_alt",
+          "style": "DASHED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c055_0",
+              "ref": {
+                "item": "plantilla"
+              }
+            },
+            {
+              "id": "c055_1",
+              "ref": {
+                "tile": {
+                  "x": 61,
+                  "y": 6
+                }
+              }
+            },
+            {
+              "id": "c055_2",
+              "ref": {
+                "item": "infographic"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c056",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c056_0",
+              "ref": {
+                "item": "tts"
+              }
+            },
+            {
+              "id": "c056_1",
+              "ref": {
+                "item": "video"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c057",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c057_0",
+              "ref": {
+                "item": "infographic"
+              }
+            },
+            {
+              "id": "c057_1",
+              "ref": {
+                "item": "video"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c058",
+          "color": "c_db",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c058_0",
+              "ref": {
+                "item": "store"
+              }
+            },
+            {
+              "id": "c058_1",
+              "ref": {
+                "item": "db"
+              }
+            }
+          ],
+          "description": "INSERT"
+        },
+        {
+          "id": "c059",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c059_0",
+              "ref": {
+                "item": "infographic"
+              }
+            },
+            {
+              "id": "c059_1",
+              "ref": {
+                "item": "result"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c060",
+          "color": "c_out",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c060_0",
+              "ref": {
+                "item": "video"
+              }
+            },
+            {
+              "id": "c060_1",
+              "ref": {
+                "tile": {
+                  "x": 63,
+                  "y": 13
+                }
+              }
+            },
+            {
+              "id": "c060_2",
+              "ref": {
+                "tile": {
+                  "x": 63,
+                  "y": 9
+                }
+              }
+            },
+            {
+              "id": "c060_3",
+              "ref": {
+                "item": "result"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c061",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c061_0",
+              "ref": {
+                "tile": {
+                  "x": 0,
+                  "y": -9
+                }
+              }
+            },
+            {
+              "id": "c061_1",
+              "ref": {
+                "tile": {
+                  "x": 6,
+                  "y": -9
+                }
+              }
+            }
+          ],
+          "description": "flujo principal"
+        },
+        {
+          "id": "c062",
+          "color": "c_alt",
+          "style": "DASHED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c062_0",
+              "ref": {
+                "tile": {
+                  "x": 0,
+                  "y": -11
+                }
+              }
+            },
+            {
+              "id": "c062_1",
+              "ref": {
+                "tile": {
+                  "x": 6,
+                  "y": -11
+                }
+              }
+            }
+          ],
+          "description": "alternativa o condición"
+        },
+        {
+          "id": "c063",
+          "color": "c_dep",
+          "style": "DOTTED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c063_0",
+              "ref": {
+                "tile": {
+                  "x": 0,
+                  "y": -13
+                }
+              }
+            },
+            {
+              "id": "c063_1",
+              "ref": {
+                "tile": {
+                  "x": 6,
+                  "y": -13
+                }
+              }
+            }
+          ],
+          "description": "lectura de datos"
+        },
+        {
+          "id": "c064",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c064_0",
+              "ref": {
+                "item": "i_bat"
+              }
+            },
+            {
+              "id": "c064_1",
+              "ref": {
+                "item": "i_py"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c065",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c065_0",
+              "ref": {
+                "item": "i_py"
+              }
+            },
+            {
+              "id": "c065_1",
+              "ref": {
+                "item": "i_uv"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c066",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c066_0",
+              "ref": {
+                "item": "i_uv"
+              }
+            },
+            {
+              "id": "c066_1",
+              "ref": {
+                "item": "i_check"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c067",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c067_0",
+              "ref": {
+                "item": "i_check"
+              }
+            },
+            {
+              "id": "c067_1",
+              "ref": {
+                "item": "i_dl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c068",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c068_0",
+              "ref": {
+                "item": "i_dl"
+              }
+            },
+            {
+              "id": "c068_1",
+              "ref": {
+                "item": "i_idx"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c069",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c069_0",
+              "ref": {
+                "item": "i_idx"
+              }
+            },
+            {
+              "id": "c069_1",
+              "ref": {
+                "item": "i_run"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c070",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c070_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c070_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c070_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -22
+                }
+              }
+            },
+            {
+              "id": "c070_3",
+              "ref": {
+                "item": "hf_whisper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c071",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c071_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c071_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c071_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -26
+                }
+              }
+            },
+            {
+              "id": "c071_3",
+              "ref": {
+                "item": "hf_e5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c072",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c072_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c072_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c072_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -30
+                }
+              }
+            },
+            {
+              "id": "c072_3",
+              "ref": {
+                "item": "hf_clap"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c073",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c073_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c073_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c073_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -34
+                }
+              }
+            },
+            {
+              "id": "c073_3",
+              "ref": {
+                "item": "hf_piper"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c074",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c074_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c074_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c074_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -38
+                }
+              }
+            },
+            {
+              "id": "c074_3",
+              "ref": {
+                "item": "hf_sdxl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c075",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c075_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c075_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c075_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -24
+                }
+              }
+            },
+            {
+              "id": "c075_3",
+              "ref": {
+                "item": "hf_wbase"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c076",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c076_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c076_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c076_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -28
+                }
+              }
+            },
+            {
+              "id": "c076_3",
+              "ref": {
+                "item": "hf_siglip"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c077",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c077_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c077_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c077_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -32
+                }
+              }
+            },
+            {
+              "id": "c077_3",
+              "ref": {
+                "item": "hf_clip"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c078",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c078_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c078_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c078_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -36
+                }
+              }
+            },
+            {
+              "id": "c078_3",
+              "ref": {
+                "item": "hf_mms"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c079",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c079_0",
+              "ref": {
+                "item": "hf_hub"
+              }
+            },
+            {
+              "id": "c079_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c079_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -40
+                }
+              }
+            },
+            {
+              "id": "c079_3",
+              "ref": {
+                "item": "hf_bark"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c080",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c080_0",
+              "ref": {
+                "item": "oll_srv"
+              }
+            },
+            {
+              "id": "c080_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -50
+                }
+              }
+            },
+            {
+              "id": "c080_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -47
+                }
+              }
+            },
+            {
+              "id": "c080_3",
+              "ref": {
+                "item": "o_vl"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c081",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c081_0",
+              "ref": {
+                "item": "oll_srv"
+              }
+            },
+            {
+              "id": "c081_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -50
+                }
+              }
+            },
+            {
+              "id": "c081_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -51
+                }
+              }
+            },
+            {
+              "id": "c081_3",
+              "ref": {
+                "item": "o_q3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c082",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c082_0",
+              "ref": {
+                "item": "oll_srv"
+              }
+            },
+            {
+              "id": "c082_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -50
+                }
+              }
+            },
+            {
+              "id": "c082_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -49
+                }
+              }
+            },
+            {
+              "id": "c082_3",
+              "ref": {
+                "item": "o_q25"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c083",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c083_0",
+              "ref": {
+                "item": "oll_srv"
+              }
+            },
+            {
+              "id": "c083_1",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -50
+                }
+              }
+            },
+            {
+              "id": "c083_2",
+              "ref": {
+                "tile": {
+                  "x": 12,
+                  "y": -53
+                }
+              }
+            },
+            {
+              "id": "c083_3",
+              "ref": {
+                "item": "o_mini"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c084",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c084_0",
+              "ref": {
+                "item": "i_dl"
+              }
+            },
+            {
+              "id": "c084_1",
+              "ref": {
+                "tile": {
+                  "x": 6,
+                  "y": -38
+                }
+              }
+            },
+            {
+              "id": "c084_2",
+              "ref": {
+                "tile": {
+                  "x": 6,
+                  "y": -31
+                }
+              }
+            },
+            {
+              "id": "c084_3",
+              "ref": {
+                "item": "hf_hub"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c085",
+          "color": "c_dep",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c085_0",
+              "ref": {
+                "item": "i_dl"
+              }
+            },
+            {
+              "id": "c085_1",
+              "ref": {
+                "tile": {
+                  "x": 6,
+                  "y": -38
+                }
+              }
+            },
+            {
+              "id": "c085_2",
+              "ref": {
+                "tile": {
+                  "x": 6,
+                  "y": -50
+                }
+              }
+            },
+            {
+              "id": "c085_3",
+              "ref": {
+                "item": "oll_srv"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c086",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c086_0",
+              "ref": {
+                "item": "d_sms"
+              }
+            },
+            {
+              "id": "c086_1",
+              "ref": {
+                "item": "nb02"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c087",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c087_0",
+              "ref": {
+                "item": "d_stext"
+              }
+            },
+            {
+              "id": "c087_1",
+              "ref": {
+                "tile": {
+                  "x": 31,
+                  "y": -26
+                }
+              }
+            },
+            {
+              "id": "c087_2",
+              "ref": {
+                "tile": {
+                  "x": 31,
+                  "y": -22
+                }
+              }
+            },
+            {
+              "id": "c087_3",
+              "ref": {
+                "item": "nb02"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c088",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c088_0",
+              "ref": {
+                "item": "d_mls"
+              }
+            },
+            {
+              "id": "c088_1",
+              "ref": {
+                "item": "nb03"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c089",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c089_0",
+              "ref": {
+                "item": "d_svoice"
+              }
+            },
+            {
+              "id": "c089_1",
+              "ref": {
+                "tile": {
+                  "x": 31,
+                  "y": -34
+                }
+              }
+            },
+            {
+              "id": "c089_2",
+              "ref": {
+                "tile": {
+                  "x": 31,
+                  "y": -30
+                }
+              }
+            },
+            {
+              "id": "c089_3",
+              "ref": {
+                "item": "nb03"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c090",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c090_0",
+              "ref": {
+                "item": "d_manual"
+              }
+            },
+            {
+              "id": "c090_1",
+              "ref": {
+                "item": "nb04"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c091",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c091_0",
+              "ref": {
+                "item": "d_manual"
+              }
+            },
+            {
+              "id": "c091_1",
+              "ref": {
+                "tile": {
+                  "x": 31,
+                  "y": -38
+                }
+              }
+            },
+            {
+              "id": "c091_2",
+              "ref": {
+                "tile": {
+                  "x": 31,
+                  "y": -42
+                }
+              }
+            },
+            {
+              "id": "c091_3",
+              "ref": {
+                "item": "nb05"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c092",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c092_0",
+              "ref": {
+                "item": "nb02"
+              }
+            },
+            {
+              "id": "c092_1",
+              "ref": {
+                "item": "a_tactic"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c093",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c093_0",
+              "ref": {
+                "item": "nb03"
+              }
+            },
+            {
+              "id": "c093_1",
+              "ref": {
+                "item": "a_voz"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c094",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c094_0",
+              "ref": {
+                "item": "nb04"
+              }
+            },
+            {
+              "id": "c094_1",
+              "ref": {
+                "item": "a_ranges"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c095",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c095_0",
+              "ref": {
+                "item": "nb05"
+              }
+            },
+            {
+              "id": "c095_1",
+              "ref": {
+                "item": "a_fusion"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c096",
+          "color": "c_train",
+          "style": "SOLID",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c096_0",
+              "ref": {
+                "item": "nb06"
+              }
+            },
+            {
+              "id": "c096_1",
+              "ref": {
+                "item": "a_bench"
+              }
+            }
+          ]
+        },
+        {
+          "id": "c097",
+          "color": "c_dep",
+          "style": "DOTTED",
+          "width": 10,
+          "anchors": [
+            {
+              "id": "c097_0",
+              "ref": {
+                "item": "a_bench"
+              }
+            },
+            {
+              "id": "c097_1",
+              "ref": {
+                "tile": {
+                  "x": 40,
+                  "y": -50
+                }
+              }
+            },
+            {
+              "id": "c097_2",
+              "ref": {
+                "item": "nb00"
+              }
+            }
+          ]
+        }
+      ],
+      "rectangles": [
+        {
+          "id": "r_user",
+          "color": "z_user",
+          "from": {
+            "x": -2,
+            "y": 12
+          },
+          "to": {
+            "x": 9,
+            "y": 6
+          }
+        },
+        {
+          "id": "r_q",
+          "color": "z_q",
+          "from": {
+            "x": 11,
+            "y": 31
+          },
+          "to": {
+            "x": 67,
+            "y": 25
+          }
+        },
+        {
+          "id": "r_audio",
+          "color": "z_audio",
+          "from": {
+            "x": 11,
+            "y": 24
+          },
+          "to": {
+            "x": 21,
+            "y": 13
+          }
+        },
+        {
+          "id": "r_img",
+          "color": "z_img",
+          "from": {
+            "x": 11,
+            "y": 12
+          },
+          "to": {
+            "x": 21,
+            "y": 3
+          }
+        },
+        {
+          "id": "r_text",
+          "color": "z_text",
+          "from": {
+            "x": 11,
+            "y": 2
+          },
+          "to": {
+            "x": 21,
+            "y": -2
+          }
+        },
+        {
+          "id": "r_sql",
+          "color": "z_sql",
+          "from": {
+            "x": 11,
+            "y": -3
+          },
+          "to": {
+            "x": 67,
+            "y": -10
+          }
+        },
+        {
+          "id": "r_core",
+          "color": "z_core",
+          "from": {
+            "x": 23,
+            "y": 18
+          },
+          "to": {
+            "x": 39,
+            "y": -1
+          }
+        },
+        {
+          "id": "r_sem",
+          "color": "z_sem",
+          "from": {
+            "x": 40,
+            "y": 16
+          },
+          "to": {
+            "x": 47,
+            "y": 3
+          }
+        },
+        {
+          "id": "r_out",
+          "color": "z_out",
+          "from": {
+            "x": 48,
+            "y": 16
+          },
+          "to": {
+            "x": 63,
+            "y": 1
+          }
+        },
+        {
+          "id": "r_res",
+          "color": "z_res",
+          "from": {
+            "x": 64,
+            "y": 12
+          },
+          "to": {
+            "x": 68,
+            "y": 6
+          }
+        },
+        {
+          "id": "r_leg",
+          "color": "z_leg",
+          "from": {
+            "x": -2,
+            "y": 3
+          },
+          "to": {
+            "x": 9,
+            "y": -14
+          }
+        },
+        {
+          "id": "r_inst",
+          "color": "z_inst",
+          "from": {
+            "x": -2,
+            "y": -19
+          },
+          "to": {
+            "x": 7,
+            "y": -48
+          }
+        },
+        {
+          "id": "r_hf",
+          "color": "z_hf",
+          "from": {
+            "x": 8,
+            "y": -19
+          },
+          "to": {
+            "x": 24,
+            "y": -42
+          }
+        },
+        {
+          "id": "r_oll",
+          "color": "z_oll",
+          "from": {
+            "x": 8,
+            "y": -44
+          },
+          "to": {
+            "x": 24,
+            "y": -55
+          }
+        },
+        {
+          "id": "r_train",
+          "color": "z_train",
+          "from": {
+            "x": 25,
+            "y": -19
+          },
+          "to": {
+            "x": 43,
+            "y": -52
+          }
+        },
+        {
+          "id": "r_sup",
+          "color": "z_sup",
+          "from": {
+            "x": 44,
+            "y": -19
+          },
+          "to": {
+            "x": 56,
+            "y": -52
+          }
+        },
+        {
+          "id": "r_g_dl",
+          "color": "z_lib",
+          "from": {
+            "x": 57,
+            "y": -19
+          },
+          "to": {
+            "x": 65,
+            "y": -26
+          }
+        },
+        {
+          "id": "r_g_hf",
+          "color": "z_lib",
+          "from": {
+            "x": 57,
+            "y": -28
+          },
+          "to": {
+            "x": 65,
+            "y": -41
+          }
+        },
+        {
+          "id": "r_g_llm",
+          "color": "z_lib",
+          "from": {
+            "x": 57,
+            "y": -43
+          },
+          "to": {
+            "x": 65,
+            "y": -53
+          }
+        },
+        {
+          "id": "r_g_media",
+          "color": "z_lib",
+          "from": {
+            "x": 66,
+            "y": -19
+          },
+          "to": {
+            "x": 74,
+            "y": -29
+          }
+        },
+        {
+          "id": "r_g_data",
+          "color": "z_lib",
+          "from": {
+            "x": 66,
+            "y": -31
+          },
+          "to": {
+            "x": 74,
+            "y": -41
+          }
+        },
+        {
+          "id": "r_g_tools",
+          "color": "z_lib",
+          "from": {
+            "x": 66,
+            "y": -43
+          },
+          "to": {
+            "x": 74,
+            "y": -56
+          }
+        }
+      ],
+      "textBoxes": [
+        {
+          "id": "t_title",
+          "tile": {
+            "x": -2,
+            "y": 37
+          },
+          "content": "DiputadoDetector · recorrido de una consulta (100 % local)   ",
+          "fontSize": 1.2,
+          "orientation": "X"
+        },
+        {
+          "id": "t_sub",
+          "tile": {
+            "x": -2,
+            "y": 35
+          },
+          "content": "Del usuario a la respuesta: ramas, código, modelos y datos      ",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "t_user",
+          "tile": {
+            "x": -2,
+            "y": 12
+          },
+          "content": "① Usuario e interfaz       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_q",
+          "tile": {
+            "x": 11,
+            "y": 31
+          },
+          "content": "② Rama «Pregúntame»: dudas sobre estafas       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_audio",
+          "tile": {
+            "x": 11,
+            "y": 24
+          },
+          "content": "③ ¿Me están llamando?       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_img",
+          "tile": {
+            "x": 11,
+            "y": 12
+          },
+          "content": "④ ¿Es fiable este mensaje?       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_text",
+          "tile": {
+            "x": 11,
+            "y": 2
+          },
+          "content": "⑤ Texto pegado       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_sql",
+          "tile": {
+            "x": 11,
+            "y": -3
+          },
+          "content": "⑥ Rama «Analista del banco»: preguntas sobre los casos       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_core",
+          "tile": {
+            "x": 23,
+            "y": 18
+          },
+          "content": "⑦ pipeline.analyze(): evidencia y señales       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_sem",
+          "tile": {
+            "x": 40,
+            "y": 16
+          },
+          "content": "⑧ Semáforo       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_out",
+          "tile": {
+            "x": 48,
+            "y": 16
+          },
+          "content": "⑨ pipeline.outputs(): salidas multimedia       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_res",
+          "tile": {
+            "x": 64,
+            "y": 12
+          },
+          "content": "⑩ Resultado       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_leg",
+          "tile": {
+            "x": -2,
+            "y": 3
+          },
+          "content": "Leyenda       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_deps",
+          "tile": {
+            "x": -2,
+            "y": -17
+          },
+          "content": "Dependencias: instalación, modelos, entrenamiento y código    ",
+          "fontSize": 1.0,
+          "orientation": "X"
+        },
+        {
+          "id": "t_inst",
+          "tile": {
+            "x": -2,
+            "y": -19
+          },
+          "content": "Instalación y arranque       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_hf",
+          "tile": {
+            "x": 8,
+            "y": -19
+          },
+          "content": "Modelos de Hugging Face → models/hf       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_oll",
+          "tile": {
+            "x": 8,
+            "y": -44
+          },
+          "content": "Modelos de Ollama → models/ollama       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_train",
+          "tile": {
+            "x": 25,
+            "y": -19
+          },
+          "content": "Entrenamiento: datos → notebooks → artifacts/       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_sup",
+          "tile": {
+            "x": 44,
+            "y": -19
+          },
+          "content": "Código de soporte       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_libs",
+          "tile": {
+            "x": 57,
+            "y": -17
+          },
+          "content": "Librerías Python (pyproject.toml + uv.lock)      ",
+          "fontSize": 0.7,
+          "orientation": "X"
+        },
+        {
+          "id": "t_g_dl",
+          "tile": {
+            "x": 57,
+            "y": -19
+          },
+          "content": "Deep learning       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_g_hf",
+          "tile": {
+            "x": 57,
+            "y": -28
+          },
+          "content": "Hugging Face       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_g_llm",
+          "tile": {
+            "x": 57,
+            "y": -43
+          },
+          "content": "LLM, agentes y UI       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_g_media",
+          "tile": {
+            "x": 66,
+            "y": -19
+          },
+          "content": "Audio, imagen y vídeo       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_g_data",
+          "tile": {
+            "x": 66,
+            "y": -31
+          },
+          "content": "Datos y evaluación       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        },
+        {
+          "id": "t_g_tools",
+          "tile": {
+            "x": 66,
+            "y": -43
+          },
+          "content": "Notebooks y tests       ",
+          "fontSize": 0.55,
+          "orientation": "X"
+        }
+      ]
+    }
+  ]
+}
