@@ -1,4 +1,9 @@
-"""Síntesis de voz en español con MMS-TTS (VITS) de Meta, en CPU."""
+"""Voz de la aplicación: un hombre, español de España (Piper, es_ES-davefx).
+
+MMS-TTS sigue en el repositorio para fabricar el dataset de VozSinteticaNet y como
+referencia del notebook 04. Su acento no es el de España, así que no es la voz
+que oye el cliente en el aviso, la respuesta ni el vídeo.
+"""
 
 from __future__ import annotations
 
@@ -22,6 +27,7 @@ _UNITS = "cero uno dos tres cuatro cinco seis siete ocho nueve diez once doce tr
 _TENS = {30: "treinta", 40: "cuarenta", 50: "cincuenta", 60: "sesenta", 70: "setenta", 80: "ochenta", 90: "noventa"}
 _HUNDREDS = {100: "ciento", 200: "doscientos", 300: "trescientos", 400: "cuatrocientos", 500: "quinientos",
              600: "seiscientos", 700: "setecientos", 800: "ochocientos", 900: "novecientos"}
+VOICE_NAME = "es_ES-davefx-medium"
 
 
 def number_to_words(n: int) -> str:
@@ -46,7 +52,7 @@ def number_to_words(n: int) -> str:
 
 
 def normalize_for_speech(text: str) -> str:
-    """MMS-TTS solo conoce letras: pasamos cifras, símbolos y URLs a palabras."""
+    """Pasa cifras, símbolos y URLs a palabras para que el locutor las pronuncie."""
     t = text
     t = re.sub(r"https?://", "", t)
     t = re.sub(r"(\d+),(\d{1,2})\s*€", lambda m: f"{m.group(1)} euros con {m.group(2)}", t)
@@ -63,6 +69,11 @@ def normalize_for_speech(text: str) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
+def _sentences(text: str) -> list[str]:
+    parts = re.split(r"(?<=[.!?¡¿:;])\s+", text)
+    return [p for p in (s.strip() for s in parts) if len(p) > 1]
+
+
 @lru_cache(maxsize=1)
 def _mms():
     from transformers import AutoTokenizer, VitsModel
@@ -73,13 +84,20 @@ def _mms():
     return tok, model
 
 
-def _sentences(text: str) -> list[str]:
-    parts = re.split(r"(?<=[.!?¡¿:;])\s+", text)
-    return [p for p in (s.strip() for s in parts) if len(p) > 1]
+@lru_cache(maxsize=1)
+def _piper():
+    from huggingface_hub import hf_hub_download
+    from piper import PiperVoice
+
+    spec = config.HF_MODELS["piper"]
+    onnx = hf_hub_download(spec["id"], spec["file"])
+    hf_hub_download(spec["id"], spec["file"] + ".json")
+    return PiperVoice.load(onnx)
 
 
 @torch.inference_mode()
-def synthesize(text: str, speaking_rate: float = 0.95, seed: int = 3) -> tuple[np.ndarray, int]:
+def synthesize_mms(text: str, speaking_rate: float = 0.95, seed: int = 3) -> tuple[np.ndarray, int]:
+    """Voz de MMS-TTS, solo para el dataset de entrenamiento."""
     with _lock:
         tok, model = _mms()
         model.speaking_rate = speaking_rate
@@ -98,6 +116,29 @@ def synthesize(text: str, speaking_rate: float = 0.95, seed: int = 3) -> tuple[n
     return (0.9 * audio / peak).astype(np.float32), sr
 
 
+def synthesize(text: str, length_scale: float = 1.08) -> tuple[np.ndarray, int]:
+    """Locución en español de España. length_scale > 1 habla más despacio."""
+    from piper.config import SynthesisConfig
+
+    spoken = normalize_for_speech(text)
+    with _lock:
+        voice = _piper()
+        chunks = [
+            c.audio_float_array.astype(np.float32)
+            for c in voice.synthesize(spoken, syn_config=SynthesisConfig(length_scale=length_scale))
+        ]
+        sr = voice.config.sample_rate
+    if not chunks:
+        return np.zeros(sr, dtype=np.float32), sr
+    pause = np.zeros(int(sr * 0.16), dtype=np.float32)
+    pieces: list[np.ndarray] = []
+    for wav in chunks:
+        pieces += [wav, pause]
+    audio = np.concatenate(pieces)
+    peak = float(np.abs(audio).max()) or 1.0
+    return (0.9 * audio / peak).astype(np.float32), sr
+
+
 def speak(text: str, out_dir: Path | None = None) -> tuple[str, dict]:
     t0 = time.perf_counter()
     audio, sr = synthesize(text)
@@ -105,4 +146,8 @@ def speak(text: str, out_dir: Path | None = None) -> tuple[str, dict]:
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"aviso_{uuid.uuid4().hex[:8]}.wav"
     sf.write(path, audio, sr)
-    return str(path), {"model": config.HF_MODELS["tts"]["id"], "ms": (time.perf_counter() - t0) * 1000, "audio_s": len(audio) / sr}
+    return str(path), {
+        "model": f"piper {VOICE_NAME}",
+        "ms": (time.perf_counter() - t0) * 1000,
+        "audio_s": len(audio) / sr,
+    }

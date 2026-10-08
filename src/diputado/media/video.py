@@ -23,9 +23,9 @@ def _caption(text: str) -> np.ndarray:
     d = ImageDraw.Draw(img)
     lines = wrap(text, font(30, True), VW - 80)[:3]
     h = 44 * len(lines) + 28
-    d.rounded_rectangle((24, 170 - h - 12, VW - 24, 158), radius=18, fill=(15, 15, 20, 238))
+    d.rounded_rectangle((24, 170 - h - 12, VW - 24, 158), radius=14, fill=(7, 11, 18, 230), outline=(62, 224, 255, 220), width=2)
     for i, line in enumerate(lines):
-        d.text((VW // 2, 170 - h + 6 + i * 44), line, font=font(30, True), fill="white", anchor="ma")
+        d.text((VW // 2, 170 - h + 6 + i * 44), line, font=font(30, True), fill=(231, 244, 251), anchor="ma")
     return np.array(img)
 
 

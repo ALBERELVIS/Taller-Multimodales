@@ -72,7 +72,7 @@ flowchart LR
   EV --> Q3["Qwen3 8B<br/>veredicto JSON"]
   RX & TN & CP & Q3 & VS & ZS --> FU{{"Fusión log-odds<br/>+ regla dura"}}
   FU --> S["🚦 Semáforo + explicación"]
-  S --> TTS["MMS-TTS<br/>aviso por voz"]
+  S --> TTS["Piper es_ES<br/>aviso por voz"]
   S --> SD["SDXL-Turbo + SigLIP2 IQA<br/>infografía"]
   TTS & SD --> MV["moviepy<br/>vídeo-alerta"]
   S --> DB[("Casos SQLite")]
@@ -100,11 +100,11 @@ Con 8 GB no caben a la vez Qwen2.5-VL (≈ 6 GB), Qwen3 (≈ 6 GB), Whisper turb
 
 | Modelo | Dónde vive | Por qué |
 |---|---|---|
-| e5, SigLIP2, CLAP, MMS-TTS, TacticNet, VozSinteticaNet | CPU, siempre cargados | Milisegundos en un Ryzen moderno; no compiten por VRAM |
+| e5, SigLIP2, CLAP, Piper (es_ES), TacticNet, VozSinteticaNet | CPU, siempre cargados | Milisegundos en un Ryzen moderno; no compiten por VRAM |
 | Whisper turbo | GPU bajo demanda; se mueve a RAM al ceder la GPU | Volver a la GPU tarda < 1 s |
 | Qwen2.5-VL, Qwen3, Qwen2.5 (Ollama) | GPU, un modelo cada vez (`OLLAMA_MAX_LOADED_MODELS=1`) | Se descargan con `keep_alive=0` al ceder la GPU; cambiar de uno a otro cuesta entre 20 y 30 s de carga |
 | SDXL-Turbo | GPU con `enable_model_cpu_offload` | Pico contenido; se libera al terminar |
-| Bark | GPU (solo para generar datos y la demo) | No forma parte del flujo del cliente |
+| Bark | GPU (solo para generar datos de entrenamiento) | No forma parte del flujo del cliente |
 
 `gpu.claim(dueño)` es un cerrojo reentrante que desaloja al ocupante anterior antes de dar la GPU al nuevo.
 Sin GPU (o con menos de 7,5 GB) el sistema entra en **modo ligero**: Whisper base en CPU e infografía de

@@ -15,8 +15,8 @@ _pipe = None
 _load_lock = threading.Lock()
 
 STYLE = (
-    "flat vector illustration, editorial style, soft blue and coral palette, clean composition, "
-    "friendly, high quality, centered subject, plain light background"
+    "cybersecurity HUD, dark background, neon cyan and red wireframe, holographic, futuristic, "
+    "circuit grid, one centered object, no text, no letters, no watermark"
 )
 
 

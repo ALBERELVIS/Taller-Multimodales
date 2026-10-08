@@ -31,15 +31,16 @@ porque la aplicación **habla**.
    sola a «¿Me están llamando?» y se carga el audio. Le damos al *play* dos segundos para que se oiga la voz.
 2. Pulsamos **Analizar ahora**.
 
-> «La voz es sintética, generada con Bark, y ha pasado por un canal telefónico simulado. Whisper la
-> transcribe, CLAP y nuestro modelo Keras VozSinteticaNet analizan cómo suena, y Qwen3 razona sobre lo que
-> dice.»
+> «La voz es de un hombre de español de España (Piper) y ha pasado por un canal telefónico simulado.
+> Whisper la transcribe, CLAP y nuestro modelo Keras VozSinteticaNet analizan cómo suena, y Qwen3 razona
+> sobre lo que dice.»
 
 3. Aparece el semáforo **rojo** y se oye el aviso por voz. Señalamos la explicación y los consejos.
 
 > «Lo que decide aquí es el contenido: nos piden el código de seis cifras que acaba de llegar por SMS, y eso
-> activa una regla dura. Nuestro detector de voz sintética no está seguro con esta voz, que no vio al
-> entrenar, y lo decimos abiertamente: por diseño solo puede sumar riesgo, nunca restarlo.»
+> activa una regla dura. Nuestro detector de voz sintética no está seguro con esta voz (p ≈ 0,25, por
+> debajo de su umbral): al entrenar solo vio MMS y Bark, no este locutor. Por diseño solo puede sumar
+> riesgo, nunca restarlo.»
 
 ## Escena 3 · El SMS de Correos (1:00 – 1:35)
 

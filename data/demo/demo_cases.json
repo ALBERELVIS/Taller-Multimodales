@@ -2,7 +2,7 @@
   {
     "id": "llamada_falso_banco",
     "titulo": "Llamada del «departamento de seguridad» del banco",
-    "descripcion": "Voz generada con Bark y pasada por un canal telefónico simulado.",
+    "descripcion": "Locutor masculino de español de España, pasado por un canal telefónico simulado.",
     "audio": "llamada_falso_banco.wav",
     "esperado": "rojo"
   },

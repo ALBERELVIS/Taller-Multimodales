@@ -9,10 +9,14 @@ import matplotlib
 from PIL import ImageFont
 
 _DIR = Path(matplotlib.get_data_path()) / "fonts" / "ttf"
+_LOCAL = Path(__file__).resolve().parent / "fonts"
 
 
 @lru_cache(maxsize=64)
 def font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
+    local = _LOCAL / ("AtkinsonHyperlegible-Bold.ttf" if bold else "AtkinsonHyperlegible-Regular.ttf")
+    if local.exists():
+        return ImageFont.truetype(str(local), size)
     name = "DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
     return ImageFont.truetype(str(_DIR / name), size)
 

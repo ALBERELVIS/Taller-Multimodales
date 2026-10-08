@@ -21,7 +21,7 @@ FLOW = """
    <li><b>Fusión log-odds</b> calibrada → semáforo explicable</li>
   </ol></div>
  <div><h3>Salidas</h3>
-  <div class="dd-chip">🚦 Semáforo + explicación</div><br><div class="dd-chip">🔊 Aviso hablado (MMS-TTS)</div><br>
+  <div class="dd-chip">Semáforo + explicación</div><br><div class="dd-chip">Aviso hablado (español de España)</div><br>
   <div class="dd-chip">🖼️ Infografía (SDXL-Turbo + control SigLIP2)</div><br><div class="dd-chip">🎬 Vídeo-alerta (moviepy)</div><br>
   <div class="dd-chip">📊 Consola + agente SQL (smolagents)</div></div>
 </div></div>
@@ -39,9 +39,10 @@ MODELS = """
 | **TacticNet** (Keras, propio) | texto | Probabilidad de estafa y 7 tácticas | CPU/GPU |
 | `qwen3:8b` (Ollama) | texto → texto | Razonamiento y explicación | GPU (por turnos) |
 | `qwen2.5:7b` (Ollama) + smolagents | texto → SQL | Agente de datos del analista | GPU (por turnos) |
-| `facebook/mms-tts-spa` | texto → voz | Aviso hablado | CPU |
-| `stabilityai/sdxl-turbo` | texto → imagen | Ilustración de la infografía | GPU (por turnos) |
-| `suno/bark-small` | texto → voz | Generar llamadas sintéticas (datos y demo) | GPU (offline) |
+| Piper `es_ES-davefx` | texto → voz | Aviso, respuesta y vídeo: hombre, español de España | CPU |
+| `facebook/mms-tts-spa` | texto → voz | Solo el dataset de voz y la comparación del notebook 04 | CPU |
+| `stabilityai/sdxl-turbo` | texto → imagen | Ilustración oscura de ciberseguridad (4 pasos) | GPU (por turnos) |
+| `suno/bark-small` | texto → voz | Llamadas sintéticas del dataset de entrenamiento | GPU (offline) |
 """
 
 PRIVACY = f"""

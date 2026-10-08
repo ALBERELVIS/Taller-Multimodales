@@ -52,7 +52,7 @@ def mms_clips(texts: list[str]) -> pd.DataFrame:
         p = out_dir / f"mms_{i:04d}.wav"
         if not p.exists():
             rate = 0.85 + 0.3 * ((i * 37) % 10) / 10
-            audio, sr = tts.synthesize(t, speaking_rate=rate, seed=i)
+            audio, sr = tts.synthesize_mms(t, speaking_rate=rate, seed=i)
             sf.write(p, resample(audio, sr, SR), SR)
         rows.append({"path": str(p), "label": 1, "generador": "mms", "locutor": "mms", "split_origen": "sintetico", "texto": t})
     return pd.DataFrame(rows)

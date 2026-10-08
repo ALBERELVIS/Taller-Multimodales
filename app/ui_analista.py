@@ -50,12 +50,13 @@ def charts():
         )
     except Exception:
         daily, camp = pd.DataFrame(columns=["dia", "nivel", "casos"]), pd.DataFrame(columns=["campana", "casos"])
-    colors = {"rojo": "#d7263d", "ambar": "#e89128", "verde": "#2a9d8f"}
+    colors = {"rojo": "#ff3b54", "ambar": "#ffb020", "verde": "#1dffb0"}
+    dark = dict(template="plotly_dark", paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="#0d1520", font_color="#e7f4fb")
     f1 = px.bar(daily, x="dia", y="casos", color="nivel", color_discrete_map=colors, title="Casos por día y nivel")
-    f1.update_layout(height=320, template="plotly_white", margin=dict(l=10, r=10, t=50, b=10), legend_title=None)
+    f1.update_layout(height=320, margin=dict(l=10, r=10, t=50, b=10), legend_title=None, **dark)
     f2 = px.bar(camp.sort_values("casos"), x="casos", y="campana", orientation="h", title="Campañas más activas (30 días)",
-                color_discrete_sequence=["#1f2a44"])
-    f2.update_layout(height=320, template="plotly_white", margin=dict(l=10, r=10, t=50, b=10))
+                color_discrete_sequence=["#3ee0ff"])
+    f2.update_layout(height=320, margin=dict(l=10, r=10, t=50, b=10), **dark)
     return f1, f2
 
 

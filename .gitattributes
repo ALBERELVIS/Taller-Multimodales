@@ -8,3 +8,5 @@
 *.mp4 binary
 *.npz binary
 *.keras binary
+*.ttf binary
+*.otf binary
